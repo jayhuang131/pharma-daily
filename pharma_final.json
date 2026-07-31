@@ -1,0 +1,229 @@
+{
+ "reportDate": "2026-07-31",
+ "window": "2026-07-25 ~ 2026-07-31",
+ "channels": [
+  {
+   "name": "Endpoints News",
+   "home": "https://endpts.com/"
+  },
+  {
+   "name": "STAT News",
+   "home": "https://www.statnews.com/"
+  },
+  {
+   "name": "Pharma Times",
+   "home": "https://www.pharmatimes.com/"
+  },
+  {
+   "name": "Pharmaceutical Executive",
+   "home": "https://www.pharmexec.com/"
+  },
+  {
+   "name": "Nature Reviews Drug Discovery",
+   "home": "https://www.nature.com/nrd/"
+  },
+  {
+   "name": "ClinicalTrials.gov",
+   "home": "https://clinicaltrials.gov/"
+  },
+  {
+   "name": "Europe PMC",
+   "home": "https://europepmc.org/"
+  },
+  {
+   "name": "北京亦庄·经开区官网",
+   "home": "https://kfqgw.beijing.gov.cn/"
+  },
+  {
+   "name": "SEC EDGAR",
+   "home": "https://www.sec.gov/cgi-bin/browse-edgar"
+  }
+],
+"sections": [
+ {
+  "label": "监管审批",
+  "items": [
+   {
+    "title": "Lynavoy 获 CHMP 推荐在欧盟获批",
+    "url": "https://pharmatimes.com/news/lynavoy-recommended-for-eu-approval-by-the-chmp/",
+    "source": "Pharma Times",
+    "time": "2026-07-30T11:02:06Z",
+    "summary": "Lynavoy 获欧盟 CHMP 推荐批准，为首个用于 PBC 胆汁淤积性瘙痒的 IBAT 抑制剂。"
+   },
+   {
+    "title": "口服大环 PCSK9 抑制剂获 FDA 批准",
+    "url": "https://www.nature.com/articles/d41573-026-00123-4",
+    "source": "Nat Rev Drug Discovery",
+    "time": "2026-07-29T16:00:00Z",
+    "summary": "FDA 批准口服大环类 PCSK9 抑制剂上市，为高胆固醇血症提供口服降脂新选择。"
+   }
+  ]
+ },
+ {
+  "label": "临床试验",
+  "items": [
+   {
+    "title": "辉瑞 Litfulo 两项 III 期白癜风试验成功",
+    "url": "https://endpoints.news/pfizers-phase-3-win-for-litfulo-braveheart-attovia-eye-ipos-of-275m-182m/",
+    "source": "Endpoints News",
+    "time": "2026-07-30T15:16:51Z",
+    "summary": "辉瑞 Litfulo 在活动性与稳定性非节段型白癜风两项 III 期试验中均获成功。"
+   },
+   {
+    "title": "VISTA 精准癌症疫苗启动首次人体给药",
+    "url": "https://pharmatimes.com/news/vista-trial-begins-dosing-in-precision-cancer-vaccine-study/",
+    "source": "Pharma Times",
+    "time": "2026-07-30T11:09:44Z",
+    "summary": "Infinitopes 精准癌症疫苗治疗平台首次人体试验（VISTA）开始给药。"
+   },
+   {
+    "title": "Sanfilippo B 综合征酶替代疗法开放早期用药",
+    "url": "https://clinicaltrials.gov/study/NCT07733856",
+    "source": "ClinicalTrials.gov",
+    "time": "2026-07-28T16:00:00Z",
+    "summary": "Spruce Biosciences 为 MPS IIIB 患者开放脑室内 tralesinidase alfa 早期用药计划。"
+   },
+   {
+    "title": "大熊制药 DWP14012 胃溃疡 III 期研究登记",
+    "url": "https://clinicaltrials.gov/study/NCT07730138",
+    "source": "ClinicalTrials.gov",
+    "time": "2026-07-27T16:00:00Z",
+    "summary": "大熊制药 DWP14012 治疗胃溃疡的多国多中心随机双盲阳性对照 III 期研究。"
+   }
+  ]
+ },
+ {
+  "label": "行业动态",
+  "items": [
+   {
+    "title": "FDA 专家委员会多数支持 Replimune 黑色素瘤疗法 RP1",
+    "url": "https://endpoints.news/replimune-defends-melanoma-drug-decisions-to-fda-advisory-panel/",
+    "source": "Endpoints News",
+    "time": "2026-07-30T19:11:21Z",
+    "summary": "FDA 咨询委员会多数认可 RP1 疗效与研究数据，Replimune 迎来关键转折。"
+   },
+   {
+    "title": "再生元与赛诺菲洽谈扩大 Dupixent 后续合作",
+    "url": "https://endpoints.news/regeneron-sanofi-tease-potential-expanded-collaboration-for-dupixent-follow-ons/",
+    "source": "Endpoints News",
+    "time": "2026-07-30T19:22:42Z",
+    "summary": "再生元与赛诺菲处于早期洽谈阶段，拟围绕 Dupixent 后续产品深化合作。"
+   },
+   {
+    "title": "赛诺菲 CEO 改革蓝图：研发清理、加大并购、加码中国",
+    "url": "https://endpoints.news/garijos-plan-to-revamp-sanofi-an-rd-cleanup-more-ma-and-a-china-push/",
+    "source": "Endpoints News",
+    "time": "2026-07-30T15:18:33Z",
+    "summary": "Garijo 上任三个月后披露规划：清理研发管线、推进并购并加码中国市场应对专利悬崖。"
+   },
+   {
+    "title": "礼来 28 亿美元收购 AtaiBeckley 幕后细节披露",
+    "url": "https://endpoints.news/ataibeckley-attracted-co-development-and-royalty-offers-before-2-8b-lilly-deal/",
+    "source": "Endpoints News",
+    "time": "2026-07-30T15:10:46Z",
+    "summary": "SEC 文件披露迷幻药领域最大收购过程，AtaiBeckley 此前曾收到共同开发与特许权报价。"
+   },
+   {
+    "title": "交易汇总：强生联手 Sail、Processa 收购 Vidya、Relation 携手 GSK",
+    "url": "https://www.pharmexec.com/view/roundup-johnson-collaborates-sail-processa-acquires-vidya-relation-gsk",
+    "source": "Pharmaceutical Executive",
+    "time": "2026-07-30T13:29:16Z",
+    "summary": "强生拟收购 Sail Biomedicines，Processa 收购 Vidya，Relation 与 GSK 达成 AI 靶点发现合作。"
+   },
+   {
+    "title": "UCB 核心产品 Bimzelx 销售超预期，股价却不升反降",
+    "url": "https://endpoints.news/ucb-stock-slides-despite-bimzelx-revenue-beating-forecasts/",
+    "source": "Endpoints News",
+    "time": "2026-07-30T15:24:12Z",
+    "summary": "Bimzelx 销售额超预期，但市场担忧 UCB 全年指引过于乐观，股价下跌。"
+   }
+  ]
+ },
+ {
+  "label": "亦庄园区动态",
+  "items": [
+   {
+    "title": "北京经开区举办生物医药人才沙龙",
+    "url": "https://kfqgw.beijing.gov.cn/ywdt/gsprcgd/rcfw/202607/t20260729_4797497.html",
+    "source": "北京亦庄·经开区官网",
+    "time": "2026-07-29T00:00:00Z",
+    "summary": "经开区举办“以才破局，以标定航”人才沙龙，破解生物医药企业出海的国际化人才瓶颈。"
+   }
+  ]
+ },
+ {
+  "label": "论文研究",
+  "items": [
+   {
+    "title": "小分子阻断 β-arrestin：GPCR 调控新路径",
+    "url": "https://www.nature.com/articles/d41573-026-00124-3",
+    "source": "Nat Rev Drug Discovery",
+    "time": "2026-07-29T16:00:00Z",
+    "summary": "Nature Reviews Drug Discovery：小分子可阻断 β-arrestin，为 GPCR 信号调控提供新干预路径。"
+   },
+   {
+    "title": "帕博利珠单抗一线治疗转移性 NSCLC 十年真实世界证据",
+    "url": "https://doi.org/10.1080/14796694.2026.2709201",
+    "source": "Europe PMC",
+    "time": "2026-07-29T16:00:00Z",
+    "summary": "汇总 K 药一线治疗转移性非小细胞肺癌的十年真实世界证据，巩固其标准治疗地位。"
+   },
+   {
+    "title": "从载荷优先走向双机制 ADC",
+    "url": "https://doi.org/10.1002/adma.74387",
+    "source": "Europe PMC",
+    "time": "2026-07-29T16:00:00Z",
+    "summary": "Perspective：曲妥珠单抗等 ADC 骨架本身即是活性生物药，双机制设计成新方向。"
+   },
+   {
+    "title": "铁供应再生脂质纳米粒整合 RNAi 诱导铁死亡抗癌",
+    "url": "https://doi.org/10.1002/smll.74925",
+    "source": "Europe PMC",
+    "time": "2026-07-29T16:00:00Z",
+    "summary": "可持续供铁的脂质纳米粒递送 siRNA，通过诱导铁死亡实现非凋亡途径抗癌。"
+   },
+   {
+    "title": "刺激响应纳米载体攻克肿瘤多药耐药",
+    "url": "https://doi.org/10.1080/17435889.2026.2711711",
+    "source": "Europe PMC",
+    "time": "2026-07-29T16:00:00Z",
+    "summary": "碳水化合物聚合物基刺激响应纳米载体研究进展，为克服肿瘤多药耐药提供精准策略。"
+   },
+   {
+    "title": "达格列净改善 1 型糖尿病患者红细胞力学特性",
+    "url": "https://doi.org/10.1111/bph.70613",
+    "source": "Europe PMC",
+    "time": "2026-07-29T16:00:00Z",
+    "summary": "30 天达格列净治疗改善 1 型糖尿病患者红细胞纳米力学特性，或部分解释 SGLT2 抑制剂心血管获益。"
+   }
+  ]
+ },
+ {
+  "label": "政策与观点",
+  "items": [
+   {
+    "title": "特朗普首轮 100% 药品关税推迟生效",
+    "url": "https://endpoints.news/first-round-of-trumps-100-pharma-tariffs-wont-start-friday-as-planned/",
+    "source": "Endpoints News",
+    "time": "2026-07-30T17:37:01Z",
+    "summary": "白宫官员称原定 7 月 31 日生效的首轮 100% 药品关税将推迟，行业暂获喘息。"
+   },
+   {
+    "title": "油价上涨或推高部分药品成本",
+    "url": "https://www.statnews.com/pharmalot/2026/07/30/rising-oil-prices-cost-of-medicines-fosil-fuels/?utm_campaign=rss",
+    "source": "STAT News",
+    "time": "2026-07-30T13:22:30Z",
+    "summary": "Unitaid 分析：油价上涨将推高常用 HIV 药物成本，专家呼吁降低对化石燃料依赖。"
+   },
+   {
+    "title": "评论：药企应将直达患者销售作为核心商业渠道",
+    "url": "https://www.pharmexec.com/view/daily-inizio-engage-launches-connected-insights",
+    "source": "Pharmaceutical Executive",
+    "time": "2026-07-30T16:55:55Z",
+    "summary": "PharmExec 评论：直达患者（DTP）销售应被作为核心商业渠道管理，而非边缘项目。"
+   }
+  ]
+ }
+],
+"sourceNote": "数据来自 Endpoints News / STAT News / Pharma Times / Pharmaceutical Executive / Nature Reviews Drug Discovery / ClinicalTrials.gov / Europe PMC / 北京亦庄·经开区官网 / SEC EDGAR（P1新增）等权威公开渠道。摘要为 AI 自动生成，仅供参考。"
+}

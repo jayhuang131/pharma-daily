@@ -1,0 +1,10 @@
+*.tmp
+*.log
+pharma_raw.json
+favs.json
+sync_token.txt
+server.log
+_gen_report.py
+test_sources.py
+__pycache__/
+.workbuddy/
