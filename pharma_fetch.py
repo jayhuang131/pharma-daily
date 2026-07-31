@@ -144,8 +144,12 @@ def classify(title, desc, default):
 RSS_FEEDS = [
     ("Endpoints News",            "https://endpts.com/feed/"),
     ("STAT News",                 "https://www.statnews.com/feed/"),
+    ("Fierce Biotech",            "https://www.fiercebiotech.com/rss.xml"),
+    ("BioPharma Dive",            "https://www.biopharmadive.com/feed/"),
     ("Pharma Times",              "https://www.pharmatimes.com/rss"),
     ("Pharmaceutical Executive",  "https://www.pharmexec.com/rss"),
+    ("PRNewswire BioTech",        "https://www.prnewswire.com/rss/biotechnology-latest-news/biotechnology-latest-news_list.rss"),
+    ("GEN",                       "https://www.genengnews.com/feed/"),
     ("Nat Rev Drug Discovery",    "https://www.nature.com/nrd.rss"),
 ]
 
@@ -153,8 +157,12 @@ def fetch_rss():
     out = []
     cutoff = NOW - timedelta(days=NEWS_DAYS)
     for source, url in RSS_FEEDS:
+        host = urllib.parse.urlparse(url).netloc
+        if not reachable(f"https://{host}", 6):
+            print(f"  [RSS] {source} 不可达，跳过（外网 PC 可生效）")
+            continue
         try:
-            items = parse_feed(http(url), source, "行业动态")
+            items = parse_feed(http(url, tries=1, timeout=12), source, "行业动态")
         except Exception as e:
             print(f"  [RSS] {source} 抓取失败: {e}")
             continue
@@ -323,6 +331,72 @@ def fetch_yizhuang():
             pass
     out.sort(key=lambda x: x["time"], reverse=True)
     print(f"  [YZ] 北京亦庄官网: 保留 {len(out)} 条")
+    return out
+
+# ---------- 4b) CDE 药审中心 公开信息 ----------
+CDE_PAGES = [
+    ("https://www.cde.org.cn/main/news/listpage/545", "新闻中心"),
+    ("https://www.cde.org.cn/main/xxgk/listpage/9f9c74c73e0f8f56a8bfbc646055026d", "信息公开"),
+]
+CDE_DAYS = 5
+CDE_BIO = ["药", "临床", "上市", "批准", "创新", "治疗", "指南", "疫苗",
+           "生物", "申请", "受理", "注册", "许可", "制剂"]
+
+def _cde_body_desc(page_html):
+    """提取 CDE 文章正文（容器通常为 .article-content / .news-content）"""
+    for cls in ("article-content", "news-content", "content", "TRS_Editor"):
+        m = re.search(rf'class="[^"]*{cls}[^"]*"[^>]*>([\s\S]*?)(?=<div class="footer|<div class="bottom)', page_html)
+        if m:
+            return clean(m.group(1))[:280]
+    return ""
+
+def fetch_cde():
+    out, seen = [], set()
+    cutoff = NOW - timedelta(days=CDE_DAYS)
+    UA2 = UA + " (biopharma-aggregator)"
+    for base_url, label in CDE_PAGES:
+        try:
+            h = http(base_url, tries=1, timeout=15, extra_headers={"User-Agent": UA2}).decode("utf-8", "ignore")
+        except Exception:
+            print(f"  [CDE] {label} 不可达，跳过（外网 PC 可生效）")
+            continue
+        for m in re.finditer(
+            r'<a[^>]+href="([^"]*(?:main/news/viewInfoCommon|main/xxgk/listpage)/[^"]*)"[^>]*>'
+            r'\s*(?:<[^>]+>)*\s*([^<]{4,120})\s*(?:</[^>]+>)*\s*</a>'
+            r'|(?:<span class="date">\s*(\d{4}-\d{2}-\d{2})\s*</span>)', h, re.S):
+            if m.group(1):
+                href = m.group(1)
+                title = clean(m.group(2) or "")
+                absu = urllib.parse.urljoin(base_url, href)
+                if not title or absu in seen:
+                    continue
+                seen.add(absu)
+                # 找最近的前一个日期
+                date_str = m.group(3) if m.lastindex >= 3 else None
+                t = parse_time(date_str) if date_str else None
+                if t is None:
+                    continue
+                if t < cutoff:
+                    continue
+                out.append({
+                    "title": title,
+                    "url": absu,
+                    "source": "CDE 药审中心",
+                    "time": t.strftime("%Y-%m-%dT%H:%M:%SZ") if t else None,
+                    "desc": "",
+                    "section": "政策追踪" if any(k in title for k in ["指南", "指导原则", "征求意见", "政策"]) else "监管审批",
+                })
+        # 补正文摘要
+        for it in out[-6:]:
+            if it["desc"]:
+                continue
+            try:
+                det = http(it["url"], tries=1, timeout=12, extra_headers={"User-Agent": UA2}).decode("utf-8", "ignore")
+                it["desc"] = _cde_body_desc(det)
+            except Exception:
+                pass
+    out.sort(key=lambda x: x["time"] or "", reverse=True)
+    print(f"  [CDE] 药审中心: 保留 {len(out)} 条")
     return out
 
 # ---------- 5) Google News RSS（中英多查询，兜底聚合全球/亚洲/公司PR） ----------
@@ -661,6 +735,7 @@ def main():
     items += fetch_clinicaltrials()
     items += fetch_papers()
     items += fetch_yizhuang()
+    items += fetch_cde()
     items += fetch_google_news()
     items += fetch_sina_news()
     items += fetch_hkex()
