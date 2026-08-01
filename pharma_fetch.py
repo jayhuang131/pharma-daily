@@ -3,7 +3,7 @@
 从权威公开渠道（RSS + 免费 API）拉取近期动态，分类去重，输出 pharma_raw.json。
 标题/摘要为原文（多为英文），中文摘要由生成步骤补写进 pharma_final.json。
 """
-import json, re, time, urllib.request, urllib.parse, socket, html as ihtml, ssl
+import json, re, time, urllib.request, urllib.parse, socket, html as ihtml, ssl, subprocess
 import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone, timedelta
@@ -39,14 +39,34 @@ def http(url, tries=3, timeout=15, ssl_loose=False, extra_headers=None):
             time.sleep(1.2 * (i + 1))
     raise last
 
-def reachable(host, timeout=5):
-    """快速连通性预检，避免被墙/不可达主机长时间阻塞。"""
+def http_curl(url, timeout=15):
+    """通过 curl 子进程抓取（绕过 Cloudflare TLS 指纹检测）。"""
     try:
-        req = urllib.request.Request(host, headers={"User-Agent": UA})
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return r.status < 500
-    except Exception:
-        return False
+        result = subprocess.run(
+            ["curl", "-sS", "--connect-timeout", str(timeout), "--max-time", str(timeout + 5),
+             "-H", "Accept: */*", url],
+            capture_output=True, timeout=timeout + 10)
+        if result.returncode == 0:
+            return result.stdout
+        raise Exception(f"curl exit {result.returncode}: {result.stderr.decode()[:200]}")
+    except subprocess.TimeoutExpired:
+        raise Exception("curl timeout")
+
+# GEN 等站点的 Cloudflare TLS 指纹只放行 curl，urllib 会被 403
+CURL_SOURCES = {"GEN", "BioPharma Dive"}
+
+def reachable(host, timeout=10):
+    """快速连通性预检，避免被墙/不可达主机长时间阻塞。失败自动重试一次。"""
+    for attempt in range(2):
+        try:
+            req = urllib.request.Request(host, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.status < 500
+        except Exception:
+            if attempt == 0:
+                time.sleep(2)
+            continue
+    return False
 
 def lname(tag):
     return tag.split("}")[-1].lower()
@@ -145,7 +165,7 @@ RSS_FEEDS = [
     ("Endpoints News",            "https://endpts.com/feed/"),
     ("STAT News",                 "https://www.statnews.com/feed/"),
     ("Fierce Biotech",            "https://www.fiercebiotech.com/rss.xml"),
-    ("BioPharma Dive",            "https://www.biopharmadive.com/feed/"),
+    ("BioPharma Dive",            "https://www.biopharmadive.com/feeds/news/"),
     ("Pharma Times",              "https://www.pharmatimes.com/rss"),
     ("Pharmaceutical Executive",  "https://www.pharmexec.com/rss"),
     ("PRNewswire BioTech",        "https://www.prnewswire.com/rss/biotechnology-latest-news/biotechnology-latest-news_list.rss"),
@@ -158,14 +178,23 @@ def fetch_rss():
     cutoff = NOW - timedelta(days=NEWS_DAYS)
     for source, url in RSS_FEEDS:
         host = urllib.parse.urlparse(url).netloc
-        if not reachable(f"https://{host}", 6):
-            print(f"  [RSS] {source} 不可达，跳过（外网 PC 可生效）")
-            continue
-        try:
-            items = parse_feed(http(url, tries=1, timeout=12), source, "行业动态")
-        except Exception as e:
-            print(f"  [RSS] {source} 抓取失败: {e}")
-            continue
+        # GEN 等站点 Cloudflare 只放 curl
+        if source in CURL_SOURCES:
+            try:
+                raw = http_curl(url, timeout=15)
+                items = parse_feed(raw, source, "行业动态")
+            except Exception as e:
+                print(f"  [RSS] {source} 抓取失败 (curl): {e}")
+                continue
+        else:
+            if not reachable(f"https://{host}", 10):
+                print(f"  [RSS] {source} 不可达，跳过（外网 PC 可生效）")
+                continue
+            try:
+                items = parse_feed(http(url, tries=1, timeout=12), source, "行业动态")
+            except Exception as e:
+                print(f"  [RSS] {source} 抓取失败: {e}")
+                continue
         kept = 0
         for it in items:
             t = parse_time(it["time"]) if it["time"] else None
@@ -466,7 +495,7 @@ def parse_gn(xml_bytes, lang):
 def fetch_google_news():
     cutoff = NOW - timedelta(days=GN_DAYS)
     out, seen = [], set()
-    if not reachable("https://news.google.com", 5):
+    if not reachable("https://news.google.com", 8):
         print("  [GN] Google News 当前环境不可达，跳过（在可访问外网的机器上会自动生效）")
         return out
     for q, lang in GN_QUERIES:
@@ -512,14 +541,15 @@ SN_KEYS = [
 ]
 
 def fetch_sina_news():
-    if not reachable("https://feed.mix.sina.com.cn", 5):
+    if not reachable("https://feed.mix.sina.com.cn", 10):
         print("  [SN] 新浪 feed 不可达，跳过")
         return []
     cutoff = NOW - timedelta(days=SN_DAYS)
     out, seen = [], set()
     for kw in SN_KEYS:
         params = urllib.parse.urlencode({"pageid": "153", "lid": "2510",
-                                          "k": kw, "num": str(SN_NUM), "page": "1"})
+                                          "k": kw, "num": str(SN_NUM), "page": "1"},
+                                          quote_via=urllib.parse.quote)
         url = "https://feed.mix.sina.com.cn/api/roll/get?" + params
         try:
             raw = http(url, tries=1, timeout=10).decode("utf-8", "ignore")
@@ -573,18 +603,20 @@ def fetch_hkex():
     """尝试直接拉取 HKEXnews 上市公司公告；接口受反爬/重定向保护时优雅返回空，
     由 Google News 中对港交所/港股创新药的定向查询兜底覆盖。"""
     out = []
-    if not reachable("https://www1.hkexnews.hk", 5):
+    if not reachable("https://www1.hkexnews.hk", 10):
         print("  [HKEX] HKEXnews 当前环境不可达，跳过（在可访问外网的机器上会自动生效）")
         return out
     try:
-        body = ("lang=EN&market=SEH&category=0&searchType=0&stockId=&"
-                "from=20260720&to=20260729&sortDir=0&sortByOptions=0&titleContains=&onlyOurNews=N")
+        from_date = (NOW - timedelta(days=7)).strftime("%Y%m%d")
+        to_date = NOW.strftime("%Y%m%d")
+        body = (f"lang=EN&market=SEH&category=0&searchType=0&stockId=&"
+                f"from={from_date}&to={to_date}&sortDir=0&sortByOptions=0&titleContains=&onlyOurNews=N")
         req = urllib.request.Request(
             "https://www1.hkexnews.hk/child/php/getnewannouncement.php",
             data=body.encode("utf-8"),
             headers={"User-Agent": UA, "Referer": "https://www1.hkexnews.hk/search/titlesearch.xhtml",
                      "Content-Type": "application/x-www-form-urlencoded", "Accept": "*/*"})
-        raw = urllib.request.urlopen(req, timeout=15).read().decode("utf-8", "ignore")
+        raw = urllib.request.urlopen(req, timeout=15).read().decode("utf-8-sig", "ignore")
         # 能解析出公告 JSON 才采用（结构随站点变动，解析失败即放弃）
         import json as _json
         data = _json.loads(raw)
