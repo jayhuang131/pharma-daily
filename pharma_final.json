@@ -1,6 +1,6 @@
 {
- "reportDate": "2026-08-01",
- "window": "2026-07-29 ~ 2026-08-01",
+ "reportDate": "2026-08-02",
+ "window": "2026-07-30 ~ 2026-08-02",
  "channels": [
   {
    "name": "Endpoints News",
@@ -71,24 +71,6 @@
      "desc": "Salt Lake City, UT, July 31, 2026 (GLOBE NEWSWIRE) -- Recursion (Nasdaq: RXRX), a leading clinical stage TechBio company decoding biology to radically improve lives, announced that on July 27, 2026, the Compensation Committee of Recursion's Board of Directors approved the grant of inducement",
      "section": "监管审批",
      "summary": "Salt Lake City, UT, July 31, 2026 (GLOBE NEWSWIRE) -- Recurs"
-    },
-    {
-     "title": "Opinion: Limb girdle muscular dystrophy patients face a maddening reality",
-     "url": "https://www.statnews.com/2026/07/31/fda-platform-designation-hold-limb-girdle-muscular-dystrophy-lgmd/?utm_campaign=rss",
-     "source": "STAT News",
-     "time": "2026-07-31T08:30:00Z",
-     "desc": "“Too often, regulatory tools authorized to speed patient access to breakthrough treatments are being used in ways that even prevent approval,” writes Kat Bryant Knudson.",
-     "section": "监管审批",
-     "summary": "“Too often, regulatory tools authorized to speed patient acc"
-    },
-    {
-     "title": "Chasing Vertex, Latigo reports non-opioid pain drug succeeds in key trial",
-     "url": "https://endpoints.news/chasing-vertex-latigo-reports-non-opioid-pain-drug-succeeds-in-key-trial/",
-     "source": "Endpoints News",
-     "time": "2026-07-31T07:24:14Z",
-     "desc": "Latigo Biotherapeutics said its non-opioid drug reduced acute pain in a Phase 2b study, as the company seeks to compete with Vertex Pharmaceuticals’ approved pain treatment Journavx. Next, Latigo has to replicate its findings in ...",
-     "section": "监管审批",
-     "summary": "Latigo Biotherapeutics said its non-opioid drug reduced acut"
     },
     {
      "title": "Lynavoy recommended for EU approval by the CHMP",
@@ -235,24 +217,6 @@
      "summary": "登记号 NCT07735806；申办方 Kafrelsheikh University；适应症 Impacted Man"
     },
     {
-     "title": "Atsena gains EMA orphan status for two gene therapies",
-     "url": "https://pharmatimes.com/news/atsena-gains-ema-orphan-status-for-two-gene-therapies/",
-     "source": "Pharma Times",
-     "time": "2026-07-29T10:53:45Z",
-     "desc": "Designation supports pivotal trials for emerging candidates",
-     "section": "临床试验",
-     "summary": "Designation supports pivotal trials for emerging candidates"
-    },
-    {
-     "title": "J&J reports major survival gains with dual‑target myeloma regimen",
-     "url": "https://pharmatimes.com/news/jj-reports-major-survival-gains-with-dual-target-myeloma-regimen/",
-     "source": "Pharma Times",
-     "time": "2026-07-29T10:47:20Z",
-     "desc": "Phase 3 data show strong benefit for two therapies",
-     "section": "临床试验",
-     "summary": "Phase 3 data show strong benefit for two therapies"
-    },
-    {
      "title": "Comparative Effectiveness of Available Treatments for Sinus and Ear Infections in Children (Acute Sinusitis)",
      "url": "https://clinicaltrials.gov/study/NCT07732699",
      "source": "ClinicalTrials.gov",
@@ -277,6 +241,15 @@
   {
    "label": "交易速览",
    "items": [
+    {
+     "title": "Twitch Phenom Cinna Declares for Bang Energy During Record-Breaking Subathon Attempt",
+     "url": "https://www.prnewswire.com/news-releases/twitch-phenom-cinna-declares-for-bang-energy-during-record-breaking-subathon-attempt-302840477.html",
+     "source": "PRNewswire BioTech",
+     "time": "2026-08-01T23:30:00Z",
+     "desc": "New Partnership Unveiled as Cinna Kicks Off Month-Long \"Cinnathon\" Livestream Event CORONA, Calif., Aug. 1, 2026 /PRNewswire/ -- Bang Energy is marking one of its biggest plays yet in the creator economy with the announcement of its newest brand ambassador, Twitch phenomenon and streamer,...",
+     "section": "交易速览",
+     "summary": "New Partnership Unveiled as Cinna Kicks Off Month-Long \"Cinn"
+    },
     {
      "title": "Pharmaceutical Executive Daily: FDA Votes 10 to 3 in Favor of Replimune's Rp1 Efficacy Data",
      "url": "https://www.pharmexec.com/view/daily-fda-votes-10-to-3-replimune-rp1-data",
@@ -303,15 +276,6 @@
      "desc": "Braveheart Bio, Attovia, and Vogenx have all announced Initial public offerings, focusing on a cardiovascular drug, an immune-disease biologics platform, and a metabolic disease program.",
      "section": "交易速览",
      "summary": "Braveheart Bio, Attovia, and Vogenx have all announced Initi"
-    },
-    {
-     "title": "Opinion: We once praised the American Diabetes Association’s courage. How things have changed",
-     "url": "https://www.statnews.com/2026/07/31/american-diabetes-association-ada-police-apology-independence/?utm_campaign=rss",
-     "source": "STAT News",
-     "time": "2026-07-31T08:30:00Z",
-     "desc": "“The ADA is no longer what we’d call a profile in courage,” write Adam Marcus and Ivan Oransky of Retraction Watch.",
-     "section": "交易速览",
-     "summary": "“The ADA is no longer what we’d call a profile in courage,”"
     }
    ]
   },
@@ -319,13 +283,49 @@
    "label": "行业动态",
    "items": [
     {
-     "title": "XPENG Announces Vehicle Delivery Results for July 2026",
-     "url": "https://www.prnewswire.com/news-releases/xpeng-announces-vehicle-delivery-results-for-july-2026-302840496.html",
+     "title": "New High School Campus in West End Opelousas Brings State-of-the-Art Training for High-Demand Careers",
+     "url": "https://www.prnewswire.com/news-releases/new-high-school-campus-in-west-end-opelousas-brings-state-of-the-art-training-for-high-demand-careers-302840600.html",
      "source": "PRNewswire BioTech",
-     "time": "2026-08-01T04:00:00Z",
-     "desc": "GUANGZHOU, China, Aug. 1, 2026 /PRNewswire/ -- XPeng Inc. (\"XPENG\" or the \"Company,\" NYSE: XPEV and HKEX: 9868), a leading global Physical AI company, today announced its vehicle delivery results for July 2026. XPENG delivered 38,027 vehicles in July, marking an increase of 4% year over...",
+     "time": "2026-08-01T23:16:00Z",
+     "desc": "With support from Building Hope, JS Clark Leadership Academy opens a new 54,000-square-foot campus that includes an allied health academy and media studio, giving students hands-on career experiences earlier in their education OPELOUSAS, La., Aug. 1, 2026 /PRNewswire/ -- JS Clark...",
      "section": "行业动态",
-     "summary": "GUANGZHOU, China, Aug. 1, 2026 /PRNewswire/ -- XPeng Inc. (\""
+     "summary": "With support from Building Hope, JS Clark Leadership Academy"
+    },
+    {
+     "title": "ADMA Deadline: ADMA Investors with Losses in Excess of $100K Have Opportunity to Lead ADMA Biologics, Inc. Securities Fraud Lawsuit Filed by The Rosen Law Firm",
+     "url": "https://www.prnewswire.com/news-releases/adma-deadline-adma-investors-with-losses-in-excess-of-100k-have-opportunity-to-lead-adma-biologics-inc-securities-fraud-lawsuit-filed-by-the-rosen-law-firm-302840414.html",
+     "source": "PRNewswire BioTech",
+     "time": "2026-08-01T23:02:00Z",
+     "desc": "NEW YORK, Aug. 1, 2026 /PRNewswire/ -- Rosen Law Firm, a global investor rights law firm, reminds purchasers of securities of ADMA Biologics, Inc. (NASDAQ: ADMA) between August 9, 2024 and March 25, 2026, both dates inclusive (the \"Class Period\"), of the importantAugust 10, 2026 lead...",
+     "section": "行业动态",
+     "summary": "NEW YORK, Aug. 1, 2026 /PRNewswire/ -- Rosen Law Firm, a glo"
+    },
+    {
+     "title": "Royal Office of Morocco Releases Statement on President Trump's Reaffirmation of U.S. Recognition of Moroccan Sovereignty Over Western Sahara",
+     "url": "https://www.prnewswire.com/news-releases/royal-office-of-morocco-releases-statement-on-president-trumps-reaffirmation-of-us-recognition-of-moroccan-sovereignty-over-western-sahara-302840599.html",
+     "source": "PRNewswire BioTech",
+     "time": "2026-08-01T22:35:00Z",
+     "desc": "WASHINGTON, Aug. 1, 2026 /PRNewswire/ -- The Royal Office of the Kingdom of Morocco today released the following statement regarding a message from President Donald J. Trump to His Majesty King Mohammed VI on the 27th anniversary of Throne Day. In the statement, President Trump...",
+     "section": "行业动态",
+     "summary": "WASHINGTON, Aug. 1, 2026 /PRNewswire/ -- The Royal Office of"
+    },
+    {
+     "title": "Employment & Labor Lawyers, at Blumenthal Nordrehaug Bhowmik De Blouw LLP, File Suit Against Southern California Rehabilitation Services, Inc., Alleging Failure to Provide Meal Periods and Rest Breaks",
+     "url": "https://www.prnewswire.com/news-releases/employment--labor-lawyers-at-blumenthal-nordrehaug-bhowmik-de-blouw-llp-file-suit-against-southern-california-rehabilitation-services-inc-alleging-failure-to-provide-meal-periods-and-rest-breaks-302837669.html",
+     "source": "PRNewswire BioTech",
+     "time": "2026-08-01T22:21:00Z",
+     "desc": "Southern California Rehabilitation Services, Inc, allegedly failed to provide employees with accurate wages due to missed meal breaks. This allegedly resulted in violations of various California Labor codes. **THIS IS AN ATTORNEY ADVERTISEMENT** SACRAMENTO, Calif., Aug. 1, 2026...",
+     "section": "行业动态",
+     "summary": "Southern California Rehabilitation Services, Inc, allegedly"
+    },
+    {
+     "title": "Alnylam's slump deepens; Q2 earnings roundup; and more",
+     "url": "https://endpoints.news/alnylams-slump-deepens-q2-earnings-roundup-and-more/",
+     "source": "Endpoints News",
+     "time": "2026-08-01T10:00:38Z",
+     "desc": "Welcome to another edition of Endpoints Weekly, and happy August! The summer is speeding right along, and we’ve got the latest from biopharma’s earnings-palooza this week. Let’s dive into the news. Alnylam’s struggles became the ...",
+     "section": "行业动态",
+     "summary": "Welcome to another edition of Endpoints Weekly, and happy Au"
     },
     {
      "title": "8-K - NORTHWEST BIOTHERAPEUTICS INC (0001072379) (Filer)",
@@ -418,24 +418,6 @@
      "summary": "HHS' Health Resources and Services Administration unveiled d"
     },
     {
-     "title": "STAT+: Trump administration revises rebate pilot for 340B drug discount program, angering hospitals",
-     "url": "https://www.statnews.com/pharmalot/2026/07/31/trump-administration-revises-rebate-pilot-drug-discount-program-hospitals/?utm_campaign=rss",
-     "source": "STAT News",
-     "time": "2026-07-31T17:02:27Z",
-     "desc": "The Trump administration is revising its rebate pilot for the 340B drug discount program, angering hospitals.",
-     "section": "行业动态",
-     "summary": "The Trump administration is revising its rebate pilot for th"
-    },
-    {
-     "title": "STAT+: Up and down the ladder: The latest comings and goings",
-     "url": "https://www.statnews.com/pharmalot/2026/07/31/up-and-down-the-ladder-latest-comings-and-goings-jobs/?utm_campaign=rss",
-     "source": "STAT News",
-     "time": "2026-07-31T14:47:59Z",
-     "desc": "From new hires to departures, promotions and transfers, here are the latest comings and goings in the pharmaceutical industry.",
-     "section": "行业动态",
-     "summary": "From new hires to departures, promotions and transfers, here"
-    },
-    {
      "title": "FDA CTGTAC Committee Votes in Favor of Replimune’s RP1 Efficiency Results in Ignyte Study",
      "url": "https://www.pharmexec.com/view/fda-ctgtac-committee-votes-replimune-rp1-efficiency-ignyte",
      "source": "Pharmaceutical Executive",
@@ -443,15 +425,6 @@
      "desc": "FDA's advisory committee voted 10 to 3 that efficacy data from the Ignyte study is evaluable and clinically meaningful.",
      "section": "行业动态",
      "summary": "FDA's advisory committee voted 10 to 3 that efficacy data fr"
-    },
-    {
-     "title": "STAT+: Pharmalittle: We’re reading about a Novo setback, support for Replimune’s melanoma drug, and more",
-     "url": "https://www.statnews.com/pharmalot/2026/07/31/novo-setback-fda-panel-endorses-replimune-melanoma-drug/?utm_campaign=rss",
-     "source": "STAT News",
-     "time": "2026-07-31T13:28:17Z",
-     "desc": "An FDA advisory panel recommended use of an experimental Replimune treatment for advanced melanoma that the agency has rejected twice",
-     "section": "行业动态",
-     "summary": "An FDA advisory panel recommended use of an experimental Rep"
     },
     {
      "title": "Manufacturing on the Move: Tariffs, Reshoring, and the Germany Investigation",
@@ -470,24 +443,6 @@
      "desc": "Julie Tierney, Kirsten Axelsen, and Maggie Farley examine how patient advocates, health economists, and communicators are each grappling with MFN's real-world impact.",
      "section": "行业动态",
      "summary": "Julie Tierney, Kirsten Axelsen, and Maggie Farley examine ho"
-    },
-    {
-     "title": "STAT+: Novo Nordisk inflammation-targeting drug misses mark in heart disease study",
-     "url": "https://www.statnews.com/2026/07/31/novo-nordisk-inflammation-heart-disease-ziltivekimab/?utm_campaign=rss",
-     "source": "STAT News",
-     "time": "2026-07-31T12:32:46Z",
-     "desc": "A Novo Nordisk drug missed the mark in a heart disease study, raising questions about targeting inflammation to prevent cardiovascular complications.",
-     "section": "行业动态",
-     "summary": "A Novo Nordisk drug missed the mark in a heart disease study"
-    },
-    {
-     "title": "Federal government could improve infectious disease monitoring, says federal government",
-     "url": "https://www.statnews.com/2026/07/31/health-news-federal-government-infectious-disease-monitoring-issues/?utm_campaign=rss",
-     "source": "STAT News",
-     "time": "2026-07-31T12:28:22Z",
-     "desc": "The new CDC director nominee moves to the full Senate vote, Medicaid work requirements will not be delayed, and more health news",
-     "section": "行业动态",
-     "summary": "The new CDC director nominee moves to the full Senate vote,"
     },
     {
      "title": "Ionis' top scientist Frank Bennett to retire; Recursion selects its first AI chief",
@@ -569,33 +524,6 @@
      "desc": "The deal with the buzzy Flagship Pioneering-backed startup makes J&J the latest large drugmaker to bet that the technology might be able to treat autoimmune conditions.",
      "section": "行业动态",
      "summary": "The deal with the buzzy Flagship Pioneering-backed startup m"
-    },
-    {
-     "title": "Capricor Duchenne cell therapy voted down by FDA panel",
-     "url": "https://www.biopharmadive.com/news/capricor-fda-vote-deramiocel-duchenne-cardiomyopathy/826465/",
-     "source": "BioPharma Dive",
-     "time": "2026-07-29T21:31:00Z",
-     "desc": "At a contentious meeting with possible implications for other rare disease drugmakers, outside experts ultimately determined that Capricor didn't prove deramiocel's benefits in Duchenne-related cardiomyopathy.",
-     "section": "行业动态",
-     "summary": "At a contentious meeting with possible implications for othe"
-    },
-    {
-     "title": "MapLight CEO on what investors missed in the biotech’s schizophrenia data",
-     "url": "https://www.biopharmadive.com/news/maplight-ceo-kroeger-schizophrenia-drug-trial-data-investors/826530/",
-     "source": "BioPharma Dive",
-     "time": "2026-07-29T21:22:00Z",
-     "desc": "Though positive, mid-stage study results erased about two-thirds of the biotech's market value this week. But Christopher Kroeger sees MapLight's drug as competitive based on the \"totality of data.\"",
-     "section": "行业动态",
-     "summary": "Though positive, mid-stage study results erased about two-th"
-    },
-    {
-     "title": "Recursion to Report Second Quarter 2026 Business Updates and Financial Results on August 5th",
-     "url": "https://ir.recursion.com/news-releases/news-release-details/recursion-report-second-quarter-2026-business-updates-and",
-     "source": "Recursion IR",
-     "time": "2026-07-29T12:30:00Z",
-     "desc": "Company to host public Earnings call on August 5th at 8:00 am ET / 6:00 am MT / 1:00 pm BST Salt Lake City, UT, July 29, 2026 (GLOBE NEWSWIRE) -- Salt Lake City, UT, July 29, 2026 (GLOBE NEWSWIRE) – Recursion (Nasdaq: RXRX), a leading clinical stage TechBio company decoding biology to radically",
-     "section": "行业动态",
-     "summary": "Company to host public Earnings call on August 5th at 8:00 a"
     }
    ]
   },
@@ -714,24 +642,6 @@
      "desc": "期刊 。Previous studies have established an association between Ninjurin2 and diseases related to vascular endothelial dysfunction, such as ischemic stroke and coronary heart disease. Given that impaired pulmonary endothelial barrier function is a critical feature of",
      "section": "论文研究",
      "summary": "期刊 。Previous studies have established an association between"
-    },
-    {
-     "title": "Small molecules stop β-arrestins",
-     "url": "https://www.nature.com/articles/d41573-026-00124-3",
-     "source": "Nat Rev Drug Discovery",
-     "time": "2026-07-29T16:00:00Z",
-     "desc": "Nature Reviews Drug Discovery, Published online: 30 July 2026; doi:10.1038/d41573-026-00124-3 Small molecules stop β-arrestins",
-     "section": "论文研究",
-     "summary": "Nature Reviews Drug Discovery, Published online: 30 July 202"
-    },
-    {
-     "title": "Oral macrocyclic PCSK9 inhibitor secures FDA approval",
-     "url": "https://www.nature.com/articles/d41573-026-00123-4",
-     "source": "Nat Rev Drug Discovery",
-     "time": "2026-07-29T16:00:00Z",
-     "desc": "Nature Reviews Drug Discovery, Published online: 30 July 2026; doi:10.1038/d41573-026-00123-4 Oral macrocyclic PCSK9 inhibitor secures FDA approval",
-     "section": "论文研究",
-     "summary": "Nature Reviews Drug Discovery, Published online: 30 July 202"
     }
    ]
   },
@@ -742,15 +652,6 @@
   {
    "label": "政策与观点",
    "items": [
-    {
-     "title": "Opinion: What a recent op-ed got wrong about our Covid study",
-     "url": "https://www.statnews.com/2026/07/31/letter-to-editor-covid-non-pharmaceutical-interventions-research/?utm_campaign=rss",
-     "source": "STAT News",
-     "time": "2026-07-31T08:30:00Z",
-     "desc": "“The appropriate counter to Covid revisionism is careful, rigorous, and honest assessment of the U.S. response.”",
-     "section": "政策与观点",
-     "summary": "“The appropriate counter to Covid revisionism is careful, ri"
-    },
     {
      "title": "Pharmaceutical Executive Daily: Inizio Engage launches Connected Insights",
      "url": "https://www.pharmexec.com/view/daily-inizio-engage-launches-connected-insights",
