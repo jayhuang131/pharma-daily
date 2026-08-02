@@ -77,7 +77,7 @@ NOISE_KW = [
     "contact sbs", "lead plaintiff", "class action", "floating rate",
     "mesa laboratories", "first solar", "futu holdings", "peabody energy",
     "score fitness", "genius group", "insulet corporation", "sponsored",
-    "upstream risks", "building a best practice", "life sciences location analysis",
+    "upstream risks that can delay your path to ind", "building a best practice", "life sciences location analysis",
     "mba graduates", "dscsa compliance", "serialization system", "gs1 certification",
     "inizio launches", "intelligence economy",
 ]
