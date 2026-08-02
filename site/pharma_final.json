@@ -47,12 +47,12 @@
    "home": "https://europepmc.org/"
   },
   {
-   "name": "北京亦庄",
+   "name": "北京亦庄·经开区官网",
    "home": "https://kfqgw.beijing.gov.cn/"
   },
   {
    "name": "SEC EDGAR",
-   "home": "https://www.sec.gov/"
+   "home": "https://www.sec.gov/cgi-bin/browse-edgar"
   },
   {
    "name": "Recursion IR",
@@ -70,7 +70,7 @@
      "time": "2026-07-31T20:30:00Z",
      "desc": "Salt Lake City, UT, July 31, 2026 (GLOBE NEWSWIRE) -- Recursion (Nasdaq: RXRX), a leading clinical stage TechBio company decoding biology to radically improve lives, announced that on July 27, 2026, the Compensation Committee of Recursion's Board of Directors approved the grant of inducement",
      "section": "监管审批",
-     "summary": "Salt Lake City, UT, July 31, 2026 (GLOBE NEWSWIRE) -- Recurs"
+     "summary": "递归报告在纳斯达克上市许可的情况下授予激励奖；盐湖城，犹他州，2026年7月31日（环球新闻专线）——递归公司（纳斯达克股票代码：RXRX），一家"
     },
     {
      "title": "Lynavoy recommended for EU approval by the CHMP",
@@ -79,7 +79,34 @@
      "time": "2026-07-30T11:02:06Z",
      "desc": "First IBAT inhibitor for PBC cholestatic pruritus",
      "section": "监管审批",
-     "summary": "First IBAT inhibitor for PBC cholestatic pruritus"
+     "summary": "利纳沃伊建议欧盟批准CHMP；首个IBAT抑制剂用于PBC胆汁淤积性瘙痒"
+    },
+    {
+     "title": "沙砾生物北京总部在经海产业园启用 经开区细胞与基因治疗产业版图再添新军",
+     "url": "https://kfqgw.beijing.gov.cn/cxyzkfq/yzal/202607/t20260727_4791395.html",
+     "source": "北京亦庄·经开区官网",
+     "time": "2026-07-27T00:00:00Z",
+     "desc": "本报讯（融媒体中心 李啸）近日，沙砾生物北京总部在经海产业园启用，标志着北京经开区细胞与基因治疗产业版图再添一块关键拼图。作为沙砾生物未来研发和运营的重要承载地，北京总部将重点推进TIL（肿瘤浸润淋巴细胞）疗法及新一代细胞治疗技术的研发转化，推动国内首个获批进入临床研究阶段的TIL疗法产品GT101尽早惠及临床患者。 沙砾生物是一家创新驱动型、处于临床后期阶段的生物制药公司，专注于为全球癌症及自身免疫性疾病患者开创下一代免疫疗法。公司自主研发的GT101注射液是中国首个获批临床的TIL药物，其作用机制是从患者肿瘤组织中分离并筛选具有肿瘤识别能力的免疫细胞",
+     "section": "监管审批",
+     "summary": "沙砾生物北京总部在经海产业园启用 经开区细胞与基因治疗产业版图再添新军"
+    },
+    {
+     "title": "A Sustainable Hybrid (NH 4 ) 2 SO₄-Driven SALLE-Fluorimetric On-Off Integrated Platform for the Determination of Cinacalcet HCl: A Calcium Receptors Sensing Drug in Different Matrices.",
+     "url": "https://doi.org/10.1002/bio.70548",
+     "source": "Europe PMC",
+     "time": "2026-07-31T16:00:00Z",
+     "desc": "期刊 。A sustainable analytical platform was established through the combination of salting-out assisted liquid-liquid extraction (SALLE) with fluorescence quenching for the trace-level quantification of cinacalcet hydrochloride (CC•HCl). Ammonium sulfate (approved a",
+     "section": "监管审批",
+     "summary": "A Sustainable Hybrid (NH 4 ) 2 SO₄-Driven SALLE-Fluorimetric"
+    },
+    {
+     "title": "Therapeutic Time Window of Disease-Modifying Therapy for Early Alzheimer's Disease in Japanese Individuals: Analysis Based on J-ADNI Study.",
+     "url": "https://doi.org/10.1111/ggi.70698",
+     "source": "Europe PMC",
+     "time": "2026-07-31T16:00:00Z",
+     "desc": "期刊 。Lecanemab and donanemab are recently approved disease-modifying therapies (DMTs) for early Alzheimer's disease (AD), indicating amyloid positivity, with Mini-Mental State Examination (MMSE) requirements. Prior analyses using North American population data sugg",
+     "section": "监管审批",
+     "summary": "Therapeutic Time Window of Disease-Modifying Therapy for Ear"
     }
    ]
   },
@@ -93,7 +120,7 @@
      "time": "2026-07-31T17:21:34Z",
      "desc": "Clinical trials now generate 5.9 million datapoints per Phase III protocol — and most sponsors are still managing them manually.",
      "section": "临床试验",
-     "summary": "Clinical trials now generate 5.9 million datapoints per Phas"
+     "summary": "Why Real-Time Data Analytics Are Vital for the Next Evolutio"
     },
     {
      "title": "Microbiota-Derived Metabolite Enhances HIV Therapy in Monkeys",
@@ -102,7 +129,7 @@
      "time": "2026-07-31T16:47:08Z",
      "desc": "The metabolite 10-hydroxystearic acid (10-HSA), from Lactiplantibacillus plantarum , repaired HIV-related gut damage, reduced inflammation, restored immunity, and improved antiretroviral therapy effectiveness in preclinical primate studies, supporting future human trials. The post Microbiota-Derived Metabolite Enhances HIV Therapy in Monkeys appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "临床试验",
-     "summary": "The metabolite 10-hydroxystearic acid (10-HSA), from Lactipl"
+     "summary": "Microbiota-Derived Metabolite Enhances HIV Therapy in Monkey"
     },
     {
      "title": "Moderna's norovirus vaccine readout is delayed because of too few infections",
@@ -111,7 +138,7 @@
      "time": "2026-07-31T16:36:25Z",
      "desc": "Moderna will need another norovirus season to adequately test the efficacy of its vaccine, saying that it is standing up an additional trial group so it can recruit more patients. Friday's ...",
      "section": "临床试验",
-     "summary": "Moderna will need another norovirus season to adequately tes"
+     "summary": "Moderna's norovirus vaccine readout is delayed because of to"
     },
     {
      "title": "Novo setback casts doubt on a new way to treat heart disease",
@@ -120,7 +147,7 @@
      "time": "2026-07-31T16:11:00Z",
      "desc": "Ziltivekimab's failure in a key trial hurt spurred share sell-offs for Novo and other biotechs, as it suggested trouble for different cardiovascular drugs that also target inflammation.",
      "section": "临床试验",
-     "summary": "Ziltivekimab's failure in a key trial hurt spurred share sel"
+     "summary": "Novo setback casts doubt on a new way to treat heart disease"
     },
     {
      "title": "Axiom’s Hong Kong Bet, Latigo’s Positive Phase II, and Base Editors for Huntington’s",
@@ -129,7 +156,7 @@
      "time": "2026-07-31T16:00:17Z",
      "desc": "In this episode of GEN 's Touching Base , editors discuss business news from Axiom and Latigo, and science updates on the potential roots of fibromyalgia and base editing for Huntington’s disease. The post Axiom’s Hong Kong Bet, Latigo’s Positive Phase II, and Base Editors for Huntington’s appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "临床试验",
-     "summary": "In this episode of GEN 's Touching Base , editors discuss bu"
+     "summary": "Axiom’s Hong Kong Bet, Latigo’s Positive Phase II, and Base "
     },
     {
      "title": "Novo Nordisk rocked by late-stage cardiovascular drug failure",
@@ -138,7 +165,7 @@
      "time": "2026-07-31T15:35:15Z",
      "desc": "An anti-inflammatory drug from Novo Nordisk unexpectedly failed in a Phase 3 study that aimed to prove a link between cardiovascular inflammation and heart disease, the Danish company revealed Friday. The ...",
      "section": "临床试验",
-     "summary": "An anti-inflammatory drug from Novo Nordisk unexpectedly fai"
+     "summary": "Novo Nordisk rocked by late-stage cardiovascular drug failur"
     },
     {
      "title": "Ratio collects $70M for its radiopharmaceutical trials; Vogenx plans $67M IPO",
@@ -147,7 +174,7 @@
      "time": "2026-07-31T14:59:38Z",
      "desc": "Ratio Therapeutics raises $70M for radiopharma trials: The Boston biotech said the Series C funding came from existing investors Duquesne Family Office and Bristol Myers Squibb, as well as new ones ...",
      "section": "临床试验",
-     "summary": "Ratio Therapeutics raises $70M for radiopharma trials: The B"
+     "summary": "Ratio collects $70M for its radiopharmaceutical trials; Voge"
     },
     {
      "title": "Karyopharm shares crater on second Phase 3 flop for Xpovio in endometrial cancer",
@@ -156,7 +183,7 @@
      "time": "2026-07-31T10:42:02Z",
      "desc": "Karyopharm’s stock has plummeted after its second attempt to expand its blood cancer medicine Xpovio into endometrial cancer fell short. Late Thursday, the company reported that its latest trial, called XPORT-EC-042 ...",
      "section": "临床试验",
-     "summary": "Karyopharm’s stock has plummeted after its second attempt to"
+     "summary": "Karyopharm shares crater on second Phase 3 flop for Xpovio i"
     },
     {
      "title": "Effects of Various Types of Ultrasound Therapy in Knee Osteoarthritis",
@@ -166,7 +193,7 @@
      "desc": "登记号 NCT07738692；申办方 Horus University；适应症 Knee Arthritis Osteoarthritis。Knee osteoarthritis (KOA) is a degenerative joint condition characterized by degeneration, which is commonly attributed to the cumulative effects of mechanical stress and the slow deterioration of articular cartilage. KO",
      "section": "临床试验",
      "_nct": "NCT07738692",
-     "summary": "登记号 NCT07738692；申办方 Horus University；适应症 Knee Arthritis Oste"
+     "summary": "Effects of Various Types of Ultrasound Therapy in Knee Osteo"
     },
     {
      "title": "Terbinafine for CSA-AKI Prevention",
@@ -176,7 +203,7 @@
      "desc": "登记号 NCT07738328；申办方 Guangdong Provincial People's Hospital；适应症 Acute Kidney Injury、Cardiac Surgical Procedures。Primary Objective: To evaluate the efficacy and safety of perioperative oral terbinafine in reducing the incidence of cardiac surgery-associated acute kidney injury (CSA-AKI).Secondary Objectives:To assess the effects of",
      "section": "临床试验",
      "_nct": "NCT07738328",
-     "summary": "登记号 NCT07738328；申办方 Guangdong Provincial People's Hospital；适"
+     "summary": "Terbinafine for CSA-AKI Prevention"
     },
     {
      "title": "Elemene Liposomes in Endometrial Cancer",
@@ -186,7 +213,7 @@
      "desc": "登记号 NCT07738315；申办方 Women's Hospital School Of Medicine Zhejiang University；适应症 Endometrial Carcinoma。The goal of this clinical trial is to learn if Elemene Liposomes, combined with carboplatin and paclitaxel (TC) chemotherapy can improve prognosis in patients with advanced or recurrent endometrial cancer. The main quest",
      "section": "临床试验",
      "_nct": "NCT07738315",
-     "summary": "登记号 NCT07738315；申办方 Women's Hospital School Of Medicine Zhej"
+     "summary": "Elemene Liposomes in Endometrial Cancer"
     },
     {
      "title": "Latigo Reports Positive Phase IIb Data for Non-Opioid Acute Pain Candidate",
@@ -195,7 +222,7 @@
      "time": "2026-07-30T13:00:14Z",
      "desc": "LTG-001 achieved the primary endpoint of the Phase IIb LTG-001-010 trial (NCT07102459) by achieving better-than-placebo scores in the time-weighted sum of the pain-intensity difference (SPID) over the 48-hour treatment period (SPID48), based on the 0-10 range of scores of the Numeric Pain Rating Scale, with higher SPID48 values indicating greater pain reduction. The post Latigo Reports Positive Phase IIb Data for Non-Opioid Acute Pain Candidate appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "临床试验",
-     "summary": "LTG-001 achieved the primary endpoint of the Phase IIb LTG-0"
+     "summary": "Latigo Reports Positive Phase IIb Data for Non-Opioid Acute "
     },
     {
      "title": "Vista trial begins dosing in precision cancer vaccine study",
@@ -204,7 +231,7 @@
      "time": "2026-07-30T11:09:44Z",
      "desc": "First-in-human evaluation of infinitopes’ therapeutic platform",
      "section": "临床试验",
-     "summary": "First-in-human evaluation of infinitopes’ therapeutic platfo"
+     "summary": "Vista trial begins dosing in precision cancer vaccine study"
     },
     {
      "title": "The Effect of Topical Application of Hyaluronic Acid and Melatonin Mixture Following Surgical Extraction of Impacted Mandibular Third Molars .",
@@ -214,7 +241,7 @@
      "desc": "登记号 NCT07735806；申办方 Kafrelsheikh University；适应症 Impacted Mandibular Third Molar。This randomized controlled clinical trial aims to evaluate the clinical and radiographical effects of the application of a mixture of hyaluronic acid and melatonin after surgical extraction of impacted mandibular third m",
      "section": "临床试验",
      "_nct": "NCT07735806",
-     "summary": "登记号 NCT07735806；申办方 Kafrelsheikh University；适应症 Impacted Man"
+     "summary": "The Effect of Topical Application of Hyaluronic Acid and Mel"
     },
     {
      "title": "Comparative Effectiveness of Available Treatments for Sinus and Ear Infections in Children (Acute Sinusitis)",
@@ -224,7 +251,7 @@
      "desc": "登记号 NCT07732699；申办方 University of Pittsburgh；适应症 ACUTE SINUSITIS、Sinusitis。This study is being conducted at multiple hospitals and clinics to better understand whether antibiotics truly help children feel better when they have a sinus infection (acute sinusitis). Children in the study are rando",
      "section": "临床试验",
      "_nct": "NCT07732699",
-     "summary": "登记号 NCT07732699；申办方 University of Pittsburgh；适应症 ACUTE SINUS"
+     "summary": "Comparative Effectiveness of Available Treatments for Sinus "
     },
     {
      "title": "Efficacy and Safety of Serplulimab in Combination With Bevacizumab and FOLFIRINOX or NALIRIFOX as Second-Line Therapy in Patients With Metastatic Pancreatic Ductal Adenocarcinoma",
@@ -234,7 +261,7 @@
      "desc": "登记号 NCT07733050；申办方 Shanghai General Hospital, China；适应症 Metastatic Pancreatic Ductal Adenocarcinoma。This is an investigator-initiated, open-label, single-arm, phase II trial evaluating the efficacy and safety of serplulimab (an anti-PD-1 monoclonal antibody) plus bevacizumab, combined with either FOLFIRINOX or NALIRIFO",
      "section": "临床试验",
      "_nct": "NCT07733050",
-     "summary": "登记号 NCT07733050；申办方 Shanghai General Hospital, China；适应症 Met"
+     "summary": "serpluliumab联合贝伐单抗和FOLFIRINO的疗效和安全性"
     }
    ]
   },
@@ -248,7 +275,7 @@
      "time": "2026-08-01T23:30:00Z",
      "desc": "New Partnership Unveiled as Cinna Kicks Off Month-Long \"Cinnathon\" Livestream Event CORONA, Calif., Aug. 1, 2026 /PRNewswire/ -- Bang Energy is marking one of its biggest plays yet in the creator economy with the announcement of its newest brand ambassador, Twitch phenomenon and streamer,...",
      "section": "交易速览",
-     "summary": "New Partnership Unveiled as Cinna Kicks Off Month-Long \"Cinn"
+     "summary": "推奇奇才吉娜在破纪录的亚马拉松比赛中宣布获得爆炸能量奖；中国启动为期一个月的“中国马拉松”直播活动，新的合作伙伴关系揭晓"
     },
     {
      "title": "Pharmaceutical Executive Daily: FDA Votes 10 to 3 in Favor of Replimune's Rp1 Efficacy Data",
@@ -257,7 +284,7 @@
      "time": "2026-07-31T17:00:32Z",
      "desc": "In today's Pharmaceutical Executive Daily, FDA's advisory committee votes in favor of Replimune's RP1 efficacy data in advanced melanoma, three clinical-stage biopharmaceutical companies file for IPOs spanning cardiovascular, immune, and metabolic disease, and a new analysis examines why two-thirds of pharmaceutical product launches fail to meet expectations.",
      "section": "交易速览",
-     "summary": "In today's Pharmaceutical Executive Daily, FDA's advisory co"
+     "summary": "《医药执行官日报》：FDA以10比3的投票结果支持Replimune的Rp1 E；在今天的医药执行日报上，FDA的咨询委员会投票赞成Replimune的RP"
     },
     {
      "title": "Sanofi to ‘rebuild trust’ with Regeneron; Apnimed adds to string of ‘upsized’ biotech IPOs",
@@ -266,7 +293,7 @@
      "time": "2026-07-31T15:06:47Z",
      "desc": "Sanofi wants to broaden the company’s productive partnership with Regeneron, its CEOs said. Elsewhere, Bristol Myers delayed two anticipated study readouts and a Shionogi-backed startup went public.",
      "section": "交易速览",
-     "summary": "Sanofi wants to broaden the company’s productive partnership"
+     "summary": "Sanofi to ‘rebuild trust’ with Regeneron; Apnimed adds to st"
     },
     {
      "title": "Funding Roundup: Braveheart, Attovia, Vogenx All Announce IPO’s",
@@ -275,7 +302,16 @@
      "time": "2026-07-31T13:22:07Z",
      "desc": "Braveheart Bio, Attovia, and Vogenx have all announced Initial public offerings, focusing on a cardiovascular drug, an immune-disease biologics platform, and a metabolic disease program.",
      "section": "交易速览",
-     "summary": "Braveheart Bio, Attovia, and Vogenx have all announced Initi"
+     "summary": "Funding Roundup: Braveheart, Attovia, Vogenx All Announce IP"
+    },
+    {
+     "title": "Monte carlo assessment of advanced shielding materials for space-efficient radiotherapy vault design.",
+     "url": "https://doi.org/10.1002/acm2.70728",
+     "source": "Europe PMC",
+     "time": "2026-07-31T16:00:00Z",
+     "desc": "期刊 。Conventional radiotherapy vault shielding typically employs 2 to 3 meters of ordinary concrete, consistent with NCRP Report 151 reference data. While NCRP 151 specifies dose-based design goals rather than mandating particular materials, the practical default o",
+     "section": "交易速览",
+     "summary": "Monte carlo assessment of advanced shielding materials for s"
     }
    ]
   },
@@ -289,7 +325,7 @@
      "time": "2026-08-01T23:16:00Z",
      "desc": "With support from Building Hope, JS Clark Leadership Academy opens a new 54,000-square-foot campus that includes an allied health academy and media studio, giving students hands-on career experiences earlier in their education OPELOUSAS, La., Aug. 1, 2026 /PRNewswire/ -- JS Clark...",
      "section": "行业动态",
-     "summary": "With support from Building Hope, JS Clark Leadership Academy"
+     "summary": "New High School Campus in West End Opelousas Brings State-of"
     },
     {
      "title": "ADMA Deadline: ADMA Investors with Losses in Excess of $100K Have Opportunity to Lead ADMA Biologics, Inc. Securities Fraud Lawsuit Filed by The Rosen Law Firm",
@@ -298,7 +334,7 @@
      "time": "2026-08-01T23:02:00Z",
      "desc": "NEW YORK, Aug. 1, 2026 /PRNewswire/ -- Rosen Law Firm, a global investor rights law firm, reminds purchasers of securities of ADMA Biologics, Inc. (NASDAQ: ADMA) between August 9, 2024 and March 25, 2026, both dates inclusive (the \"Class Period\"), of the importantAugust 10, 2026 lead...",
      "section": "行业动态",
-     "summary": "NEW YORK, Aug. 1, 2026 /PRNewswire/ -- Rosen Law Firm, a glo"
+     "summary": "ADMA Deadline: ADMA Investors with Losses in Excess of $100K"
     },
     {
      "title": "Royal Office of Morocco Releases Statement on President Trump's Reaffirmation of U.S. Recognition of Moroccan Sovereignty Over Western Sahara",
@@ -307,7 +343,7 @@
      "time": "2026-08-01T22:35:00Z",
      "desc": "WASHINGTON, Aug. 1, 2026 /PRNewswire/ -- The Royal Office of the Kingdom of Morocco today released the following statement regarding a message from President Donald J. Trump to His Majesty King Mohammed VI on the 27th anniversary of Throne Day. In the statement, President Trump...",
      "section": "行业动态",
-     "summary": "WASHINGTON, Aug. 1, 2026 /PRNewswire/ -- The Royal Office of"
+     "summary": "Royal Office of Morocco Releases Statement on President Trum"
     },
     {
      "title": "Employment & Labor Lawyers, at Blumenthal Nordrehaug Bhowmik De Blouw LLP, File Suit Against Southern California Rehabilitation Services, Inc., Alleging Failure to Provide Meal Periods and Rest Breaks",
@@ -316,7 +352,7 @@
      "time": "2026-08-01T22:21:00Z",
      "desc": "Southern California Rehabilitation Services, Inc, allegedly failed to provide employees with accurate wages due to missed meal breaks. This allegedly resulted in violations of various California Labor codes. **THIS IS AN ATTORNEY ADVERTISEMENT** SACRAMENTO, Calif., Aug. 1, 2026...",
      "section": "行业动态",
-     "summary": "Southern California Rehabilitation Services, Inc, allegedly"
+     "summary": "Employment & Labor Lawyers, at Blumenthal Nordrehaug Bhowmik"
     },
     {
      "title": "Alnylam's slump deepens; Q2 earnings roundup; and more",
@@ -325,7 +361,7 @@
      "time": "2026-08-01T10:00:38Z",
      "desc": "Welcome to another edition of Endpoints Weekly, and happy August! The summer is speeding right along, and we’ve got the latest from biopharma’s earnings-palooza this week. Let’s dive into the news. Alnylam’s struggles became the ...",
      "section": "行业动态",
-     "summary": "Welcome to another edition of Endpoints Weekly, and happy Au"
+     "summary": "Alnylam's slump deepens; Q2 earnings roundup; and more"
     },
     {
      "title": "8-K - NORTHWEST BIOTHERAPEUTICS INC (0001072379) (Filer)",
@@ -334,7 +370,7 @@
      "desc": "Filed: 2026-07-31 AccNo: 0001104659-26-089293 Size: 187 KB Item 1.01: Entry into a Material Definitive Agreement Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant",
      "source": "SEC EDGAR",
      "section": "行业动态",
-     "summary": "Filed: 2026-07-31 AccNo: 0001104659-26-089293 Size: 187 KB I"
+     "summary": "8-K - NORTHWEST BIOTHERAPEUTICS INC (0001072379) (Filer)"
     },
     {
      "title": "8-K - Healthcare Realty Trust Inc (0001360604) (Filer)",
@@ -343,7 +379,7 @@
      "desc": "Filed: 2026-07-31 AccNo: 0001628280-26-051458 Size: 201 KB Item 8.01: Other Events Item 9.01: Financial Statements and Exhibits",
      "source": "SEC EDGAR",
      "section": "行业动态",
-     "summary": "Filed: 2026-07-31 AccNo: 0001628280-26-051458 Size: 201 KB I"
+     "summary": "8-K - Healthcare Realty Trust Inc (0001360604) (Filer)"
     },
     {
      "title": "8-K - ATN International, Inc. (0000879585) (Filer)",
@@ -352,7 +388,7 @@
      "desc": "Filed: 2026-07-31 AccNo: 0001104659-26-089278 Size: 284 KB Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers Item 9.01: Financial Statements and Exhibits",
      "source": "SEC EDGAR",
      "section": "行业动态",
-     "summary": "Filed: 2026-07-31 AccNo: 0001104659-26-089278 Size: 284 KB I"
+     "summary": "8-K - ATN International, Inc. (0000879585) (Filer)"
     },
     {
      "title": "8-K - Calidi Biotherapeutics, Inc. (0001855485) (Filer)",
@@ -361,7 +397,7 @@
      "desc": "Filed: 2026-07-31 AccNo: 0001493152-26-035666 Size: 232 KB Item 3.03: Material Modifications to Rights of Security Holders Item 5.03: Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year Item 9.01: Financial Statements and Exhibits",
      "source": "SEC EDGAR",
      "section": "行业动态",
-     "summary": "Filed: 2026-07-31 AccNo: 0001493152-26-035666 Size: 232 KB I"
+     "summary": "8-K - Calidi Biotherapeutics, Inc. (0001855485) (Filer)"
     },
     {
      "title": "8-K - MIRA PHARMACEUTICALS, INC. (0001904286) (Filer)",
@@ -370,7 +406,7 @@
      "desc": "Filed: 2026-07-31 AccNo: 0001493152-26-035665 Size: 207 KB Item 3.01: Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing",
      "source": "SEC EDGAR",
      "section": "行业动态",
-     "summary": "Filed: 2026-07-31 AccNo: 0001493152-26-035665 Size: 207 KB I"
+     "summary": "8-K - MIRA PHARMACEUTICALS, INC. (0001904286) (Filer)"
     },
     {
      "title": "8-K - Quince Therapeutics, Inc. (0001662774) (Filer)",
@@ -379,7 +415,7 @@
      "desc": "Filed: 2026-07-31 AccNo: 0001193125-26-328784 Size: 152 KB Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers",
      "source": "SEC EDGAR",
      "section": "行业动态",
-     "summary": "Filed: 2026-07-31 AccNo: 0001193125-26-328784 Size: 152 KB I"
+     "summary": "8-K - Quince Therapeutics, Inc. (0001662774) (Filer)"
     },
     {
      "title": "AbbVie touts strong momentum for Skyrizi despite rising competition",
@@ -388,7 +424,7 @@
      "time": "2026-07-31T18:22:56Z",
      "desc": "If AbbVie executives are bothered by growing threats to their immunology powerhouse, they aren't letting on. Earlier this year, analysts were pondering how the company’s blockbuster Skyrizi might fare against competition from ...",
      "section": "行业动态",
-     "summary": "If AbbVie executives are bothered by growing threats to thei"
+     "summary": "AbbVie touts strong momentum for Skyrizi despite rising comp"
     },
     {
      "title": "Ketamine Triggers Sex-Specific Brain Recovery Responses",
@@ -397,7 +433,7 @@
      "time": "2026-07-31T18:00:32Z",
      "desc": "A study in mice has shown how shown that microglia immune cells in the brain play a critical role in how the brain recovers from ketamine anesthesia, and indicates that there are differences between female and male brains. The post Ketamine Triggers Sex-Specific Brain Recovery Responses appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "行业动态",
-     "summary": "A study in mice has shown how shown that microglia immune ce"
+     "summary": "Ketamine Triggers Sex-Specific Brain Recovery Responses"
     },
     {
      "title": "Molecular GPS Guides Neutrophils to Sites of Infection",
@@ -406,7 +442,7 @@
      "time": "2026-07-31T18:00:10Z",
      "desc": "Through a multistep process, signals from infected cells trigger the formation of a receptor complex that directs neutrophils out of blood vessels toward infection sites without damaging healthy tissue. The post Molecular GPS Guides Neutrophils to Sites of Infection appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "行业动态",
-     "summary": "Through a multistep process, signals from infected cells tri"
+     "summary": "Molecular GPS Guides Neutrophils to Sites of Infection"
     },
     {
      "title": "Pharma groups back changes to 340B rebate pilot",
@@ -415,7 +451,7 @@
      "time": "2026-07-31T17:22:21Z",
      "desc": "HHS' Health Resources and Services Administration unveiled details of a revised 340B rebate pilot, which will let some drug manufacturers deny rebates for a small subset of drugs. The 340B program gives some hospitals access ...",
      "section": "行业动态",
-     "summary": "HHS' Health Resources and Services Administration unveiled d"
+     "summary": "Pharma groups back changes to 340B rebate pilot"
     },
     {
      "title": "FDA CTGTAC Committee Votes in Favor of Replimune’s RP1 Efficiency Results in Ignyte Study",
@@ -424,7 +460,7 @@
      "time": "2026-07-31T13:49:46Z",
      "desc": "FDA's advisory committee voted 10 to 3 that efficacy data from the Ignyte study is evaluable and clinically meaningful.",
      "section": "行业动态",
-     "summary": "FDA's advisory committee voted 10 to 3 that efficacy data fr"
+     "summary": "FDA CTGTAC Committee Votes in Favor of Replimune’s RP1 Effic"
     },
     {
      "title": "Manufacturing on the Move: Tariffs, Reshoring, and the Germany Investigation",
@@ -433,7 +469,7 @@
      "time": "2026-07-31T12:53:50Z",
      "desc": "Kirsten Axelsen unpacks how reshoring trends, tariff exposure, and the Section 301 investigation into Germany's pricing policies are reshaping where pharma manufactures and launches.",
      "section": "行业动态",
-     "summary": "Kirsten Axelsen unpacks how reshoring trends, tariff exposur"
+     "summary": "Manufacturing on the Move: Tariffs, Reshoring, and the Germa"
     },
     {
      "title": "Patient Access, Innovation, and the Global Cost of MFN",
@@ -442,7 +478,7 @@
      "time": "2026-07-31T12:41:35Z",
      "desc": "Julie Tierney, Kirsten Axelsen, and Maggie Farley examine how patient advocates, health economists, and communicators are each grappling with MFN's real-world impact.",
      "section": "行业动态",
-     "summary": "Julie Tierney, Kirsten Axelsen, and Maggie Farley examine ho"
+     "summary": "Patient Access, Innovation, and the Global Cost of MFN"
     },
     {
      "title": "Ionis' top scientist Frank Bennett to retire; Recursion selects its first AI chief",
@@ -451,7 +487,7 @@
      "time": "2026-07-31T11:00:06Z",
      "desc": "After 37 years, Frank Bennett is retiring from Ionis Pharmaceuticals. Bennett started at Ionis as a founding scientist in 1989 and climbed to the role of CSO. Bennett will retire in February 2027, Ionis",
      "section": "行业动态",
-     "summary": "After 37 years, Frank Bennett is retiring from Ionis Pharmac"
+     "summary": "Ionis' top scientist Frank Bennett to retire; Recursion sele"
     },
     {
      "title": "What Steps US Regulators Are Taking to Promote Domestic Investment",
@@ -460,7 +496,7 @@
      "time": "2026-07-31T10:00:00Z",
      "desc": "John Stanford, executive director at Incubate, explains the COINS Act debate: should Treasury restrict US biotech investment in China, and what happens to American leadership if it does.",
      "section": "行业动态",
-     "summary": "John Stanford, executive director at Incubate, explains the"
+     "summary": "孵化器执行董事约翰•斯坦福（John Stanford）解释了《硬币法案》（COINS Act）的辩"
     },
     {
      "title": "Spatiotemporal Multiomics Charts Cellular Dynamics of Liver Metastasis",
@@ -469,7 +505,7 @@
      "time": "2026-07-30T23:17:36Z",
      "desc": "The team integrated high-resolution spatial transcriptomics, single-cell RNA sequencing, and chromatin-accessibility profiling across nine sequential stages of lung colonization in mouse models. The post Spatiotemporal Multiomics Charts Cellular Dynamics of Liver Metastasis appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "行业动态",
-     "summary": "The team integrated high-resolution spatial transcriptomics,"
+     "summary": "时空多组学描绘肝转移的细胞动力学；该团队整合了高分辨率空间转录组学、单细胞RNA测序和染色质"
     },
     {
      "title": "Replimune melanoma drug wins support of FDA panel",
@@ -478,7 +514,7 @@
      "time": "2026-07-30T21:25:00Z",
      "desc": "The positive vote came despite persistent concerns from FDA scientists and positions the company to bounce back from two earlier rejections.",
      "section": "行业动态",
-     "summary": "The positive vote came despite persistent concerns from FDA"
+     "summary": "黑色素瘤药物补充免疫获得FDA小组的支持；尽管FDA的科学家和该公司的立场一直担心，但最终还是获得了赞成票"
     },
     {
      "title": "Alnylam plunges as earnings deliver ‘one-two punch’",
@@ -487,7 +523,7 @@
      "time": "2026-07-30T20:12:00Z",
      "desc": "The RNA-focused biotech shed 30% of its market value — or close to $12 billion — amid growing investor concerns about its main drug business.",
      "section": "行业动态",
-     "summary": "The RNA-focused biotech shed 30% of its market value — or cl"
+     "summary": "财报“连击”，Alnylam股价暴跌"
     },
     {
      "title": "A Computational Framework for Designing Disordered Proteins at Large Scale",
@@ -496,7 +532,7 @@
      "time": "2026-07-30T18:45:19Z",
      "desc": "Scientists developed a platform, GOOSE, allowing them to design disordered proteins at a large scale, offering a lens through which to investigate how their component sequences affect the cell and how changes in such proteins might drive diseases. The post A Computational Framework for Designing Disordered Proteins at Large Scale appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "行业动态",
-     "summary": "Scientists developed a platform, GOOSE, allowing them to des"
+     "summary": "A Computational Framework for Designing Disordered Proteins "
     },
     {
      "title": "Mitochondrial–Epigenetic Pathway Linked to Age-Related Inflammation",
@@ -505,7 +541,7 @@
      "time": "2026-07-30T18:37:27Z",
      "desc": "Crosstalk between mitochondrial metabolism and epigenetic regulation helps activate the inflammatory SASP in senescent cells, revealing a potential therapeutic target for limiting chronic inflammation during aging. The post Mitochondrial–Epigenetic Pathway Linked to Age-Related Inflammation appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "行业动态",
-     "summary": "Crosstalk between mitochondrial metabolism and epigenetic re"
+     "summary": "Mitochondrial–Epigenetic Pathway Linked to Age-Related Infla"
     },
     {
      "title": "FTC sues Hims & Hers over alleged privacy violations, deceptive billing practices",
@@ -514,7 +550,7 @@
      "time": "2026-07-30T16:03:00Z",
      "desc": "Regulators say the telehealth company illegally shared patients’ health data with advertisers and misled its customers. Hims & Hers hit back, calling the claims “baseless.”",
      "section": "行业动态",
-     "summary": "Regulators say the telehealth company illegally shared patie"
+     "summary": "FTC sues Hims & Hers over alleged privacy violations, decept"
     },
     {
      "title": "J&J nabs option to buy ‘in vivo’ CAR-T maker Sail for nearly $2.6B",
@@ -523,7 +559,7 @@
      "time": "2026-07-30T15:52:00Z",
      "desc": "The deal with the buzzy Flagship Pioneering-backed startup makes J&J the latest large drugmaker to bet that the technology might be able to treat autoimmune conditions.",
      "section": "行业动态",
-     "summary": "The deal with the buzzy Flagship Pioneering-backed startup m"
+     "summary": "J&J nabs option to buy ‘in vivo’ CAR-T maker Sail for nearly"
     }
    ]
   },
@@ -537,16 +573,7 @@
      "time": "2026-07-29T00:00:00Z",
      "desc": "本报讯（融媒体中心 李浩宇）为聚力破解生物医药产业国际化发展人才瓶颈，激活高端智力创新动能，近日，以“以才破局，以标定航”为主题的生物医药人才沙龙活动举办。活动践行“人才活动人才办”创新工作理念，紧扣北京经开区生物医药企业出海现状与人才需求，整合政企校猎资源，以主题分享聚势能、以深度研讨谋突破，搭建学术分享与交流互动的常态化、专业化平台，汇聚人才智慧共探破局新路径，助力区域生物医药产业抢抓全球市场机遇、构筑产业全球竞争优势。 当前，经开区生物医药产业创新活力迸发、全球化布局提速，产业链、创新链持续迭代升级，但国际化复合型人才结构性短缺、跨境引才成本偏高等",
      "section": "亦庄园区动态",
-     "summary": "本报讯（融媒体中心 李浩宇）为聚力破解生物医药产业国际化发展人才瓶颈，激活高端智力创新动能，近日，以“以才破局，以标定航"
-    },
-    {
-     "title": "沙砾生物北京总部在经海产业园启用 经开区细胞与基因治疗产业版图再添新军",
-     "url": "https://kfqgw.beijing.gov.cn/cxyzkfq/yzal/202607/t20260727_4791395.html",
-     "source": "北京亦庄·经开区官网",
-     "time": "2026-07-27T00:00:00Z",
-     "desc": "本报讯（融媒体中心 李啸）近日，沙砾生物北京总部在经海产业园启用，标志着北京经开区细胞与基因治疗产业版图再添一块关键拼图。作为沙砾生物未来研发和运营的重要承载地，北京总部将重点推进TIL（肿瘤浸润淋巴细胞）疗法及新一代细胞治疗技术的研发转化，推动国内首个获批进入临床研究阶段的TIL疗法产品GT101尽早惠及临床患者。 沙砾生物是一家创新驱动型、处于临床后期阶段的生物制药公司，专注于为全球癌症及自身免疫性疾病患者开创下一代免疫疗法。公司自主研发的GT101注射液是中国首个获批临床的TIL药物，其作用机制是从患者肿瘤组织中分离并筛选具有肿瘤识别能力的免疫细胞",
-     "section": "亦庄园区动态",
-     "summary": "本报讯（融媒体中心 李啸）近日，沙砾生物北京总部在经海产业园启用，标志着北京经开区细胞与基因治疗产业版图再添一块关键拼图"
+     "summary": "生物医药人才沙龙搭建引才交流平台"
     }
    ]
   },
@@ -554,22 +581,13 @@
    "label": "论文研究",
    "items": [
     {
-     "title": "A Sustainable Hybrid (NH 4 ) 2 SO₄-Driven SALLE-Fluorimetric On-Off Integrated Platform for the Determination of Cinacalcet HCl: A Calcium Receptors Sensing Drug in Different Matrices.",
-     "url": "https://doi.org/10.1002/bio.70548",
-     "source": "Europe PMC",
-     "time": "2026-07-31T16:00:00Z",
-     "desc": "期刊 。A sustainable analytical platform was established through the combination of salting-out assisted liquid-liquid extraction (SALLE) with fluorescence quenching for the trace-level quantification of cinacalcet hydrochloride (CC•HCl). Ammonium sulfate (approved a",
-     "section": "论文研究",
-     "summary": "期刊 。A sustainable analytical platform was established throug"
-    },
-    {
      "title": "[ 18 F]PSMA-1007 PET-Based Recurrence Site Distribution and Predictors of Metastatic Disease in Patients With Biochemical Recurrence of Prostate Cancer.",
      "url": "https://doi.org/10.1111/iju.70587",
      "source": "Europe PMC",
      "time": "2026-07-31T16:00:00Z",
      "desc": "期刊 。Prostate-specific membrane antigen positron emission tomography (PSMA-PET) is a sensitive imaging modality for detecting recurrent prostate cancer following definitive local therapy. However, evidence on 18F-labeled PSMA tracers in Japanese patients with bioch",
      "section": "论文研究",
-     "summary": "期刊 。Prostate-specific membrane antigen positron emission tom"
+     "summary": "[ 18 F]PSMA-1007 PET-Based Recurrence Site Distribution and "
     },
     {
      "title": "Mass Spectrometry in Chiral Analysis and Synthesis.",
@@ -578,16 +596,7 @@
      "time": "2026-07-31T16:00:00Z",
      "desc": "期刊 。Mass spectrometry (MS) has a role to play in chiral chemistry, in part through methods based on microdroplets and non-covalent molecular clusters. High-throughput MS reaction screening and chiral anal0ysis use microdroplet sprays to perform accelerated nanosca",
      "section": "论文研究",
-     "summary": "期刊 。Mass spectrometry (MS) has a role to play in chiral chem"
-    },
-    {
-     "title": "Therapeutic Time Window of Disease-Modifying Therapy for Early Alzheimer's Disease in Japanese Individuals: Analysis Based on J-ADNI Study.",
-     "url": "https://doi.org/10.1111/ggi.70698",
-     "source": "Europe PMC",
-     "time": "2026-07-31T16:00:00Z",
-     "desc": "期刊 。Lecanemab and donanemab are recently approved disease-modifying therapies (DMTs) for early Alzheimer's disease (AD), indicating amyloid positivity, with Mini-Mental State Examination (MMSE) requirements. Prior analyses using North American population data sugg",
-     "section": "论文研究",
-     "summary": "期刊 。Lecanemab and donanemab are recently approved disease-mo"
+     "summary": "Mass Spectrometry in Chiral Analysis and Synthesis."
     },
     {
      "title": "Full-Component Chart-Derived Lee Score, Upfront Androgen Receptor Signaling Inhibitor Selection, and Competing Mortality in Metastatic Hormone-Sensitive Prostate Cancer.",
@@ -596,7 +605,7 @@
      "time": "2026-07-31T16:00:00Z",
      "desc": "期刊 。To examine associations of a full-component chart-derived Lee score with upfront androgen receptor signaling inhibitor (ARSI) selection and competing mortality in men with metastatic hormone-sensitive prostate cancer (mHSPC). Of 136 potentially eligible patien",
      "section": "论文研究",
-     "summary": "期刊 。To examine associations of a full-component chart-derive"
+     "summary": "Full-Component Chart-Derived Lee Score, Upfront Androgen Rec"
     },
     {
      "title": "Pyruvate Kinase M2 Upregulation Is Associated With Guillain-Barré Syndrome Risk and Immune Dysregulation: Insights From Mendelian Randomization and the Experimental Autoimmune Neuritis Model.",
@@ -605,7 +614,7 @@
      "time": "2026-07-31T16:00:00Z",
      "desc": "期刊 。This study aimed to investigate the potential involvement of pyruvate kinase M2 (PKM2) in the pathogenesis of Guillain-Barré syndrome (GBS). Mendelian randomization (MR) analysis was used to evaluate the causal association between PKM2 expression and GBS susce",
      "section": "论文研究",
-     "summary": "期刊 。This study aimed to investigate the potential involvemen"
+     "summary": "Pyruvate Kinase M2 Upregulation Is Associated With Guillain-"
     },
     {
      "title": "Optimization of Ultrasound-Assisted Extraction of Thymbra Spicata L. Using Response Surface Methodology: Polyphenol Profile and Antibacterial Activity.",
@@ -614,16 +623,7 @@
      "time": "2026-07-31T16:00:00Z",
      "desc": "期刊 。Thymbra spicata L. (Zahter) is a medicinal aromatic plant naturally growing in Türkiye. This study aimed to optimize ultrasound-assisted extraction (UAE) conditions using response surface methodology (RSM) to maximize its total phenolic content (TPC), total fl",
      "section": "论文研究",
-     "summary": "期刊 。Thymbra spicata L. (Zahter) is a medicinal aromatic plan"
-    },
-    {
-     "title": "Monte carlo assessment of advanced shielding materials for space-efficient radiotherapy vault design.",
-     "url": "https://doi.org/10.1002/acm2.70728",
-     "source": "Europe PMC",
-     "time": "2026-07-31T16:00:00Z",
-     "desc": "期刊 。Conventional radiotherapy vault shielding typically employs 2 to 3 meters of ordinary concrete, consistent with NCRP Report 151 reference data. While NCRP 151 specifies dose-based design goals rather than mandating particular materials, the practical default o",
-     "section": "论文研究",
-     "summary": "期刊 。Conventional radiotherapy vault shielding typically empl"
+     "summary": "Optimization of Ultrasound-Assisted Extraction of Thymbra Sp"
     },
     {
      "title": "Refinement of Operating Characteristics for Model-Based TGI Metrics Decision Support to Ungate a Pivotal Trial in Oncology.",
@@ -632,7 +632,7 @@
      "time": "2026-07-31T16:00:00Z",
      "desc": "期刊 。The oncology market is evolving, with an increasing number of therapeutic options making the inference of treatment benefit from early development critical. The \"Go\" versus \"No Go\" decisions from such trials usually rely on probabilities of achieving meaningfu",
      "section": "论文研究",
-     "summary": "期刊 。The oncology market is evolving, with an increasing numb"
+     "summary": "Refinement of Operating Characteristics for Model-Based TGI "
     },
     {
      "title": "Ninjurin2 Promotes Pulmonary Endothelial Barrier Dysfunction Through VEGF/VEGFR2 Signaling Pathway.",
@@ -641,7 +641,7 @@
      "time": "2026-07-31T16:00:00Z",
      "desc": "期刊 。Previous studies have established an association between Ninjurin2 and diseases related to vascular endothelial dysfunction, such as ischemic stroke and coronary heart disease. Given that impaired pulmonary endothelial barrier function is a critical feature of",
      "section": "论文研究",
-     "summary": "期刊 。Previous studies have established an association between"
+     "summary": "Ninjurin2 Promotes Pulmonary Endothelial Barrier Dysfunction"
     }
    ]
   },
@@ -659,10 +659,10 @@
      "time": "2026-07-30T16:55:55Z",
      "desc": "In today's Pharmaceutical Executive Daily, Johnson & Johnson, Processa Pharmaceuticals, and Relation strike new deals spanning cell therapy, BTK inhibition, and AI-driven target discovery, Inizio Engage launches Connected Insights to turn medical information interactions into strategic intelligence, and a commentary argues pharma companies need to manage direct-to-patient sales as a core commercial channel rather than a side program.",
      "section": "政策与观点",
-     "summary": "In today's Pharmaceutical Executive Daily, Johnson & Johnson"
+     "summary": "Pharmaceutical Executive Daily: Inizio Engage launches Conne"
     }
    ]
   }
  ],
- "sourceNote": "聚合国际媒体/临试/文献/园区/交易所等公开渠道。摘要 AI/规则生成，仅供参考。"
+ "sourceNote": "聚合国际媒体/临试/文献/园区/交易所等公开渠道。中文摘要 AI 自动翻译生成，仅供参考。"
 }
