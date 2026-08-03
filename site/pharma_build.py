@@ -271,11 +271,12 @@ document.addEventListener('DOMContentLoaded',async()=>{
 '''
 
 
-def site_nav(active, with_fav=False):
+def site_nav(active, with_fav=False, with_search=False):
     links = [
         ("index.html", "首页", "home"),
         ("latest.html", "今日晨报", "today"),
         ("archive.html", "历史存档", "archive"),
+        ("weekly.html", "本周周报", "weekly"),
     ]
     nav = '<nav class="sitenav"><div class="inner">'
     nav += '<a class="brand" href="index.html"><span class="badge">💊</span> 生物医药晨报</a>'
@@ -283,6 +284,11 @@ def site_nav(active, with_fav=False):
         cls = "navlink" + (" active" if key == active else "")
         nav += f'<a class="{cls}" href="{href}">{label}</a>'
     nav += '<span class="spacer"></span>'
+    if with_search:
+        nav += ('<input type="text" id="searchBox" placeholder="搜索标题/公司/药品..." '
+                'style="background:var(--bg);border:1px solid var(--line);color:var(--text);'
+                'border-radius:8px;padding:6px 14px;font-size:13px;width:200px;margin-right:8px" '
+                'oninput="doSearch(this.value)">')
     if with_fav:
         nav += ('<button class="favToggle" id="favToggle">☆ 只看收藏</button>'
                 '<span class="favCount" id="favCount">已收藏 0 篇</span>')
@@ -373,7 +379,7 @@ def render_report(data, is_latest=False):
     channels = data.get("channels", [])
     data_json = json.dumps(data, ensure_ascii=False)
     body = (
-        site_nav("today", with_fav=True) +
+        site_nav("today", with_fav=True, with_search=True) +
         '<div class="wrap">'
         '<header class="hero">'
         '<span class="kicker"><span class="dot"></span> 生物医药 · 创新药 晨报 · 多渠道聚合</span>'
@@ -453,6 +459,20 @@ document.querySelectorAll('.card').forEach(c=>{
   if(b.length){const d=document.createElement('div');d.className='ms-badges';
     d.innerHTML=b.join('');c.insertBefore(d,c.querySelector('.meta'));}
 });
+// 搜索框
+function doSearch(q){
+  if(!q||q.trim().length<2){document.querySelectorAll('.card').forEach(c=>c.style.display='');
+    document.querySelectorAll('section[data-sec]').forEach(s=>s.style.display='');return;}
+  q=q.toLowerCase();
+  document.querySelectorAll('.card').forEach(c=>{
+    const txt=(c.querySelector('h3')?.textContent||'')+(c.querySelector('.summary')?.textContent||'');
+    c.style.display=txt.toLowerCase().includes(q)?'':'none';
+  });
+  document.querySelectorAll('section[data-sec]').forEach(sec=>{
+    const any=[...sec.querySelectorAll('.card')].some(c=>c.style.display!=='none');
+    sec.style.display=any?'':'none';
+  });
+}
 </script>
 '''
     html = page_head(f"生物医药晨报 · {data['reportDate']}") + body + "</body>\n</html>"
@@ -465,6 +485,74 @@ document.querySelectorAll('.card').forEach(c=>{
 def weekday_cn(date_str):
     d = datetime.strptime(date_str, "%Y-%m-%d")
     return WD[d.weekday()]
+
+
+def render_weekly(data, archive_entries):
+    """本周周报：本周统计 + 八版块 TOP + 各渠道统计"""
+    from collections import Counter
+    sections = data["sections"]
+    total = sum(len(s["items"]) for s in sections)
+    channels_str = " · ".join(c["name"] for c in data.get("channels", []))
+
+    # 按渠道统计
+    src_cnt = Counter()
+    for sec in sections:
+        for it in sec["items"]:
+            src_cnt[it.get("source", "未知")] += 1
+    src_rows = "".join(
+        f"<div class='src-item'><span class='sn'>{s}</span><span class='sc'>{c}</span></div>"
+        for s, c in src_cnt.most_common())
+
+    # 各版块 TOP
+    sec_html = ""
+    for sec in sections:
+        items = sec["items"]
+        if not items:
+            continue
+        items_html = ""
+        top_n = min(5, len(items))
+        for i, it in enumerate(items[:top_n]):
+            items_html += (
+                f"<div class='card'>"
+                f"<div class='idx'>{i+1}</div>"
+                f"<h3>{it['title']}</h3>"
+                f"<div class='meta'><span class='chip'>{it.get('source','')}</span></div>"
+                f"<p class='summary'>{it.get('summary','')}</p>"
+                f"<a class='more' href='{it.get('url','#')}' target='_blank'>阅读原文 →</a>"
+                f"</div>"
+            )
+        sec_html += (
+            f"<section><div class='sec-head'><h2>{sec['label']}</h2>"
+            f"<span class='cnt'>共 {len(items)} 条</span></div>"
+            f"<div class='grid'>{items_html}</div></section>"
+        )
+
+    body = (
+        site_nav("weekly") +
+        f'<div class="wrap"><div class="hero">'
+        f'<span class="kicker"><span class="dot"></span> 生物医药 · 创新药 晨报</span>'
+        f'<h1><span class="hl">本周周报</span></h1>'
+        f'<p class="sub2">报告日期 <b>{data["reportDate"]}</b> · 数据窗口 <b>{data["window"]}</b> · '
+        f'共 <b>{total}</b> 条 · <b>{len(src_cnt)}</b> 个渠道</p>'
+        f'<div class="cards">'
+        f'<div class="panel"><h3>📊 渠道统计（{len(src_cnt)} 路 · {total} 条）</h3>'
+        f'<div class="src-stats">{src_rows}</div></div>'
+        f'</div></div>'
+        f'<nav class="nav" style="top:57px"><div class="inner">'
+        f'<a class="backlink" href="index.html">← 回首页</a>'
+        f'<a href="#sec-0">监管审批</a><a href="#sec-1">临床试验</a>'
+        f'<a href="#sec-2">交易速览</a><a href="#sec-3">行业动态</a>'
+        f'<a href="#sec-4">亦庄园区</a><a href="#sec-5">论文研究</a>'
+        f'<a href="#sec-6">政策追踪</a><a href="#sec-7">政策与观点</a>'
+        f'</div></nav>'
+        f'<main>{sec_html}</main>'
+        f'<footer><div>本周共 {total} 条动态，覆盖 {len(src_cnt)} 个渠道。</div>'
+        f'<div class="note">{data.get("sourceNote","")}</div></footer></div>'
+    )
+
+    html = page_head(f"生物医药晨报 · 本周周报 · {data['reportDate']}") + body + page_foot(
+        f"渠道：{channels_str}。中文摘要 AI 生成，仅供参考。")
+    return html
 
 
 def main():
@@ -491,7 +579,7 @@ def main():
     meta[date] = {"file": report_file, "total": total, "weekday": weekday_cn(date)}
     json.dump(meta, open(meta_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
-    # 3) 历史索引（日期倒序）+ 首页
+    # 3) 历史索引（日期倒序）+ 首页 + 周报
     entries = []
     for d in sorted(meta.keys(), reverse=True):
         e = dict(meta[d])
@@ -504,11 +592,15 @@ def main():
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(render_home(data))
 
-    # 4) config.js（部署者可改同步地址）
+    # 4) 周报
+    with open("weekly.html", "w", encoding="utf-8") as f:
+        f.write(render_weekly(data, entries))
+
+    # 5) config.js
     with open("config.js", "w", encoding="utf-8") as f:
         f.write(CONFIG_JS)
 
-    print(f"site built: index.html + latest.html + archive.html + {report_file} | date={date} total={total} | 存档 {len(entries)} 期")
+    print(f"site built: index.html + latest.html + archive.html + weekly.html + {report_file} | date={date} total={total} | 存档 {len(entries)} 期")
 
 
 if __name__ == "__main__":

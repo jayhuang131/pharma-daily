@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>生物医药晨报 · 本周周报 · 2026-08-03</title>
+<script src="config.js"></script>
+<style>
+  :root{
+    --bg:#0b0f17; --bg2:#0e131d; --card:#151b27; --line:#263041;
+    --text:#e8edf5; --muted:#9aa7bd; --faint:#6b7689;
+    --accent:#34d399; --accent2:#22d3ee; --chip:#1e2a3d; --chiptext:#7dd3c0; --gold:#fbbf24;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:radial-gradient(1200px 600px at 70% -10%, #122031 0%, var(--bg) 55%) fixed;
+    color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px 60px}
+  /* 站点顶栏 */
+  .sitenav{position:sticky;top:0;z-index:30;background:rgba(11,15,23,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .sitenav .inner{max-width:1120px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:18px}
+  .sitenav .brand{font-weight:800;font-size:16px;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:7px}
+  .sitenav .brand .badge{font-size:18px}
+  .sitenav a.navlink{font-size:14px;color:var(--muted);text-decoration:none;transition:.15s}
+  .sitenav a.navlink:hover,.sitenav a.navlink.active{color:var(--accent)}
+  .sitenav .spacer{flex:1}
+  .favToggle{cursor:pointer;font-size:13px;color:var(--muted);border:1px solid var(--line);background:transparent;padding:6px 12px;border-radius:999px;transition:.15s}
+  .favToggle:hover{color:var(--text);border-color:var(--gold)}
+  .favToggle.on{color:#0b0f17;background:var(--gold);border-color:var(--gold);font-weight:700}
+  .favCount{font-size:12.5px;color:var(--faint)}
+  /* 首页 */
+  .hero{padding:54px 0 26px}
+  .kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--accent);
+    border:1px solid var(--line);background:rgba(52,211,153,.08);padding:5px 12px;border-radius:999px}
+  .kicker .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+  h1{font-size:38px;line-height:1.15;margin:18px 0 8px;font-weight:800;letter-spacing:-.5px}
+  h1 .hl{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--muted);font-size:16px;max-width:640px}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+  .btn{font-size:15px;font-weight:700;text-decoration:none;padding:13px 22px;border-radius:12px;transition:.18s;display:inline-flex;align-items:center;gap:8px}
+  .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#06231b}
+  .btn.primary:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(52,211,153,.25)}
+  .btn.ghost{border:1px solid var(--line);color:var(--text)}
+  .btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:34px}
+  .panel{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:16px;padding:22px}
+  .panel h3{font-size:16px;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+  .panel p,.panel li{color:var(--muted);font-size:14px}
+  .panel ul{margin:8px 0 0 18px}
+  .channels{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .channels span{font-size:12px;color:var(--chiptext);background:var(--chip);border:1px solid #2c3a4f;border-radius:999px;padding:4px 11px}
+  /* 同步设置 */
+  .syncbox{margin-top:14px}
+  .syncrow{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+  .syncrow input{flex:1;min-width:220px;background:var(--bg);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:10px 12px;font-size:14px}
+  .syncrow input:focus{outline:none;border-color:var(--accent)}
+  .syncrow button{cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--text);border-radius:10px;padding:10px 16px;font-size:14px;transition:.15s}
+  .syncrow button:hover{border-color:var(--accent);color:var(--accent)}
+  .syncrow button.save{background:var(--accent);color:#06231b;border-color:var(--accent);font-weight:700}
+  .syncstatus{margin-top:10px;font-size:13px;color:var(--faint)}
+  .syncstatus.ok{color:var(--accent)}
+  .syncstatus.err{color:#f87171}
+  code{background:#0c1320;border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:12.5px;color:var(--chiptext)}
+  /* channel-stats (首页管道面板) */
+  .src-stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin-top:12px}
+  .src-item{display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+  .src-item .sn{font-size:13px;color:var(--muted)}
+  .src-item .sc{font-size:15px;font-weight:700;color:var(--accent)}
+  /* 晨报页 */
+  .sub2{color:var(--muted);font-size:15px}
+  .sub2 b{color:var(--text)}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-top:24px}
+  .stat{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:16px;padding:18px 16px}
+  .stat .n{font-size:30px;font-weight:800;color:var(--accent)}
+  .stat .l{font-size:13px;color:var(--muted);margin-top:4px}
+  .nav{position:sticky;top:57px;z-index:20;background:rgba(11,15,23,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin-top:8px}
+  .nav .inner{max-width:1120px;margin:0 auto;padding:10px 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .nav a{font-size:13px;color:var(--muted);text-decoration:none;border:1px solid var(--line);padding:6px 12px;border-radius:999px;transition:.15s;white-space:nowrap}
+  .nav a:hover{color:var(--text);border-color:var(--accent);background:rgba(52,211,153,.08)}
+  .nav a .c{color:var(--accent);font-weight:700;margin-left:5px}
+  .nav .spacer{flex:1}
+  .backlink{font-size:13px;color:var(--accent2);text-decoration:none;border:1px solid var(--line);padding:6px 12px;border-radius:999px}
+  .backlink:hover{border-color:var(--accent2)}
+  section{padding-top:38px;scroll-margin-top:120px}
+  .sec-head{display:flex;align-items:baseline;gap:12px;border-left:4px solid var(--accent);padding-left:14px;margin-bottom:18px}
+  .sec-head h2{font-size:22px;font-weight:700}
+  .sec-head .cnt{font-size:13px;color:var(--faint)}
+  .empty{color:var(--faint);font-size:14px;border:1px dashed var(--line);border-radius:12px;padding:18px;background:rgba(255,255,255,.02)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+  .card{position:relative;background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px;transition:.18s;overflow:hidden}
+  .card:hover{transform:translateY(-3px);border-color:#3a4a63;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+  .card .idx{position:absolute;top:12px;right:14px;font-size:13px;font-weight:800;color:var(--accent);background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.25);border-radius:8px;padding:1px 8px;min-width:30px;text-align:center}
+  .card h3{font-size:16px;font-weight:700;line-height:1.4;padding-right:42px}
+  /* 监管审批里程碑高亮 */
+  .card.regulatory{border-left:3px solid var(--gold);background:linear-gradient(180deg,#1b2220,var(--bg2))}
+  .card.regulatory:hover{border-left-color:#f59e0b}
+  .card.regulatory .idx{background:rgba(251,191,36,.15);border-color:rgba(251,191,36,.3);color:var(--gold)}
+  .card.regulatory .milestone{display:inline-flex;align-items:center;gap:4px;
+    font-size:11px;color:var(--gold);border:1px solid rgba(251,191,36,.25);
+    background:rgba(251,191,36,.08);border-radius:999px;padding:2px 8px;margin-left:6px}
+  .card.regulatory .milestone::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--gold)}
+  /* 里程碑徽章 */
+  .ms-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:-4px;margin-bottom:2px}
+  .ms-badge{font-size:11px;font-weight:600;border-radius:999px;padding:2px 9px;line-height:1.5}
+  .ms-badge.ph3{color:#c084fc;background:rgba(192,132,252,.12);border:1px solid rgba(192,132,252,.3)}
+  .ms-badge.ph2{color:#60a5fa;background:rgba(96,165,250,.12);border:1px solid rgba(96,165,250,.3)}
+  .ms-badge.ph1{color:#94a3b8;background:rgba(148,163,184,.12);border:1px solid rgba(148,163,184,.3)}
+  .ms-badge.ft{color:var(--gold);background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.3)}
+  .ms-badge.bt{color:#f59e0b;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.3)}
+  .ms-badge.ok{color:var(--accent);background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.3)}
+  .ms-badge.deal{color:#38bdf8;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.3)}
+  .ms-badge.ipo{color:#f472b6;background:rgba(244,114,182,.12);border:1px solid rgba(244,114,182,.3)}
+  /* 交易速览卡片 */
+  .card.deal{border-left:3px solid #38bdf8;background:linear-gradient(180deg,#151d24,var(--bg2))}
+  .card.deal:hover{border-left-color:#60a5fa}
+  .card.deal .idx{background:rgba(56,189,248,.12);border-color:rgba(56,189,248,.25);color:#38bdf8}
+  /* 政策追踪卡片 */
+  .card.policy{border-left:3px solid #818cf8;background:linear-gradient(180deg,#171720,var(--bg2))}
+  .card.policy:hover{border-left-color:#a5b4fc}
+  .card.policy .idx{background:rgba(129,140,248,.12);border-color:rgba(129,140,248,.25);color:#818cf8}
+  .meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+  .chip{font-size:12px;color:var(--chiptext);background:var(--chip);border:1px solid #2c3a4f;border-radius:999px;padding:3px 10px}
+  .time{font-size:12px;color:var(--faint)}
+  .summary{font-size:14px;color:var(--muted);flex:1}
+  .foot{display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .more{font-size:13px;color:var(--accent);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:4px}
+  .more:hover{gap:8px}
+  .fav{cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--faint);font-size:18px;line-height:1;border-radius:9px;width:34px;height:30px;transition:.15s}
+  .fav:hover{color:var(--gold);border-color:var(--gold)}
+  .fav.active{color:var(--gold);border-color:var(--gold);background:rgba(251,191,36,.1)}
+  footer{margin-top:46px;border-top:1px solid var(--line);padding-top:20px;color:var(--faint);font-size:13px}
+  footer b{color:var(--muted)}
+  footer .note{margin-top:8px;font-size:12.5px;line-height:1.7}
+  footer .src{margin-top:10px;font-size:12.5px}
+  footer .src a{color:var(--chiptext);text-decoration:none;border-bottom:1px dotted #2c3a4f}
+  /* archive index */
+  .arc-item{display:flex;align-items:center;gap:16px;background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:12px;text-decoration:none;transition:.15s}
+  .arc-item:hover{border-color:var(--accent);transform:translateX(4px)}
+  .arc-item .d{font-size:20px;font-weight:800;color:var(--text);min-width:130px}
+  .arc-item .w{font-size:13px;color:var(--faint);min-width:48px}
+  .arc-item .t{font-size:13px;color:var(--muted);flex:1}
+  .badge-now{font-size:11.5px;color:#0b0f17;background:var(--accent);border-radius:999px;padding:2px 9px;font-weight:700}
+  .arc-item .go{color:var(--accent);font-weight:700}
+  @media (max-width:560px){
+    h1{font-size:27px}
+    .grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}
+    .arc-item .d{min-width:0;font-size:17px}
+    .nav{top:57px}
+    .cta{flex-direction:column}
+    .cta .btn{justify-content:center;text-align:center}
+    .syncrow{flex-direction:column}.syncrow input{min-width:auto}
+    .src-stats{grid-template-columns:1fr}
+    .sitenav .inner{gap:10px;flex-wrap:wrap}
+  }
+</style>
+</head>
+<body>
+<nav class="sitenav"><div class="inner"><a class="brand" href="index.html"><span class="badge">💊</span> 生物医药晨报</a><a class="navlink" href="index.html">首页</a><a class="navlink" href="latest.html">今日晨报</a><a class="navlink" href="archive.html">历史存档</a><a class="navlink active" href="weekly.html">本周周报</a><span class="spacer"></span></div></nav><div class="wrap"><div class="hero"><span class="kicker"><span class="dot"></span> 生物医药 · 创新药 晨报</span><h1><span class="hl">本周周报</span></h1><p class="sub2">报告日期 <b>2026-08-03</b> · 数据窗口 <b>2026-07-31 ~ 2026-08-03</b> · 共 <b>71</b> 条 · <b>12</b> 个渠道</p><div class="cards"><div class="panel"><h3>📊 渠道统计（12 路 · 71 条）</h3><div class="src-stats"><div class='src-item'><span class='sn'>Europe PMC</span><span class='sc'>10</span></div><div class='src-item'><span class='sn'>Endpoints News</span><span class='sc'>8</span></div><div class='src-item'><span class='sn'>PRNewswire BioTech</span><span class='sc'>8</span></div><div class='src-item'><span class='sn'>SEC EDGAR</span><span class='sc'>8</span></div><div class='src-item'><span class='sn'>STAT News</span><span class='sc'>8</span></div><div class='src-item'><span class='sn'>Pharmaceutical Executive</span><span class='sc'>7</span></div><div class='src-item'><span class='sn'>GEN</span><span class='sc'>6</span></div><div class='src-item'><span class='sn'>ClinicalTrials.gov</span><span class='sc'>6</span></div><div class='src-item'><span class='sn'>BioPharma Dive</span><span class='sc'>4</span></div><div class='src-item'><span class='sn'>北京亦庄·经开区官网</span><span class='sc'>3</span></div><div class='src-item'><span class='sn'>Pharma Times</span><span class='sc'>2</span></div><div class='src-item'><span class='sn'>Recursion IR</span><span class='sc'>1</span></div></div></div></div></div><nav class="nav" style="top:57px"><div class="inner"><a class="backlink" href="index.html">← 回首页</a><a href="#sec-0">监管审批</a><a href="#sec-1">临床试验</a><a href="#sec-2">交易速览</a><a href="#sec-3">行业动态</a><a href="#sec-4">亦庄园区</a><a href="#sec-5">论文研究</a><a href="#sec-6">政策追踪</a><a href="#sec-7">政策与观点</a></div></nav><main><section><div class='sec-head'><h2>监管审批</h2><span class='cnt'>共 3 条</span></div><div class='grid'><div class='card'><div class='idx'>1</div><h3>Hackers steal patient data in Amgen cloud breach</h3><div class='meta'><span class='chip'>Endpoints News</span></div><p class='summary'>行业动态：Hackers steal patient data in Amgen cloud breach</p><a class='more' href='https://endpoints.news/hackers-steal-patient-data-in-amgen-cloud-breach/' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>2</div><h3>Recursion Reports Grant of Inducement Awards as Permitted by the Nasdaq Listing Rules</h3><div class='meta'><span class='chip'>Recursion IR</span></div><p class='summary'>行业动态：Recursion Reports Grant of Inducement Awards as Permitt</p><a class='more' href='https://ir.recursion.com/news-releases/news-release-details/recursion-reports-grant-inducement-awards-permitted-nasdaq-1' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>3</div><h3>沙砾生物北京总部在经海产业园启用 经开区细胞与基因治疗产业版图再添新军</h3><div class='meta'><span class='chip'>北京亦庄·经开区官网</span></div><p class='summary'>沙砾生物北京总部在经海产业园启用 经开区细胞与基因治疗产业版图再添新军</p><a class='more' href='https://kfqgw.beijing.gov.cn/cxyzkfq/yzal/202607/t20260727_4791395.html' target='_blank'>阅读原文 →</a></div></div></section><section><div class='sec-head'><h2>临床试验</h2><span class='cnt'>共 9 条</span></div><div class='grid'><div class='card'><div class='idx'>1</div><h3>Why Real-Time Data Analytics Are Vital for the Next Evolution of Clinical Trials</h3><div class='meta'><span class='chip'>Pharmaceutical Executive</span></div><p class='summary'>临床试验：Why Real-Time Data Analytics Are Vital for the Next Evo</p><a class='more' href='https://www.pharmexec.com/view/real-time-data-analytics-vital-next-evolution-clinical-trials' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>2</div><h3>Microbiota-Derived Metabolite Enhances HIV Therapy in Monkeys</h3><div class='meta'><span class='chip'>GEN</span></div><p class='summary'>生物医药：Microbiota-Derived Metabolite Enhances HIV Therapy in </p><a class='more' href='https://www.genengnews.com/topics/infectious-diseases/microbiota-derived-metabolite-enhances-hiv-therapy-in-monkeys/' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>3</div><h3>Novo setback casts doubt on a new way to treat heart disease</h3><div class='meta'><span class='chip'>BioPharma Dive</span></div><p class='summary'>行业动态：Novo setback casts doubt on a new way to treat heart di</p><a class='more' href='https://www.biopharmadive.com/news/novo-nordik-ziltivekimab-zeus-study-results-corvidia/826695/' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>4</div><h3>Axiom’s Hong Kong Bet, Latigo’s Positive Phase II, and Base Editors for Huntington’s</h3><div class='meta'><span class='chip'>GEN</span></div><p class='summary'>临床试验：Axiom’s Hong Kong Bet, Latigo’s Positive Phase II, and </p><a class='more' href='https://www.genengnews.com/topics/infectious-diseases/axioms-hong-kong-bet-latigos-positive-phase-ii-and-base-editors-for-huntingtons/' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>5</div><h3>Effects of Various Types of Ultrasound Therapy in Knee Osteoarthritis</h3><div class='meta'><span class='chip'>ClinicalTrials.gov</span></div><p class='summary'>生物医药：Effects of Various Types of Ultrasound Therapy in Knee</p><a class='more' href='https://clinicaltrials.gov/study/NCT07738692' target='_blank'>阅读原文 →</a></div></div></section><section><div class='sec-head'><h2>交易速览</h2><span class='cnt'>共 11 条</span></div><div class='grid'><div class='card'><div class='idx'>1</div><h3>A Study on the Preventive Effect of Electroacupuncture Combined With Dexmedetomidine in Post-stroke Depression</h3><div class='meta'><span class='chip'>ClinicalTrials.gov</span></div><p class='summary'>临床试验：A Study on the Preventive Effect of Electroacupuncture </p><a class='more' href='https://clinicaltrials.gov/study/NCT07739329' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>2</div><h3>Supernus, Indivior to merge and form CNS-focused drugmaker</h3><div class='meta'><span class='chip'>Endpoints News</span></div><p class='summary'>收购交易：Supernus, Indivior to merge and form CNS-focused drugma</p><a class='more' href='https://endpoints.news/supernus-indivior-to-merge-and-form-cns-focused-drugmaker/' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>3</div><h3>Mark Fischer and Aaron Black Acquire Lane Office Furniture, Inc.</h3><div class='meta'><span class='chip'>PRNewswire BioTech</span></div><p class='summary'>收购交易：Mark Fischer and Aaron Black Acquire Lane Office Furnit</p><a class='more' href='https://www.prnewswire.com/news-releases/mark-fischer-and-aaron-black-acquire-lane-office-furniture-inc-302840487.html' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>4</div><h3>Consumer Cellular Expands Personal Emergency Response System Product Suite with IRIS Ally Go, a New Watch-Style Wearable</h3><div class='meta'><span class='chip'>PRNewswire BioTech</span></div><p class='summary'>收购交易：Consumer Cellular Expands Personal Emergency Response S</p><a class='more' href='https://www.prnewswire.com/news-releases/consumer-cellular-expands-personal-emergency-response-system-product-suite-with-iris-ally-go-a-new-watch-style-wearable-302840969.html' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>5</div><h3>Receptor.AI and Sethera Plan to Create Closed-Loop Discovery and Optimization Workflow for Difficult Therapeutic Targets</h3><div class='meta'><span class='chip'>GEN</span></div><p class='summary'>行业动态：Receptor.AI and Sethera Plan to Create Closed-Loop Disc</p><a class='more' href='https://www.genengnews.com/topics/drug-discovery/receptor-ai-and-sethera-plan-to-create-a-closed-loop-discovery-and-optimization-workflow-for-difficult-therapeutic-targets/' target='_blank'>阅读原文 →</a></div></div></section><section><div class='sec-head'><h2>行业动态</h2><span class='cnt'>共 35 条</span></div><div class='grid'><div class='card'><div class='idx'>1</div><h3>8-K - ROCKET PHARMACEUTICALS, INC. (0001281895) (Filer)</h3><div class='meta'><span class='chip'>SEC EDGAR</span></div><p class='summary'>ROCKET PHARMACEUTICALS, INC.提交重大事项报告</p><a class='more' href='https://www.sec.gov/Archives/edgar/data/1281895/000114036126030568/0001140361-26-030568-index.htm' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>2</div><h3>Orthopaedic Advocacy Week gives surgeons a powerful voice at a critical moment for healthcare</h3><div class='meta'><span class='chip'>PRNewswire BioTech</span></div><p class='summary'>行业动态：Orthopaedic Advocacy Week gives surgeons a powerful voi</p><a class='more' href='https://www.prnewswire.com/news-releases/orthopaedic-advocacy-week-gives-surgeons-a-powerful-voice-at-a-critical-moment-for-healthcare-302840326.html' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>3</div><h3>Keenova Announces Publication of XIAFLEX® (collagenase clostridium histolyticum) Manuscript in Translational Andrology and Urology</h3><div class='meta'><span class='chip'>PRNewswire BioTech</span></div><p class='summary'>IPO：Keenova Announces Publication of XIAFLEX® (collagenase </p><a class='more' href='https://www.prnewswire.com/news-releases/keenova-announces-publication-of-xiaflex-collagenase-clostridium-histolyticum-manuscript-in-translational-andrology-and-urology-302840040.html' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>4</div><h3>Lindblad Expeditions Holdings, Inc. Reports 2026 Second Quarter Financial Results</h3><div class='meta'><span class='chip'>PRNewswire BioTech</span></div><p class='summary'>Lindblad Expeditions Holdings融资199.2百万美元</p><a class='more' href='https://www.prnewswire.com/news-releases/lindblad-expeditions-holdings-inc-reports-2026-second-quarter-financial-results-302840508.html' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>5</div><h3>STAT+: BioNTech names Guido Oelkers its new CEO</h3><div class='meta'><span class='chip'>STAT News</span></div><p class='summary'>行业动态：STAT+: BioNTech names Guido Oelkers its new CEO</p><a class='more' href='https://www.statnews.com/2026/08/03/biontech-ceo-guido-oelkers-ugur-sahin-replacement/?utm_campaign=rss' target='_blank'>阅读原文 →</a></div></div></section><section><div class='sec-head'><h2>亦庄园区动态</h2><span class='cnt'>共 1 条</span></div><div class='grid'><div class='card'><div class='idx'>1</div><h3>生物医药人才沙龙搭建引才交流平台</h3><div class='meta'><span class='chip'>北京亦庄·经开区官网</span></div><p class='summary'>生物医药人才沙龙搭建引才交流平台</p><a class='more' href='https://kfqgw.beijing.gov.cn/ywdt/gsprcgd/rcfw/202607/t20260729_4797497.html' target='_blank'>阅读原文 →</a></div></div></section><section><div class='sec-head'><h2>论文研究</h2><span class='cnt'>共 9 条</span></div><div class='grid'><div class='card'><div class='idx'>1</div><h3>A closer insight into the molecular effect of canagliflozin on gentamicin-induced nephrotoxicity in rats: Attention to SIRT1/Nrf2/HO-1, p38 MAPK/NF-κB signaling pathways, and expression of miR-21 and miR-155.</h3><div class='meta'><span class='chip'>Europe PMC</span></div><p class='summary'>行业动态：A closer insight into the molecular effect of canaglifl</p><a class='more' href='https://doi.org/10.1080/08923973.2026.2713468' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>2</div><h3>Sustained-Release Intracameral Prostaglandin Analog Implants for Glaucoma: Comparative Review and Meta-Analysis of Bimatoprost and Travoprost Delivery Systems.</h3><div class='meta'><span class='chip'>Europe PMC</span></div><p class='summary'>行业动态：Sustained-Release Intracameral Prostaglandin Analog Imp</p><a class='more' href='https://doi.org/10.1177/10807683261474828' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>3</div><h3>Integrated HPLC-DAD and multivariate analysis for exploratory prioritisation of candidate marker compounds in Lactuca indica .</h3><div class='meta'><span class='chip'>Europe PMC</span></div><p class='summary'>行业动态：Integrated HPLC-DAD and multivariate analysis for explo</p><a class='more' href='https://doi.org/10.1080/14786419.2026.2708284' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>4</div><h3>The impact of financial toxicity levels on shared decision-making among cancer patients in Türkiye.</h3><div class='meta'><span class='chip'>Europe PMC</span></div><p class='summary'>融资：The impact of financial toxicity levels on shared decis</p><a class='more' href='https://doi.org/10.1080/07347332.2026.2711299' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>5</div><h3>Exploring the antihyperglycemic potential of Durio kutejensis (Hassk.) Becc.: in vitro , in vivo , and metabolomic examinations.</h3><div class='meta'><span class='chip'>Europe PMC</span></div><p class='summary'>行业动态：Exploring the antihyperglycemic potential of Durio kute</p><a class='more' href='https://doi.org/10.1080/14786419.2026.2709578' target='_blank'>阅读原文 →</a></div></div></section><section><div class='sec-head'><h2>政策与观点</h2><span class='cnt'>共 3 条</span></div><div class='grid'><div class='card'><div class='idx'>1</div><h3>Opinion: We lead the Federation of State Medical Boards. Here’s what we think about licensing AI to practice medicine</h3><div class='meta'><span class='chip'>STAT News</span></div><p class='summary'>观点：Opinion: We lead the Federation of State Medical Boards</p><a class='more' href='https://www.statnews.com/2026/08/03/ai-doctors-licensing-state-medical-boards/?utm_campaign=rss' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>2</div><h3>Accelerating Translation of NK Cell Therapies to the Clinic: A European Perspective.</h3><div class='meta'><span class='chip'>Europe PMC</span></div><p class='summary'>收购交易：Accelerating Translation of NK Cell Therapies to the Cl</p><a class='more' href='https://doi.org/10.1177/10430342261468974' target='_blank'>阅读原文 →</a></div><div class='card'><div class='idx'>3</div><h3>Opinion: I’m a neurologist. I’ve delivered ALS diagnoses. Then I received one myself</h3><div class='meta'><span class='chip'>STAT News</span></div><p class='summary'>观点：Opinion: I’m a neurologist. I’ve delivered ALS diagnose</p><a class='more' href='https://www.statnews.com/2026/08/03/als-diagnosis-neurologist-research-hope/?utm_campaign=rss' target='_blank'>阅读原文 →</a></div></div></section></main><footer><div>本周共 71 条动态，覆盖 12 个渠道。</div><div class="note">聚合国际媒体/临试/文献/园区/交易所等公开渠道。中文摘要智能生成，仅供参考。</div></footer></div><footer><div>本站为生物医药 / 创新药行业资讯聚合演示，数据来自公开权威渠道，仅供参考，不构成投资建议。</div><div class="note">渠道：Endpoints News · STAT News · Fierce Biotech · BioPharma Dive · GEN · Pharma Times · Pharmaceutical Executive · PRNewswire BioTech · Nature Reviews Drug Discovery · ClinicalTrials.gov · Europe PMC · 北京亦庄·经开区官网 · SEC EDGAR · CDE 药审中心 · Recursion IR。中文摘要 AI 生成，仅供参考。</div></footer>
+</body>
+</html>
