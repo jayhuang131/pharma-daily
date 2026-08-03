@@ -35,10 +35,6 @@
    "home": "https://www.prnewswire.com/biotechnology/"
   },
   {
-   "name": "Nature Reviews Drug Discovery",
-   "home": "https://www.nature.com/nrd/"
-  },
-  {
    "name": "ClinicalTrials.gov",
    "home": "https://clinicaltrials.gov/"
   },
@@ -55,10 +51,6 @@
    "home": "https://www.sec.gov/cgi-bin/browse-edgar"
   },
   {
-   "name": "CDE 药审中心",
-   "home": "https://www.cde.org.cn/"
-  },
-  {
    "name": "Recursion IR",
    "home": "https://ir.recursion.com/"
   }
@@ -68,31 +60,40 @@
    "label": "监管审批",
    "items": [
     {
-     "title": "Hackers steal patient data in Amgen cloud breach",
-     "url": "https://endpoints.news/hackers-steal-patient-data-in-amgen-cloud-breach/",
-     "source": "Endpoints News",
-     "time": "2026-08-03T10:47:59Z",
-     "desc": "Amgen said Friday that hackers have stolen company and patient information in a data breach. The company said it noticed “unauthorized activity” affecting data stored on cloud platforms hosted by third-party providers in July, according ...",
+     "title": "Pharmaceutical Executive Daily: FDA Votes 10 to 3 in Favor of Replimune's Rp1 Efficacy Data",
+     "url": "https://www.pharmexec.com/view/daily-fda-votes-10-to-3-replimune-rp1-data",
+     "source": "Pharmaceutical Executive",
+     "time": "2026-07-31T17:00:32Z",
+     "desc": "In today's Pharmaceutical Executive Daily, FDA's advisory committee votes in favor of Replimune's RP1 efficacy data in advanced melanoma, three clinical-stage biopharmaceutical companies file for IPOs spanning cardiovascular, immune, and metabolic disease, and a new analysis examines why two-thirds of pharmaceutical product launches fail to meet expectations.",
      "section": "监管审批",
-     "summary": "行业动态：Hackers steal patient data in Amgen cloud breach"
+     "summary": "FDA 咨询委员会 10:3 投票支持 Replimune RP1 黑色素瘤疗法。"
     },
     {
-     "title": "Recursion Reports Grant of Inducement Awards as Permitted by the Nasdaq Listing Rules",
-     "url": "https://ir.recursion.com/news-releases/news-release-details/recursion-reports-grant-inducement-awards-permitted-nasdaq-1",
-     "source": "Recursion IR",
-     "time": "2026-07-31T20:30:00Z",
-     "desc": "Salt Lake City, UT, July 31, 2026 (GLOBE NEWSWIRE) -- Recursion (Nasdaq: RXRX), a leading clinical stage TechBio company decoding biology to radically improve lives, announced that on July 27, 2026, the Compensation Committee of Recursion's Board of Directors approved the grant of inducement",
+     "title": "Polpharma Biologics gains FDA and EMA review acceptances",
+     "url": "https://pharmatimes.com/uncategorized/polpharma-biologics-gains-fda-and-ema-review-acceptances/",
+     "source": "Pharma Times",
+     "time": "2026-08-03T11:03:33Z",
+     "desc": "Regulators assess PB016 vedolizumab biosimilar applications",
      "section": "监管审批",
-     "summary": "行业动态：Recursion Reports Grant of Inducement Awards as Permitt"
+     "summary": "Polpharma Biologics 生物类似药获 FDA 与 EMA 受理审评。"
     },
     {
-     "title": "沙砾生物北京总部在经海产业园启用 经开区细胞与基因治疗产业版图再添新军",
-     "url": "https://kfqgw.beijing.gov.cn/cxyzkfq/yzal/202607/t20260727_4791395.html",
-     "source": "北京亦庄·经开区官网",
-     "time": "2026-07-27T00:00:00Z",
-     "desc": "本报讯（融媒体中心 李啸）近日，沙砾生物北京总部在经海产业园启用，标志着北京经开区细胞与基因治疗产业版图再添一块关键拼图。作为沙砾生物未来研发和运营的重要承载地，北京总部将重点推进TIL（肿瘤浸润淋巴细胞）疗法及新一代细胞治疗技术的研发转化，推动国内首个获批进入临床研究阶段的TIL疗法产品GT101尽早惠及临床患者。 沙砾生物是一家创新驱动型、处于临床后期阶段的生物制药公司，专注于为全球癌症及自身免疫性疾病患者开创下一代免疫疗法。公司自主研发的GT101注射液是中国首个获批临床的TIL药物，其作用机制是从患者肿瘤组织中分离并筛选具有肿瘤识别能力的免疫细胞",
+     "title": "StockWatch: Capricor Plunges as FDA Panel, Staff Question Effectiveness of Lead Candidate Deramiocel",
+     "url": "https://www.genengnews.com/topics/translational-medicine/stockwatch-capricor-plunges-as-fda-panel-staff-question-effectiveness-of-lead-candidate-deramiocel/",
+     "source": "GEN",
+     "time": "2026-08-03T00:47:27Z",
+     "desc": "After seeing its lead candidate rejected by the FDA last year, Capricor Therapeutics is hoping for a better outcome for its resubmitted BLA for its lead pipeline candidate Deramiocel. The post StockWatch: Capricor Plunges as FDA Panel, Staff Question Effectiveness of Lead Candidate Deramiocel appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "监管审批",
-     "summary": "沙砾生物北京总部在经海产业园启用 经开区细胞与基因治疗产业版图再添新军"
+     "summary": "Capricor DMD 细胞疗法遭 FDA 专家组质疑，股价暴跌。"
+    },
+    {
+     "title": "FDA CTGTAC Committee Votes in Favor of Replimune’s RP1 Efficiency Results in Ignyte Study",
+     "url": "https://www.pharmexec.com/view/fda-ctgtac-committee-votes-replimune-rp1-efficiency-ignyte",
+     "source": "Pharmaceutical Executive",
+     "time": "2026-07-31T13:49:46Z",
+     "desc": "FDA's advisory committee voted 10 to 3 that efficacy data from the Ignyte study is evaluable and clinically meaningful.",
+     "section": "监管审批",
+     "summary": "FDA 细胞与基因治疗委员会投票支持 Replimune RP1 疗效数据。"
     }
    ]
   },
@@ -100,31 +101,13 @@
    "label": "临床试验",
    "items": [
     {
-     "title": "Why Real-Time Data Analytics Are Vital for the Next Evolution of Clinical Trials",
-     "url": "https://www.pharmexec.com/view/real-time-data-analytics-vital-next-evolution-clinical-trials",
-     "source": "Pharmaceutical Executive",
-     "time": "2026-07-31T17:21:34Z",
-     "desc": "Clinical trials now generate 5.9 million datapoints per Phase III protocol — and most sponsors are still managing them manually.",
-     "section": "临床试验",
-     "summary": "临床试验：Why Real-Time Data Analytics Are Vital for the Next Evo"
-    },
-    {
-     "title": "Microbiota-Derived Metabolite Enhances HIV Therapy in Monkeys",
-     "url": "https://www.genengnews.com/topics/infectious-diseases/microbiota-derived-metabolite-enhances-hiv-therapy-in-monkeys/",
-     "source": "GEN",
-     "time": "2026-07-31T16:47:08Z",
-     "desc": "The metabolite 10-hydroxystearic acid (10-HSA), from Lactiplantibacillus plantarum , repaired HIV-related gut damage, reduced inflammation, restored immunity, and improved antiretroviral therapy effectiveness in preclinical primate studies, supporting future human trials. The post Microbiota-Derived Metabolite Enhances HIV Therapy in Monkeys appeared first on GEN - Genetic Engineering and Biotechnology News .",
-     "section": "临床试验",
-     "summary": "生物医药：Microbiota-Derived Metabolite Enhances HIV Therapy in "
-    },
-    {
      "title": "Novo setback casts doubt on a new way to treat heart disease",
      "url": "https://www.biopharmadive.com/news/novo-nordik-ziltivekimab-zeus-study-results-corvidia/826695/",
      "source": "BioPharma Dive",
      "time": "2026-07-31T16:11:00Z",
      "desc": "Ziltivekimab's failure in a key trial spurred share sell-offs for Novo and other biotechs, as it suggested trouble for different cardiovascular drugs that also target inflammation.",
      "section": "临床试验",
-     "summary": "行业动态：Novo setback casts doubt on a new way to treat heart di"
+     "summary": "诺和诺德抗炎药治疗心脏病意外失败，新疗法路径受质疑。"
     },
     {
      "title": "Axiom’s Hong Kong Bet, Latigo’s Positive Phase II, and Base Editors for Huntington’s",
@@ -133,57 +116,16 @@
      "time": "2026-07-31T16:00:17Z",
      "desc": "In this episode of GEN 's Touching Base , editors discuss business news from Axiom and Latigo, and science updates on the potential roots of fibromyalgia and base editing for Huntington’s disease. The post Axiom’s Hong Kong Bet, Latigo’s Positive Phase II, and Base Editors for Huntington’s appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "临床试验",
-     "summary": "临床试验：Axiom’s Hong Kong Bet, Latigo’s Positive Phase II, and "
+     "summary": "Latigo 非阿片类镇痛药 II 期数据积极；碱基编辑技术取得进展。"
     },
     {
-     "title": "Effects of Various Types of Ultrasound Therapy in Knee Osteoarthritis",
-     "url": "https://clinicaltrials.gov/study/NCT07738692",
-     "source": "ClinicalTrials.gov",
-     "time": "2026-07-30T16:00:00Z",
-     "desc": "登记号 NCT07738692；申办方 Horus University；适应症 Knee Arthritis Osteoarthritis。Knee osteoarthritis (KOA) is a degenerative joint condition characterized by degeneration, which is commonly attributed to the cumulative effects of mechanical stress and the slow deterioration of articular cartilage. KO",
+     "title": "Heart transplant candidates fail if they get too weak. New program tries inpatient prehab",
+     "url": "https://www.statnews.com/2026/08/03/heart-transplant-prehabilitation-cardiologist-discusses-innovative-project/?utm_campaign=rss",
+     "source": "STAT News",
+     "time": "2026-08-03T08:30:00Z",
+     "desc": "Patients often get weaker waiting in the hospital for heart transplant. A cardiologist had an idea: inpatient prehabilitation.",
      "section": "临床试验",
-     "_nct": "NCT07738692",
-     "summary": "生物医药：Effects of Various Types of Ultrasound Therapy in Knee"
-    },
-    {
-     "title": "Terbinafine for CSA-AKI Prevention",
-     "url": "https://clinicaltrials.gov/study/NCT07738328",
-     "source": "ClinicalTrials.gov",
-     "time": "2026-07-30T16:00:00Z",
-     "desc": "登记号 NCT07738328；申办方 Guangdong Provincial People's Hospital；适应症 Acute Kidney Injury、Cardiac Surgical Procedures。Primary Objective: To evaluate the efficacy and safety of perioperative oral terbinafine in reducing the incidence of cardiac surgery-associated acute kidney injury (CSA-AKI).Secondary Objectives:To assess the effects of",
-     "section": "临床试验",
-     "_nct": "NCT07738328",
-     "summary": "行业动态：Terbinafine for CSA-AKI Prevention"
-    },
-    {
-     "title": "Elemene Liposomes in Endometrial Cancer",
-     "url": "https://clinicaltrials.gov/study/NCT07738315",
-     "source": "ClinicalTrials.gov",
-     "time": "2026-07-30T16:00:00Z",
-     "desc": "登记号 NCT07738315；申办方 Women's Hospital School Of Medicine Zhejiang University；适应症 Endometrial Carcinoma。The goal of this clinical trial is to learn if Elemene Liposomes, combined with carboplatin and paclitaxel (TC) chemotherapy can improve prognosis in patients with advanced or recurrent endometrial cancer. The main quest",
-     "section": "临床试验",
-     "_nct": "NCT07738315",
-     "summary": "临床试验：Elemene Liposomes in Endometrial Cancer"
-    },
-    {
-     "title": "The Effect of Topical Application of Hyaluronic Acid and Melatonin Mixture Following Surgical Extraction of Impacted Mandibular Third Molars .",
-     "url": "https://clinicaltrials.gov/study/NCT07735806",
-     "source": "ClinicalTrials.gov",
-     "time": "2026-07-29T16:00:00Z",
-     "desc": "登记号 NCT07735806；申办方 Kafrelsheikh University；适应症 Impacted Mandibular Third Molar。This randomized controlled clinical trial aims to evaluate the clinical and radiographical effects of the application of a mixture of hyaluronic acid and melatonin after surgical extraction of impacted mandibular third m",
-     "section": "临床试验",
-     "_nct": "NCT07735806",
-     "summary": "行业动态：The Effect of Topical Application of Hyaluronic Acid an"
-    },
-    {
-     "title": "Progesterone Luteal Support in Unexplained Infertility Management",
-     "url": "https://clinicaltrials.gov/study/NCT07738068",
-     "source": "ClinicalTrials.gov",
-     "time": "2026-07-29T16:00:00Z",
-     "desc": "登记号 NCT07738068；申办方 UMC Utrecht；适应症 Infertility、Female Infertility、Subfertility。The purpose of this study is to evaluate whether progesterone in women with unexplained infertility can increases live birth rate. The main research question is: Does luteal phase support with progesterone increase the l",
-     "section": "临床试验",
-     "_nct": "NCT07738068",
-     "summary": "行业动态：Progesterone Luteal Support in Unexplained Infertility "
+     "summary": "新项目帮助心衰患者术前增强体质，提高心脏移植成功率。"
     }
    ]
   },
@@ -191,41 +133,13 @@
    "label": "交易速览",
    "items": [
     {
-     "title": "A Study on the Preventive Effect of Electroacupuncture Combined With Dexmedetomidine in Post-stroke Depression",
-     "url": "https://clinicaltrials.gov/study/NCT07739329",
-     "source": "ClinicalTrials.gov",
-     "time": "2026-07-30T16:00:00Z",
-     "desc": "登记号 NCT07739329；申办方 First Affiliated Hospital of Chongqing Medical University；适应症 Post-stroke Depression。Post-stroke depression (PSD) is a common neuropsychiatric complication following stroke and has emerged as a major public health concern due to its adverse impact on post-stroke prognosis. Clinical studies have confirmed",
-     "section": "交易速览",
-     "_nct": "NCT07739329",
-     "summary": "临床试验：A Study on the Preventive Effect of Electroacupuncture "
-    },
-    {
      "title": "Supernus, Indivior to merge and form CNS-focused drugmaker",
      "url": "https://endpoints.news/supernus-indivior-to-merge-and-form-cns-focused-drugmaker/",
      "source": "Endpoints News",
      "time": "2026-08-03T11:24:44Z",
      "desc": "Supernus Pharmaceuticals and Indivior Pharmaceuticals have signed an all-stock merger agreement to establish a new company focused on CNS diseases. The combined company, which will be based in Rockville, MD, will keep the Supernus name ...",
      "section": "交易速览",
-     "summary": "收购交易：Supernus, Indivior to merge and form CNS-focused drugma"
-    },
-    {
-     "title": "Mark Fischer and Aaron Black Acquire Lane Office Furniture, Inc.",
-     "url": "https://www.prnewswire.com/news-releases/mark-fischer-and-aaron-black-acquire-lane-office-furniture-inc-302840487.html",
-     "source": "PRNewswire BioTech",
-     "time": "2026-08-03T11:13:00Z",
-     "desc": "New Principals to lead the next chapter of Lane Office's 104-year legacy NEW YORK, Aug. 3, 2026 /PRNewswire/ -- Lane Office Furniture, Inc., a boutique commercial furniture dealer headquartered in New York, announced today that Mark Fischer, who most recently served as CEO, has signed an...",
-     "section": "交易速览",
-     "summary": "收购交易：Mark Fischer and Aaron Black Acquire Lane Office Furnit"
-    },
-    {
-     "title": "Consumer Cellular Expands Personal Emergency Response System Product Suite with IRIS Ally Go, a New Watch-Style Wearable",
-     "url": "https://www.prnewswire.com/news-releases/consumer-cellular-expands-personal-emergency-response-system-product-suite-with-iris-ally-go-a-new-watch-style-wearable-302840969.html",
-     "source": "PRNewswire BioTech",
-     "time": "2026-08-03T11:06:00Z",
-     "desc": "Building on a platform already trusted by more than 30,000 customers, Consumer Cellular expands customer choice with a new personal emergency response product that reflects the diverse lifestyles and preferences of older adults. SCOTTSDALE, Ariz., Aug. 3, 2026 /PRNewswire/ -- Consumer...",
-     "section": "交易速览",
-     "summary": "收购交易：Consumer Cellular Expands Personal Emergency Response S"
+     "summary": "Supernus 与 Indivior 合并，打造 CNS 药物领军企业。"
     },
     {
      "title": "Receptor.AI and Sethera Plan to Create Closed-Loop Discovery and Optimization Workflow for Difficult Therapeutic Targets",
@@ -234,7 +148,7 @@
      "time": "2026-08-03T11:00:49Z",
      "desc": "The collaboration is specifically focused on applying Receptor.AI's computational platform to Sethera's proprietary polymacrocyclic peptide chemistry, encoded screening data, and resulting therapeutic candidates. Each company will retain its background platform technologies. The post Receptor.AI and Sethera Plan to Create Closed-Loop Discovery and Optimization Workflow for Difficult Therapeutic Targets appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "交易速览",
-     "summary": "行业动态：Receptor.AI and Sethera Plan to Create Closed-Loop Disc"
+     "summary": "Receptor.AI 与 Sethera 合作构建闭环药物发现与优化平台。"
     },
     {
      "title": "Dash Bio raises $30M Series A led by Oak HC/FT",
@@ -243,7 +157,7 @@
      "time": "2026-08-03T11:00:07Z",
      "desc": "When he first pitched investors on his startup in the fall of 2024, Dave Johnson felt like he was selling an unpopular idea. The typical VC response to his proposed pharma lab services company was: ...",
      "section": "交易速览",
-     "summary": "融资：Dash Bio raises $30M Series A led by Oak HC/FT"
+     "summary": "Dash Bio 完成 3000 万美元 A 轮融资，Oak HC/FT 领投。"
     },
     {
      "title": "AstraZeneca, Bristol Myers in talks about merger — report",
@@ -252,16 +166,7 @@
      "time": "2026-08-02T20:27:37Z",
      "desc": "AstraZeneca is in talks with Bristol Myers Squibb about a merger that would be one of the industry’s largest ever, according to a report Sunday by the Financial Times. A deal would combine the UK ...",
      "section": "交易速览",
-     "summary": "收购交易：AstraZeneca, Bristol Myers in talks about merger — repo"
-    },
-    {
-     "title": "Pharmaceutical Executive Daily: FDA Votes 10 to 3 in Favor of Replimune's Rp1 Efficacy Data",
-     "url": "https://www.pharmexec.com/view/daily-fda-votes-10-to-3-replimune-rp1-data",
-     "source": "Pharmaceutical Executive",
-     "time": "2026-07-31T17:00:32Z",
-     "desc": "In today's Pharmaceutical Executive Daily, FDA's advisory committee votes in favor of Replimune's RP1 efficacy data in advanced melanoma, three clinical-stage biopharmaceutical companies file for IPOs spanning cardiovascular, immune, and metabolic disease, and a new analysis examines why two-thirds of pharmaceutical product launches fail to meet expectations.",
-     "section": "交易速览",
-     "summary": "生物医药：Pharmaceutical Executive Daily: FDA Votes 10 to 3 in F"
+     "summary": "阿斯利康与百时美施贵宝据报正进行合并谈判。"
     },
     {
      "title": "Sanofi to ‘rebuild trust’ with Regeneron; Apnimed adds to string of ‘upsized’ biotech IPOs",
@@ -270,7 +175,7 @@
      "time": "2026-07-31T15:06:47Z",
      "desc": "Sanofi wants to broaden the company’s productive partnership with Regeneron, its CEOs said. Elsewhere, Bristol Myers delayed two anticipated study readouts and a Shionogi-backed startup went public.",
      "section": "交易速览",
-     "summary": "IPO：Sanofi to ‘rebuild trust’ with Regeneron; Apnimed adds "
+     "summary": "赛诺菲寻求重建与再生元合作关系；Apnimed IPO 融资上调。"
     },
     {
      "title": "Funding Roundup: Braveheart, Attovia, Vogenx All Announce IPO’s",
@@ -279,16 +184,7 @@
      "time": "2026-07-31T13:22:07Z",
      "desc": "Braveheart Bio, Attovia, and Vogenx have all announced Initial public offerings, focusing on a cardiovascular drug, an immune-disease biologics platform, and a metabolic disease program.",
      "section": "交易速览",
-     "summary": "IPO：Funding Roundup: Braveheart, Attovia, Vogenx All Announ"
-    },
-    {
-     "title": "经开区医药健康产业创新成果集中涌现",
-     "url": "https://kfqgw.beijing.gov.cn/cxyzkfq/yzal/202607/t20260731_4803143.html",
-     "source": "北京亦庄·经开区官网",
-     "time": "2026-07-31T00:00:00Z",
-     "desc": "悦康药业YKYY033注射液新适应症获得国家药监局临床试验批准；博尔诚两款呼吸道病原体核酸检测新品获批上市；凡恩世自研核心双特异性抗体技术平台PACbody ® 获得国家知识产权局的发明专利授权……近期，北京经开区医药健康产业“新”潮澎湃，一批覆盖创新药研发、体外诊断、原创核心技术平台等领域的成果加速涌现，不仅展现出区内企业的创新硬实力，也为产业集群升级注入新动能。 悦康药业自研的YKYY033注射液多项新适应症获批临床，具体包括，用于治疗成人深静脉血栓形成（DVT），降低急性DVT后DVT复发和肺栓塞（PE）的风险；用于非瓣膜性心房颤动（NVAF）患者",
-     "section": "交易速览",
-     "summary": "经开区医药健康产业创新成果集中涌现"
+     "summary": "Braveheart、Attovia、Vogenx 集中宣布 IPO，生物技术上市潮持续。"
     }
    ]
   },
@@ -296,22 +192,22 @@
    "label": "行业动态",
    "items": [
     {
+     "title": "Hackers steal patient data in Amgen cloud breach",
+     "url": "https://endpoints.news/hackers-steal-patient-data-in-amgen-cloud-breach/",
+     "source": "Endpoints News",
+     "time": "2026-08-03T10:47:59Z",
+     "desc": "Amgen said Friday that hackers have stolen company and patient information in a data breach. The company said it noticed “unauthorized activity” affecting data stored on cloud platforms hosted by third-party providers in July, according ...",
+     "section": "行业动态",
+     "summary": "Amgen 云服务遭黑客入侵，患者数据泄露。"
+    },
+    {
      "title": "8-K - ROCKET PHARMACEUTICALS, INC. (0001281895) (Filer)",
      "url": "https://www.sec.gov/Archives/edgar/data/1281895/000114036126030568/0001140361-26-030568-index.htm",
      "time": "2026-08-03T11:41:33Z",
      "desc": "Filed: 2026-08-03 AccNo: 0001140361-26-030568 Size: 186 KB Item 7.01: Regulation FD Disclosure Item 9.01: Financial Statements and Exhibits",
      "source": "SEC EDGAR",
      "section": "行业动态",
-     "summary": "ROCKET PHARMACEUTICALS, INC.提交重大事项报告"
-    },
-    {
-     "title": "Orthopaedic Advocacy Week gives surgeons a powerful voice at a critical moment for healthcare",
-     "url": "https://www.prnewswire.com/news-releases/orthopaedic-advocacy-week-gives-surgeons-a-powerful-voice-at-a-critical-moment-for-healthcare-302840326.html",
-     "source": "PRNewswire BioTech",
-     "time": "2026-08-03T11:30:00Z",
-     "desc": "WASHINGTON, Aug. 3, 2026 /PRNewswire/ -- As physicians face growing legislative, regulatory, and administrative challenges that threaten their ability to deliver timely, high-quality patient care, the American Association of Orthopaedic Surgeons (AAOS) is mobilizing its members for the...",
-     "section": "行业动态",
-     "summary": "行业动态：Orthopaedic Advocacy Week gives surgeons a powerful voi"
+     "summary": "Rocket Pharmaceuticals 提交 8-K 重大事项报告。"
     },
     {
      "title": "Keenova Announces Publication of XIAFLEX® (collagenase clostridium histolyticum) Manuscript in Translational Andrology and Urology",
@@ -320,16 +216,7 @@
      "time": "2026-08-03T11:30:00Z",
      "desc": "DUBLIN, Aug. 3, 2026 /PRNewswire/ -- Keenova Therapeutics plc announced the publication of a new manuscript examining whether baseline penile pain influences treatment outcomes in men with Peyronie's disease treated with XIAFLEX® (collagenase clostridium histolyticum). The...",
      "section": "行业动态",
-     "summary": "IPO：Keenova Announces Publication of XIAFLEX® (collagenase "
-    },
-    {
-     "title": "Lindblad Expeditions Holdings, Inc. Reports 2026 Second Quarter Financial Results",
-     "url": "https://www.prnewswire.com/news-releases/lindblad-expeditions-holdings-inc-reports-2026-second-quarter-financial-results-302840508.html",
-     "source": "PRNewswire BioTech",
-     "time": "2026-08-03T11:30:00Z",
-     "desc": "Second Quarter 2026 Highlights: Total revenue increased 19% to $199.2 million Net loss available to stockholders improved $8.3 million to $1.4 million Adjusted EBITDA increased 31% to $32.5 million Lindblad segment net yield per available guest night increased 4% to $1,294 Occupancy...",
-     "section": "行业动态",
-     "summary": "Lindblad Expeditions Holdings融资199.2百万美元"
+     "summary": "Keenova 宣布 Xiaflex 新研究数据发表，推动适应证拓展。"
     },
     {
      "title": "STAT+: BioNTech names Guido Oelkers its new CEO",
@@ -338,7 +225,7 @@
      "time": "2026-08-03T11:25:39Z",
      "desc": "Guido Oelkers will take over as the new CEO of BioNTech, replacing company cofounder Ugur Sahin.",
      "section": "行业动态",
-     "summary": "行业动态：STAT+: BioNTech names Guido Oelkers its new CEO"
+     "summary": "BioNTech 任命 Sobi 前高管 Guido Oelkers 为新任 CEO。"
     },
     {
      "title": "8-K - Twist Bioscience Corp (0001581280) (Filer)",
@@ -347,16 +234,7 @@
      "desc": "Filed: 2026-08-03 AccNo: 0001581280-26-000044 Size: 333 KB Item 2.02: Results of Operations and Financial Condition Item 9.01: Financial Statements and Exhibits",
      "source": "SEC EDGAR",
      "section": "行业动态",
-     "summary": "Twist Bioscience Corp提交重大事项报告"
-    },
-    {
-     "title": "Natural Grocers® Celebrates 71 Years With Beach-Worthy Savings, Freebies and a Chance to Win a Toyota® RAV4 Hybrid, Aug. 13-15, 2026",
-     "url": "https://www.prnewswire.com/news-releases/natural-grocers-celebrates-71-years-with-beach-worthy-savings-freebies-and-a-chance-to-win-a-toyota-rav4-hybrid-aug-1315-2026-302837101.html",
-     "source": "PRNewswire BioTech",
-     "time": "2026-08-03T11:17:00Z",
-     "desc": "The 71st Anniversary Celebration features up to 52% off more than 600 products, free BBQ, snow cones, popcorn, exclusive giveaways and more than $184,000 in sweepstakes prizes. LAKEWOOD, Colo., Aug. 3, 2026 /PRNewswire/ -- Natural Grocers®, the largest family-operated organic and natural...",
-     "section": "行业动态",
-     "summary": "行业动态：Natural Grocers® Celebrates 71 Years With Beach-Worthy "
+     "summary": "Twist Bioscience 提交 8-K 重大事项报告。"
     },
     {
      "title": "8-K - Cocrystal Pharma, Inc. (0001412486) (Filer)",
@@ -365,16 +243,7 @@
      "desc": "Filed: 2026-08-03 AccNo: 0001493152-26-035743 Size: 335 KB Item 1.01: Entry into a Material Definitive Agreement Item 3.02: Unregistered Sales of Equity Securities Item 7.01: Regulation FD Disclosure Item 9.01: Financial Statements and Exhibits",
      "source": "SEC EDGAR",
      "section": "行业动态",
-     "summary": "Cocrystal Pharma, Inc.提交重大事项报告"
-    },
-    {
-     "title": "BioNTech names Sobi's Guido Oelkers as incoming CEO",
-     "url": "https://endpoints.news/biontech-names-sobis-guido-oelkers-as-incoming-ceo/",
-     "source": "Endpoints News",
-     "time": "2026-08-03T11:07:53Z",
-     "desc": "BioNTech has tapped Sobi’s Guido Oelkers as its new CEO, who will start Feb. 1, 2027, at the latest. Sobi also said Monday it is on the lookout for his replacement. ...",
-     "section": "行业动态",
-     "summary": "行业动态：BioNTech names Sobi's Guido Oelkers as incoming CEO"
+     "summary": "Cocrystal Pharma 提交 8-K 重大事项报告。"
     },
     {
      "title": "8-K - OCULAR THERAPEUTIX, INC (0001393434) (Filer)",
@@ -383,25 +252,7 @@
      "desc": "Filed: 2026-08-03 AccNo: 0001104659-26-089443 Size: 350 KB Item 2.02: Results of Operations and Financial Condition Item 9.01: Financial Statements and Exhibits",
      "source": "SEC EDGAR",
      "section": "行业动态",
-     "summary": "OCULAR THERAPEUTIX, INC提交重大事项报告"
-    },
-    {
-     "title": "Domino's® is Paying Customers to Beta Test Its New Website and App",
-     "url": "https://www.prnewswire.com/news-releases/dominos-is-paying-customers-to-beta-test-its-new-website-and-app-302836932.html",
-     "source": "PRNewswire BioTech",
-     "time": "2026-08-03T11:07:00Z",
-     "desc": "When customers order online, they'll receive $5 off their next order ANN ARBOR, Mich., Aug. 3, 2026 /PRNewswire/ -- Domino's Pizza Inc. (Nasdaq: DPZ) redesigned its website and app earlier this year to make it even better, but don't take our word for it. While other companies treat...",
-     "section": "行业动态",
-     "summary": "行业动态：Domino's® is Paying Customers to Beta Test Its New Webs"
-    },
-    {
-     "title": "Domino's® pagará a sus clientes para que prueben la versión beta de su nueva página web y su nueva aplicación",
-     "url": "https://www.prnewswire.com/news-releases/domino-s-r-pagara-a-sus-clientes-para-que-prueben-la-version-beta-de-su-nueva-pagina-web-y-su-nueva-aplicacion-879386971.html",
-     "source": "PRNewswire BioTech",
-     "time": "2026-08-03T11:07:00Z",
-     "desc": "Cuando los clientes hagan un pedido por Internet, recibirán un descuento de 5 dólares en su próximo pedido. ANN ARBOR, Míchigan, 3 de agosto de 2026 /PRNewswire-HISPANIC PR WIRE/ -- Domino's Pizza Inc. (Nasdaq: DPZ) ha rediseñado su página web y su aplicación a principios de este año para...",
-     "section": "行业动态",
-     "summary": "行业动态：Domino's® pagará a sus clientes para que prueben la ver"
+     "summary": "Ocular Therapeutix 提交 8-K 重大事项报告。"
     },
     {
      "title": "8-K - TG THERAPEUTICS, INC. (0001001316) (Filer)",
@@ -410,7 +261,7 @@
      "desc": "Filed: 2026-08-03 AccNo: 0001437749-26-025304 Size: 360 KB Item 2.02: Results of Operations and Financial Condition Item 9.01: Financial Statements and Exhibits",
      "source": "SEC EDGAR",
      "section": "行业动态",
-     "summary": "TG THERAPEUTICS, INC.提交重大事项报告"
+     "summary": "TG Therapeutics 提交 8-K 重大事项报告。"
     },
     {
      "title": "8-K - Tonix Pharmaceuticals Holding Corp. (0001430306) (Filer)",
@@ -419,7 +270,7 @@
      "desc": "Filed: 2026-08-03 AccNo: 0001493152-26-035741 Size: 267 KB Item 7.01: Regulation FD Disclosure Item 8.01: Other Events Item 9.01: Financial Statements and Exhibits",
      "source": "SEC EDGAR",
      "section": "行业动态",
-     "summary": "Tonix Pharmaceuticals Holding 提交重大事项报告"
+     "summary": "Tonix Pharmaceuticals 提交 8-K 重大事项报告。"
     },
     {
      "title": "8-K - Krystal Biotech, Inc. (0001711279) (Filer)",
@@ -428,16 +279,7 @@
      "desc": "Filed: 2026-08-03 AccNo: 0001711279-26-000058 Size: 587 KB Item 2.02: Results of Operations and Financial Condition Item 9.01: Financial Statements and Exhibits",
      "source": "SEC EDGAR",
      "section": "行业动态",
-     "summary": "Krystal Biotech, Inc.提交重大事项报告"
-    },
-    {
-     "title": "Polpharma Biologics gains FDA and EMA review acceptances",
-     "url": "https://pharmatimes.com/uncategorized/polpharma-biologics-gains-fda-and-ema-review-acceptances/",
-     "source": "Pharma Times",
-     "time": "2026-08-03T11:03:33Z",
-     "desc": "Regulators assess PB016 vedolizumab biosimilar applications",
-     "section": "行业动态",
-     "summary": "生物医药：Polpharma Biologics gains FDA and EMA review acceptanc"
+     "summary": "Krystal Biotech 提交 8-K 重大事项报告。"
     },
     {
      "title": "8-K - Seaport Therapeutics, Inc. (0002042347) (Filer)",
@@ -446,25 +288,7 @@
      "desc": "Filed: 2026-08-03 AccNo: 0001193125-26-329528 Size: 335 KB Item 2.02: Results of Operations and Financial Condition Item 9.01: Financial Statements and Exhibits",
      "source": "SEC EDGAR",
      "section": "行业动态",
-     "summary": "Seaport Therapeutics, Inc.提交重大事项报告"
-    },
-    {
-     "title": "Parsortix study shows promise for ADC target detection",
-     "url": "https://pharmatimes.com/news/parsortix-study-shows-promise-for-adc-target-detection/",
-     "source": "Pharma Times",
-     "time": "2026-08-03T10:54:03Z",
-     "desc": "Researchers highlight minimally invasive monitoring potential",
-     "section": "行业动态",
-     "summary": "行业动态：Parsortix study shows promise for ADC target detection"
-    },
-    {
-     "title": "How Regulators and the Industry Can Work Together to Improve the US Pharma Ecosystem",
-     "url": "https://www.pharmexec.com/view/regulators-industry-together-improve-us-ecosystem",
-     "source": "Pharmaceutical Executive",
-     "time": "2026-08-03T10:00:00Z",
-     "desc": "Incubate’s executive director discusses China’s rise in biotech and why the US’ best response may be to focus on its own issues.",
-     "section": "行业动态",
-     "summary": "生物医药：How Regulators and the Industry Can Work Together to I"
+     "summary": "Seaport Therapeutics 提交 8-K 重大事项报告。"
     },
     {
      "title": "STAT+: Are AI scribes useful tools in medical education, or a crutch that imperils learning?",
@@ -473,34 +297,7 @@
      "time": "2026-08-03T08:30:00Z",
      "desc": "Educators want future physicians to be fluent in AI scribes, but they worry what off-loading clinical notes to AI could do to learning.",
      "section": "行业动态",
-     "summary": "生物医药：STAT+: Are AI scribes useful tools in medical educatio"
-    },
-    {
-     "title": "Heart transplant candidates fail if they get too weak. New program tries inpatient prehab",
-     "url": "https://www.statnews.com/2026/08/03/heart-transplant-prehabilitation-cardiologist-discusses-innovative-project/?utm_campaign=rss",
-     "source": "STAT News",
-     "time": "2026-08-03T08:30:00Z",
-     "desc": "Patients often get weaker waiting in the hospital for heart transplant. A cardiologist had an idea: inpatient prehabilitation.",
-     "section": "行业动态",
-     "summary": "行业动态：Heart transplant candidates fail if they get too weak. "
-    },
-    {
-     "title": "StockWatch: Capricor Plunges as FDA Panel, Staff Question Effectiveness of Lead Candidate Deramiocel",
-     "url": "https://www.genengnews.com/topics/translational-medicine/stockwatch-capricor-plunges-as-fda-panel-staff-question-effectiveness-of-lead-candidate-deramiocel/",
-     "source": "GEN",
-     "time": "2026-08-03T00:47:27Z",
-     "desc": "After seeing its lead candidate rejected by the FDA last year, Capricor Therapeutics is hoping for a better outcome for its resubmitted BLA for its lead pipeline candidate Deramiocel. The post StockWatch: Capricor Plunges as FDA Panel, Staff Question Effectiveness of Lead Candidate Deramiocel appeared first on GEN - Genetic Engineering and Biotechnology News .",
-     "section": "行业动态",
-     "summary": "行业动态：StockWatch: Capricor Plunges as FDA Panel, Staff Questi"
-    },
-    {
-     "title": "STAT+: Senate measure would block Trump plan to politicize federal grants, for now",
-     "url": "https://www.statnews.com/2026/08/02/senate-would-block-white-house-control-over-research-grants/?utm_campaign=rss",
-     "source": "STAT News",
-     "time": "2026-08-02T23:55:12Z",
-     "desc": "A White House proposal to subject research grants to political scrutiny meets at least a temporary roadblock in the Senate.",
-     "section": "行业动态",
-     "summary": "行业动态：STAT+: Senate measure would block Trump plan to politic"
+     "summary": "AI 语音记录工具进入医学教育：是实用工具还是思维拐杖？"
     },
     {
      "title": "STAT+: Michigan Supreme Court ruling allows probe into Lilly insulin pricing",
@@ -509,7 +306,7 @@
      "time": "2026-08-02T18:14:14Z",
      "desc": "Lilly was accused of charging “grossly” excessive prices for different insulin products that forced some patients to ration or forgo the drug.",
      "section": "行业动态",
-     "summary": "行业动态：STAT+: Michigan Supreme Court ruling allows probe into "
+     "summary": "密歇根州最高法院裁定可调查礼来胰岛素定价行为。"
     },
     {
      "title": "Alnylam's slump deepens; Q2 earnings roundup; and more",
@@ -518,16 +315,7 @@
      "time": "2026-08-01T10:00:38Z",
      "desc": "Welcome to another edition of Endpoints Weekly, and happy August! The summer is speeding right along, and we’ve got the latest from biopharma’s earnings-palooza this week. Let’s dive into the news. Alnylam’s struggles became the ...",
      "section": "行业动态",
-     "summary": "财报：Alnylam's slump deepens; Q2 earnings roundup; and more"
-    },
-    {
-     "title": "Trump administration tries again to institute rebates in 340B",
-     "url": "https://www.biopharmadive.com/news/the-trump-administration-tries-again-340b-rebates/826766/",
-     "source": "BioPharma Dive",
-     "time": "2026-07-31T19:10:00Z",
-     "desc": "The Health Resources and Services Administration is again pushing to include rebates in the drug discount program after a failed attempt earlier this year. Hospitals railed against the announcement, saying it would burden already strapped providers.",
-     "section": "行业动态",
-     "summary": "行业动态：Trump administration tries again to institute rebates i"
+     "summary": "Alnylam 股价持续下挫；多家药企 Q2 财报汇总。"
     },
     {
      "title": "AbbVie touts strong momentum for Skyrizi despite rising competition",
@@ -536,43 +324,7 @@
      "time": "2026-07-31T18:22:56Z",
      "desc": "If AbbVie executives are bothered by growing threats to their immunology powerhouse, they aren't letting on. Earlier this year, analysts were wondering how the company’s blockbuster Skyrizi might fare against competition from ...",
      "section": "行业动态",
-     "summary": "行业动态：AbbVie touts strong momentum for Skyrizi despite rising"
-    },
-    {
-     "title": "Ketamine Triggers Sex-Specific Brain Recovery Responses",
-     "url": "https://www.genengnews.com/topics/translational-medicine/ketamine-triggers-sex-specific-brain-recovery-responses/",
-     "source": "GEN",
-     "time": "2026-07-31T18:00:32Z",
-     "desc": "A study in mice has shown how shown that microglia immune cells in the brain play a critical role in how the brain recovers from ketamine anesthesia, and indicates that there are differences between female and male brains. The post Ketamine Triggers Sex-Specific Brain Recovery Responses appeared first on GEN - Genetic Engineering and Biotechnology News .",
-     "section": "行业动态",
-     "summary": "行业动态：Ketamine Triggers Sex-Specific Brain Recovery Responses"
-    },
-    {
-     "title": "Molecular GPS Guides Neutrophils to Sites of Infection",
-     "url": "https://www.genengnews.com/topics/infectious-diseases/molecular-gps-guides-neutrophils-to-sites-of-infection/",
-     "source": "GEN",
-     "time": "2026-07-31T18:00:10Z",
-     "desc": "Through a multistep process, signals from infected cells trigger the formation of a receptor complex that directs neutrophils out of blood vessels toward infection sites without damaging healthy tissue. The post Molecular GPS Guides Neutrophils to Sites of Infection appeared first on GEN - Genetic Engineering and Biotechnology News .",
-     "section": "行业动态",
-     "summary": "行业动态：Molecular GPS Guides Neutrophils to Sites of Infection"
-    },
-    {
-     "title": "Pharma groups back changes to 340B rebate pilot",
-     "url": "https://endpoints.news/pharma-groups-back-changes-to-340b-rebate-pilot/",
-     "source": "Endpoints News",
-     "time": "2026-07-31T17:22:21Z",
-     "desc": "HHS' Health Resources and Services Administration unveiled details of a revised 340B rebate pilot, which will let some drug manufacturers deny rebates for a small subset of drugs. The 340B program gives some hospitals access ...",
-     "section": "行业动态",
-     "summary": "生物医药：Pharma groups back changes to 340B rebate pilot"
-    },
-    {
-     "title": "STAT+: Trump administration revises rebate pilot for 340B drug discount program, angering hospitals",
-     "url": "https://www.statnews.com/pharmalot/2026/07/31/trump-administration-revises-rebate-pilot-drug-discount-program-hospitals/?utm_campaign=rss",
-     "source": "STAT News",
-     "time": "2026-07-31T17:02:27Z",
-     "desc": "The Trump administration is revising its rebate pilot for the 340B drug discount program, angering hospitals.",
-     "section": "行业动态",
-     "summary": "生物医药：STAT+: Trump administration revises rebate pilot for 3"
+     "summary": "艾伯维称 Skyrizi 免疫药物增长势头强劲，无惧竞争加剧。"
     },
     {
      "title": "Resilience and Lilly invest $750M to boost Cincinnati drug production",
@@ -581,16 +333,7 @@
      "time": "2026-07-31T15:45:00Z",
      "desc": "The expansion will create 400 jobs dedicated to making GLP-1 injectables across Resilience’s contract manufacturing facilities.",
      "section": "行业动态",
-     "summary": "生物医药：Resilience and Lilly invest $750M to boost Cincinnati "
-    },
-    {
-     "title": "FDA CTGTAC Committee Votes in Favor of Replimune’s RP1 Efficiency Results in Ignyte Study",
-     "url": "https://www.pharmexec.com/view/fda-ctgtac-committee-votes-replimune-rp1-efficiency-ignyte",
-     "source": "Pharmaceutical Executive",
-     "time": "2026-07-31T13:49:46Z",
-     "desc": "FDA's advisory committee voted 10 to 3 that efficacy data from the Ignyte study is evaluable and clinically meaningful.",
-     "section": "行业动态",
-     "summary": "行业动态：FDA CTGTAC Committee Votes in Favor of Replimune’s RP1 "
+     "summary": "Resilience 与礼来投资 7.5 亿美元扩建辛辛那提制药基地。"
     },
     {
      "title": "Manufacturing on the Move: Tariffs, Reshoring, and the Germany Investigation",
@@ -599,16 +342,7 @@
      "time": "2026-07-31T12:53:50Z",
      "desc": "Kirsten Axelsen unpacks how reshoring trends, tariff exposure, and the Section 301 investigation into Germany's pricing policies are reshaping where pharma manufactures and launches.",
      "section": "行业动态",
-     "summary": "行业动态：Manufacturing on the Move: Tariffs, Reshoring, and the "
-    },
-    {
-     "title": "Patient Access, Innovation, and the Global Cost of MFN",
-     "url": "https://www.pharmexec.com/view/patient-access-innovation-and-the-global-cost-of-mfn",
-     "source": "Pharmaceutical Executive",
-     "time": "2026-07-31T12:41:35Z",
-     "desc": "Julie Tierney, Kirsten Axelsen, and Maggie Farley examine how patient advocates, health economists, and communicators are each grappling with MFN's real-world impact.",
-     "section": "行业动态",
-     "summary": "行业动态：Patient Access, Innovation, and the Global Cost of MFN"
+     "summary": "关税加速制药制造回流美国，德国加大生科投资应对。"
     }
    ]
   },
@@ -616,13 +350,31 @@
    "label": "亦庄园区动态",
    "items": [
     {
+     "title": "经开区医药健康产业创新成果集中涌现",
+     "url": "https://kfqgw.beijing.gov.cn/cxyzkfq/yzal/202607/t20260731_4803143.html",
+     "source": "北京亦庄·经开区官网",
+     "time": "2026-07-31T00:00:00Z",
+     "desc": "悦康药业YKYY033注射液新适应症获得国家药监局临床试验批准；博尔诚两款呼吸道病原体核酸检测新品获批上市；凡恩世自研核心双特异性抗体技术平台PACbody ® 获得国家知识产权局的发明专利授权……近期，北京经开区医药健康产业“新”潮澎湃，一批覆盖创新药研发、体外诊断、原创核心技术平台等领域的成果加速涌现，不仅展现出区内企业的创新硬实力，也为产业集群升级注入新动能。 悦康药业自研的YKYY033注射液多项新适应症获批临床，具体包括，用于治疗成人深静脉血栓形成（DVT），降低急性DVT后DVT复发和肺栓塞（PE）的风险；用于非瓣膜性心房颤动（NVAF）患者",
+     "section": "亦庄园区动态",
+     "summary": "经开区医药健康产业创新成果集中涌现，多项技术突破。"
+    },
+    {
      "title": "生物医药人才沙龙搭建引才交流平台",
      "url": "https://kfqgw.beijing.gov.cn/ywdt/gsprcgd/rcfw/202607/t20260729_4797497.html",
      "source": "北京亦庄·经开区官网",
      "time": "2026-07-29T00:00:00Z",
      "desc": "本报讯（融媒体中心 李浩宇）为聚力破解生物医药产业国际化发展人才瓶颈，激活高端智力创新动能，近日，以“以才破局，以标定航”为主题的生物医药人才沙龙活动举办。活动践行“人才活动人才办”创新工作理念，紧扣北京经开区生物医药企业出海现状与人才需求，整合政企校猎资源，以主题分享聚势能、以深度研讨谋突破，搭建学术分享与交流互动的常态化、专业化平台，汇聚人才智慧共探破局新路径，助力区域生物医药产业抢抓全球市场机遇、构筑产业全球竞争优势。 当前，经开区生物医药产业创新活力迸发、全球化布局提速，产业链、创新链持续迭代升级，但国际化复合型人才结构性短缺、跨境引才成本偏高等",
      "section": "亦庄园区动态",
-     "summary": "生物医药人才沙龙搭建引才交流平台"
+     "summary": "生物医药人才沙龙在经开区举办，搭建高端引才交流平台。"
+    },
+    {
+     "title": "沙砾生物北京总部在经海产业园启用 经开区细胞与基因治疗产业版图再添新军",
+     "url": "https://kfqgw.beijing.gov.cn/cxyzkfq/yzal/202607/t20260727_4791395.html",
+     "source": "北京亦庄·经开区官网",
+     "time": "2026-07-27T00:00:00Z",
+     "desc": "本报讯（融媒体中心 李啸）近日，沙砾生物北京总部在经海产业园启用，标志着北京经开区细胞与基因治疗产业版图再添一块关键拼图。作为沙砾生物未来研发和运营的重要承载地，北京总部将重点推进TIL（肿瘤浸润淋巴细胞）疗法及新一代细胞治疗技术的研发转化，推动国内首个获批进入临床研究阶段的TIL疗法产品GT101尽早惠及临床患者。 沙砾生物是一家创新驱动型、处于临床后期阶段的生物制药公司，专注于为全球癌症及自身免疫性疾病患者开创下一代免疫疗法。公司自主研发的GT101注射液是中国首个获批临床的TIL药物，其作用机制是从患者肿瘤组织中分离并筛选具有肿瘤识别能力的免疫细胞",
+     "section": "亦庄园区动态",
+     "summary": "沙砾生物北京总部在经海产业园启用，经开区细胞基因治疗产业再添新军。"
     }
    ]
   },
@@ -630,13 +382,40 @@
    "label": "论文研究",
    "items": [
     {
+     "title": "Microbiota-Derived Metabolite Enhances HIV Therapy in Monkeys",
+     "url": "https://www.genengnews.com/topics/infectious-diseases/microbiota-derived-metabolite-enhances-hiv-therapy-in-monkeys/",
+     "source": "GEN",
+     "time": "2026-07-31T16:47:08Z",
+     "desc": "The metabolite 10-hydroxystearic acid (10-HSA), from Lactiplantibacillus plantarum , repaired HIV-related gut damage, reduced inflammation, restored immunity, and improved antiretroviral therapy effectiveness in preclinical primate studies, supporting future human trials. The post Microbiota-Derived Metabolite Enhances HIV Therapy in Monkeys appeared first on GEN - Genetic Engineering and Biotechnology News .",
+     "section": "论文研究",
+     "summary": "微生物群衍生代谢物可增强猴模型中 HIV 治疗效果。"
+    },
+    {
+     "title": "Ketamine Triggers Sex-Specific Brain Recovery Responses",
+     "url": "https://www.genengnews.com/topics/translational-medicine/ketamine-triggers-sex-specific-brain-recovery-responses/",
+     "source": "GEN",
+     "time": "2026-07-31T18:00:32Z",
+     "desc": "A study in mice has shown how shown that microglia immune cells in the brain play a critical role in how the brain recovers from ketamine anesthesia, and indicates that there are differences between female and male brains. The post Ketamine Triggers Sex-Specific Brain Recovery Responses appeared first on GEN - Genetic Engineering and Biotechnology News .",
+     "section": "论文研究",
+     "summary": "氯胺酮触发性别特异性脑修复反应，或指导抑郁症精准治疗。"
+    },
+    {
+     "title": "Molecular GPS Guides Neutrophils to Sites of Infection",
+     "url": "https://www.genengnews.com/topics/infectious-diseases/molecular-gps-guides-neutrophils-to-sites-of-infection/",
+     "source": "GEN",
+     "time": "2026-07-31T18:00:10Z",
+     "desc": "Through a multistep process, signals from infected cells trigger the formation of a receptor complex that directs neutrophils out of blood vessels toward infection sites without damaging healthy tissue. The post Molecular GPS Guides Neutrophils to Sites of Infection appeared first on GEN - Genetic Engineering and Biotechnology News .",
+     "section": "论文研究",
+     "summary": "分子 GPS 机制引导中性粒细胞精准定位感染灶。"
+    },
+    {
      "title": "A closer insight into the molecular effect of canagliflozin on gentamicin-induced nephrotoxicity in rats: Attention to SIRT1/Nrf2/HO-1, p38 MAPK/NF-κB signaling pathways, and expression of miR-21 and miR-155.",
      "url": "https://doi.org/10.1080/08923973.2026.2713468",
      "source": "Europe PMC",
      "time": "2026-08-02T16:00:00Z",
      "desc": "期刊 。Nephrotoxicity is considered the most detrimental effect of gentamicin (GM). In this study, we investigated the potential effects for canagliflozin (CANA) to protect against GM-induced nephrotoxicity, besides the multiple molecular pathways underlying these ef",
      "section": "论文研究",
-     "summary": "行业动态：A closer insight into the molecular effect of canaglifl"
+     "summary": "卡格列净对庆大霉素肾毒性分子保护机制的新见解。"
     },
     {
      "title": "Sustained-Release Intracameral Prostaglandin Analog Implants for Glaucoma: Comparative Review and Meta-Analysis of Bimatoprost and Travoprost Delivery Systems.",
@@ -645,34 +424,16 @@
      "time": "2026-08-02T16:00:00Z",
      "desc": "期刊 。To evaluate the efficacy and safety of sustained-release intracameral prostaglandin analog implants, including bimatoprost (Durysta) and travoprost (iDose TR), in patients with open-angle glaucoma (OAG) or ocular hypertension (OHT). A systematic review and poo",
      "section": "论文研究",
-     "summary": "行业动态：Sustained-Release Intracameral Prostaglandin Analog Imp"
+     "summary": "眼内长效释放前列腺素类药物植入物治疗青光眼的综述。"
     },
     {
-     "title": "Integrated HPLC-DAD and multivariate analysis for exploratory prioritisation of candidate marker compounds in Lactuca indica .",
-     "url": "https://doi.org/10.1080/14786419.2026.2708284",
+     "title": "Accelerating Translation of NK Cell Therapies to the Clinic: A European Perspective.",
+     "url": "https://doi.org/10.1177/10430342261468974",
      "source": "Europe PMC",
      "time": "2026-08-02T16:00:00Z",
-     "desc": "期刊 。Lactuca indica L. is a medicinal plant widely used in traditional Vietnamese medicine. A validated HPLC-DAD method was developed for the simultaneous quantification of four selected phenolic compounds, chlorogenic acid, caffeic acid, luteolin-7-O-glucuronide, ",
+     "desc": "期刊 。Adoptive immunotherapies have emerged as a promising strategy in the treatment of hematological malignancies. To date, seven chimeric antigen receptor (CAR)-T cell products have obtained market authorization in Europe for B-cell malignancies, where they have r",
      "section": "论文研究",
-     "summary": "行业动态：Integrated HPLC-DAD and multivariate analysis for explo"
-    },
-    {
-     "title": "The impact of financial toxicity levels on shared decision-making among cancer patients in Türkiye.",
-     "url": "https://doi.org/10.1080/07347332.2026.2711299",
-     "source": "Europe PMC",
-     "time": "2026-08-02T16:00:00Z",
-     "desc": "期刊 。This study examines the impact of financial toxicity levels on shared decision-making in cancer patients. While the impact of financial toxicity on clinical outcomes has been elucidated by numerous studies, its effect on shared decision-making is quite limited",
-     "section": "论文研究",
-     "summary": "融资：The impact of financial toxicity levels on shared decis"
-    },
-    {
-     "title": "Exploring the antihyperglycemic potential of Durio kutejensis (Hassk.) Becc.: in vitro , in vivo , and metabolomic examinations.",
-     "url": "https://doi.org/10.1080/14786419.2026.2709578",
-     "source": "Europe PMC",
-     "time": "2026-08-02T16:00:00Z",
-     "desc": "期刊 。Diabetes mellitus caused 3.4 million deaths in 2024. Although α-glucosidase and DPP-IV inhibitors are utilised therapeutically, synthetic drugs cause side effects. Durio kutejensis was examined for antihyperglycemic potential. This study assessed the antihyper",
-     "section": "论文研究",
-     "summary": "行业动态：Exploring the antihyperglycemic potential of Durio kute"
+     "summary": "加速 NK 细胞疗法临床转化的欧洲专家共识报告。"
     },
     {
      "title": "Practical management of BRAF inhibitors in glioma: toxicity and resistance.",
@@ -681,40 +442,41 @@
      "time": "2026-08-02T16:00:00Z",
      "desc": "期刊 。BRAF inhibitors have advanced treatment for patients with BRAF-altered high and low-grade glioma (HGG and LGG, respectively). Clinically-available therapies are effective but require selection by mutation type and careful, proactive toxicity management to maxi",
      "section": "论文研究",
-     "summary": "行业动态：Practical management of BRAF inhibitors in glioma: toxi"
-    },
-    {
-     "title": "Safety and Efficacy of Allogeneic Integrin α10β1-Selected Mesenchymal Stem Cells in the Treatment of Knee Osteoarthritis: A First-In-Human Phase I/IIa Dose Escalation Study.",
-     "url": "https://doi.org/10.1177/19476035261475741",
-     "source": "Europe PMC",
-     "time": "2026-08-02T16:00:00Z",
-     "desc": "期刊 。PurposeSafety and efficacy of allogeneic integrin α10β1-selected MSCs (integrin α10-MSCs) have been shown in two post-traumatic osteoarthritis (OA) equine models. The aim of this study is to evaluate safety, tolerability and preliminary efficacy of allogeneic ",
-     "section": "论文研究",
-     "summary": "Selected Mesenchymal Stem CellsOsteoarthritis临床试验"
-    },
-    {
-     "title": "Novel VSV-G Variants with Enhanced Blinding for Targeted Delivery of Lentiviral Vectors.",
-     "url": "https://doi.org/10.1177/10430342261466823",
-     "source": "Europe PMC",
-     "time": "2026-08-02T16:00:00Z",
-     "desc": "期刊 。Targeted in vivo transduction, entailing direct administration of viral vector preparations to patients, is the next big step in gene therapy. To redirect lentiviral vector (LV) particles selectively to desired cell type(s), different glycoproteins have been e",
-     "section": "论文研究",
-     "summary": "行业动态：Novel VSV-G Variants with Enhanced Blinding for Targete"
-    },
-    {
-     "title": "Development of dispersive micro-solid phase extraction using QDs@ZIF-8 for the extraction of Ni(II) and Co(II) ions from water and fruit juice samples prior to their determination by flame atomic absorption spectrometry.",
-     "url": "https://doi.org/10.1039/d6ay00193a",
-     "source": "Europe PMC",
-     "time": "2026-08-02T16:00:00Z",
-     "desc": "期刊 。In this research, a hybrid sorbent known as QDs@ZIF-8, a composite of zeolitic imidazolate framework-8 and quantum dots, was synthesized and utilized for extracting Ni(II) and Co(II) ions from water and fruit juice samples. Due to its superior adsorption capac",
-     "section": "论文研究",
-     "summary": "临床试验：Development of dispersive micro-solid phase extraction "
+     "summary": "BRAF 抑制剂在胶质瘤中毒性管理与耐药策略的实践指南。"
     }
    ]
   },
   {
    "label": "政策追踪",
-   "items": []
+   "items": [
+    {
+     "title": "Trump administration tries again to institute rebates in 340B",
+     "url": "https://www.biopharmadive.com/news/the-trump-administration-tries-again-340b-rebates/826766/",
+     "source": "BioPharma Dive",
+     "time": "2026-07-31T19:10:00Z",
+     "desc": "The Health Resources and Services Administration is again pushing to include rebates in the drug discount program after a failed attempt earlier this year. Hospitals railed against the announcement, saying it would burden already strapped providers.",
+     "section": "政策追踪",
+     "summary": "特朗普政府再度推动 340B 药品折扣计划改革。"
+    },
+    {
+     "title": "Pharma groups back changes to 340B rebate pilot",
+     "url": "https://endpoints.news/pharma-groups-back-changes-to-340b-rebate-pilot/",
+     "source": "Endpoints News",
+     "time": "2026-07-31T17:22:21Z",
+     "desc": "HHS' Health Resources and Services Administration unveiled details of a revised 340B rebate pilot, which will let some drug manufacturers deny rebates for a small subset of drugs. The 340B program gives some hospitals access ...",
+     "section": "政策追踪",
+     "summary": "制药行业团体发声支持 340B 药品折扣改革方案。"
+    },
+    {
+     "title": "STAT+: Trump administration revises rebate pilot for 340B drug discount program, angering hospitals",
+     "url": "https://www.statnews.com/pharmalot/2026/07/31/trump-administration-revises-rebate-pilot-drug-discount-program-hospitals/?utm_campaign=rss",
+     "source": "STAT News",
+     "time": "2026-07-31T17:02:27Z",
+     "desc": "The Trump administration is revising its rebate pilot for the 340B drug discount program, angering hospitals.",
+     "section": "政策追踪",
+     "summary": "特朗普政府修订 340B 药品折扣试点方案细则。"
+    }
+   ]
   },
   {
    "label": "政策与观点",
@@ -726,16 +488,25 @@
      "time": "2026-08-03T08:30:00Z",
      "desc": "The leaders of the Federation of State Medical Boards weigh in on the question of licensing AI to practice medicine.",
      "section": "政策与观点",
-     "summary": "观点：Opinion: We lead the Federation of State Medical Boards"
+     "summary": "美国州医学委员会联合会领导层撰文回应行业监管质疑。"
     },
     {
-     "title": "Accelerating Translation of NK Cell Therapies to the Clinic: A European Perspective.",
-     "url": "https://doi.org/10.1177/10430342261468974",
-     "source": "Europe PMC",
-     "time": "2026-08-02T16:00:00Z",
-     "desc": "期刊 。Adoptive immunotherapies have emerged as a promising strategy in the treatment of hematological malignancies. To date, seven chimeric antigen receptor (CAR)-T cell products have obtained market authorization in Europe for B-cell malignancies, where they have r",
+     "title": "STAT+: Senate measure would block Trump plan to politicize federal grants, for now",
+     "url": "https://www.statnews.com/2026/08/02/senate-would-block-white-house-control-over-research-grants/?utm_campaign=rss",
+     "source": "STAT News",
+     "time": "2026-08-02T23:55:12Z",
+     "desc": "A White House proposal to subject research grants to political scrutiny meets at least a temporary roadblock in the Senate.",
      "section": "政策与观点",
-     "summary": "收购交易：Accelerating Translation of NK Cell Therapies to the Cl"
+     "summary": "参议院提案拟阻止特朗普将联邦科研拨款政治化的计划。"
+    },
+    {
+     "title": "Patient Access, Innovation, and the Global Cost of MFN",
+     "url": "https://www.pharmexec.com/view/patient-access-innovation-and-the-global-cost-of-mfn",
+     "source": "Pharmaceutical Executive",
+     "time": "2026-07-31T12:41:35Z",
+     "desc": "Julie Tierney, Kirsten Axelsen, and Maggie Farley examine how patient advocates, health economists, and communicators are each grappling with MFN's real-world impact.",
+     "section": "政策与观点",
+     "summary": "专利保护与药品可及性的全球博弈：MFN 最惠国待遇争议。"
     },
     {
      "title": "Opinion: I’m a neurologist. I’ve delivered ALS diagnoses. Then I received one myself",
@@ -744,10 +515,10 @@
      "time": "2026-08-03T08:30:00Z",
      "desc": "“Losing the ability to speak has taught me how quickly society conflates physical dependence with diminished personhood,” writes Dr. Christopher Campos.",
      "section": "政策与观点",
-     "summary": "观点：Opinion: I’m a neurologist. I’ve delivered ALS diagnose"
+     "summary": "神经科医生自述：从诊断 ALS 到自己成为患者的经历。"
     }
    ]
   }
  ],
- "sourceNote": "聚合国际媒体/临试/文献/园区/交易所等公开渠道。中文摘要智能生成，仅供参考。"
+ "sourceNote": "数据来自 Endpoints News / STAT News / GEN / BioPharma Dive / Pharma Times / Pharmaceutical Executive 等权威公开渠道。中文摘要人工精选翻译，仅供参考，不构成投资建议。"
 }
