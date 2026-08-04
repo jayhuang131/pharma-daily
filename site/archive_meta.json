@@ -33,5 +33,10 @@
   "file": "report-2026-08-04.html",
   "total": 66,
   "weekday": "周二"
+ },
+ "2026-08-05": {
+  "file": "report-2026-08-05.html",
+  "total": 89,
+  "weekday": "周三"
  }
 }
