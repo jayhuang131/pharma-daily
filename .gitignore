@@ -8,3 +8,5 @@ _gen_report.py
 test_sources.py
 __pycache__/
 .workbuddy/
+deepseek_key.txt
+site/deepseek_key.txt
