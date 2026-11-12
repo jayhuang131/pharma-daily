@@ -76,7 +76,7 @@ CSS = r'''
   /* 晨报页 */
   .sub2{color:var(--muted);font-size:15px}
   .sub2 b{color:var(--text)}
-  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-top:24px}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}
   .stat{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:16px;padding:18px 16px}
   .stat .n{font-size:30px;font-weight:800;color:var(--accent)}
   .stat .l{font-size:13px;color:var(--muted);margin-top:4px}
@@ -97,7 +97,7 @@ CSS = r'''
   .card{position:relative;background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px;transition:.18s;overflow:hidden}
   .card:hover{transform:translateY(-3px);border-color:#3a4a63;box-shadow:0 12px 30px rgba(0,0,0,.35)}
   .card .idx{position:absolute;top:12px;right:14px;font-size:13px;font-weight:800;color:var(--accent);background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.25);border-radius:8px;padding:1px 8px;min-width:30px;text-align:center}
-  .card h3{font-size:16px;font-weight:700;line-height:1.4;padding-right:42px}
+  .card h3{font-size:14px;font-weight:600;line-height:1.5;padding-right:42px;color:var(--muted)}
   /* 监管审批里程碑高亮 */
   .card.regulatory{border-left:3px solid var(--gold);background:linear-gradient(180deg,#1b2220,var(--bg2))}
   .card.regulatory:hover{border-left-color:#f59e0b}
@@ -106,6 +106,14 @@ CSS = r'''
     font-size:11px;color:var(--gold);border:1px solid rgba(251,191,36,.25);
     background:rgba(251,191,36,.08);border-radius:999px;padding:2px 8px;margin-left:6px}
   .card.regulatory .milestone::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--gold)}
+  /* 头条卡：每个版块首条跨两列，大标题 + 大摘要 */
+  .card.lead{grid-column:span 2;padding:24px 26px}
+  .card.lead h3{font-size:21px;font-weight:800;color:var(--text);line-height:1.3;padding-right:60px}
+  .card.lead .summary{font-size:16.5px;color:var(--text);line-height:1.7}
+  /* 首页数据源 chips（紧凑，不再一行一个） */
+  .src-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .src-chip{font-size:12.5px;color:var(--muted);background:var(--chip);border:1px solid #2c3a4f;border-radius:999px;padding:5px 11px;display:inline-flex;align-items:center;gap:6px}
+  .src-chip b{color:var(--accent);font-weight:700}
   /* 里程碑徽章 */
   .ms-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:-4px;margin-bottom:2px}
   .ms-badge{font-size:11px;font-weight:600;border-radius:999px;padding:2px 9px;line-height:1.5}
@@ -128,7 +136,7 @@ CSS = r'''
   .meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
   .chip{font-size:12px;color:var(--chiptext);background:var(--chip);border:1px solid #2c3a4f;border-radius:999px;padding:3px 10px}
   .time{font-size:12px;color:var(--faint)}
-  .summary{font-size:14px;color:var(--muted);flex:1}
+  .summary{font-size:15px;color:#dbe3ee;flex:1;line-height:1.65}
   .foot{display:flex;align-items:center;justify-content:space-between;gap:8px}
   .more{font-size:13px;color:var(--accent);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:4px}
   .more:hover{gap:8px}
@@ -150,7 +158,7 @@ CSS = r'''
   .arc-item .go{color:var(--accent);font-weight:700}
   @media (max-width:560px){
     h1{font-size:27px}
-    .grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}
+    .grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.card.lead{grid-column:span 1}
     .arc-item .d{min-width:0;font-size:17px}
     .nav{top:57px}
     .cta{flex-direction:column}
@@ -322,7 +330,7 @@ def render_home(data):
             src = it.get("source", "未知")
             src_cnt[src] = src_cnt.get(src, 0) + 1
     src_stats = "".join(
-        f'<div class="src-item"><span class="sn">{s}</span><span class="sc">{c}</span></div>'
+        f'<span class="src-chip">{s}<b>{c}</b></span>'
         for s, c in sorted(src_cnt.items(), key=lambda x: -x[1]))
     body = (
         site_nav("home") +
@@ -336,7 +344,7 @@ def render_home(data):
         '</div></div>'
         '<div class="cards">'
         f'<div class="panel"><h3>📊 今日数据管道（{len(src_cnt)} 个渠道 · {total} 条）</h3>'
-        f'<div class="src-stats">{src_stats}</div></div>'
+        f'<div class="src-chips">{src_stats}</div></div>'
         '<div class="panel"><h3>⭐ 收藏跨设备同步</h3>'
         '<div class="syncbox"><p>收藏默认只存本浏览器。想跨设备共享，把本站指向你的同步服务即可（在运行 <code>pharma_server.py</code> 的机器/服务器上填写其可访问地址）：</p>'
         '<div class="syncrow"><input id="syncUrl" placeholder="https://你的隧道地址:8000"><button class="save" id="syncSave">保存</button><button id="syncClear">清除</button></div>'
@@ -426,8 +434,9 @@ DATA.sections.forEach((s,i)=>{
   if(!s.items.length){const e=document.createElement('div');e.className='empty';
     e.textContent='本期该渠道未检索到相关动态。';sec.appendChild(e);}
   else{const g=document.createElement('div');g.className='grid';
-    [...s.items].sort((a,b)=>new Date(b.time)-new Date(a.time)).forEach(it=>{idx++;
+    [...s.items].sort((a,b)=>new Date(b.time)-new Date(a.time)).forEach((it,pos)=>{idx++;
       const c=document.createElement('article');c.className='card';c.dataset.url=it.url;
+      if(pos===0)c.classList.add('lead');
       if(s.label==='监管审批')c.classList.add('regulatory');
       if(s.label==='交易速览')c.classList.add('deal');
       if(s.label==='政策追踪')c.classList.add('policy');
