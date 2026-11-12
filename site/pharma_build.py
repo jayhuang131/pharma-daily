@@ -16,15 +16,29 @@ CSS = r'''
     --bg:#0b0f17; --bg2:#0e131d; --card:#151b27; --line:#263041;
     --text:#e8edf5; --muted:#9aa7bd; --faint:#6b7689;
     --accent:#34d399; --accent2:#22d3ee; --chip:#1e2a3d; --chiptext:#7dd3c0; --gold:#fbbf24;
+    --bodybg:radial-gradient(1200px 600px at 70% -10%, #122031 0%, #0b0f17 55%);
+    --navbg:rgba(11,15,23,.9); --navbg2:rgba(11,15,23,.85);
+    --tint-reg:#1b2220; --tint-deal:#151d24; --tint-policy:#171720;
+    --sumtext:#dbe3ee;
+    --serif:"Noto Serif SC","Songti SC","SimSun","STSong",serif;
+  }
+  html[data-theme="light"]{
+    --bg:#f6f8fb; --bg2:#eef2f7; --card:#ffffff; --line:#e2e8f0;
+    --text:#0f172a; --muted:#475569; --faint:#94a3b8;
+    --accent:#0d9488; --accent2:#0891b2; --chip:#e8f1f0; --chiptext:#0f766e; --gold:#b45309;
+    --bodybg:radial-gradient(1200px 600px at 70% -10%, #e6f0f5 0%, #f6f8fb 55%);
+    --navbg:rgba(255,255,255,.92); --navbg2:rgba(255,255,255,.88);
+    --tint-reg:#fffaf0; --tint-deal:#f0f9ff; --tint-policy:#f5f3ff;
+    --sumtext:#334155;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:radial-gradient(1200px 600px at 70% -10%, #122031 0%, var(--bg) 55%) fixed;
+  body{background:var(--bodybg) fixed;
     color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
     line-height:1.6; -webkit-font-smoothing:antialiased}
   a{color:inherit}
   .wrap{max-width:1120px;margin:0 auto;padding:0 20px 60px}
   /* 站点顶栏 */
-  .sitenav{position:sticky;top:0;z-index:30;background:rgba(11,15,23,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .sitenav{position:sticky;top:0;z-index:30;background:var(--navbg);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   .sitenav .inner{max-width:1120px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:18px}
   .sitenav .brand{font-weight:800;font-size:16px;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:7px}
   .sitenav .brand .badge{font-size:18px}
@@ -40,7 +54,7 @@ CSS = r'''
   .kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--accent);
     border:1px solid var(--line);background:rgba(52,211,153,.08);padding:5px 12px;border-radius:999px}
   .kicker .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
-  h1{font-size:38px;line-height:1.15;margin:18px 0 8px;font-weight:800;letter-spacing:-.5px}
+  h1{font-family:var(--serif);font-size:38px;line-height:1.2;margin:18px 0 10px;font-weight:700;letter-spacing:.5px}
   h1 .hl{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
   .sub{color:var(--muted);font-size:16px;max-width:640px}
   .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
@@ -80,7 +94,7 @@ CSS = r'''
   .stat{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:16px;padding:18px 16px}
   .stat .n{font-size:30px;font-weight:800;color:var(--accent)}
   .stat .l{font-size:13px;color:var(--muted);margin-top:4px}
-  .nav{position:sticky;top:57px;z-index:20;background:rgba(11,15,23,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin-top:8px}
+  .nav{position:sticky;top:57px;z-index:20;background:var(--navbg2);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin-top:8px}
   .nav .inner{max-width:1120px;margin:0 auto;padding:10px 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
   .nav a{font-size:13px;color:var(--muted);text-decoration:none;border:1px solid var(--line);padding:6px 12px;border-radius:999px;transition:.15s;white-space:nowrap}
   .nav a:hover{color:var(--text);border-color:var(--accent);background:rgba(52,211,153,.08)}
@@ -90,16 +104,16 @@ CSS = r'''
   .backlink:hover{border-color:var(--accent2)}
   section{padding-top:38px;scroll-margin-top:120px}
   .sec-head{display:flex;align-items:baseline;gap:12px;border-left:4px solid var(--accent);padding-left:14px;margin-bottom:18px}
-  .sec-head h2{font-size:22px;font-weight:700}
+  .sec-head h2{font-family:var(--serif);font-size:22px;font-weight:700;letter-spacing:.5px}
   .sec-head .cnt{font-size:13px;color:var(--faint)}
   .empty{color:var(--faint);font-size:14px;border:1px dashed var(--line);border-radius:12px;padding:18px;background:rgba(255,255,255,.02)}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
   .card{position:relative;background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px;transition:.18s;overflow:hidden}
   .card:hover{transform:translateY(-3px);border-color:#3a4a63;box-shadow:0 12px 30px rgba(0,0,0,.35)}
-  .card .idx{position:absolute;top:12px;right:14px;font-size:13px;font-weight:800;color:var(--accent);background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.25);border-radius:8px;padding:1px 8px;min-width:30px;text-align:center}
+  .card .idx{position:absolute;top:12px;right:14px;font-size:13px;font-weight:800;color:var(--muted);background:rgba(148,163,184,.08);border:1px solid rgba(148,163,184,.2);border-radius:8px;padding:1px 8px;min-width:30px;text-align:center}
   .card h3{font-size:14px;font-weight:600;line-height:1.5;padding-right:42px;color:var(--muted)}
   /* 监管审批里程碑高亮 */
-  .card.regulatory{border-left:3px solid var(--gold);background:linear-gradient(180deg,#1b2220,var(--bg2))}
+  .card.regulatory{border-left:3px solid var(--gold);background:linear-gradient(180deg,var(--tint-reg),var(--bg2))}
   .card.regulatory:hover{border-left-color:#f59e0b}
   .card.regulatory .idx{background:rgba(251,191,36,.15);border-color:rgba(251,191,36,.3);color:var(--gold)}
   .card.regulatory .milestone{display:inline-flex;align-items:center;gap:4px;
@@ -114,6 +128,16 @@ CSS = r'''
   .src-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
   .src-chip{font-size:12.5px;color:var(--muted);background:var(--chip);border:1px solid #2c3a4f;border-radius:999px;padding:5px 11px;display:inline-flex;align-items:center;gap:6px}
   .src-chip b{color:var(--accent);font-weight:700}
+  /* 亮/暗切换 */
+  .themeToggle{cursor:pointer;font-size:15px;line-height:1;color:var(--muted);border:1px solid var(--line);background:transparent;padding:5px 10px;border-radius:999px;transition:.15s}
+  .themeToggle:hover{color:var(--text);border-color:var(--accent)}
+  /* 分类色图例 */
+  .legend{display:flex;gap:16px;margin-top:12px;font-size:12px;color:var(--faint)}
+  .legend .lg{display:inline-flex;align-items:center;gap:6px}
+  .legend .lg::before{content:'';width:10px;height:10px;border-radius:3px}
+  .legend .gold::before{background:var(--gold)}
+  .legend .blue::before{background:#38bdf8}
+  .legend .purple::before{background:#818cf8}
   /* 里程碑徽章 */
   .ms-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:-4px;margin-bottom:2px}
   .ms-badge{font-size:11px;font-weight:600;border-radius:999px;padding:2px 9px;line-height:1.5}
@@ -126,17 +150,17 @@ CSS = r'''
   .ms-badge.deal{color:#38bdf8;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.3)}
   .ms-badge.ipo{color:#f472b6;background:rgba(244,114,182,.12);border:1px solid rgba(244,114,182,.3)}
   /* 交易速览卡片 */
-  .card.deal{border-left:3px solid #38bdf8;background:linear-gradient(180deg,#151d24,var(--bg2))}
+  .card.deal{border-left:3px solid #38bdf8;background:linear-gradient(180deg,var(--tint-deal),var(--bg2))}
   .card.deal:hover{border-left-color:#60a5fa}
   .card.deal .idx{background:rgba(56,189,248,.12);border-color:rgba(56,189,248,.25);color:#38bdf8}
   /* 政策追踪卡片 */
-  .card.policy{border-left:3px solid #818cf8;background:linear-gradient(180deg,#171720,var(--bg2))}
+  .card.policy{border-left:3px solid #818cf8;background:linear-gradient(180deg,var(--tint-policy),var(--bg2))}
   .card.policy:hover{border-left-color:#a5b4fc}
   .card.policy .idx{background:rgba(129,140,248,.12);border-color:rgba(129,140,248,.25);color:#818cf8}
   .meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
   .chip{font-size:12px;color:var(--chiptext);background:var(--chip);border:1px solid #2c3a4f;border-radius:999px;padding:3px 10px}
   .time{font-size:12px;color:var(--faint)}
-  .summary{font-size:15px;color:#dbe3ee;flex:1;line-height:1.65}
+  .summary{font-size:15px;color:var(--sumtext);flex:1;line-height:1.65}
   .foot{display:flex;align-items:center;justify-content:space-between;gap:8px}
   .more{font-size:13px;color:var(--accent);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:4px}
   .more:hover{gap:8px}
@@ -279,6 +303,20 @@ document.addEventListener('DOMContentLoaded',async()=>{
 '''
 
 
+THEME_JS = r'''
+(function(){
+  var KEY='pharma_theme';
+  function apply(t){document.documentElement.setAttribute('data-theme',t);var b=document.getElementById('themeToggle');if(b)b.textContent=(t==='light'?'🌙':'☀️');}
+  var q=new URLSearchParams(location.search).get('theme');
+  apply(q||localStorage.getItem(KEY)||'dark');
+  var b=document.getElementById('themeToggle');
+  if(b){b.addEventListener('click',function(){
+    var cur=(document.documentElement.getAttribute('data-theme')==='light')?'dark':'light';
+    apply(cur);try{localStorage.setItem(KEY,cur);}catch(e){}
+  });}
+})();
+'''
+
 def site_nav(active, with_fav=False, with_search=False):
     links = [
         ("index.html", "首页", "home"),
@@ -300,6 +338,7 @@ def site_nav(active, with_fav=False, with_search=False):
     if with_fav:
         nav += ('<button class="favToggle" id="favToggle">☆ 只看收藏</button>'
                 '<span class="favCount" id="favCount">已收藏 0 篇</span>')
+    nav += '<button class="themeToggle" id="themeToggle" title="切换亮/暗">☀️</button>'
     nav += '</div></nav>'
     return nav
 
@@ -308,6 +347,7 @@ def page_head(title, css_extra=""):
     return (f'<!DOCTYPE html>\n<html lang="zh-CN">\n<head>\n<meta charset="UTF-8">\n'
             f'<meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
             f'<title>{title}</title>\n<script src="config.js"></script>\n'
+            f'<script>try{{var q=new URLSearchParams(location.search).get("theme");document.documentElement.setAttribute("data-theme",q||localStorage.getItem("pharma_theme")||"dark");}}catch(e){{}}</script>\n'
             f'<style>{CSS}{css_extra}</style>\n</head>\n<body>\n')
 
 
@@ -355,7 +395,7 @@ def render_home(data):
         '</div></div>'
     )
     html = page_head("生物医药晨报 · 独立网站") + body + page_foot(note)
-    html = html.replace('</body>', '<script>' + SYNC_CFG_JS + FAV_JS + '</script></body>')
+    html = html.replace('</body>', '<script>' + SYNC_CFG_JS + FAV_JS + THEME_JS + '</script></body>')
     return html
 
 
@@ -378,7 +418,7 @@ def render_archive(entries):
             f'<main>{items}</main></div>')
     html = page_head("生物医药行业日报 · 历史存档") + body + page_foot(
         "收藏通过同步服务（favs.json）跨设备共享；若未配置同步服务，则自动回退为浏览器本地存储。")
-    html = html.replace('</body>', '<script>' + SYNC_CFG_JS + FAV_JS + '</script></body>')
+    html = html.replace('</body>', '<script>' + SYNC_CFG_JS + FAV_JS + THEME_JS + '</script></body>')
     return html
 
 
@@ -394,6 +434,7 @@ def render_report(data, is_latest=False):
         f'<h1>{data["reportDate"]} <span class="hl">生物医药行业日报</span></h1>'
         f'<p class="sub2">数据窗口 <b>{data["window"]}</b> · 共 <b id="totalN">0</b> 条 · 覆盖 <b>{len(channels)}</b> 个权威公开渠道</p>'
         '<div class="channels" id="channels"></div>'
+        '<div class="legend"><span class="lg gold">监管审批</span><span class="lg blue">交易速览</span><span class="lg purple">政策追踪</span></div>'
         '<div class="stats" id="stats"></div>'
         '</header>'
         '<nav class="nav"><div class="inner">'
@@ -486,7 +527,7 @@ function doSearch(q){
 '''
     html = page_head(f"生物医药晨报 · {data['reportDate']}") + body + "</body>\n</html>"
     html = html.replace('</body>',
-                        '<script>' + SYNC_CFG_JS + FAV_JS + '</script>'
+                        '<script>' + SYNC_CFG_JS + FAV_JS + THEME_JS + '</script>'
                         + script.replace("__DATA_JSON__", data_json) + '</body>')
     return html
 
