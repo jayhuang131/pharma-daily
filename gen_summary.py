@@ -73,15 +73,28 @@ def batch_translate(items, max_per_batch=40):
         for i, gi in enumerate(range(batch_start, end)):
             t = items[gi].get("title", "") or ""
             d = (items[gi].get("desc", "") or "")[:100]
-            local.append(f"[{i}] {t} || {d}" if d else f"[{i}] {t}")
+            src = items[gi].get("source", "") or ""
+            line = f"[{i}] (来源:{src}) {t}"
+            if d:
+                line += f" || {d}"
+            local.append(line)
         prompt = f"""你是生物医药新闻编辑。对下面每条新闻：
 1) 判断所属版块，只能从这 8 个里选：监管审批、临床试验、交易速览、行业动态、亦庄园区动态、论文研究、政策追踪、政策与观点
 2) 写一条 ≤60 字的中文摘要
 
+分类规则（重要）：
+- 「论文研究」只收学术论文/期刊（来源为 Europe PMC、Nat Rev Drug Discovery 等学术源）；媒体或公司 PR 即使提到 study/研究，也归「行业动态」或「临床试验」
+- 「监管审批」= FDA/NMPA 等批准、审批、标签变更
+- 「临床试验」= 阶段（I/II/III）、试验结果、适应证
+- 「交易速览」= 收购/并购/融资/licensing，含金额
+- 「政策追踪」= 医保/集采/定价/监管政策
+- 「政策与观点」= 评论/观点/editorial
+- 「亦庄园区动态」= 北京经开区相关
+
 要求：
 - 每条独立一行，格式必须是：[序号] 版块|摘要
 - 保留药名/公司名/靶点/适应证的英文原名
-- 临床进展提阶段和适应证；交易提金额和方向；论文按"期刊：关键发现"
+- 摘要按新闻风格写，简洁准确
 - 若明显不属于上述 8 个版块（非生物医药），输出：[序号] 丢弃|无
 
 新闻列表：
@@ -187,6 +200,9 @@ def main():
             missing += 1
         if sec not in so_valid:
             sec = classify(it.get("title", ""), it.get("desc", ""), it.get("section", "行业动态"))
+        # 硬规则：论文研究只保留学术源，媒体稿即使提 study 也不算论文
+        if sec == "论文研究" and it.get("source") not in ("Europe PMC", "Nat Rev Drug Discovery"):
+            sec = "行业动态"
         it["section"] = sec
         secs[sec].append(it)
         kept += 1
