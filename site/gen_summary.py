@@ -29,16 +29,34 @@ NOISE_KW = [
     "lindblad expeditions", "décor", "furniture",
 ]
 
-# ---------- DeepSeek 批量翻译 ----------
+# 生物医药相关性关键词（PRNewswire 等泛科技源必须命中其一才保留）
+BIOTECH_KW = [
+    "药", "制药", "临床", "试验", "获批", "疗法", "肿瘤", "癌症", "抗体", "双抗",
+    "靶点", "新药", "适应症", "管线", "疫苗", "细胞", "基因", "论文", "期刊",
+    "biopharm", "pharma", "drug", "clinical", "trial", "fda", "approval",
+    "therapy", "vaccine", "antibody", "oncolog", "medic", "biosimilar",
+    "biotech", "gene", "cell", "patient", "treatment", "pipeline", "preclinical",
+    "target", "dose", "efficacy", "safety", "immune", "cancer", "tumor",
+]
 
 def filter_items(raw):
     """噪音过滤 + 去重"""
     seen, clean = set(), []
     for it in raw:
-        blob = (it.get("title", "") + " " + it.get("desc", "")).lower()
+        title = it.get("title", "") or ""
+        desc = it.get("desc", "") or ""
+        src = it.get("source", "") or ""
+        blob = (title + " " + desc).lower()
+        # 通用噪音词
         if any(k in blob for k in NOISE_KW):
             continue
-        key = it.get("url") or it["title"][:40].lower()
+        # SEC 8-K 备案 / MarketBeat 等聚合垃圾
+        if title.lower().startswith("8-k") or "marketbeat" in src.lower():
+            continue
+        # PRNewswire 泛科技源：无生物医药关键词则丢弃
+        if src == "PRNewswire BioTech" and not any(k in blob for k in BIOTECH_KW):
+            continue
+        key = it.get("url") or title[:40].lower()
         if key in seen:
             continue
         seen.add(key)
@@ -47,69 +65,58 @@ def filter_items(raw):
 
 
 def batch_translate(items, max_per_batch=40):
-    """发送给 DeepSeek 批量翻译标题 + 生成中文摘要"""
-    # 构建批量 prompt
-    titles = []
-    for idx, it in enumerate(items):
-        src = it.get("source", "").replace("·经开区官网", "")
-        t = it.get("title", "")
-        titles.append(f"[{idx}] {t}")
-
-    # 分批
+    """发送给 DeepSeek：分类 + 中文摘要（输出格式：[序号] 版块|摘要）"""
     all_results = {}
-    for batch_start in range(0, len(titles), max_per_batch):
-        batch = titles[batch_start:batch_start + max_per_batch]
-        # 用局部编号发给 DeepSeek，解析时加回 batch_start
-        local_titles = []
-        for local_i, global_i in enumerate(range(batch_start, min(batch_start + max_per_batch, len(titles)))):
-            local_titles.append(f"[{local_i}] {items[global_i].get('title','')}")
-        prompt = f"""你是一个生物医药新闻编辑。请将以下每条英文/中文新闻标题翻译为简洁的中文摘要（≤60字）。
+    for batch_start in range(0, len(items), max_per_batch):
+        end = min(batch_start + max_per_batch, len(items))
+        local = []
+        for i, gi in enumerate(range(batch_start, end)):
+            t = items[gi].get("title", "") or ""
+            d = (items[gi].get("desc", "") or "")[:100]
+            local.append(f"[{i}] {t} || {d}" if d else f"[{i}] {t}")
+        prompt = f"""你是生物医药新闻编辑。对下面每条新闻：
+1) 判断所属版块，只能从这 8 个里选：监管审批、临床试验、交易速览、行业动态、亦庄园区动态、论文研究、政策追踪、政策与观点
+2) 写一条 ≤60 字的中文摘要
 
 要求：
-- 每条摘要独立一行，格式为 "[序号] 摘要"
-- 保留关键实体（药名/公司名/靶点/适应证）的英文原名
-- 中文主语优先，表达专业、简洁
-- 临床进展提及阶段和适应证
-- 交易并购提及金额和方向
-- 论文按 "期刊：关键发现" 格式
+- 每条独立一行，格式必须是：[序号] 版块|摘要
+- 保留药名/公司名/靶点/适应证的英文原名
+- 临床进展提阶段和适应证；交易提金额和方向；论文按"期刊：关键发现"
+- 若明显不属于上述 8 个版块（非生物医药），输出：[序号] 丢弃|无
 
 新闻列表：
-{chr(10).join(local_titles)}"""
-
+{chr(10).join(local)}"""
         payload = json.dumps({
             "model": "deepseek-chat",
             "messages": [
-                {"role": "system", "content": "你是生物医药专业新闻摘要编辑，输出简洁准确的中文摘要。"},
+                {"role": "system", "content": "你是生物医药专业新闻编辑，负责分类与摘要。"},
                 {"role": "user", "content": prompt}
             ],
-            "temperature": 0.3,
+            "temperature": 0.2,
             "max_tokens": 4096,
             "stream": False
         }).encode("utf-8")
-
         req = urllib.request.Request(DEEPSEEK_URL, data=payload, headers={
             "Authorization": f"Bearer {DEEPSEEK_KEY}",
             "Content-Type": "application/json"
         })
         ctx = ssl.create_default_context()
-        print(f"  → 批次 {batch_start//max_per_batch+1}: {len(batch)} 条...", end=" ", flush=True)
+        print(f"  → 批次 {batch_start//max_per_batch+1}: {end-batch_start} 条...", end=" ", flush=True)
         try:
-            with urllib.request.urlopen(req, timeout=60, context=ctx) as resp:
+            with urllib.request.urlopen(req, timeout=90, context=ctx) as resp:
                 data = json.loads(resp.read().decode("utf-8"))
                 content = data["choices"][0]["message"]["content"]
             print("OK")
         except Exception as e:
             print(f"FAIL: {e}")
             continue
-
-        # 解析响应
         for line in content.strip().split("\n"):
-            m = re.match(r'\[(\d+)\]\s*(.+)', line.strip())
+            m = re.match(r'\[(\d+)\]\s*([^|]+)\|(.+)', line.strip())
             if m:
                 idx = int(m.group(1)) + batch_start
-                summary = m.group(2).strip()[:60]
-                all_results[idx] = summary
-
+                if idx >= len(items):
+                    continue
+                all_results[idx] = {"section": m.group(2).strip(), "summary": m.group(3).strip()[:60]}
     return all_results
 
 
@@ -162,31 +169,45 @@ def main():
     secs = {k: [] for k in so}
     missing = 0
 
+    so_valid = set(so)
+    kept = 0
+    dropped = 0
+    missing = 0
     for idx, it in enumerate(clean):
-        s = summaries.get(idx)
-        if s:
-            it["summary"] = s[:60]
+        r = summaries.get(idx) or {}
+        sec = (r.get("section") or "").strip()
+        summ = (r.get("summary") or "").strip()
+        if sec == "丢弃" or summ == "无":
+            dropped += 1
+            continue
+        if summ:
+            it["summary"] = summ[:60]
         else:
             it["summary"] = it.get("title", "")[:60]
             missing += 1
+        if sec not in so_valid:
+            sec = classify(it.get("title", ""), it.get("desc", ""), it.get("section", "行业动态"))
+        it["section"] = sec
+        secs[sec].append(it)
+        kept += 1
 
-        it["section"] = classify(it.get("title", ""), it.get("desc", ""), it.get("section", "行业动态"))
-        secs[it["section"]].append(it)
-
-    print(f"DeepSeek 翻译: {len(clean)-missing}/{len(clean)} 条成功")
+    print(f"DeepSeek 分类+摘要: 保留 {kept} 条，丢弃 {dropped} 条，标题兜底 {missing} 条")
 
     ch = [
         {"name": "Endpoints News", "home": "https://endpts.com/"},
         {"name": "STAT News", "home": "https://www.statnews.com/"},
+        {"name": "Fierce Biotech", "home": "https://www.fiercebiotech.com/"},
         {"name": "BioPharma Dive", "home": "https://www.biopharmadive.com/"},
         {"name": "GEN", "home": "https://www.genengnews.com/"},
         {"name": "Pharma Times", "home": "https://www.pharmatimes.com/"},
         {"name": "Pharmaceutical Executive", "home": "https://www.pharmexec.com/"},
+        {"name": "PRNewswire BioTech", "home": "https://www.prnewswire.com/biotechnology/"},
         {"name": "Nat Rev Drug Discovery", "home": "https://www.nature.com/nrd/"},
         {"name": "ClinicalTrials.gov", "home": "https://clinicaltrials.gov/"},
         {"name": "Europe PMC", "home": "https://europepmc.org/"},
         {"name": "北京亦庄·经开区官网", "home": "https://kfqgw.beijing.gov.cn/"},
         {"name": "SEC EDGAR", "home": "https://www.sec.gov/"},
+        {"name": "Recursion IR", "home": "https://ir.recursion.com/"},
     ]
 
     d = datetime.now()
