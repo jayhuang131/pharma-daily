@@ -43,7 +43,7 @@ def http_curl(url, timeout=15):
     """通过 curl 子进程抓取（绕过 Cloudflare TLS 指纹检测）。"""
     try:
         result = subprocess.run(
-            ["curl", "-sS", "--connect-timeout", str(timeout), "--max-time", str(timeout + 5),
+            ["curl", "-sS", "-L", "--connect-timeout", str(timeout), "--max-time", str(timeout + 5),
              "-H", "Accept: */*", url],
             capture_output=True, timeout=timeout + 10)
         if result.returncode == 0:
@@ -52,8 +52,8 @@ def http_curl(url, timeout=15):
     except subprocess.TimeoutExpired:
         raise Exception("curl timeout")
 
-# GEN 等站点的 Cloudflare TLS 指纹只放行 curl，urllib 会被 403
-CURL_SOURCES = {"GEN", "BioPharma Dive"}
+# GEN / Fierce / PharmaTimes 等站点的 Cloudflare TLS 指纹只放行 curl，urllib 会被 403
+CURL_SOURCES = {"GEN", "BioPharma Dive", "Fierce Biotech", "Pharma Times"}
 
 def reachable(host, timeout=10):
     """快速连通性预检，避免被墙/不可达主机长时间阻塞。失败自动重试一次。"""
