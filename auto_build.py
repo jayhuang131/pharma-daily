@@ -26,15 +26,16 @@ subprocess.run([PY, "pharma_build.py", "pharma_final.json"], check=False)
 
 # ----- Step 4: 同步到 site/ -----
 print("===== Step 4: sync to site/ =====")
+import shutil, glob as _glob
 site_files = ["index.html", "latest.html", "archive.html", "archive_meta.json",
-              "pharma_final.json", "config.js", "pharma_fetch.py", "pharma_build.py",
+              "pharma_final.json", "config.js", "weekly.html", "pharma_fetch.py", "pharma_build.py",
               "gen_summary.py", "auto_build.py"]
-for f in site_files:
+for f in site_files + _glob.glob("report-*.html"):
     if os.path.exists(f):
-        subprocess.run(["cp", f, "site/"], check=False)
-import glob as _glob
-for f in _glob.glob("report-*.html"):
-    subprocess.run(["cp", f, "site/"], check=False)
+        try:
+            shutil.copy(f, "site/")
+        except Exception as e:
+            print(f"  copy {f} failed: {e}")
 
 # ----- Step 5: git push -----
 print("===== Step 5: git push =====")
