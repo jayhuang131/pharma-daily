@@ -6,6 +6,7 @@ cd /d %~dp0
 set "PATH=C:\Users\zijia\.workbuddy\vendor\PortableGit\cmd;%PATH%"
 set "HTTP_PROXY=http://127.0.0.1:10808"
 set "HTTPS_PROXY=http://127.0.0.1:10808"
+set "PYTHONUTF8=1"
 
 set "LOG=%~dp0auto_run.log"
 echo. >> "%LOG%"
