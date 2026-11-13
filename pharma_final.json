@@ -1,6 +1,6 @@
 {
- "reportDate": "2026-11-13",
- "window": "2026-11-10 ~ 2026-11-13",
+ "reportDate": "2026-11-14",
+ "window": "2026-11-11 ~ 2026-11-14",
  "channels": [
   {
    "name": "Endpoints News",
@@ -64,6 +64,15 @@
    "label": "监管审批",
    "items": [
     {
+     "title": "FDA Approves Durvalumab-Enfortumab Vedotin for Cisplatin-Ineligible MIBC",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNM2V1UjMzbzk5WURhY2s1aXJKczdfQnJBR0ZuTVJLVDJ1TXJvSTBJYW9ZVUtjR28xRjh1VmIwc3gxSlkzcjZCVklES2lnbEtCbGRFS3IxM3NtY2lhVWdWaUJxZGRsTUhfWm5XQWdaOFNrYjFhNHlUbDNKOUM4T2t6R2lQSTFnd0xFUXlrTGsyQWtMYWtYUTVsWHM2bjRYbFNjODBiVjBONXNWRzla?oc=5",
+     "source": "Oncology Nursing News",
+     "time": "2026-11-13T18:55:28Z",
+     "desc": "FDA Approves Durvalumab-Enfortumab Vedotin for Cisplatin-Ineligible MIBC Oncology Nursing News",
+     "section": "监管审批",
+     "summary": "FDA批准Durvalumab-Enfortumab Vedotin用于不适合顺铂的MIBC患者。"
+    },
+    {
      "title": "NervGen Receives FDA Breakthrough Therapy Designation for NVG-291 in Chronic Spinal Cord Injury",
      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNblIwNTZIVlotREFJYWNuM2k4bGVyR1dFZG1tOFVDTlhBOUxMekRWR3Atc0RfYW9ud2tvMmQ4N1laS25oLW1tQTJDUDJLbjZWRDlkcnU0RnRZLW9yVTlJOWxTajhzazNDNFRmd05peDEzcEVTR3pUakRNQ0FPcmVIakZwaFh3N0ZZSUlnVVhmTnVqUEsyMlVEUldvczVLa0tnMmpKSE9jTmJ1b0xwT2lQUHg5SVhIUjRwSVQ4WGxIaUhiMUJUUnlISzhRME5mUTdSOWVJcnAwODUxczVBUTFkMUhKLWVRcFp4TlZ1eEl4SjdaTG9wbGlaSEZlbjhtLVNvR2pVMHB5SXliZ0hiYlE?oc=5",
      "source": "The Globe and Mail",
@@ -79,70 +88,25 @@
      "time": "2026-11-11T23:36:35Z",
      "desc": "Drug Approval Marks Another Win for Merck KGaA’s Rare Tumor Strategy MedCity News",
      "section": "监管审批",
-     "summary": "Merck KGaA的Pimjetmi获批，罕见肿瘤战略再下一城。"
+     "summary": "Merck KGaA罕见肿瘤药物获批，为其罕见肿瘤战略再添一胜。"
     },
     {
-     "title": "Pharmaceutical Executive Daily: FDA Approves Pimjetmi",
-     "url": "https://www.pharmexec.com/view/daily-fda-approves-pimjetmi",
+     "title": "AstraZeneca pulls EU filing for antibody as CHMP backs Gazyvaro in lupus",
+     "url": "https://endpoints.news/astrazeneca-pulls-eu-filing-for-antibody-as-chmp-backs-gazyvaro-in-lupus/",
+     "source": "Endpoints News",
+     "time": "2026-11-13T18:01:59Z",
+     "desc": "AstraZeneca has withdrawn its European marketing application for a monoclonal antibody in a subset of amyloidosis patients. The candidate had previously failed two late-stage studies in a broader population, but the drugmaker then said that ...",
+     "section": "监管审批",
+     "summary": "阿斯利康撤回某单抗欧盟上市申请；CHMP支持Gazyvaro用于狼疮。"
+    },
+    {
+     "title": "FDA Pauses Commissioner’s National Priority Voucher Program: Report",
+     "url": "https://www.pharmexec.com/view/fda-shelves-commissioner-national-priority-voucher-program-report",
      "source": "Pharmaceutical Executive",
-     "time": "2026-11-11T19:51:28Z",
-     "desc": "FDA approves Merck KGaA’s Pimjetmi for tenosynovial giant cell tumor, Parexel’s Stacy Hurt on when patient input should enter the clinical research process, and Ignite Proteomics’ Dr. Brian Corgiat on adjusting for tumor mutations in treatment decisions.",
+     "time": "2026-11-13T15:45:29Z",
+     "desc": "FDA Commissioner’s National Priority Voucher program reportedly in limbo for expedited drug reviews.",
      "section": "监管审批",
-     "summary": "FDA批准Merck KGaA的Pimjetmi，用于腱鞘巨细胞瘤。"
-    },
-    {
-     "title": "FDA Approves Pimicotinib for Tenosynovial Giant Cell Tumor",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUHhGcGMyOTBhR2lKa0FTd1BGM2NTWnRHakhQSi1mQk5QV0VQZ041X3Q1MkNyeE54YW5acTR2NVIwNW41djFrRTdKbjc5aG9CTE9TZ2IxbTBFVGNWa3JrU1ZtNFJYeXhTME1uOFljdzlsUTdjM0ZkTjViLUg1ank5UzJSczQ1Nm8zbVhMMmI1Y3ZLaGpZSXFCWA?oc=5",
-     "source": "Pharmacy Times",
-     "time": "2026-11-11T15:56:38Z",
-     "desc": "FDA Approves Pimicotinib for Tenosynovial Giant Cell Tumor Pharmacy Times",
-     "section": "监管审批",
-     "summary": "FDA批准pimicotinib用于腱鞘巨细胞瘤。"
-    },
-    {
-     "title": "FDA Approves Pimjetmi for Patients With Tenosynovial Giant Cell Tumor",
-     "url": "https://www.pharmexec.com/view/fda-approves-pimjetmi-patients-tenosynovial-giant-cell-tumor",
-     "source": "Pharmaceutical Executive",
-     "time": "2026-11-11T14:51:22Z",
-     "desc": "FDA has approved Merck KGaA’s Pimjetmi, an oral CSF-1R inhibitor, for adults with symptomatic tenosynovial giant cell tumors.",
-     "section": "监管审批",
-     "summary": "FDA批准口服CSF-1R抑制剂Pimjetmi，用于症状性腱鞘巨细胞瘤成人患者。"
-    },
-    {
-     "title": "Pharmaceutical Executive Daily: FDA Requires Safety Label Update on GLP-1 Receptor Agonist",
-     "url": "https://www.pharmexec.com/view/daily-fda-requires-safety-label-update-glp1-receptor-agonist",
-     "source": "Pharmaceutical Executive",
-     "time": "2026-11-10T19:00:00Z",
-     "desc": "FDA approves Bayer’s asundexian as the first Factor XIa inhibitor for secondary stroke prevention, the FDA requires a new safety label warning across all GLP-1 receptor agonists for a potential NAION risk, and AstraZeneca acquires Omniose to add a bioconjugation platform to its vaccine pipeline.",
-     "section": "监管审批",
-     "summary": "FDA要求GLP-1受体激动剂更新安全标签；Bayer的asundexian获批为首个Factor XIa抑制剂。"
-    },
-    {
-     "title": "FDA Approves PIMJETMI® (pimicotinib) for Patients with Tenosynovial Giant Cell Tumor",
-     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNYzNRX1NTd2Y0TzVtY09sRVRmRHdrOXJsVHBtTW5aUzc1WVZYQWhhNDNrUHVqLVk3bkdxcmw2VWFtOHA5ODdEVUZ3TkViR0Z4enBDU2FTYXRaQXAwNlJkQVdCMFVBWEduZ1lWbmhxRjRCNDIzaVRNbENtTnNEU0lWNV84R0pKbC0yWDMwUzJKTkZJMGhTdzR1QmxlbDB2QjN0NlRKa0wyYUl1M2UxWWFFZGRnU2c2dnI1c0ZIay1MN2pBUnZ5dF9iNFFoNV9RSGYxVFE3cg?oc=5",
-     "source": "Business Wire",
-     "time": "2026-11-10T18:14:00Z",
-     "desc": "FDA Approves PIMJETMI® (pimicotinib) for Patients with Tenosynovial Giant Cell Tumor Business Wire",
-     "section": "监管审批",
-     "summary": "FDA批准PIMJETMI（pimicotinib）用于腱鞘巨细胞瘤患者。"
-    },
-    {
-     "title": "STAT+: Pharmalittle: We’re reading about FDA shelving fast-track review, a Canadian importer arrested, and more",
-     "url": "https://www.statnews.com/pharmalot/2026/11/12/fda-fast-track-review-shelved-canadian-importer-arrested/?utm_campaign=rss",
-     "source": "STAT News",
-     "time": "2026-11-12T14:14:55Z",
-     "desc": "The FDA has shelved the fast-track drug review initiative launched in June 2025 by former Commissioner Marty Makary",
-     "section": "监管审批",
-     "summary": "FDA搁置2025年6月启动的快速通道药物审评计划，另有一名加拿大进口商被捕。"
-    },
-    {
-     "title": "Shanton Pharma Receives EMA and FDA Pediatric Study Waivers for SAP-001 in Hyperuricemia",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQY3ZYM0s4cko4YVhlWmwzejFrNDY3a3VmVUwwX2FBRi1uUGx1Q280TnN3VVBhdjM4X2E1QXVHdzY4QUJyVi1Kc3otVF8ydlFGNHoyUFRhcG5JTUc1cXBUdWFYSFU4UEJTUGRldVJ3b1BPb1d3MWZkOWE5VmIzamlIMFdTaDM1Q0p6YzY0WmFETVZNN2VJeUYtNUlaM0RSajhHTk9mUW5iMnJwdVJmY0RVQzFvUjd5dw?oc=5",
-     "source": "Macau Business",
-     "time": "2026-11-11T13:35:38Z",
-     "desc": "Shanton Pharma Receives EMA and FDA Pediatric Study Waivers for SAP-001 in Hyperuricemia Macau Business",
-     "section": "监管审批",
-     "summary": "Shanton Pharma的SAP-001获EMA和FDA儿童研究豁免，用于高尿酸血症。"
+     "summary": "据报道FDA暂停专员国家优先审评券项目，加速药物审评陷停滞"
     },
     {
      "title": "NICE backs PADCEV and KEYTRUDA combination",
@@ -151,25 +115,7 @@
      "time": "2026-11-11T10:53:47Z",
      "desc": "Recommendation expands options for bladder cancer",
      "section": "监管审批",
-     "summary": "NICE推荐PADCEV与KEYTRUDA联合方案，扩大膀胱癌治疗选择。"
-    },
-    {
-     "title": "Merck KGaA lands FDA nod in rare tumor disorder, portending Ono, Daiichi showdown",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMFRvbkJoanZQWGVfQWNGbzV2NEZHRV9zdXVBWjBBMVlUOFZXQmMzM0xiQ0t1QlRNbWxlVVF5bnpJb0xHNGRTc1JyMnpNSmpZSGpEb3NRekNVZzhtNVVTdDhPR09OLWx2aTB3ZzM5NjJpN0pWWFJnYnRVTGczb28tMUp6M2YtVUU?oc=5",
-     "source": "Fierce Pharma",
-     "time": "2026-11-10T22:45:36Z",
-     "desc": "Merck KGaA lands FDA nod in rare tumor disorder, portending Ono, Daiichi showdown Fierce Pharma",
-     "section": "监管审批",
-     "summary": "Merck KGaA罕见肿瘤药物获FDA批准，预示与Ono、Daiichi竞争。"
-    },
-    {
-     "title": "First factor XIa inhibitor nabs FDA approval for stroke prevention",
-     "url": "https://www.nature.com/articles/d41573-026-00180-9",
-     "source": "Nat Rev Drug Discovery",
-     "time": "2026-11-10T16:00:00Z",
-     "desc": "Nature Reviews Drug Discovery, Published online: 11 November 2026; doi:10.1038/d41573-026-00180-9 First factor XIa inhibitor nabs FDA approval for stroke prevention",
-     "section": "监管审批",
-     "summary": "首个factor XIa抑制剂获FDA批准用于卒中预防。"
+     "summary": "NICE推荐PADCEV与KEYTRUDA联合方案，扩大膀胱癌治疗选择"
     }
    ]
   },
@@ -177,118 +123,127 @@
    "label": "临床试验",
    "items": [
     {
+     "title": "Final trial results show promising long-term survival with lenvatinib plus pembrolizumab in advanced thymic tumors",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWDBKRVJjd1lHdkRkbVEwTkw0Y0M1ZjJfcmtTSGJYbFVmOHhvODdjLWdhcUxlZlRBOHRBLTRRWWJxcWhRTFBXS2pMMjh1QkNyUU12elUyU2JzalJCNEd0ZVVNN0ttWWNsZlNqNVdHdWRNOTBuZDdVMEMtUzBMakN4TDZFcjVBd3djSVE?oc=5",
+     "source": "Medical Xpress",
+     "time": "2026-11-13T18:20:07Z",
+     "desc": "Final trial results show promising long-term survival with lenvatinib plus pembrolizumab in advanced thymic tumors Medical Xpress",
+     "section": "临床试验",
+     "summary": "lenvatinib联合pembrolizumab治疗晚期胸腺肿瘤最终试验显示长期生存获益。"
+    },
+    {
+     "title": "JAMA Network Open Publishes Quality of Life and Pain Outcomes Data from Phase 3 PANOVA-3 Trial of Novocure’s Tumor Treating Fields for Pancreatic Cancer",
+     "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPQkJTQThsRXNPQ2p5WDdteklHcFhQZG4xQzVTZmhDRHE4QkhQOFJaUHMxVWs3UkVIbzBJZXNxb0RxMXZmR0dwUm1yR1dvdmJock1lUTY5WEZUZUEyV09Xcm0zWWpVUGpvNXA2OV9vS1VHM3ROYVpKZHZJQ3hsclFtSDIwQXcteEdUQ2RKWTBMWlMybEl5UGU3emlYZ1FqamgzNnVMUnlQNk5Dbk52YnRnXzZJWDd0SF9HS3NLb3dKUjYtNW53UERmaEVPTVFvWWp6Q1RuektEOE1Xc29WclBnQjJpd1pNUUJJTjFvejh3Rl9ieHBqeGdDUTNBZXNFMDBteG5DWmJiWExndkdvUUhTT2JtTFJhd1RTY2FXUklIaEVfWWtuazVsSDNGR3NQclRCdWc?oc=5",
+     "source": "Business Wire",
+     "time": "2026-11-13T16:30:00Z",
+     "desc": "JAMA Network Open Publishes Quality of Life and Pain Outcomes Data from Phase 3 PANOVA-3 Trial of Novocure’s Tumor Treating Fields for Pancreatic Cancer Business Wire",
+     "section": "临床试验",
+     "summary": "JAMA Network Open发表Novocure肿瘤电场治疗胰腺癌III期PANOVA-3生活质量与疼痛数据。"
+    },
+    {
+     "title": "Brain implant startup pauses trials",
+     "url": "https://www.statnews.com/2026/11/13/health-news-brain-implant-startup-pauses-trials/?utm_campaign=rss",
+     "source": "STAT News",
+     "time": "2026-11-13T14:40:32Z",
+     "desc": "Synchron has paused clinical trials of its second-generation brain-computer interface. Leaders say the pause is not safety related.",
+     "section": "临床试验",
+     "summary": "脑机接口初创Synchron暂停第二代脑植入设备临床试验。"
+    },
+    {
+     "title": "Rezolute gets an uplift from phase 3 tumor hyperinsulinism win ahead of FDA meeting",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNb2duNWFTUjViWTE1SXhxb0JYVVhtenl6blRaZzJsSUsxYUlOQ2J0a0ZxbERLajh3RnEtc1c5am1JYzdhUzRFQzZIclNOS3c5cmk2MmdGMXgwbVpmaERhVXlSeDR3NkJjeFRjMW9wa2o4R3JWQjRGMFlaYlhnMG5icm1rQjRGakJtdmlFN0Q3RDk1QQ?oc=5",
+     "source": "Fierce Biotech",
+     "time": "2026-11-13T14:30:41Z",
+     "desc": "Rezolute gets an uplift from phase 3 tumor hyperinsulinism win ahead of FDA meeting Fierce Biotech",
+     "section": "临床试验",
+     "summary": "Rezolute肿瘤相关高胰岛素血症III期试验告捷，将赴FDA会议。"
+    },
+    {
+     "title": "A Study of Tersolisib (LY4064809) and Abemaciclib With Hormone Therapies in Participants With PIK3CA-Mutated Early Breast Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT07935317",
+     "source": "ClinicalTrials.gov",
+     "time": "2026-11-12T16:00:00Z",
+     "desc": "登记号 NCT07935317；申办方 Eli Lilly and Company；适应症 Breast Neoplasms。The main purpose of this study is to compare two ways of giving the anti-cancer medicines abemaciclib and hormone therapy with tersolisib in participants with early breast cancer that has a genetic mutation (PIK3CA mutat",
+     "section": "临床试验",
+     "_nct": "NCT07935317",
+     "summary": "礼来登记NCT07935317，评估Tersolisib联合Abemaciclib治疗PIK3CA突变早期乳腺癌。"
+    },
+    {
      "title": "GENFIT highlights nangibotide potential in ACLF",
      "url": "https://pharmatimes.com/news/genfit-highlights-nangibotide-potential-in-aclf/",
      "source": "Pharma Times",
      "time": "2026-11-12T10:53:30Z",
      "desc": "Phase 2 data expected during 2027",
      "section": "临床试验",
-     "summary": "GENFIT公布nangibotide在ACLF中的潜力，II期数据预计2027年读出。"
+     "summary": "GENFIT称nangibotide在ACLF具潜力，II期数据预计2027年公布。"
     },
     {
-     "title": "Beam’s base editing therapy for sickle cell hits goal in pivotal trial",
-     "url": "https://www.biopharmadive.com/news/beam-sickle-cell-base-editing-risto-cel-results/874242/",
-     "source": "BioPharma Dive",
-     "time": "2026-11-10T17:06:00Z",
-     "desc": "The result represents a scientific milestone and positions Beam to submit a first-of-its-kind FDA application as soon as the end of the year.",
+     "title": "Phase I Trial of Subcutaneous VDJ010 In Healthy Subjects and Patients With Ulcerative Colitis",
+     "url": "https://clinicaltrials.gov/study/NCT07932691",
+     "source": "ClinicalTrials.gov",
+     "time": "2026-11-11T16:00:00Z",
+     "desc": "登记号 NCT07932691；申办方 Beijing VDJBio Co., LTD.；适应症 Ulcerative Colitis (UC)。This study adopted a multi-center, randomized, double-blind, placebo-controlled, single- and multiple-ascending dose design, using recombinant human IL-2 fusion protein (VDJ010) administered subcutaneously to evaluate it",
      "section": "临床试验",
-     "summary": "Beam碱基编辑疗法在镰状细胞病关键试验中达标，拟提交首创FDA申请。"
+     "_nct": "NCT07932691",
+     "summary": "北京VDJBio登记NCT07932691，评估皮下VDJ010治疗溃疡性结肠炎的I期试验。"
     },
     {
-     "title": "Novel ADC Boosts Survival in Pretreated Endometrial Cancer",
-     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1UQ3NqR0lXSHdMS3FUckFVbG1QNGF3bUEwaVVsaUppazZDTkFYTmh6UEdfMUM4U2ZSbXFxNVk5Yzk4M2t5VVdCLWxaanRCY09FOHBFbW55ZUFieV8xVkk2NURvQm43WkgtRjFHaHBjNThjTFoxQXc?oc=5",
-     "source": "MedPage Today",
-     "time": "2026-11-10T15:33:54Z",
-     "desc": "Novel ADC Boosts Survival in Pretreated Endometrial Cancer MedPage Today",
+     "title": "远大医药中药1类创新药GPN01020在中国开展的II期临床研究完成首例患者入组",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBPRlZodlloTS03RGozV3FrNjEycUp1b1ptSTB5RVEtQVRnMk9pQjBkVFA0NUlnRFhNLVJOX2l5X0o2YjhoUDhOZ2Z5NWE3RGR2aXVQaElDRFRycU1EMWRBMHQ4bWZ6UFo4eTZjTGVYS1Nqb25aUW5FWGkxbWw2UQ?oc=5",
+     "source": "ByDrug",
+     "time": "2026-11-11T03:48:30Z",
+     "desc": "远大医药中药1类创新药GPN01020在中国开展的II期临床研究完成首例患者入组 ByDrug",
      "section": "临床试验",
-     "summary": "新型ADC在经治子宫内膜癌中提升生存。"
+     "summary": "远大医药中药1类创新药GPN01020中国II期临床完成首例患者入组。"
     },
     {
-     "title": "First patient dosed in rectal cancer BT-001 trial",
-     "url": "https://pharmatimes.com/news/first-patient-dosed-in-rectal-cancer-bt-001-trial/",
-     "source": "Pharma Times",
-     "time": "2026-11-10T10:43:51Z",
-     "desc": "Phase 1 study targets hard-to-treat patients",
+     "title": "BCMA/GPRC5D Dual-Target CAR-T Cell Immunotherapy for Relapsed/Refractory Multiple Myeloma",
+     "url": "https://clinicaltrials.gov/study/NCT07927842",
+     "source": "ClinicalTrials.gov",
+     "time": "2026-11-09T16:00:00Z",
+     "desc": "登记号 NCT07927842；申办方 Chinese PLA General Hospital；适应症 Multiple Myeloma; Relapsed/Refractory Multiple Myeloma。This is a single-center, open-label, single-arm, investigator-initiated clinical study to evaluate the safety, tolerability, and preliminary efficacy of SL4903, a BCMA/GPRC5D dual-target autologous CAR-T cell injection, ",
      "section": "临床试验",
-     "summary": "直肠癌BT-001试验首例患者给药，I期针对难治患者。"
+     "_nct": "NCT07927842",
+     "summary": "解放军总医院登记NCT07927842，BCMA/GPRC5D双靶CAR-T治疗复发难治多发性骨髓瘤。"
     },
     {
-     "title": "Effects of Biased Opioid Agonists on Gastrointestinal Recovery After Gynecologic Laparoscopic Surgery",
-     "url": "https://clinicaltrials.gov/study/NCT07924306",
+     "title": "Dermal Priming in Enhancing Vaccine Immunogenicity",
+     "url": "https://clinicaltrials.gov/study/NCT07925996",
      "source": "ClinicalTrials.gov",
      "time": "2026-11-08T16:00:00Z",
-     "desc": "登记号 NCT07924306；申办方 Hainan Medical College；适应症 Gynecologic Laparoscopic Surgery、Postoperative Gastrointestinal Dysfunction。This randomized controlled clinical trial aims to evaluate the effects of different opioid analgesics on gastrointestinal recovery after gynecologic laparoscopic surgery. Opioid medications are commonly used to manage pa",
+     "desc": "登记号 NCT07925996；申办方 Cambridge University Hospitals NHS Foundation Trust；适应症 ANCA Associated Vasculitis (AAV)、IgG4 Related Disease、Glomerular Diseases。Experimental medicine study in patients receiving B cell depletion therapy administering an immune challenge with seasonal influenza vaccination with/without concurrent administration of topical imiquimod (TLR7 agonist) ",
      "section": "临床试验",
-     "_nct": "NCT07924306",
-     "summary": "NCT07924306：海南医科大学研究偏向性阿片激动剂对妇科腹腔镜术后胃肠恢复的影响。"
+     "_nct": "NCT07925996",
+     "summary": "剑桥大学医院登记NCT07925996，研究皮肤预处理增强疫苗免疫原性。"
     },
     {
-     "title": "TCM Fumigation Care for Uremic Refractory Pruritus During Hemoperfusion",
-     "url": "https://clinicaltrials.gov/study/NCT07924488",
+     "title": "Clinical Trial Evaluating the Efficacy and Safety of Navepegritide and Lonapegsomatropin in Achondroplasia",
+     "url": "https://clinicaltrials.gov/study/NCT07924059",
      "source": "ClinicalTrials.gov",
      "time": "2026-11-08T16:00:00Z",
-     "desc": "登记号 NCT07924488；申办方 Second Affiliated Hospital of Nanchang University；适应症 Refractory Pruritus。Objective: To investigate the application effect of traditional Chinese medicine (TCM) fumigation nursing intervention in uremic patients with refractory skin pruritus undergoing hemoperfusion treatment. Methods: A total",
+     "desc": "登记号 NCT07924059；申办方 Ascendis Pharma A/S；适应症 Achondroplasia。This pivotal trial is being conducted to evaluate the efficacy, safety and tolerability of dual therapy with navepegritide and lonapegsomatropin administered as separate subcutaneous (SC) injections once weekly in childr",
      "section": "临床试验",
-     "_nct": "NCT07924488",
-     "summary": "NCT07924488：南昌大学二附院研究中药熏蒸护理血液灌流中尿毒症难治性瘙痒。"
+     "_nct": "NCT07924059",
+     "summary": "Ascendis登记NCT07924059，关键试验评估navepegritide与lonapegsomatropin治"
     },
     {
-     "title": "PSMA PET/MRI for Predicting and Detecting Prostate Cancer",
-     "url": "https://clinicaltrials.gov/study/NCT07924605",
+     "title": "Ocular Changes in Patients Using Tirzepatide or Semaglutide",
+     "url": "https://clinicaltrials.gov/study/NCT07924618",
      "source": "ClinicalTrials.gov",
      "time": "2026-11-08T16:00:00Z",
-     "desc": "登记号 NCT07924605；申办方 University of Wisconsin, Madison；适应症 Prostate Cancer、High-Risk Localized Prostate Cancer、Locally Advanced Prostate Cancer。The goal of this clinical trial is to see if a drug called 18F-DCFPyL can help find prostate cancer or prostate cancer that has spread to other parts of the body. The main question it aims to answer is: * Can 18F-DCFPyL ",
+     "desc": "登记号 NCT07924618；申办方 Istanbul University；适应症 Type 2 Diabetes Mellitus、Obesity。This prospective observational study aims to evaluate ocular structural and microvascular changes in adults with obesity who are receiving semaglutide or tirzepatide as part of routine clinical care. Participants with an",
      "section": "临床试验",
-     "_nct": "NCT07924605",
-     "summary": "NCT07924605：威斯康星大学研究PSMA PET/MRI预测和检测前列腺癌。"
+     "_nct": "NCT07924618",
+     "summary": "伊斯坦布尔大学登记NCT07924618，观察tirzepatide或semaglutide使用者的眼部变化。"
     },
     {
-     "title": "Study of Ifinatamab Deruxtecan in De Novo or Treatment-Emergent Neuroendocrine Prostate Cancer",
-     "url": "https://clinicaltrials.gov/study/NCT07925268",
-     "source": "ClinicalTrials.gov",
-     "time": "2026-11-08T16:00:00Z",
-     "desc": "登记号 NCT07925268；申办方 University of California, San Francisco；适应症 Neuroendocrine Prostate Cancer (NEPC)、Metastatic Prostate Adenocarcinoma、Prostate Cancer。This is a Phase 2, open-label, single-arm study evaluating the safety and effectiveness of ifinatamab deruxtecan (I-DXd) in adult men with histologic evidence of de novo or treatment-emergent neuroendocrine prostate canc",
-     "section": "临床试验",
-     "_nct": "NCT07925268",
-     "summary": "NCT07925268：UCSF研究Ifinatamab Deruxtecan治疗神经内分泌前列腺癌。"
-    },
-    {
-     "title": "Silver Diamine Fluoride for Caries in Primary Teeth in Routine Clinical Practice",
-     "url": "https://clinicaltrials.gov/study/NCT07926828",
-     "source": "ClinicalTrials.gov",
-     "time": "2026-11-08T16:00:00Z",
-     "desc": "登记号 NCT07926828；申办方 Consorci Sanitari de l'Alt Penedès i Garraf；适应症 Dental Caries。The goal of this observational study is to learn how well and how safely silver diamine fluoride (SDF) stops tooth decay (caries) in baby teeth when it is used in routine dental care. It will include children aged 14 yea",
-     "section": "临床试验",
-     "_nct": "NCT07926828",
-     "summary": "NCT07926828：研究氟化二胺银在常规临床中治疗乳牙龋齿。"
-    },
-    {
-     "title": "Effects Of Topical Clobetasol Versus Coconut Oil Cream In The Treatment Of Oral Lichen Planus",
-     "url": "https://clinicaltrials.gov/study/NCT07924865",
-     "source": "ClinicalTrials.gov",
-     "time": "2026-11-08T16:00:00Z",
-     "desc": "登记号 NCT07924865；申办方 Abbasi Shaheed Hospital；适应症 Comparative Effectiveness、Comparative Effectiveness Study、Oral Lichen Planus。The goal of this clinical trial is to learn if coconut oil cream works to treat oral lichen planus (OLP) in adults. It will also compare its effects and safety with clobetasol, a commonly used treatment for OLP. The main",
-     "section": "临床试验",
-     "_nct": "NCT07924865",
-     "summary": "NCT07924865：比较局部氯倍他索与椰子油乳膏治疗口腔扁平苔藓。"
-    },
-    {
-     "title": "EnGene seeks comeback from May bladder cancer crash",
-     "url": "https://endpoints.news/engene-seeks-comeback-from-may-bladder-cancer-crash/",
+     "title": "Regeneron posts mid-stage POTS data; Kyverna completes CAR-T filing",
+     "url": "https://endpoints.news/regeneron-posts-mid-stage-pots-data-kyverna-completes-car-t-filing/",
      "source": "Endpoints News",
-     "time": "2026-11-12T16:15:42Z",
-     "desc": "EnGene’s latest data on its bladder cancer therapy looked better than an earlier cut in May, which had gutted the biotech’s stock after it reported underwhelming durability results. But it still remains ...",
+     "time": "2026-11-13T16:12:28Z",
+     "desc": "Plus, news about Merck KGaA, Rezolute, Vir, Orakl and Cellectis. Regeneron’s mid-stage POTS data: The biotech’s monoclonal antibody, baloncibart, given at 450 mg led to an average 11.4-beat-per-minute reduction in heart ...",
      "section": "临床试验",
-     "summary": "EnGene膀胱癌疗法最新数据优于5月表现，寻求反弹。"
-    },
-    {
-     "title": "PepGen soars on promising early data for muscular dystrophy drug",
-     "url": "https://www.biopharmadive.com/news/pepgen-myotonic-dystrophy-dm1-drug-results-freedom/874249/",
-     "source": "BioPharma Dive",
-     "time": "2026-11-10T21:48:00Z",
-     "desc": "While from a small study, the findings suggest PepGen’s therapy compares favorably to other RNA-based medicines in testing at Novartis and Dyne Therapeutics.",
-     "section": "临床试验",
-     "summary": "PepGen肌营养不良药物早期数据积极，股价大涨，小样本显示优于其他RNA疗法。"
+     "summary": "Regeneron公布POTS中期数据，Kyverna完成CAR-T申报，另涉Merck KGaA、Vir等动态"
     }
    ]
   },
@@ -300,18 +255,9 @@
      "url": "https://www.biopharmadive.com/news/windward-ipo-pricing-immune-drugs-china-deals-tezspire/874533/",
      "source": "BioPharma Dive",
      "time": "2026-11-13T01:22:00Z",
-     "desc": "The Swiss biotech has two prospects it sees as having the potential to outcompete AstraZeneca and Amgen's blockbuster asthma treatment Tezspire.",
+     "desc": "The Swiss biotech, which pocketed another $50 million through a concurrent private share sale to Sanofi, is developing a potential competitor to the blockbuster asthma treatment Tezspire.",
      "section": "交易速览",
-     "summary": "Windward以1.75亿美元IPO推进中国授权肺部药物，两款候选药拟挑战阿斯利康等竞品。"
-    },
-    {
-     "title": "Nxera signs $1.47bn AbbVie licensing deal",
-     "url": "https://pharmatimes.com/uncategorized/nxera-signs-1-47bn-abbvie-licensing-deal/",
-     "source": "Pharma Times",
-     "time": "2026-11-10T10:33:35Z",
-     "desc": "Agreement covers IBD drug candidate",
-     "section": "交易速览",
-     "summary": "Nxera与AbbVie签署14.7亿美元授权协议，覆盖IBD候选药。"
+     "summary": "Windward Bio定价1.75亿美元IPO，另获赛诺菲5000万美元私募配售。"
     },
     {
      "title": "Blackstone bets $1.5B on Pfizer’s obesity drug",
@@ -320,25 +266,25 @@
      "time": "2026-11-12T16:44:00Z",
      "desc": "The deal will support a sprawling Phase 3 program for a monthly GLP-1 shot Pfizer acquired by winning a bidding war for the drug’s previous owner, Metsera.",
      "section": "交易速览",
-     "summary": "Blackstone向Pfizer肥胖药投资15亿美元，支持每月一次GLP-1注射剂III期项目。"
+     "summary": "Blackstone向辉瑞肥胖药投资15亿美元，支持每月一次GLP-1的III期项目。"
     },
     {
-     "title": "Rezera postpones a planned $200M IPO shortly before expected debut",
-     "url": "https://endpoints.news/rezera-postpones-a-planned-200m-ipo-shortly-before-expected-debut/",
+     "title": "Argenx is spending billions to push beyond Vyvgart",
+     "url": "https://endpoints.news/argenx-is-spending-billions-to-push-beyond-vyvgart/",
      "source": "Endpoints News",
-     "time": "2026-11-12T19:52:42Z",
-     "desc": "Rezera, a biotech developing drugs for cardio and inflammatory diseases, has delayed its IPO that was scheduled for Friday, a company spokesperson confirmed to Endpoints News. The spokesperson cited “current market conditions” as the reason ...",
+     "time": "2026-11-13T18:50:58Z",
+     "desc": "Six months into her term as CEO of rare disease drugmaker argenx, Karen Massey has overseen two acquisitions worth a combined potential of about $3.4 billion as the company seeks to build a broader immunology ...",
      "section": "交易速览",
-     "summary": "Rezera推迟原定2亿美元IPO，临近预期上市。"
+     "summary": "argenx投入数十亿美元开展两笔收购，推动超越Vyvgart的业务扩张。"
     },
     {
-     "title": "BioNTech pays $205M for Scholar Rock voucher; J&J pulls back in Norway",
-     "url": "https://endpoints.news/biontech-pays-205m-for-scholar-rock-voucher-jj-pulls-back-in-norway/",
+     "title": "Windward Bio hits Nasdaq with $175M IPO, plus another $50M from Sanofi",
+     "url": "https://endpoints.news/windward-bio-hits-nasdaq-with-175m-ipo-plus-another-50m-from-sanofi/",
      "source": "Endpoints News",
-     "time": "2026-11-12T16:03:16Z",
-     "desc": "Plus, news about Vor Bio, RemeGen, Merck KGaA, Aidea, Astellas and Immuneering. BioNTech acquires PRV for $205 million: The German biotech scooped up the FDA voucher from Scholar Rock, with plans ...",
+     "time": "2026-11-13T16:30:30Z",
+     "desc": "Windward Bio, a biotech developing drugs for respiratory diseases, made its public debut after putting together $175 million in its IPO. The company began trading Friday with an initial share price {$WWB} of $17 apiece ...",
      "section": "交易速览",
-     "summary": "BioNTech以2.05亿美元购Scholar Rock优先审评券；J&J收缩挪威业务。"
+     "summary": "Windward Bio登陆纳斯达克，IPO募资1.75亿美元，另获赛诺菲5000万美元。"
     },
     {
      "title": "Pfizer and Blackstone Sign Co-Funding Deal for berobenatide",
@@ -347,25 +293,7 @@
      "time": "2026-11-12T14:35:05Z",
      "desc": "Pfizer and Blackstone Life Sciences sign a co-funding deal in which Blackstone is set to provide up to $1.5 billion through 2028 to advance berobenatide.",
      "section": "交易速览",
-     "summary": "Pfizer与Blackstone Life Sciences签署berobenatide共同资助协议。"
-    },
-    {
-     "title": "STAT+: Blackstone backs Pfizer’s bet on monthly obesity treatment",
-     "url": "https://www.statnews.com/2026/11/12/biotech-news-blackstone-backs-pfizer-bet-on-monthly-obesity-treatment/?utm_campaign=rss",
-     "source": "STAT News",
-     "time": "2026-11-12T16:31:10Z",
-     "desc": "Pfizer spent up to $10 billion to buy Metsera last year. Now, it’s bringing in private equity behemoth Blackstone to help pay for the deal.",
-     "section": "交易速览",
-     "summary": "Blackstone支持Pfizer每月一次肥胖治疗押注。"
-    },
-    {
-     "title": "Merck KGaA's writedown over Lonza deal; PharmaLogic buys Lantheus' CDMO business",
-     "url": "https://endpoints.news/merck-kgaas-writedown-over-lonza-deal-pharmalogic-buys-lantheus-cdmo-business/",
-     "source": "Endpoints News",
-     "time": "2026-11-12T15:06:12Z",
-     "desc": "Merck KGaA’s impairment hit from CDMO sale: The German conglomerate reported a €366 million ($405.8 million) impairment loss on its business sale to Lonza, according to its third-quarter earnings report Thursday. Last week, the company ...",
-     "section": "交易速览",
-     "summary": "Merck KGaA因Lonza交易计提3.66亿欧元减值；PharmaLogic收购Lantheus的CDMO业务。"
+     "summary": "辉瑞与Blackstone Life Sciences就berobenatide签署共同出资协议。"
     },
     {
      "title": "AstraZeneca buys vaccine startup; FDA issues GLP-1 safety warning",
@@ -374,7 +302,7 @@
      "time": "2026-11-11T13:42:00Z",
      "desc": "The deal gives AstraZeneca a simpler way to make conjugate vaccines. Elsewhere, a psychedelic depression drug was submitted to the FDA and an autoimmune disease-focused biotech’s shares collapsed.",
      "section": "交易速览",
-     "summary": "AstraZeneca收购疫苗初创公司；FDA发布GLP-1安全警告。"
+     "summary": "AstraZeneca收购疫苗初创公司以简化结合疫苗生产；FDA发GLP-1安全警告"
     }
    ]
   },
@@ -382,22 +310,40 @@
    "label": "行业动态",
    "items": [
     {
-     "title": "When Patient Input Should Be Collected in the Clinical Research Process",
-     "url": "https://www.pharmexec.com/view/when-patient-input-should-be-collected-clinical-research-process",
-     "source": "Pharmaceutical Executive",
-     "time": "2026-11-11T11:00:00Z",
-     "desc": "AI can make clinical trials smarter and faster, but lived patient experience remains irreplaceable in guiding research toward optimal results.",
+     "title": "Milestone cuts 20% of staff as Cardamyst sales hit $1M in Q3",
+     "url": "https://endpoints.news/milestone-cuts-20-of-staff-as-cardamyst-sales-hit-1m-in-q3/",
+     "source": "Endpoints News",
+     "time": "2026-11-13T16:19:06Z",
+     "desc": "Milestone Pharmaceuticals is cutting costs and staff following the FDA approval of its heart arrhythmia treatment, with two top executives departing the leadership team. The company said in its third-quarter earnings ...",
      "section": "行业动态",
-     "summary": "探讨临床研究中患者输入应何时收集，AI提效但患者体验不可替代。"
+     "summary": "Milestone因Cardamyst三季度销售仅100万美元，裁员20%并削减成本。"
     },
     {
-     "title": "Automation a Path to Lower Cell Therapy Costs",
-     "url": "https://www.genengnews.com/topics/bioprocessing/automation-a-path-to-lower-cell-therapy-costs/",
-     "source": "GEN",
-     "time": "2026-11-10T17:00:23Z",
-     "desc": "Australian developer Currus Bio predicts that automating the production of its candidate cancer cell therapy, CUR-001, using the Cocoon platform will reduce costs and enhance its ability to scale production as the product moves through trials. The post Automation a Path to Lower Cell Therapy Costs appeared first on GEN - Genetic Engineering and Biotechnology News .",
+     "title": "Primary Sclerosing Cholangitis Drugs in Development 2026: Pipeline Therapies, Ongoing Trials, and Companies Driving Innovation | Engitix, GRI Bio, Qing Bile Therapeutics, Sirnaomics, Cascade Pharma",
+     "url": "https://news.google.com/rss/articles/CBMi_gJBVV95cUxPRWwzS1RKemp6QlNJTWJGWi0yb2pwMS1vNnUyQkhwR1dDSzdqMk9zZDR3NEE2XzNBOHB0RDY2VTNYT3V4XzJYY20tdW9ISXZqRTJQVUhWbWdmcG02bzQ0eVFMQTlySElIN2IxVEREUVI5SW1kalBUZVllcWhOdlFyeUdwQml2MHlQQ3VjSFcyZ0RwZGJmMUpEQml1eE9RVlN1TzhWdUZZaGMxSU5BRVFDODBvRkNNanBXR0hVTkJFTDk5RlNfblQ1cDAwcHVYT0ZCcWRGMDZJenR6MllnWlRyZ2RsSG5jV1NzVktmSzgtTWd1c2hjSjBpcFNSQVlLYm9uTWUxc1BmZFFMZ0E1UExRbEhRVVpuV0hhVjdSY1dzS2NnUDFod0dCZExqekNtcDVhRnJJd2htNF9rNVR6dTBlWlhjaDZfNEhOdXhpVzBGWVRRakYtbHZ5Q3RDblpib3luVTIweVliVnVUWHJCMFVaSlYxVFZYbk1GVGRJZzdR?oc=5",
+     "source": "StreetInsider",
+     "time": "2026-11-13T15:00:20Z",
+     "desc": "Primary Sclerosing Cholangitis Drugs in Development 2026: Pipeline Therapies, Ongoing Trials, and Companies Driving Innovation | Engitix, GRI Bio, Qing Bile Therapeutics, Sirnaomics, Cascade Pharma StreetInsider",
      "section": "行业动态",
-     "summary": "Currus Bio称自动化生产可降低细胞疗法成本。"
+     "summary": "原发性硬化性胆管炎在研管线综述，涵盖Engitix、Sirnaomics等公司及在研试验。"
+    },
+    {
+     "title": "Novo submits sickle cell drug; Flagship, Gates Foundation deepen ties",
+     "url": "https://www.biopharmadive.com/news/novo-etavopivat-flagship-gates-ascidian-immuneering-neurosterix/874120/",
+     "source": "BioPharma Dive",
+     "time": "2026-11-13T14:36:00Z",
+     "desc": "Novo views the medicine, acquired in a billion-dollar deal, as a future blockbuster. Meanwhile, a pair of startups forged an RNA editing pact and Astellas lined up two new trials in pancreatic cancer.",
+     "section": "行业动态",
+     "summary": "Novo提交镰状细胞病药物申请；Flagship与盖茨基金会深化合作。"
+    },
+    {
+     "title": "This week in charts: Brain drugs are back on venture capitalists’ minds",
+     "url": "https://www.biopharmadive.com/news/charts-venture-neuroscience-oyster-vectory-acr-cell-therapy/874570/",
+     "source": "BioPharma Dive",
+     "time": "2026-11-13T14:00:00Z",
+     "desc": "Five neurology-focused startups have together raised around $450 million in the last few weeks. Elsewhere, investors had a muted response to the latest cell therapy research.",
+     "section": "行业动态",
+     "summary": "本周图表：脑部药物重回风投视野，五家神经领域初创近期合计融资约4.5亿美元。"
     },
     {
      "title": "Pharmaceutical Executive Daily: Moderna Outlines Growth Plan at 2026 Analyst Day",
@@ -406,7 +352,7 @@
      "time": "2026-11-12T19:33:26Z",
      "desc": "Moderna lays out an oncology-driven growth plan at its 2026 Analyst Day, Pfizer and Blackstone sign a co-funding deal worth up to $1.5 billion for berobenatide, and Parexel’s Stacy Hurt on how patients’ use of AI is reshaping sponsor communication.",
      "section": "行业动态",
-     "summary": "Moderna在2026分析师日公布肿瘤驱动增长计划；Pfizer与Blackstone签约。"
+     "summary": "Moderna在2026分析师日公布肿瘤驱动增长计划；辉瑞与Blackstone签约。"
     },
     {
      "title": "Bristol Myers research chief to depart in ‘evolution’ of company’s structure",
@@ -415,16 +361,106 @@
      "time": "2026-11-12T16:03:00Z",
      "desc": "Robert Plenge is leaving as part of a shift that will see the company merge together its R&D department in a bid to speed development and capitalize on new technologies.",
      "section": "行业动态",
-     "summary": "Bristol Myers研究负责人Robert Plenge将离职，公司合并研发部门。"
+     "summary": "BMS研发主管Robert Plenge将离职，公司合并研发部门调整架构。"
     },
     {
-     "title": "STAT+: Scientists debut map of basal ganglia, a key brain region involved in an array of diseases",
-     "url": "https://www.statnews.com/2026/11/12/brain-map-basal-ganglia-offers-treatment-clues-parkinsons-schizophrenia/?utm_campaign=rss",
-     "source": "STAT News",
-     "time": "2026-11-12T16:00:00Z",
-     "desc": "A massive scientific collaboration has produced the most detailed map yet of the basal ganglia, a key brain region involved in an array of psychiatric and neurologic disorders.",
+     "title": "The NYSE Welcomes vVARDIS as a Publicly Listed Company",
+     "url": "https://www.prnewswire.com/news-releases/the-nyse-welcomes-vvardis-as-a-publicly-listed-company-302939413.html",
+     "source": "PRNewswire BioTech",
+     "time": "2026-11-13T22:56:00Z",
+     "desc": "NEW YORK, Nov. 13, 2026 /PRNewswire/ -- vVARDIS (NYSE: VVVV) co-founders Dr. Haley Abivardi and Dr. Goly Abivardi aim to reshape the future of dental care with a drill-free treatment for the world's #1 non-communicable disease: cavities. vVARDIS Solves a Problem that Millions FaceTooth...",
      "section": "行业动态",
-     "summary": "科学家发布基底节详细图谱，该脑区涉及多种疾病。"
+     "summary": "vVARDIS在纽交所上市，股票代码VVVV。"
+    },
+    {
+     "title": "DCIS Cell Atlas Reveals Clues to Invasive Breast Cancer Progression",
+     "url": "https://www.genengnews.com/topics/cancer/dcis-cell-atlas-reveals-clues-to-invasive-breast-cancer-progression/",
+     "source": "GEN",
+     "time": "2026-11-13T22:04:09Z",
+     "desc": "Researchers created a detailed map of the tumor microenvironment surrounding estrogen receptor-positive ductal carcinoma in situ , which may help better predict progression to invasive breast cancer and inform on future therapeutic strategies. The post DCIS Cell Atlas Reveals Clues to Invasive Breast Cancer Progression appeared first on GEN - Genetic Engineering and Biotechnology News .",
+     "section": "行业动态",
+     "summary": "DCIS细胞图谱揭示ER阳性乳腺肿瘤微环境特征及侵袭进展线索。"
+    },
+    {
+     "title": "How Vancomycin-Resistant Enterococcus Evolved in a Danish Hospital",
+     "url": "https://www.genengnews.com/topics/infectious-diseases/how-vancomycin-resistant-enterococcus-evolved-in-a-danish-hospital/",
+     "source": "GEN",
+     "time": "2026-11-13T20:02:36Z",
+     "desc": "A genomic study reveals how genetic mutations, recombination, and resistance-carrying plasmids shaped the evolution, diversification, and decline of vancomycin-resistant Enterococcus faecium in Danish hospitals between 2012 and 2020. The post How Vancomycin-Resistant Enterococcus Evolved in a Danish Hospital appeared first on GEN - Genetic Engineering and Biotechnology News .",
+     "section": "行业动态",
+     "summary": "基因组研究揭示丹麦医院耐万古霉素肠球菌的突变、重组与质粒演化。"
+    },
+    {
+     "title": "Pharmaceutical Executive Daily: FDA Shelves CNPV Program",
+     "url": "https://www.pharmexec.com/view/daily-fda-shelves-cnpv-program",
+     "source": "Pharmaceutical Executive",
+     "time": "2026-11-13T18:01:12Z",
+     "desc": "FDA reportedly shelves its Commissioner’s National Priority Voucher program, Eli Lilly breaks ground on a $3.5 billion Pennsylvania manufacturing site for next-generation obesity treatments, and Parexel’s Stacy Hurt on how small protocol decisions can become enrollment and retention barriers.",
+     "section": "行业动态",
+     "summary": "FDA据报搁置CNPV项目；礼来举行奠基仪式。"
+    },
+    {
+     "title": "STAT+: Doctors have questions about the Watchman. Boston Scientific has a sales pitch.",
+     "url": "https://www.statnews.com/2026/11/13/investigation-boston-scientific-watchman-cardiac-implant-marketing-science/?utm_campaign=rss",
+     "source": "STAT News",
+     "time": "2026-11-13T17:55:00Z",
+     "desc": "The Boston Globe investigates if Boston Scientific's marketing of its cardiac implant, Watchman, outpaced the science.",
+     "section": "行业动态",
+     "summary": "波士顿科学Watchman心脏植入物营销引发医生疑问，媒体调查。"
+    },
+    {
+     "title": "Moderna readies commercial cancer vaccine production ahead of FDA filing",
+     "url": "https://endpoints.news/moderna-readies-commercial-cancer-vaccine-production-ahead-of-fda-filing/",
+     "source": "Endpoints News",
+     "time": "2026-11-13T16:26:47Z",
+     "desc": "MARLBOROUGH, MA — Moderna is “on track and ready” to make thousands of doses of its Merck-partnered cancer vaccine as it prepares to file a marketing application by the end of this year with the FDA ...",
+     "section": "行业动态",
+     "summary": "Moderna为Merck合作癌症疫苗做好商业化生产准备，待FDA申报。"
+    },
+    {
+     "title": "Integrated Drug Discovery Market Size Report, 2026-2033",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaHp6MnloRlZDdlFqVUlIVVIwSGlLVjlPRGNyOS03TWJPTlRTZG1GdDJXV3NlRlFCZFhSenlOWlJqYzlfQ3MyR21zeDdHQWNlRnZHSzBnNmpzVTEyZTA1Tkt0T2h1TGJHMlA3YXlGbUt6bm5zV2p2S1NkUGFSaURBOEFfUHFjQjY3b0p4NHowOFdLSGM3a0E?oc=5",
+     "source": "Grand View Research",
+     "time": "2026-11-13T15:48:47Z",
+     "desc": "Integrated Drug Discovery Market Size Report, 2026-2033 Grand View Research",
+     "section": "行业动态",
+     "summary": "Grand View Research发布2026-2033整合药物发现市场规模报告"
+    },
+    {
+     "title": "STAT+: Up and down the ladder: The latest comings and goings",
+     "url": "https://www.statnews.com/pharmalot/2026/11/13/up-down-ladder-jobs-pharma-biotech-2/?utm_campaign=rss",
+     "source": "STAT News",
+     "time": "2026-11-13T15:48:14Z",
+     "desc": "From new hires to departures, promotions and transfers, here are the latest comings and goings in the pharmaceutical industry.",
+     "section": "行业动态",
+     "summary": "STAT+人事升降榜：生物医药领域最新招聘、离职与晋升动态"
+    },
+    {
+     "title": "Downstream Processing: Purifying Complex Antibody Therapeutics When Target Molecules Misbehave",
+     "url": "https://www.genengnews.com/multimedia/webinars/downstream-processing-purifying-complex-antibody-therapeutics-when-target-molecules-misbehave/",
+     "source": "GEN",
+     "time": "2026-11-13T15:39:32Z",
+     "desc": "In this GEN webinar, downstream process development and scale up manufacturing specialists will discuss practical strategies for building robust purification processes when the target molecule misbehaves. The post Downstream Processing: Purifying Complex Antibody Therapeutics When Target Molecules Misbehave appeared first on GEN - Genetic Engineering and Biotechnology News .",
+     "section": "行业动态",
+     "summary": "GEN网络研讨会聚焦复杂抗体疗法下游纯化工艺开发与放大"
+    },
+    {
+     "title": "Eli Lilly Breaks Ground on $3.5 billion Pennsylvania Manufacturing Site",
+     "url": "https://www.pharmexec.com/view/eli-lilly-breaks-ground-3-billion-pennsylvania-manufacturing-site",
+     "source": "Pharmaceutical Executive",
+     "time": "2026-11-13T14:39:09Z",
+     "desc": "Eli Lilly breaks ground on a $3.5 billion manufacturing facility in Pennsylvania to produce next-generation obesity treatments like retatrutide.",
+     "section": "行业动态",
+     "summary": "Eli Lilly在宾夕法尼亚州破土动工35亿美元生产基地，生产下一代药物"
+    },
+    {
+     "title": "Gubra CEO gets the quick hook; Ex-HHS official Brett Giroir takes over at cancer biotech",
+     "url": "https://endpoints.news/gubra-ceo-gets-the-quick-hook-ex-hhs-official-brett-giroir-takes-over-at-cancer-biotech/",
+     "source": "Endpoints News",
+     "time": "2026-11-13T12:00:11Z",
+     "desc": "→ AbbVie and Boehringer Ingelheim’s Danish obesity partner Gubra is going with a co-CEO arrangement after the abrupt departure of Markus Rohrwild. Endpoints News just spoke with Rohrwild last month about Gubra’s ...",
+     "section": "行业动态",
+     "summary": "Gubra任命联席CEO，前HHS官员Brett Giroir接掌一家癌症生物技术公司"
     },
     {
      "title": "Reference Genomes of Malaria-Causing Plasmodium Parasites Completed",
@@ -433,7 +469,7 @@
      "time": "2026-11-12T23:44:45Z",
      "desc": "Using DNA sequenced from patient blood samples, researchers assembled complete reference genomes of neglected malaria parasites, uncovering genetic regions potentially involved in immune evasion and providing new tools for disease surveillance. The post Reference Genomes of Malaria-Causing Plasmodium Parasites Completed appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "行业动态",
-     "summary": "利用患者血液样本测序，完成疟原虫完整参考基因组。"
+     "summary": "基于患者血样测序，研究人员完成疟原虫完整参考基因组组装"
     },
     {
      "title": "High Frequency of Drug-Impacting Gene Variants Found in All of Us Cohort",
@@ -442,16 +478,7 @@
      "time": "2026-11-12T20:17:04Z",
      "desc": "A study finds that everyone in a diverse, nearly 100,000-person sample carried at least one genetic variant that affects how their body processes medications, and a quarter of those people had been prescribed a medication that is known to be impacted by the variant they carried. The post High Frequency of Drug-Impacting Gene Variants Found in All of Us Cohort appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "行业动态",
-     "summary": "All of Us队列研究发现影响药物基因变异高频出现。"
-    },
-    {
-     "title": "Google's Gemini is getting in the health AI game",
-     "url": "https://endpoints.news/gemini-getting-in-the-health-ai-game/",
-     "source": "Endpoints News",
-     "time": "2026-11-12T19:39:53Z",
-     "desc": "This week, Google launched Gemini for healthcare. Google has long been a fixture in health, helping hospitals store data in Google Cloud, selling a wellness device through Fitbit and spinning out startups such as Verily ...",
-     "section": "行业动态",
-     "summary": "Google推出医疗版Gemini，加码健康AI。"
+     "summary": "All of Us队列研究发现近10万人样本中人人携带至少一种影响药物的基因变异"
     },
     {
      "title": "Neuroprotective Protein Atlas Positions the Blood-Brain Barrier as a Selective Checkpoint",
@@ -460,7 +487,7 @@
      "time": "2026-11-12T18:59:49Z",
      "desc": "The blood-brain barrier keeps most proteins in the bloodstream out of the brain, but not all. The pathways that import them are damaged early in Alzheimer’s disease models, hinting at new ways to treat the disease. The post Neuroprotective Protein Atlas Positions the Blood-Brain Barrier as a Selective Checkpoint appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "行业动态",
-     "summary": "神经保护蛋白图谱将血脑屏障定位为选择性检查点。"
+     "summary": "神经保护蛋白图谱揭示血脑屏障作为选择性检查点的作用机制"
     },
     {
      "title": "Moderna Lays Out Oncology-Driven Growth Plan at 2026 Analyst Day",
@@ -469,7 +496,7 @@
      "time": "2026-11-12T15:10:22Z",
      "desc": "Moderna used its 2026 Analyst Day to outline an oncology-driven growth strategy anchored by intismeran and other cancer antigen therapies.",
      "section": "行业动态",
-     "summary": "Moderna在2026分析师日公布以肿瘤为核心的 growth 战略，锚定intismer。"
+     "summary": "Moderna在2026分析师日公布以intismeran为核心的肿瘤驱动增长战略"
     },
     {
      "title": "The FDA has over 1k open jobs — and the staffing shortage is hitting pharma",
@@ -478,25 +505,7 @@
      "time": "2026-11-12T14:38:00Z",
      "desc": "The agency is still recovering from a mass staff exodus last year that left it shorthanded. Here’s what it means for the industry.",
      "section": "行业动态",
-     "summary": "FDA有超1000个职位空缺，人员短缺正冲击制药行业，机构仍在从去年大规模离职中恢复。"
-    },
-    {
-     "title": "Ira Mellman wants Parker Institute to restore cancer immunotherapy",
-     "url": "https://endpoints.news/ira-mellman-wants-parker-institute-to-restore-cancer-immunotherapy/",
-     "source": "Endpoints News",
-     "time": "2026-11-12T14:00:54Z",
-     "desc": "While the whole world was applauding Revolution Medicines' new cancer drug, all Ira Mellman felt was disappointment and frustration. The pill, daraxonrasib, kept patients with advanced pancreatic cancer alive roughly twice as ...",
-     "section": "行业动态",
-     "summary": "Ira Mellman希望Parker Institute重振癌症免疫治疗，此前Revolution Medicines"
-    },
-    {
-     "title": "STAT+: Alnylam, once in the hunt to be a $100 billion biotech, needs to solve its heart drug problem",
-     "url": "https://www.statnews.com/2026/11/12/alnylam-amvuttra-heart-drug-growth/?utm_campaign=rss",
-     "source": "STAT News",
-     "time": "2026-11-12T11:30:00Z",
-     "desc": "Alnylam is heavily dependent on its heart drug Amvuttra for growth — and sales have been slowing.",
-     "section": "行业动态",
-     "summary": "Alnylam曾瞄准千亿美元生物科技公司，如今需解决其心脏药物Amvuttra销售放缓问题。"
+     "summary": "FDA逾千岗位空缺，人员短缺波及制药行业，仍在恢复去年大规模离职"
     },
     {
      "title": "How Patients’ Use of AI Impact How Sponsors Communicate with Them",
@@ -505,7 +514,7 @@
      "time": "2026-11-12T11:00:00Z",
      "desc": "With 60% of Americans using AI health tools, patient advocates are encouraging collaborative use of AI alongside healthcare teams for better outcomes.",
      "section": "行业动态",
-     "summary": "60%美国人使用AI健康工具，患者倡导者鼓励协作使用AI以改善申办方沟通。"
+     "summary": "六成美国人使用AI健康工具，患者倡导者呼吁申办方协同沟通"
     },
     {
      "title": "Cancer Grand Challenges launches AI research project",
@@ -514,97 +523,16 @@
      "time": "2026-11-12T10:56:47Z",
      "desc": "£8m initiative to support cancer discovery",
      "section": "行业动态",
-     "summary": "Cancer Grand Challenges启动800万英镑AI研究项目，支持癌症发现。"
+     "summary": "Cancer Grand Challenges启动800万英镑AI癌症发现研究项目"
     },
     {
      "title": "Cancer Vaccines Show Promise for Treatment and Prevention",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQmlUaFU4dTgxSFRtUG4wUlpINlVDTFFnazZiT3ZxWTFobFBhS25QLXlXNDljWE1HSWN2Xy1ta0dPNTNRcGVhbDVwRG5GeXVyMkpLM0lodjU4d1QxODJnZFVoVWg5ZkplMGVZX3BtVDBOTC1iMkgydDM4VkJxZFYtbWUzUmpJQUQzTEZyeWktN3RTRkZFNUE?oc=5",
-     "source": "Newswise",
-     "time": "2026-11-12T01:30:00Z",
-     "desc": "Cancer Vaccines Show Promise for Treatment and Prevention Newswise",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPX3JTb1VwWWFOSzMtNW83aDZDazJZWEZtT0t6RDRTWFM2R2QzdlRLRE04NUhQVkhLN2k5V2xWZ2J6Q2tsdVNkRnF0ZE13UDRRT09fLXFNemJYSlpNdU96eWthSE5fZllIRHhvb19kdFA5ZVpVUUFhZnhMYW1NR0JnZFp6ZmdiOGFhQmphOWpKcFE4TVFKRWphVTliTVdVUWpLNXFZdElpVUxNOEY5NFlacnVyODctdm4yVVUwWnI3YkRfa2s?oc=5",
+     "source": "Johns Hopkins Medicine",
+     "time": "2026-11-12T00:52:26Z",
+     "desc": "Cancer Vaccines Show Promise for Treatment and Prevention Johns Hopkins Medicine",
      "section": "行业动态",
-     "summary": "癌症疫苗在治疗和预防方面展现前景。"
-    },
-    {
-     "title": "Why four companies are chasing the same immune chokepoint",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNa2lNM253WXFKYm9JcmtqbFR5Mnd4UVk1elhYZkVfVFVXNWI4M2Y4QzVEeTUwSUF0eHdyTkR5UUVYWkRoZGU3cng3UXBkOU82ZUVucURmSGhpUFh4Zm5FVTBwM0dDb0ZaTTVwMU1wYnV5eUFyb1dsa1Y2Sy04emF1ODA4WmYzUXNjZ3YxOWhUN0djZThtY0VZZFZlWTVWQQ?oc=5",
-     "source": "Drug Discovery News",
-     "time": "2026-11-10T18:40:16Z",
-     "desc": "Why four companies are chasing the same immune chokepoint Drug Discovery News",
-     "section": "行业动态",
-     "summary": "四家公司竞逐同一免疫检查点靶点。"
-    },
-    {
-     "title": "How Breast Cancer Chemotherapy May Impact Biological Aging and Loss of Healthy Life Years",
-     "url": "https://www.genengnews.com/topics/cancer/how-breast-cancer-chemotherapy-may-impact-biological-aging-and-loss-of-healthy-life-years/",
-     "source": "GEN",
-     "time": "2026-11-10T17:26:51Z",
-     "desc": "Chemotherapy helps many women survive breast cancer, but the results of new research suggest that chemotherapy may also accelerate biological aging beyond chronological age and increase the risk of earlier death from other causes. The post How Breast Cancer Chemotherapy May Impact Biological Aging and Loss of Healthy Life Years appeared first on GEN - Genetic Engineering and Biotechnology News .",
-     "section": "行业动态",
-     "summary": "新研究提示乳腺癌化疗可能影响生物学衰老并减少健康寿命。"
-    },
-    {
-     "title": "From Farm Waste to Medical Nanoparticles",
-     "url": "https://www.genengnews.com/topics/bioprocessing/from-farm-waste-to-medical-nanoparticles/",
-     "source": "GEN",
-     "time": "2026-11-10T17:00:31Z",
-     "desc": "Fruit peels, rice husks, and other crop leftovers can yield biomedical nanoparticles, but variable feedstocks, scale-up hurdles, and thin safety data still stand between lab promise and reliable commercial bioprocessing. The post From Farm Waste to Medical Nanoparticles appeared first on GEN - Genetic Engineering and Biotechnology News .",
-     "section": "行业动态",
-     "summary": "果皮、稻壳等农业废弃物可制备医用纳米颗粒，但变异性问题待解。"
-    },
-    {
-     "title": "Hybrid Model Captures Lactate Run-Away and Back-Metabolism",
-     "url": "https://www.genengnews.com/topics/bioprocessing/hybrid-model-captures-lactate-run-away-and-back-metabolism/",
-     "source": "GEN",
-     "time": "2026-11-10T17:00:27Z",
-     "desc": "A hybrid model provides hard-to-achieve insights into lactate performance during bioprocessing, creating conditions for more accurate predictions to better manage key batch parameters and variability. The post Hybrid Model Captures Lactate Run-Away and Back-Metabolism appeared first on GEN - Genetic Engineering and Biotechnology News .",
-     "section": "行业动态",
-     "summary": "混合模型揭示生物工艺中乳酸失控与回代谢机制。"
-    },
-    {
-     "title": "Extracellular Vesicle Product Developer Creates Potency Assay",
-     "url": "https://www.genengnews.com/topics/bioprocessing/extracellular-vesicle-product-developer-creates-potency-assay/",
-     "source": "GEN",
-     "time": "2026-11-10T17:00:26Z",
-     "desc": "A company developing extracellular vesicle-based products has developed a potency assay for quality control. They hope to adapt it for future products and scale it to commercial manufacturing. The post Extracellular Vesicle Product Developer Creates Potency Assay appeared first on GEN - Genetic Engineering and Biotechnology News .",
-     "section": "行业动态",
-     "summary": "细胞外囊泡产品开发商建立效力检测方法用于质量控制。"
-    },
-    {
-     "title": "港股创新药概念爆发！药明合联大涨超10%，药明康德、金斯瑞涨超8%",
-     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUUZUSFVob2k3ZmZWdktIb0NLQlJLTV9tVFFiOEhPcnJCb2NqXzdCRjNZSjEwd0ZXa3NpWHppVmpfU2djMmhZYy01Ukw0VVhKaklfSnR4Y0hraW53QTRtOVN1YkkzVW5QWXZaZW5YZnJmaUcxa1ZlM2hDcU5rZHdqVkYtTzlBbDJH?oc=5",
-     "source": "Sohu",
-     "time": "2026-11-10T13:09:41Z",
-     "desc": "港股创新药概念爆发！药明合联大涨超10%，药明康德、金斯瑞涨超8% Sohu",
-     "section": "行业动态",
-     "summary": "港股创新药概念爆发，药明合联涨超10%，药明康德、金斯瑞涨超8%。"
-    },
-    {
-     "title": "港股生物医药股高开 个股利好能否提振整个医药行业情绪？",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQc1N1XzAwbmtMQUxWMzFpRlVRYzM1anZCVl9iMEFaeE9sTlNWbGdpb2Y0NEE5eE5xMTU0bWd3VTc0bWZDZDh4a0NhOXp3NnZmamswdl96ZEZIM09mV3dNU0xvUmdpWVB1ZExDYURBZkxCRDYtS1FtbjlILUZOeW9KcEN4eTUtQzlzOTd1YjFhNDdzNG5a?oc=5",
-     "source": "手机新浪网",
-     "time": "2026-11-10T09:57:00Z",
-     "desc": "港股生物医药股高开 个股利好能否提振整个医药行业情绪？ 手机新浪网",
-     "section": "行业动态",
-     "summary": "港股生物医药股高开，个股利好能否提振行业情绪受关注。"
-    },
-    {
-     "title": "港股CRO概念集体走强，药明康德被移除出1260H名单丨港股异动",
-     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE56N2lUN2RoZHU2d21SUlNFbHgtSlVpZklvMTE2Qy14Qkxwc0JLbHc5T2x3NF9ZOFdRSFA5cVNSNjk2U0o3RlY4LUZlel81QUhiczFBYXc2TTlJV0ZJUGpnbjZR?oc=5",
-     "source": "证券之星",
-     "time": "2026-11-10T03:48:51Z",
-     "desc": "港股CRO概念集体走强，药明康德被移除出1260H名单丨港股异动 证券之星",
-     "section": "行业动态",
-     "summary": "港股CRO概念走强，药明康德被移出1260H名单。"
-    },
-    {
-     "title": "港股异动 | 药明康德被移出美国“中国涉军企业清单”，创新药概念全线走高！金斯瑞生物科技大涨9%，药明康德涨逾4%",
-     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8yZ3VSV0dfN0FDSHZiQ2pSU3VQVXNvYkNBaS1lREd3Vzloc0paTDdfdzF0ekZlVktFd09Jby14bkQwYjZNdEdFOWV6WGRzeU5FeWdmY3R0ZXdrYVRWcnZmUTVR?oc=5",
-     "source": "华盛通",
-     "time": "2026-11-10T01:33:00Z",
-     "desc": "港股异动 | 药明康德被移出美国“中国涉军企业清单”，创新药概念全线走高！金斯瑞生物科技大涨9%，药明康德涨逾4% 华盛通",
-     "section": "行业动态",
-     "summary": "药明康德被移出美国“中国涉军企业清单”，创新药概念走高，金斯瑞涨9%。"
+     "summary": "Johns Hopkins Medicine称癌症疫苗在治疗与预防方面展现前景"
     }
    ]
   },
@@ -618,7 +546,7 @@
      "time": "2026-11-11T00:00:00Z",
      "desc": "本报讯（融媒体中心 李玉凤）近日，由北京经开区科技和产业促进局、北京市知识产权保护中心、中关村知识产权保护中心等单位联合主办，中关村知识产权保护中心BioPark分中心承办的“生物医药领域专利布局与申请质量提升培训”在国际医药创新公园举办。本次培训聚焦生物医药产业专利保护中的重点、难点问题，邀请专利审查协作北京中心两位资深审查员授课，吸引了20余家生物医药企业代表参加。 培训现场，专利审查协作北京中心医药生物部基因工程室审查员刘春杰以“多肽类药物专利保护策略”为题进行授课。他从多肽类药物概况切入，系统梳理了GLP-1药物的研发现状、发展历程与全球专利态势",
      "section": "亦庄园区动态",
-     "summary": "北京经开区等多单位联合举办生物医药领域专利布局与申请培训。"
+     "summary": "北京经开区联合多部门举办生物医药领域专利布局与申请培训"
     },
     {
      "title": "看！5.5平方公里国际医药创新公园拔节生长",
@@ -627,7 +555,7 @@
      "time": "2026-11-09T00:00:00Z",
      "desc": "国际医药创新公园（BioPark）。张磊/摄（资料图） 南中轴以东、京台路以西，北京五环一带最后一片完整的产业发展区上，国际医药创新公园（BioPark）正在加速成型。从规划到落地，从蓝图到实景，这座北京重点打造的全球医药健康创新合作枢纽，目标、布局、路径尽在一组组清晰数字之中。 01 谋篇 2年时间 见证园区从谋划到落地 2024年7月18日 在博鳌亚洲论坛全球健康论坛第三届大会“投资北京”主题推介会上，北京经开区首次发布国际医药创新公园建设计划。 2025年4月15日 《国际医药创新公园高质量建设实施方案（2025—2030年）》印发，明确功能布局、",
      "section": "亦庄园区动态",
-     "summary": "北京经开区5.5平方公里国际医药创新公园BioPark加速成型。"
+     "summary": "北京经开区5.5平方公里国际医药创新公园（BioPark）加速成型"
     },
     {
      "title": "亦企同行 临床资源直通车精准对接医企需求",
@@ -636,7 +564,7 @@
      "time": "2026-11-09T00:00:00Z",
      "desc": "本报讯（融媒体中心 刘茜）近日，“亦企同行·临床资源直通车”活动走进首都医科大学附属北京朝阳医院。活动由北京协同医药医学创新促进中心主办、首都医科大学附属北京朝阳医院支持、北京经开区工委组织人事部亦企服务港旧宫港指导，吸引复星医药、爱恩康、和铂医药、银谷制药、伯乐祝医药等30余家经开区生物医药企业及相关行业机构代表参加。 本次活动聚焦医药补贴专项政策、临床新技术应用、临床质量管理及项目合作等内容，通过政策解读、专题报告、参观座谈等形式，推动医疗机构临床研究资源与企业研发需求精准对接，为生物医药企业拓展合作渠道、提升研发质量搭建交流平台。 临床研究是连接药",
      "section": "亦庄园区动态",
-     "summary": "“亦企同行·临床资源直通车”走进北京朝阳医院，精准对接医企需求。"
+     "summary": "“亦企同行·临床资源直通车”走进朝阳医院，精准对接医企需求"
     },
     {
      "title": "一册指引 一港协调 多部门联动 一次办成 国际医药创新公园以集成服务助企落地发展",
@@ -645,7 +573,7 @@
      "time": "2026-11-06T00:00:00Z",
      "desc": "“从提交材料到完成联合验收，仅用了3个工作日，相关部门主动靠前、协同服务，为我们按期试运营提供了有力支持。”近日，安斯泰来制药（中国）有限公司（以下简称“安斯泰来”）相关负责人向北京经开区工委组织人事部亦企服务港旧宫港赠送锦旗，对项目建设期间旧宫港提供的贴心服务表示感谢。 这面锦旗背后，是一次围绕企业实际需求展开的跨部门协同服务，也是北京经开区推动“高效办成一件事”向国际医药创新公园（BioPark）延伸、以集成服务助力企业落地发展的生动实践。 从“企业找流程”到“部门协同办” 服务向前一步 2025年10月，安斯泰来在国际医药创新公园设立了其进入中国市",
      "section": "亦庄园区动态",
-     "summary": "国际医药创新公园以集成服务助企落地，安斯泰来3个工作日完成联合验收。"
+     "summary": "BioPark集成服务助企落地，安斯泰来3个工作日完成联合验收"
     }
    ]
   },
@@ -653,49 +581,130 @@
    "label": "论文研究",
    "items": [
     {
-     "title": "Psilocybin enhances conditioned place preference learning in planarians.",
-     "url": "https://doi.org/10.1097/fbp.0000000000000903",
-     "source": "Europe PMC",
-     "time": "2026-11-12T16:00:00Z",
-     "desc": "期刊 。Psilocybin has emerged as a promising therapeutic agent, with clinical benefits attributed to enhanced neuroplasticity rather than acute pharmacological effects. However, the fundamental mechanisms underlying these effects remain poorly understood. Using plana",
-     "section": "论文研究",
-     "summary": "期刊研究显示Psilocybin增强涡虫条件位置偏好学习。"
-    },
-    {
-     "title": "Indications for Dose Adjustment of Thyroid Hormones in Older Patients.",
-     "url": "https://doi.org/10.3238/arztebl.m2026.0161",
-     "source": "Europe PMC",
-     "time": "2026-11-12T16:00:00Z",
-     "desc": "期刊 。Background Thyroid dysfunction is common in older people (persons aged 65 and above). A meta-analysis of data from European countries revealed a 4.1% prevalence of undiagnosed subclinical hypothyroidism. It was found in a primary care study from the United Kin",
-     "section": "论文研究",
-     "summary": "期刊meta分析探讨老年患者甲状腺激素剂量调整指征。"
-    },
-    {
-     "title": "Antibiotic Treatment of Severe Infections with Multiresistant Bacteria.",
-     "url": "https://doi.org/10.3238/arztebl.m2026.0154",
-     "source": "Europe PMC",
-     "time": "2026-11-12T16:00:00Z",
-     "desc": "期刊 。Background Approximately 10 000 people die in Germany each year because of infections with multidrug-resistant organisms (MDRO) such as carbapenem-resistant Enterobacterales (CRE), difficult-to-treat resistant Pseudomonas aeruginosa (DTR-PA), carbapenem-resist",
-     "section": "论文研究",
-     "summary": "期刊研究分析多重耐药菌严重感染的抗生素治疗。"
-    },
-    {
-     "title": "The Detection of Atrial Fibrillation by Implantable Event Recorders: A Study of Patients Who Have Had a Cryptogenic Stroke.",
-     "url": "https://doi.org/10.3238/arztebl.m2026.0151",
-     "source": "Europe PMC",
-     "time": "2026-11-12T16:00:00Z",
-     "desc": "期刊 。Background Arial fibrillation (AF) plays a role in approximately one-third of ischemic strokes. In embolic strokes of undetermined source (ESUS), paroxysmal atrial fibrillation often escapes detection; if detected, it could be an indication for oral anticoagul",
-     "section": "论文研究",
-     "summary": "期刊研究评估植入式事件记录仪对隐源性卒中患者房颤的检测。"
-    },
-    {
-     "title": "The expansion of kinase drug discovery: new targets, platforms and indications",
-     "url": "https://www.nature.com/articles/s41573-026-01551-y",
+     "title": "How can gene therapy platforms be scaled up to treat thousands of rare diseases?",
+     "url": "https://www.nature.com/articles/d41573-026-00179-2",
      "source": "Nat Rev Drug Discovery",
-     "time": "2026-11-10T16:00:00Z",
-     "desc": "Nature Reviews Drug Discovery, Published online: 11 November 2026; doi:10.1038/s41573-026-01551-y Over the past 25 years, kinase drug discovery has been one of the most active areas in pharmaceutical research and development. This article provides a comprehensive analysis of the kinase therapeutic landscape, covering drug platforms, new targeting approaches, the expanding target spectrum, approvals and clinical trends.",
+     "time": "2026-11-12T16:00:00Z",
+     "desc": "Nature Reviews Drug Discovery, Published online: 13 November 2026; doi:10.1038/d41573-026-00179-2 The NIH’s P. J. Brooks discusses the challenges and opportunities ahead for gene therapies and gene editing for diseases of no commercial interest.",
      "section": "论文研究",
-     "summary": "Nat Rev Drug Discovery综述激酶药物发现扩展：新靶点、平台与适应证。"
+     "summary": "Nat Rev Drug Discovery探讨基因治疗平台如何规模化治疗数千种罕见病"
+    },
+    {
+     "title": "Cancer vaccine development gets complicated",
+     "url": "https://www.nature.com/articles/d41573-026-00181-8",
+     "source": "Nat Rev Drug Discovery",
+     "time": "2026-11-12T16:00:00Z",
+     "desc": "Nature Reviews Drug Discovery, Published online: 13 November 2026; doi:10.1038/d41573-026-00181-8 Merck and Moderna’s intismeran autogene succeeded in a landmark melanoma trial, but the oncology community still has more questions than answers about the future of cancer vaccines.",
+     "section": "论文研究",
+     "summary": "Nat Rev Drug Discovery评述癌症疫苗开发的复杂化趋势"
+    },
+    {
+     "title": "From hope to adoption: an industry perspective on the maturation of new approach methodologies",
+     "url": "https://www.nature.com/articles/s41573-026-01583-4",
+     "source": "Nat Rev Drug Discovery",
+     "time": "2026-11-12T16:00:00Z",
+     "desc": "Nature Reviews Drug Discovery, Published online: 13 November 2026; doi:10.1038/s41573-026-01583-4 From hope to adoption: an industry perspective on the maturation of new approach methodologies",
+     "section": "论文研究",
+     "summary": "Nat Rev Drug Discovery刊文从产业视角看新方法学（NAMs）的成熟与采纳"
+    },
+    {
+     "title": "Immunogenicity risk assessment of novel modalities using new approach methodologies",
+     "url": "https://www.nature.com/articles/s41573-026-01562-9",
+     "source": "Nat Rev Drug Discovery",
+     "time": "2026-11-12T16:00:00Z",
+     "desc": "Nature Reviews Drug Discovery, Published online: 13 November 2026; doi:10.1038/s41573-026-01562-9 Novel therapeutic modalities such as cell therapies and gene editors could potentially treat many diseases, but their clinical progression is limited by unwanted immune responses. This Perspective proposes how ‘new approach methodologies’ such as computational tools and organoids can be applied to assess the immunogenicity of novel modalities, given the limited translational value of immunogenicity data from traditional animal models.",
+     "section": "论文研究",
+     "summary": "Nat Rev Drug Discovery刊文用新方法学评估新型模态的免疫原性风险"
+    },
+    {
+     "title": "Pharmacological management of severe plaque psoriasis in patients with cancer.",
+     "url": "https://doi.org/10.1080/14656566.2026.2764546",
+     "source": "Europe PMC",
+     "time": "2026-11-12T16:00:00Z",
+     "desc": "期刊 。The management of moderate-to-severe plaque psoriasis in patients with current or previous malignancy remains challenging because of concerns regarding cancer recurrence or progression and the limited representation of these patients in randomized trials. This",
+     "section": "论文研究",
+     "summary": "综述：合并癌症的严重斑块状银屑病患者的药物治疗管理"
+    },
+    {
+     "title": "Osteoarticular Infection in Immunocompromised Children and Neonates: A Retrospective Case Series Emphasising Diagnostic Challenges and Multimodal Management.",
+     "url": "https://doi.org/10.1097/bpo.0000000000003527",
+     "source": "Europe PMC",
+     "time": "2026-11-12T16:00:00Z",
+     "desc": "期刊 。Osteoarticular infections (OAIs) in neonates and immunocompromised children present distinct diagnostic and therapeutic challenges. Atypical clinical presentations, attenuated inflammatory responses, and a broader spectrum of pathogens complicate early recogni",
+     "section": "论文研究",
+     "summary": "回顾性病例系列：免疫受损儿童与新生儿骨关节感染的诊断挑战与多模式管理"
+    },
+    {
+     "title": "Microdosing, fractional and split dosing of injectable GLP-1-based drugs: balancing potential benefits and risks.",
+     "url": "https://doi.org/10.23736/s2724-6507.26.04655-5",
+     "source": "Europe PMC",
+     "time": "2026-11-12T16:00:00Z",
+     "desc": "期刊 。Glucagon-like peptide-1 (GLP-1)-based drugs (also known as incretin receptor agonists) have revolutionized the management of type 2 diabetes and overweight/obesity. Microdosing, fractional dosing and split dosing of GLP-1-based drugs administered by subcutaneo",
+     "section": "论文研究",
+     "summary": "综述：注射用GLP-1类药物微剂量、分次与拆分给药的获益与风险平衡"
+    },
+    {
+     "title": "Pharmacogenomics of antidiabetic agents: current evidence and implications for precision medicine.",
+     "url": "https://doi.org/10.1515/dmpt-2025-0091",
+     "source": "Europe PMC",
+     "time": "2026-11-12T16:00:00Z",
+     "desc": "期刊 。Diabetes mellitus, a noncommunicable disease, is controlled with antidiabetic medications. However, interindividual variations require tailored therapy with suitable drugs to achieve glycemic control. Very few studies have focused on candidate genes that regul",
+     "section": "论文研究",
+     "summary": "综述：抗糖尿病药物的药物基因组学证据及精准医学意义"
+    },
+    {
+     "title": "An effective approach for the management of men's sexual dysfunction via local administration of Sildenafil/cyclodextrin-loaded hydrogels.",
+     "url": "https://doi.org/10.1080/03639045.2026.2760406",
+     "source": "Europe PMC",
+     "time": "2026-11-12T16:00:00Z",
+     "desc": "期刊 。This study aimed to enhance the bioavailability of Sildenafil via cyclodextrin inclusion complexation and to formulate various hydrogel systems containing modified Sildenafil as an alternative, safe treatment for erectile dysfunction. Oral administration of Si",
+     "section": "论文研究",
+     "summary": "研究：西地那非/环糊精载药水凝胶局部给药改善男性性功能障碍管理"
+    },
+    {
+     "title": "Threshold-triggered microneedle applicators: converting user-applied force into reproducible dissolving microneedle insertion for global vaccination.",
+     "url": "https://doi.org/10.1080/17425247.2026.2764429",
+     "source": "Europe PMC",
+     "time": "2026-11-12T16:00:00Z",
+     "desc": "期刊 。Vaccine distribution in low- and middle-income countries is constrained by healthcare workforce shortages - averaging one health worker per 435 people - and by unreliable facility infrastructure. Dissolving microneedle patches address these bottlenecks by redu",
+     "section": "论文研究",
+     "summary": "阈值触发微针施药器将按压力转化为可重复溶解微针插入，助力全球疫苗接种"
+    },
+    {
+     "title": "Halochromic composite materials for self-indicating wound-healing textiles: a review.",
+     "url": "https://doi.org/10.1515/znc-2026-0215",
+     "source": "Europe PMC",
+     "time": "2026-11-12T16:00:00Z",
+     "desc": "期刊 。Wound healing is a dynamic and multifactorial process that requires timely assessment to identify changes in the wound microenvironment and to support appropriate clinical management. Conventional wound dressings primarily provide physical protection but gener",
+     "section": "论文研究",
+     "summary": "综述：用于自指示伤口愈合纺织品的卤致变色复合材料"
+    },
+    {
+     "title": "RIPK2 influences bone metastasis in prostate cancer through macrophage-tumor cell interaction: a mechanistic study.",
+     "url": "https://doi.org/10.23736/s2724-6051.26.07040-0",
+     "source": "Europe PMC",
+     "time": "2026-11-12T16:00:00Z",
+     "desc": "期刊 。Bone metastasis is a leading cause of mortality in prostate cancer (PCa) patients with limited treatment options. Myeloid-tumor cell interactions in the tumor microenvironment (TME) critically drive metastasis, but the mechanisms involved are poorly understood",
+     "section": "论文研究",
+     "summary": "机制研究：RIPK2经巨噬细胞-肿瘤细胞互作影响前列腺癌骨转移"
+    },
+    {
+     "title": "BAP1 Promotes Apoptosis in Glioblastoma by Stabilizing IP3 Receptor 3 to Modulate Calcium Signaling.",
+     "url": "https://doi.org/10.1177/15330338261508174",
+     "source": "Europe PMC",
+     "time": "2026-11-12T16:00:00Z",
+     "desc": "期刊 。IntroductionGlioblastoma (GBM) is a highly lethal brain tumor with limited therapeutic options. While the deubiquitinase BRCA1-associated protein 1 (BAP1) functions as a tumor suppressor in various cancers, its role in GBM remains poorly understood.MethodsBioi",
+     "section": "论文研究",
+     "summary": "BAP1通过稳定IP3受体3调控钙信号促进胶质母细胞瘤凋亡"
+    },
+    {
+     "title": "A Clinical Classification and Decision Tree for Pontic Site Management in Resin Bonded Fixed Dental Prostheses.",
+     "url": "https://doi.org/10.3290/j.ijed.d_391",
+     "source": "Europe PMC",
+     "time": "2026-11-12T16:00:00Z",
+     "desc": "期刊 。The management of pontic sites plays a pivotal role in achieving long-term esthetics and functional success in resin-bonded fixed dental prostheses (RBFDPs), particularly in the anterior region where smile harmony and facial balance are of paramount importance",
+     "section": "论文研究",
+     "summary": "树脂粘接固定局部义齿桥体区管理的临床分类与决策树"
     }
    ]
   },
@@ -703,22 +712,31 @@
    "label": "政策追踪",
    "items": [
     {
+     "title": "STAT+: HHS plans funding for research into ibogaine for PTSD",
+     "url": "https://www.statnews.com/2026/11/13/biotech-news-hhs-funding-for-research-into-ibogaine-for-ptsd/?utm_campaign=rss",
+     "source": "STAT News",
+     "time": "2026-11-13T15:25:46Z",
+     "desc": "The Trump administration will funnel up to $4.9 million into supporting research into ibogaine, a psychedelic that’s drawn interest as a potential treatment for PTSD and addiction.",
+     "section": "政策追踪",
+     "summary": "HHS计划投入至多490万美元资助ibogaine治疗PTSD的研究。"
+    },
+    {
      "title": "HHS directs new funds, research for psychedelics work",
      "url": "https://endpoints.news/hhs-directs-new-funds-research-for-psychedelics-work/",
      "source": "Endpoints News",
      "time": "2026-11-12T20:09:22Z",
      "desc": "Following President Donald Trump’s executive order in the spring to make psychedelics research a priority, HHS on Thursday announced a flurry of new funding and studies into the field, with a special focus on ibogaine. ...",
      "section": "政策追踪",
-     "summary": "HHS拨款并推进迷幻药研究，落实特朗普行政令优先事项。"
+     "summary": "HHS拨款并推进迷幻药研究，落实特朗普相关行政令。"
     },
     {
-     "title": "FDA's speedy voucher program is dead: report",
-     "url": "https://endpoints.news/fdas-speedy-voucher-program-is-dead-report/",
-     "source": "Endpoints News",
-     "time": "2026-11-12T19:34:07Z",
-     "desc": "Despite issuing no new vouchers in the six months since former FDA Commissioner Marty Makary left the agency, and a report suggesting the program has been shelved, the FDA still contends it's running the Commissioner’s ...",
+     "title": "STAT+: Enforcement of stringent Medicaid work requirements delayed for six months",
+     "url": "https://www.statnews.com/2026/11/13/medicaid-work-requirements-implementation-delayed-six-months/?utm_campaign=rss",
+     "source": "STAT News",
+     "time": "2026-11-13T22:21:56Z",
+     "desc": "Enforcement of the Trump administration's stringent new Medicaid work requirements have been delayed for six months, until July 1, 2027.",
      "section": "政策追踪",
-     "summary": "报道称FDA快速审评券项目已终止，六个月未发新券。"
+     "summary": "特朗普政府严格Medicaid工作要求执行推迟六个月。"
     },
     {
      "title": "Drug price hikes in Germany could push US costs higher, study says",
@@ -727,7 +745,7 @@
      "time": "2026-11-11T16:11:00Z",
      "desc": "The report comes amid escalating tensions between the U.S. and Germany over drug prices, with several large pharmaceutical companies responding by scaling back investments in the country.",
      "section": "政策追踪",
-     "summary": "研究称德国药品涨价可能推高美国药价，美欧药价紧张加剧。"
+     "summary": "研究称德国药品涨价或推高美国药价，美欧药价紧张加剧"
     }
    ]
   },
@@ -735,49 +753,40 @@
    "label": "政策与观点",
    "items": [
     {
-     "title": "STAT+: New documents raise more questions about Medicare’s AI prior-authorization experiment",
-     "url": "https://www.statnews.com/2026/11/12/new-documents-raise-more-questions-about-medicares-ai-prior-authorization-experiment/?utm_campaign=rss",
-     "source": "STAT News",
-     "time": "2026-11-12T14:49:02Z",
-     "desc": "In this edition of STAT Health Tech: Oura's big bet on AI, a 'rumble strip' for clinical chatbots, and questions around Medicare’s AI prior-auth experiment.",
+     "title": "When Small Protocol Decisions Become Enrollment or Retention Barriers",
+     "url": "https://www.pharmexec.com/view/when-small-protocol-decisions-become-enrollment-or-retention-barriers",
+     "source": "Pharmaceutical Executive",
+     "time": "2026-11-13T11:00:00Z",
+     "desc": "Every protocol decision affects patients, and only those with lived disease experience can identify true burden — from invasive biopsies to daily trial demands.",
      "section": "政策与观点",
-     "summary": "STAT+质疑Medicare AI预授权试验，新文件引发更多疑问。"
+     "summary": "评论：小型方案决策如何成为入组与留存障碍，需患者经验参与。"
     },
     {
-     "title": "STAT+: Will Heidi Overton get to run the FDA?",
-     "url": "https://www.statnews.com/2026/11/12/will-heidi-overton-be-confirmed-fda-commissioner-dc-diagnosis/?utm_campaign=rss",
+     "title": "STAT+: Democrats coalesce around ‘Medicare for More,’ ‘Medikids’ proposals",
+     "url": "https://www.statnews.com/2026/11/13/democrats-eye-medicare-for-more-vs-medicare-for-all/?utm_campaign=rss",
      "source": "STAT News",
-     "time": "2026-11-12T15:38:37Z",
-     "desc": "Does Heidi Overton have the votes ? And how will Dems take on RFK Jr.?",
+     "time": "2026-11-13T21:46:05Z",
+     "desc": "Democrats are coalescing around a plan to offer Medicare to more Americans, if not all of them.",
      "section": "政策与观点",
-     "summary": "STAT+讨论Heidi Overton能否获得足够票数执掌FDA，以及民主党如何应对RFK Jr.。"
+     "summary": "民主党凝聚共识，推动“Medicare for More”与“Medikids”提案。"
     },
     {
-     "title": "Experts update prostate cancer screening guidelines for men",
-     "url": "https://www.statnews.com/2026/11/12/health-news-experts-update-prostate-cancer-screening-guidelines-for-men/?utm_campaign=rss",
+     "title": "New addiction society guidance on medetomidine’s brutal withdrawal",
+     "url": "https://www.statnews.com/2026/11/13/medetomidine-withdrawal-asam-new-treatment-guidance/?utm_campaign=rss",
      "source": "STAT News",
-     "time": "2026-11-12T12:32:57Z",
-     "desc": "Are you an American man between 50 and 69? You might want to get checked for prostate cancer, ACS says in reversal of previous guidelines.",
+     "time": "2026-11-13T20:45:42Z",
+     "desc": "The American Society of Addiction Medicine has released the first national guidance for recognizing and treating patients who have taken medetomidine.",
      "section": "政策与观点",
-     "summary": "专家更新前列腺癌筛查指南，建议50至69岁美国男性接受检查。"
+     "summary": "美国成瘾医学会发布首份medetomidine戒断识别与管理全国指南。"
     },
     {
-     "title": "American Cancer Society revises guidelines, urges routine PSA screening for prostate cancer",
-     "url": "https://www.statnews.com/2026/11/12/prostate-cancer-screening-guidelines-updated-acs/?utm_campaign=rss",
+     "title": "Opinion: New organ donation rules are unfair to families",
+     "url": "https://www.statnews.com/2026/11/13/organ-donation-policy-life-sustaining-treatment-brain-death/?utm_campaign=rss",
      "source": "STAT News",
-     "time": "2026-11-12T12:00:00Z",
-     "desc": "The American Cancer Society recommended routine PSA screening for prostate cancer, changing guidelines in place since 2010.",
+     "time": "2026-11-13T14:59:54Z",
+     "desc": "New organ donation rules may “blur the line between the physicians fighting to save a patient's life and the teams responsible for organ procurement.”",
      "section": "政策与观点",
-     "summary": "美国癌症协会修订指南，建议前列腺癌常规PSA筛查。"
-    },
-    {
-     "title": "股价在等数据，数据或已来临：港股创新药ETF景顺(513780)的三条催化与一个估值前提",
-     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9oVTh3eFZ1WkUtLXZUU01IeFA0MnU0VUFRbFE0a1M5R3dLeGhzRVpuLTI4V1ZWaTVHeFFwVVFlNEJWcVozWGpza0t4LTFBRmk1NWh3?oc=5",
-     "source": "FX168财经",
-     "time": "2026-11-10T08:00:00Z",
-     "desc": "股价在等数据，数据或已来临：港股创新药ETF景顺(513780)的三条催化与一个估值前提 FX168财经",
-     "section": "政策与观点",
-     "summary": "分析港股创新药ETF景顺的三条催化因素与估值前提。"
+     "summary": "STAT观点：新器官捐献规则对家属不公，或模糊救死扶伤界限"
     }
    ]
   }
