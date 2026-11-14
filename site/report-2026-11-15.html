@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>生物医药晨报 · 2026-11-15</title>
+<script src="config.js"></script>
+<script>try{var q=new URLSearchParams(location.search).get("theme");document.documentElement.setAttribute("data-theme",q||localStorage.getItem("pharma_theme")||"dark");}catch(e){}</script>
+<style>
+  :root{
+    --bg:#0b0f17; --bg2:#0e131d; --card:#151b27; --line:#263041;
+    --text:#e8edf5; --muted:#9aa7bd; --faint:#6b7689;
+    --accent:#34d399; --accent2:#22d3ee; --chip:#1e2a3d; --chiptext:#7dd3c0; --gold:#fbbf24;
+    --bodybg:radial-gradient(1200px 600px at 70% -10%, #122031 0%, #0b0f17 55%);
+    --navbg:rgba(11,15,23,.9); --navbg2:rgba(11,15,23,.85);
+    --tint-reg:#1b2220; --tint-deal:#151d24; --tint-policy:#171720;
+    --sumtext:#dbe3ee;
+    --serif:"Noto Serif SC","Songti SC","SimSun","STSong",serif;
+  }
+  html[data-theme="light"]{
+    --bg:#f6f8fb; --bg2:#eef2f7; --card:#ffffff; --line:#e2e8f0;
+    --text:#0f172a; --muted:#475569; --faint:#94a3b8;
+    --accent:#0d9488; --accent2:#0891b2; --chip:#e8f1f0; --chiptext:#0f766e; --gold:#b45309;
+    --bodybg:radial-gradient(1200px 600px at 70% -10%, #e6f0f5 0%, #f6f8fb 55%);
+    --navbg:rgba(255,255,255,.92); --navbg2:rgba(255,255,255,.88);
+    --tint-reg:#fffaf0; --tint-deal:#f0f9ff; --tint-policy:#f5f3ff;
+    --sumtext:#334155;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bodybg) fixed;
+    color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px 60px}
+  /* 站点顶栏 */
+  .sitenav{position:sticky;top:0;z-index:30;background:var(--navbg);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .sitenav .inner{max-width:1120px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:18px}
+  .sitenav .brand{font-weight:800;font-size:16px;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:7px}
+  .sitenav .brand .badge{font-size:18px}
+  .sitenav a.navlink{font-size:14px;color:var(--muted);text-decoration:none;transition:.15s}
+  .sitenav a.navlink:hover,.sitenav a.navlink.active{color:var(--accent)}
+  .sitenav .spacer{flex:1}
+  .favToggle{cursor:pointer;font-size:13px;color:var(--muted);border:1px solid var(--line);background:transparent;padding:6px 12px;border-radius:999px;transition:.15s}
+  .favToggle:hover{color:var(--text);border-color:var(--gold)}
+  .favToggle.on{color:#0b0f17;background:var(--gold);border-color:var(--gold);font-weight:700}
+  .favCount{font-size:12.5px;color:var(--faint)}
+  /* 首页 */
+  .hero{padding:54px 0 26px}
+  .kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--accent);
+    border:1px solid var(--line);background:rgba(52,211,153,.08);padding:5px 12px;border-radius:999px}
+  .kicker .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+  h1{font-family:var(--serif);font-size:38px;line-height:1.2;margin:18px 0 10px;font-weight:700;letter-spacing:.5px}
+  h1 .hl{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--muted);font-size:16px;max-width:640px}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+  .btn{font-size:15px;font-weight:700;text-decoration:none;padding:13px 22px;border-radius:12px;transition:.18s;display:inline-flex;align-items:center;gap:8px}
+  .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#06231b}
+  .btn.primary:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(52,211,153,.25)}
+  .btn.ghost{border:1px solid var(--line);color:var(--text)}
+  .btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:34px}
+  .panel{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:16px;padding:22px}
+  .panel h3{font-size:16px;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+  .panel p,.panel li{color:var(--muted);font-size:14px}
+  .panel ul{margin:8px 0 0 18px}
+  .channels{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .channels span{font-size:12px;color:var(--chiptext);background:var(--chip);border:1px solid #2c3a4f;border-radius:999px;padding:4px 11px}
+  /* 同步设置 */
+  .syncbox{margin-top:14px}
+  .syncrow{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+  .syncrow input{flex:1;min-width:220px;background:var(--bg);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:10px 12px;font-size:14px}
+  .syncrow input:focus{outline:none;border-color:var(--accent)}
+  .syncrow button{cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--text);border-radius:10px;padding:10px 16px;font-size:14px;transition:.15s}
+  .syncrow button:hover{border-color:var(--accent);color:var(--accent)}
+  .syncrow button.save{background:var(--accent);color:#06231b;border-color:var(--accent);font-weight:700}
+  .syncstatus{margin-top:10px;font-size:13px;color:var(--faint)}
+  .syncstatus.ok{color:var(--accent)}
+  .syncstatus.err{color:#f87171}
+  code{background:#0c1320;border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:12.5px;color:var(--chiptext)}
+  /* channel-stats (首页管道面板) */
+  .src-stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin-top:12px}
+  .src-item{display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+  .src-item .sn{font-size:13px;color:var(--muted)}
+  .src-item .sc{font-size:15px;font-weight:700;color:var(--accent)}
+  /* 晨报页 */
+  .sub2{color:var(--muted);font-size:15px}
+  .sub2 b{color:var(--text)}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}
+  .stat{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:16px;padding:18px 16px}
+  .stat .n{font-size:30px;font-weight:800;color:var(--accent)}
+  .stat .l{font-size:13px;color:var(--muted);margin-top:4px}
+  .nav{position:sticky;top:57px;z-index:20;background:var(--navbg2);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin-top:8px}
+  .nav .inner{max-width:1120px;margin:0 auto;padding:10px 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .nav a{font-size:13px;color:var(--muted);text-decoration:none;border:1px solid var(--line);padding:6px 12px;border-radius:999px;transition:.15s;white-space:nowrap}
+  .nav a:hover{color:var(--text);border-color:var(--accent);background:rgba(52,211,153,.08)}
+  .nav a .c{color:var(--accent);font-weight:700;margin-left:5px}
+  .nav .spacer{flex:1}
+  .backlink{font-size:13px;color:var(--accent2);text-decoration:none;border:1px solid var(--line);padding:6px 12px;border-radius:999px}
+  .backlink:hover{border-color:var(--accent2)}
+  section{padding-top:38px;scroll-margin-top:120px}
+  .sec-head{display:flex;align-items:baseline;gap:12px;border-left:4px solid var(--accent);padding-left:14px;margin-bottom:18px}
+  .sec-head h2{font-family:var(--serif);font-size:22px;font-weight:700;letter-spacing:.5px}
+  .sec-head .cnt{font-size:13px;color:var(--faint)}
+  .empty{color:var(--faint);font-size:14px;border:1px dashed var(--line);border-radius:12px;padding:18px;background:rgba(255,255,255,.02)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+  .card{position:relative;background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px;transition:.18s;overflow:hidden}
+  .card:hover{transform:translateY(-3px);border-color:#3a4a63;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+  .card .idx{position:absolute;top:12px;right:14px;font-size:13px;font-weight:800;color:var(--muted);background:rgba(148,163,184,.08);border:1px solid rgba(148,163,184,.2);border-radius:8px;padding:1px 8px;min-width:30px;text-align:center}
+  .card h3{font-size:14px;font-weight:600;line-height:1.5;padding-right:42px;color:var(--muted)}
+  /* 监管审批里程碑高亮 */
+  .card.regulatory{border-left:3px solid var(--gold);background:linear-gradient(180deg,var(--tint-reg),var(--bg2))}
+  .card.regulatory:hover{border-left-color:#f59e0b}
+  .card.regulatory .idx{background:rgba(251,191,36,.15);border-color:rgba(251,191,36,.3);color:var(--gold)}
+  .card.regulatory .milestone{display:inline-flex;align-items:center;gap:4px;
+    font-size:11px;color:var(--gold);border:1px solid rgba(251,191,36,.25);
+    background:rgba(251,191,36,.08);border-radius:999px;padding:2px 8px;margin-left:6px}
+  .card.regulatory .milestone::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--gold)}
+  /* 头条卡：每个版块首条跨两列，大标题 + 大摘要 */
+  .card.lead{grid-column:span 2;padding:24px 26px}
+  .card.lead h3{font-size:21px;font-weight:800;color:var(--text);line-height:1.3;padding-right:60px}
+  .card.lead .summary{font-size:16.5px;color:var(--text);line-height:1.7}
+  /* 首页数据源 chips（紧凑，不再一行一个） */
+  .src-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .src-chip{font-size:12.5px;color:var(--muted);background:var(--chip);border:1px solid #2c3a4f;border-radius:999px;padding:5px 11px;display:inline-flex;align-items:center;gap:6px}
+  .src-chip b{color:var(--accent);font-weight:700}
+  /* 亮/暗切换 */
+  .themeToggle{cursor:pointer;font-size:15px;line-height:1;color:var(--muted);border:1px solid var(--line);background:transparent;padding:5px 10px;border-radius:999px;transition:.15s}
+  .themeToggle:hover{color:var(--text);border-color:var(--accent)}
+  /* 分类色图例 */
+  .legend{display:flex;gap:16px;margin-top:12px;font-size:12px;color:var(--faint)}
+  .legend .lg{display:inline-flex;align-items:center;gap:6px}
+  .legend .lg::before{content:'';width:10px;height:10px;border-radius:3px}
+  .legend .gold::before{background:var(--gold)}
+  .legend .blue::before{background:#38bdf8}
+  .legend .purple::before{background:#818cf8}
+  /* 里程碑徽章 */
+  .ms-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:-4px;margin-bottom:2px}
+  .ms-badge{font-size:11px;font-weight:600;border-radius:999px;padding:2px 9px;line-height:1.5}
+  .ms-badge.ph3{color:#c084fc;background:rgba(192,132,252,.12);border:1px solid rgba(192,132,252,.3)}
+  .ms-badge.ph2{color:#60a5fa;background:rgba(96,165,250,.12);border:1px solid rgba(96,165,250,.3)}
+  .ms-badge.ph1{color:#94a3b8;background:rgba(148,163,184,.12);border:1px solid rgba(148,163,184,.3)}
+  .ms-badge.ft{color:var(--gold);background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.3)}
+  .ms-badge.bt{color:#f59e0b;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.3)}
+  .ms-badge.ok{color:var(--accent);background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.3)}
+  .ms-badge.deal{color:#38bdf8;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.3)}
+  .ms-badge.ipo{color:#f472b6;background:rgba(244,114,182,.12);border:1px solid rgba(244,114,182,.3)}
+  /* 交易速览卡片 */
+  .card.deal{border-left:3px solid #38bdf8;background:linear-gradient(180deg,var(--tint-deal),var(--bg2))}
+  .card.deal:hover{border-left-color:#60a5fa}
+  .card.deal .idx{background:rgba(56,189,248,.12);border-color:rgba(56,189,248,.25);color:#38bdf8}
+  /* 政策追踪卡片 */
+  .card.policy{border-left:3px solid #818cf8;background:linear-gradient(180deg,var(--tint-policy),var(--bg2))}
+  .card.policy:hover{border-left-color:#a5b4fc}
+  .card.policy .idx{background:rgba(129,140,248,.12);border-color:rgba(129,140,248,.25);color:#818cf8}
+  .meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+  .chip{font-size:12px;color:var(--chiptext);background:var(--chip);border:1px solid #2c3a4f;border-radius:999px;padding:3px 10px}
+  .time{font-size:12px;color:var(--faint)}
+  .summary{font-size:15px;color:var(--sumtext);flex:1;line-height:1.65}
+  .foot{display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .more{font-size:13px;color:var(--accent);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:4px}
+  .more:hover{gap:8px}
+  .fav{cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--faint);font-size:18px;line-height:1;border-radius:9px;width:34px;height:30px;transition:.15s}
+  .fav:hover{color:var(--gold);border-color:var(--gold)}
+  .fav.active{color:var(--gold);border-color:var(--gold);background:rgba(251,191,36,.1)}
+  footer{margin-top:46px;border-top:1px solid var(--line);padding-top:20px;color:var(--faint);font-size:13px}
+  footer b{color:var(--muted)}
+  footer .note{margin-top:8px;font-size:12.5px;line-height:1.7}
+  footer .src{margin-top:10px;font-size:12.5px}
+  footer .src a{color:var(--chiptext);text-decoration:none;border-bottom:1px dotted #2c3a4f}
+  /* archive index */
+  .arc-item{display:flex;align-items:center;gap:16px;background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:12px;text-decoration:none;transition:.15s}
+  .arc-item:hover{border-color:var(--accent);transform:translateX(4px)}
+  .arc-item .d{font-size:20px;font-weight:800;color:var(--text);min-width:130px}
+  .arc-item .w{font-size:13px;color:var(--faint);min-width:48px}
+  .arc-item .t{font-size:13px;color:var(--muted);flex:1}
+  .badge-now{font-size:11.5px;color:#0b0f17;background:var(--accent);border-radius:999px;padding:2px 9px;font-weight:700}
+  .arc-item .go{color:var(--accent);font-weight:700}
+  @media (max-width:560px){
+    h1{font-size:27px}
+    .grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.card.lead{grid-column:span 1}
+    .arc-item .d{min-width:0;font-size:17px}
+    .nav{top:57px}
+    .cta{flex-direction:column}
+    .cta .btn{justify-content:center;text-align:center}
+    .syncrow{flex-direction:column}.syncrow input{min-width:auto}
+    .src-stats{grid-template-columns:1fr}
+    .sitenav .inner{gap:10px;flex-wrap:wrap}
+  }
+</style>
+</head>
+<body>
+<nav class="sitenav"><div class="inner"><a class="brand" href="index.html"><span class="badge">💊</span> 生物医药晨报</a><a class="navlink" href="index.html">首页</a><a class="navlink active" href="latest.html">今日晨报</a><a class="navlink" href="archive.html">历史存档</a><a class="navlink" href="weekly.html">本周周报</a><span class="spacer"></span><input type="text" id="searchBox" placeholder="搜索标题/公司/药品..." style="background:var(--bg);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:6px 14px;font-size:13px;width:200px;margin-right:8px" oninput="doSearch(this.value)"><button class="favToggle" id="favToggle">☆ 只看收藏</button><span class="favCount" id="favCount">已收藏 0 篇</span><button class="themeToggle" id="themeToggle" title="切换亮/暗">☀️</button></div></nav><div class="wrap"><header class="hero"><span class="kicker"><span class="dot"></span> 生物医药 · 创新药 晨报 · 多渠道聚合</span><h1>2026-11-15 <span class="hl">生物医药行业日报</span></h1><p class="sub2">数据窗口 <b>2026-11-12 ~ 2026-11-15</b> · 共 <b id="totalN">0</b> 条 · 覆盖 <b>14</b> 个权威公开渠道</p><div class="channels" id="channels"></div><div class="legend"><span class="lg gold">监管审批</span><span class="lg blue">交易速览</span><span class="lg purple">政策追踪</span></div><div class="stats" id="stats"></div></header><nav class="nav"><div class="inner"><a class="backlink" href="archive.html">← 日报存档</a><span id="nav"></span><span class="spacer"></span><button class="favToggle" id="favToggle">☆ 只看收藏</button><span class="favCount" id="favCount">已收藏 0 篇</span></div></nav><main id="main"></main><footer><div>本日报共收录 <b id="footTotal">0</b> 条生物医药 / 创新药相关动态。</div><div class="note">聚合国际媒体/临试/文献/园区/交易所等公开渠道。中文摘要 DeepSeek AI 生成，仅供参考。</div><div class="src" id="srcLinks"></div></footer></div><script>
+// 同步地址 / 令牌：优先 config.js，其次首页 UI 存在 localStorage 的值
+(function(){
+  try{
+    window.__SYNC_API__=(localStorage.getItem('pharma_sync_api')||window.__SYNC_API__||'').trim();
+    window.__SYNC_TOKEN__=(localStorage.getItem('pharma_sync_token')||window.__SYNC_TOKEN__||'').trim();
+  }catch(e){}
+})();
+function apiBase(){var s=(window.__SYNC_API__||'').trim();return s?s.replace(/\/+$/,''):'';}
+function favApi(){var b=apiBase();return b?b+'/api/favs':'/api/favs';}
+function favHeaders(json){var h={};if(json)h['Content-Type']='application/json';
+  if(window.__SYNC_TOKEN__)h['X-Fav-Token']=window.__SYNC_TOKEN__;return h;}
+
+const FAV_KEY='pharma_favs';
+let FAVS=[];        // [{url,title,section,ts}]
+let SERVER=false;   // 是否连上同步服务（跨设备共享）
+let FAV_ONLY=false;
+function lsLoad(){try{return JSON.parse(localStorage.getItem(FAV_KEY))||[]}catch(e){return[]}}
+function lsSave(a){try{localStorage.setItem(FAV_KEY,JSON.stringify(a))}catch(e){}}
+async function loadFavs(){
+  if(!apiBase()){FAVS=lsLoad();SERVER=false;return;}   // 未配置后端 -> 本地
+  try{const r=await fetch(favApi(),{cache:'no-store',headers:favHeaders(false)});
+    if(r.ok){FAVS=await r.json();SERVER=true;return;}}catch(e){}
+  FAVS=lsLoad();SERVER=false;                          // 后端不可达 -> 本地回退
+}
+function isFav(u){return FAVS.some(f=>f.url===u);}
+function refreshCount(){const el=document.getElementById('favCount');
+  if(el)el.textContent='已收藏 '+FAVS.length+' 篇'+(SERVER?' · 已同步':' · 本地');}
+function paint(btn){const on=isFav(btn.dataset.url);
+  btn.classList.toggle('active',on);btn.textContent=on?'★':'☆';btn.title=on?'取消收藏':'收藏';}
+async function toggle(btn){
+  const u=btn.dataset.url,t=btn.dataset.title||'',s=btn.dataset.section||'';
+  if(SERVER){
+    try{
+      if(isFav(u))await fetch(favApi()+'?url='+encodeURIComponent(u),{method:'DELETE',headers:favHeaders(false)});
+      else await fetch(favApi(),{method:'POST',headers:favHeaders(true),
+        body:JSON.stringify({url:u,title:t,section:s,ts:Date.now()})});
+      const r=await fetch(favApi(),{cache:'no-store',headers:favHeaders(false)});
+      if(r.ok)FAVS=await r.json();
+    }catch(e){SERVER=false;}
+  }
+  if(!SERVER){
+    const i=FAVS.findIndex(f=>f.url===u);
+    if(i>=0)FAVS.splice(i,1);else FAVS.push({url:u,title:t,section:s,ts:Date.now()});
+    lsSave(FAVS);
+  }
+  document.querySelectorAll('.fav').forEach(b=>{if(b.dataset.url===u)paint(b);});
+  refreshCount();
+  if(FAV_ONLY)applyFilter();
+}
+function applyFilter(){
+  document.querySelectorAll('.card').forEach(c=>{
+    c.style.display=(!FAV_ONLY||isFav(c.dataset.url))?'':'none';
+  });
+  document.querySelectorAll('section[data-sec]').forEach(sec=>{
+    const any=[...sec.querySelectorAll('.card')].some(c=>c.style.display!=='none');
+    sec.style.display=any?'':'none';
+  });
+}
+document.addEventListener('click',e=>{
+  const btn=e.target.closest('.fav');
+  if(btn)toggle(btn);
+});
+document.addEventListener('DOMContentLoaded',async()=>{
+  await loadFavs();
+  document.querySelectorAll('.fav').forEach(paint);
+  refreshCount();
+  const tg=document.getElementById('favToggle');
+  if(tg)tg.addEventListener('click',()=>{FAV_ONLY=!FAV_ONLY;tg.classList.toggle('on',FAV_ONLY);
+    tg.textContent=FAV_ONLY?'★ 只看收藏':'☆ 只看收藏';applyFilter();});
+  // 首页同步设置
+  const inp=document.getElementById('syncUrl');
+  if(inp){
+    const tinp=document.getElementById('syncToken');
+    inp.value=window.__SYNC_API__||'';
+    if(tinp)tinp.value=window.__SYNC_TOKEN__||'';
+    const st=document.getElementById('syncStatus');
+    const save=document.getElementById('syncSave');
+    const clr=document.getElementById('syncClear');
+    function setStatus(t,cls){st.textContent=t;st.className='syncstatus '+(cls||'');}
+    if(window.__SYNC_API__)setStatus('当前同步地址：'+window.__SYNC_API__+(window.__SYNC_TOKEN__?'（已带令牌）':'')+'，已生效','ok');
+    else setStatus('未配置同步地址，收藏仅保存在本浏览器。填入你的同步服务地址即可跨设备共享。');
+    save.onclick=async()=>{
+      const v=inp.value.trim();
+      const tk=tinp?tinp.value.trim():'';
+      try{localStorage.setItem('pharma_sync_api',v);localStorage.setItem('pharma_sync_token',tk);}catch(e){}
+      window.__SYNC_API__=v;window.__SYNC_TOKEN__=tk;
+      if(!v){setStatus('已清除，收藏仅本浏览器保存。');await loadFavs();refreshCount();return;}
+      try{const r=await fetch(favApi(),{cache:'no-store',headers:favHeaders(false)});
+        if(r.ok){await loadFavs();refreshCount();setStatus('已连接同步服务：'+v+(tk?'（已带令牌）':''),'ok');}
+        else if(r.status===401)setStatus('已保存，但后端要求令牌校验失败(401)。请确认令牌填写正确，且后端 FAV_TOKEN 与之匹配。','err');
+        else setStatus('已保存，但连接测试返回 '+r.status+'，请确认地址可公网访问。','err');
+      }catch(e){setStatus('已保存，但无法连接（'+e.message+'）。请确认服务已启动且可公网访问。','err');}
+    };
+    clr.onclick=()=>{try{localStorage.removeItem('pharma_sync_api');localStorage.removeItem('pharma_sync_token');}catch(e){}window.__SYNC_API__='';window.__SYNC_TOKEN__='';inp.value='';if(tinp)tinp.value='';setStatus('已清除，收藏仅本浏览器保存。');};
+  }
+});
+
+(function(){
+  var KEY='pharma_theme';
+  function apply(t){document.documentElement.setAttribute('data-theme',t);var b=document.getElementById('themeToggle');if(b)b.textContent=(t==='light'?'🌙':'☀️');}
+  var q=new URLSearchParams(location.search).get('theme');
+  apply(q||localStorage.getItem(KEY)||'dark');
+  var b=document.getElementById('themeToggle');
+  if(b){b.addEventListener('click',function(){
+    var cur=(document.documentElement.getAttribute('data-theme')==='light')?'dark':'light';
+    apply(cur);try{localStorage.setItem(KEY,cur);}catch(e){}
+  });}
+})();
+</script>
+<script>
+const DATA = {"reportDate": "2026-11-15", "window": "2026-11-12 ~ 2026-11-15", "channels": [{"name": "Endpoints News", "home": "https://endpts.com/"}, {"name": "STAT News", "home": "https://www.statnews.com/"}, {"name": "Fierce Biotech", "home": "https://www.fiercebiotech.com/"}, {"name": "BioPharma Dive", "home": "https://www.biopharmadive.com/"}, {"name": "GEN", "home": "https://www.genengnews.com/"}, {"name": "Pharma Times", "home": "https://www.pharmatimes.com/"}, {"name": "Pharmaceutical Executive", "home": "https://www.pharmexec.com/"}, {"name": "PRNewswire BioTech", "home": "https://www.prnewswire.com/biotechnology/"}, {"name": "Nat Rev Drug Discovery", "home": "https://www.nature.com/nrd/"}, {"name": "ClinicalTrials.gov", "home": "https://clinicaltrials.gov/"}, {"name": "Europe PMC", "home": "https://europepmc.org/"}, {"name": "北京亦庄·经开区官网", "home": "https://kfqgw.beijing.gov.cn/"}, {"name": "SEC EDGAR", "home": "https://www.sec.gov/"}, {"name": "Recursion IR", "home": "https://ir.recursion.com/"}], "sections": [{"label": "监管审批", "items": [{"title": "8个月火速获批！这款中国原研药拿下全球首个，现在进医保了", "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE96SFpOTFZlT2pIRHZVdzBvM0lrQmMzZ0ZRMllVN0x1YzQ1ZEFmVE1XVzdweE9lNmxZcTY0R3JYTkNvemhWYzRvNXJjNVREYjR2UDhWSzVGQWpyU2xx?oc=5", "source": "上观新闻", "time": "2026-11-14T05:58:00Z", "desc": "8个月火速获批！这款中国原研药拿下全球首个，现在进医保了 上观新闻", "section": "监管审批", "summary": "中国原研药8个月火速获批并拿下全球首个，现已纳入医保。"}, {"title": "BeyondSpring Q3 loss widens to $(0.05); gets FDA Fast Track for Plinabulin", "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOaTEyMkE1aEpqWFBKRVNrR2ZCSGo5QmdBM05lN2xIa20tSVpEMWtKeFJLMHJGM2dhNmlNLU5EbkJtVnJkOU43dGJtZlJwWDFBdmhEN3d0My1lYkdsRzNjUWRpXzl2WER4MnQ3SEU3RHlXTUI4UUNkeVVwemNabWlHQm1zRHNDczBIY2ZraWNqZV9qNVYzamhnd1NaR3VIRDdKLTdFRHc2aC1ibi1neVNMN1U0RHQ?oc=5", "source": "scanx.trade", "time": "2026-11-13T22:49:12Z", "desc": "BeyondSpring Q3 loss widens to $(0.05); gets FDA Fast Track for Plinabulin scanx.trade", "section": "监管审批", "summary": "BeyondSpring获FDA授予Plinabulin快速通道资格，Q3亏损扩大至0.05美元。"}, {"title": "FDA Approves Perioperative Durvalumab/Enfortumab Vedotin in MIBC", "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVkRXYUsybTNRalYyUlBxRkV5MGhBMnBWQ1lJM282dVQwb2JiMl84c3JPOHo4SVlRY0J3RDMtRlROT2diQUNUUmk1ZjVrX1ZIRmExcVNOLXdtQktUTDhBXzZIWVRDcWVPTXQycmdBbU9udU1hTVBsVTgzNXFDLUxETTFJWEp1UDRHMTVneDdBM25TZUl5bXhLelhNNjlMamZQ?oc=5", "source": "CancerNetwork", "time": "2026-11-13T19:08:46Z", "desc": "FDA Approves Perioperative Durvalumab/Enfortumab Vedotin in MIBC CancerNetwork", "section": "监管审批", "summary": "FDA批准围手术期Durvalumab/Enfortumab Vedotin用于肌层浸润性膀胱癌。"}, {"title": "NervGen Receives FDA Breakthrough Therapy Designation for NVG-291 in Chronic Spinal Cord Injury", "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNblIwNTZIVlotREFJYWNuM2k4bGVyR1dFZG1tOFVDTlhBOUxMekRWR3Atc0RfYW9ud2tvMmQ4N1laS25oLW1tQTJDUDJLbjZWRDlkcnU0RnRZLW9yVTlJOWxTajhzazNDNFRmd05peDEzcEVTR3pUakRNQ0FPcmVIakZwaFh3N0ZZSUlnVVhmTnVqUEsyMlVEUldvczVLa0tnMmpKSE9jTmJ1b0xwT2lQUHg5SVhIUjRwSVQ4WGxIaUhiMUJUUnlISzhRME5mUTdSOWVJcnAwODUxczVBUTFkMUhKLWVRcFp4TlZ1eEl4SjdaTG9wbGlaSEZlbjhtLVNvR2pVMHB5SXliZ0hiYlE?oc=5", "source": "The Globe and Mail", "time": "2026-11-12T12:15:29Z", "desc": "NervGen Receives FDA Breakthrough Therapy Designation for NVG-291 in Chronic Spinal Cord Injury The Globe and Mail", "section": "监管审批", "summary": "NervGen的NVG-291获FDA突破性疗法认定，用于慢性脊髓损伤。"}, {"title": "信诺维1类新药注射用亚胺西福获批上市", "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE83aGc3Z0c4MTBKSUpndlhCczEwLVN4alBIYlVRODJWRjFCZ0w5aE82M2pVSUlxaFl4ZDJwMTJrVEFqWG5aN1JwODNvQ2RIaUl6bHhnYnpnUWVPX2VMNXU1MHhR?oc=5", "source": "同花顺财经", "time": "2026-11-12T07:30:04Z", "desc": "信诺维1类新药注射用亚胺西福获批上市 同花顺财经", "section": "监管审批", "summary": "信诺维1类新药注射用亚胺西福获批上市。"}, {"title": "AstraZeneca pulls EU filing for antibody as CHMP backs Gazyvaro in lupus", "url": "https://endpoints.news/astrazeneca-pulls-eu-filing-for-antibody-as-chmp-backs-gazyvaro-in-lupus/", "source": "Endpoints News", "time": "2026-11-13T18:01:59Z", "desc": "AstraZeneca has withdrawn its European marketing application for a monoclonal antibody in a subset of amyloidosis patients. The candidate had previously failed two late-stage studies in a broader population, but the drugmaker then said that ...", "section": "监管审批", "summary": "阿斯利康撤回某单抗欧盟上市申请；CHMP支持Gazyvaro用于狼疮。"}, {"title": "Pharmaceutical Executive Daily: FDA Shelves CNPV Program", "url": "https://www.pharmexec.com/view/daily-fda-shelves-cnpv-program", "source": "Pharmaceutical Executive", "time": "2026-11-13T18:01:12Z", "desc": "FDA reportedly shelves its Commissioner’s National Priority Voucher program, Eli Lilly breaks ground on a $3.5 billion Pennsylvania manufacturing site for next-generation obesity treatments, and Parexel’s Stacy Hurt on how small protocol decisions can become enrollment and retention barriers.", "section": "监管审批", "summary": "FDA据报搁置专员国家优先凭证（CNPV）计划，礼来同步举行新厂动工仪式。"}, {"title": "FDA Pauses Commissioner’s National Priority Voucher Program: Report", "url": "https://www.pharmexec.com/view/fda-shelves-commissioner-national-priority-voucher-program-report", "source": "Pharmaceutical Executive", "time": "2026-11-13T15:45:29Z", "desc": "FDA Commissioner’s National Priority Voucher program reportedly in limbo for expedited drug reviews.", "section": "监管审批", "summary": "FDA据报暂停专员国家优先凭证计划，加速药物审评通道陷入停滞。"}]}, {"label": "临床试验", "items": [{"title": "Servier Presents Updated Four-Year Results from Phase 2 FIREFLY-1 Study of OJEMDA® (tovorafenib) in Pediatric Low-Grade Glioma (pLGG) at SNO 2026", "url": "https://www.prnewswire.com/news-releases/servier-presents-updated-four-year-results-from-phase-2-firefly-1-study-of-ojemda-tovorafenib-in-pediatric-low-grade-glioma-plgg-at-sno-2026-302939577.html", "source": "PRNewswire BioTech", "time": "2026-11-14T20:45:00Z", "desc": "Updated longer-term analysis, including up to four years of follow-up data in patients with relapsed or refractory BRAF-altered pediatric low-grade glioma treated with OJEMDA®(tovorafenib), will be presented as an oral presentation on November 14 at 3:45 p.m. EST Data expand on clinically...", "section": "临床试验", "summary": "Servier在SNO 2026公布OJEMDA(tovorafenib)治疗儿童低级别胶质瘤II期FIREFLY-1四"}, {"title": "Final trial results show promising long-term survival with lenvatinib plus pembrolizumab in advanced thymic tumors", "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWDBKRVJjd1lHdkRkbVEwTkw0Y0M1ZjJfcmtTSGJYbFVmOHhvODdjLWdhcUxlZlRBOHRBLTRRWWJxcWhRTFBXS2pMMjh1QkNyUU12elUyU2JzalJCNEd0ZVVNN0ttWWNsZlNqNVdHdWRNOTBuZDdVMEMtUzBMakN4TDZFcjVBd3djSVE?oc=5", "source": "Medical Xpress", "time": "2026-11-13T18:20:07Z", "desc": "Final trial results show promising long-term survival with lenvatinib plus pembrolizumab in advanced thymic tumors Medical Xpress", "section": "临床试验", "summary": "最终试验结果显示lenvatinib联合pembrolizumab治疗晚期胸腺肿瘤具长期生存获益。"}, {"title": "Brain implant startup pauses trials", "url": "https://www.statnews.com/2026/11/13/health-news-brain-implant-startup-pauses-trials/?utm_campaign=rss", "source": "STAT News", "time": "2026-11-13T14:40:32Z", "desc": "Synchron has paused clinical trials of its second-generation brain-computer interface. Leaders say the pause is not safety related.", "section": "临床试验", "summary": "脑机接口初创Synchron暂停第二代设备临床试验。"}, {"title": "Rezolute gets an uplift from phase 3 tumor hyperinsulinism win ahead of FDA meeting", "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNb2duNWFTUjViWTE1SXhxb0JYVVhtenl6blRaZzJsSUsxYUlOQ2J0a0ZxbERLajh3RnEtc1c5am1JYzdhUzRFQzZIclNOS3c5cmk2MmdGMXgwbVpmaERhVXlSeDR3NkJjeFRjMW9wa2o4R3JWQjRGMFlaYlhnMG5icm1rQjRGakJtdmlFN0Q3RDk1QQ?oc=5", "source": "Fierce Biotech", "time": "2026-11-13T14:30:41Z", "desc": "Rezolute gets an uplift from phase 3 tumor hyperinsulinism win ahead of FDA meeting Fierce Biotech", "section": "临床试验", "summary": "Rezolute III期肿瘤相关高胰岛素血症试验告捷，将赴FDA会议。"}, {"title": "Sellas Life Sciences shares jump as key leukemia trial results near (SLS:NASDAQ)", "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQV2NuZFMxSjBIY1FFck5ZRVJid1RuRXAzTlhtZVN4bXJ1WWthVGRFNFRSOWhmekJ3QlhTVTNtalhPOXdualhJWFRSQi1UTzZ1VDlzWVhQVDNORkNYa1NjRXFMZ0xJTVpUN2FLS2tjaHNRRnd0SFBOb1A2Z1ByekpESjUwTEZjTU9qZ2JHNk1xeEdiNkFjdjFZSFAza0JLcWdmOTF0LUdYX1A?oc=5", "source": "Seeking Alpha", "time": "2026-11-13T03:38:00Z", "desc": "Sellas Life Sciences shares jump as key leukemia trial results near (SLS:NASDAQ) Seeking Alpha", "section": "临床试验", "summary": "Sellas Life Sciences关键白血病试验结果临近，股价大涨。"}, {"title": "A Study of Tersolisib (LY4064809) and Abemaciclib With Hormone Therapies in Participants With PIK3CA-Mutated Early Breast Cancer", "url": "https://clinicaltrials.gov/study/NCT07935317", "source": "ClinicalTrials.gov", "time": "2026-11-12T16:00:00Z", "desc": "登记号 NCT07935317；申办方 Eli Lilly and Company；适应症 Breast Neoplasms。The main purpose of this study is to compare two ways of giving the anti-cancer medicines abemaciclib and hormone therapy with tersolisib in participants with early breast cancer that has a genetic mutation (PIK3CA mutat", "section": "临床试验", "_nct": "NCT07935317", "summary": "礼来登记NCT07935317，评估Tersolisib(LY4064809)联合Abemaciclib及激素疗法治疗P"}, {"title": "How Diet Changes Affect Digestive Symptoms in Perak Athletes", "url": "https://clinicaltrials.gov/study/NCT07934823", "source": "ClinicalTrials.gov", "time": "2026-11-12T16:00:00Z", "desc": "登记号 NCT07934823；申办方 Universiti Tunku Abdul Rahman；适应症 Gastrointestinal Symptom、Athletes、FODMAP Diet。The aim of this study is to determine the effectiveness of a low FODMAP diet and microencapsulated oral calcium butyrate supplementation in reducing GI symptoms among athletes in Perak.", "section": "临床试验", "_nct": "NCT07934823", "summary": "登记NCT07934823，研究饮食改变对Perak运动员胃肠道症状的影响。"}, {"title": "An All-Oral Combination of Ivosidenib, Sonrotoclax, and Chidamide for Newly Diagnosed Acute Myeloid Leukemia With an IDH1 Mutation (ISC)", "url": "https://clinicaltrials.gov/study/NCT07937124", "source": "ClinicalTrials.gov", "time": "2026-11-12T16:00:00Z", "desc": "登记号 NCT07937124；申办方 First Affiliated Hospital of Zhejiang University；适应症 Acute Myeloid Leukemia。This prospective, multicenter, exploratory clinical study is designed to evaluate the efficacy and safety of an all-oral combination of ivosidenib, sonrotoclax, and chidamide in adults with newly diagnosed acute myeloid ", "section": "临床试验", "_nct": "NCT07937124", "summary": "浙大一院登记NCT07937124，评估Ivosidenib+Sonrotoclax+Chidamide全口服方案治疗I"}, {"title": "GENFIT highlights nangibotide potential in ACLF", "url": "https://pharmatimes.com/news/genfit-highlights-nangibotide-potential-in-aclf/", "source": "Pharma Times", "time": "2026-11-12T10:53:30Z", "desc": "Phase 2 data expected during 2027", "section": "临床试验", "summary": "GENFIT强调nangibotide在慢加急性肝衰竭潜力，II期数据预计2027年公布。"}, {"title": "Phase I Trial of Subcutaneous VDJ010 In Healthy Subjects and Patients With Ulcerative Colitis", "url": "https://clinicaltrials.gov/study/NCT07932691", "source": "ClinicalTrials.gov", "time": "2026-11-11T16:00:00Z", "desc": "登记号 NCT07932691；申办方 Beijing VDJBio Co., LTD.；适应症 Ulcerative Colitis (UC)。This study adopted a multi-center, randomized, double-blind, placebo-controlled, single- and multiple-ascending dose design, using recombinant human IL-2 fusion protein (VDJ010) administered subcutaneously to evaluate it", "section": "临床试验", "_nct": "NCT07932691", "summary": "北京VDJBio登记NCT07932691，开展VDJ010皮下注射治疗溃疡性结肠炎I期试验。"}, {"title": "BCMA/GPRC5D Dual-Target CAR-T Cell Immunotherapy for Relapsed/Refractory Multiple Myeloma", "url": "https://clinicaltrials.gov/study/NCT07927842", "source": "ClinicalTrials.gov", "time": "2026-11-09T16:00:00Z", "desc": "登记号 NCT07927842；申办方 Chinese PLA General Hospital；适应症 Multiple Myeloma; Relapsed/Refractory Multiple Myeloma。This is a single-center, open-label, single-arm, investigator-initiated clinical study to evaluate the safety, tolerability, and preliminary efficacy of SL4903, a BCMA/GPRC5D dual-target autologous CAR-T cell injection, ", "section": "临床试验", "_nct": "NCT07927842", "summary": "解放军总医院登记NCT07927842，开展BCMA/GPRC5D双靶点CAR-T治疗复发难治多发性骨髓瘤。"}, {"title": "Study to Evaluate Pharmacokinetics, Safety, and Tolerability of Subcutaneous Injections of Elamipretide in Pediatric Subjects With Barth Syndrome", "url": "https://clinicaltrials.gov/study/NCT07927972", "source": "ClinicalTrials.gov", "time": "2026-11-09T16:00:00Z", "desc": "登记号 NCT07927972；申办方 Mighty Therapeutics, Inc.；适应症 Barth Syndrome。This Phase 1, open-label trial will enroll approximately 6 subjects who have BTHS weighing between 7 and 30 kg. Subjects will receive a weight-based dose of elamipretide daily via SC injection for 4 weeks. PK samples wil", "section": "临床试验", "_nct": "NCT07927972", "summary": "Mighty Therapeutics登记NCT07927972，评估Elamipretide皮下注射在Barth综合征"}, {"title": "Regeneron posts mid-stage POTS data; Kyverna completes CAR-T filing", "url": "https://endpoints.news/regeneron-posts-mid-stage-pots-data-kyverna-completes-car-t-filing/", "source": "Endpoints News", "time": "2026-11-13T16:12:28Z", "desc": "Plus, news about Merck KGaA, Rezolute, Vir, Orakl and Cellectis. Regeneron’s mid-stage POTS data: The biotech’s monoclonal antibody, baloncibart, given at 450 mg led to an average 11.4-beat-per-minute reduction in heart ...", "section": "临床试验", "summary": "Regeneron公布POTS中期数据；Kyverna完成CAR-T申报，另涉Merck KGaA等动态。"}]}, {"label": "交易速览", "items": [{"title": "Windward prices $175M IPO to advance China-licensed lung drugs", "url": "https://www.biopharmadive.com/news/windward-ipo-pricing-immune-drugs-china-deals-tezspire/874533/", "source": "BioPharma Dive", "time": "2026-11-13T01:22:00Z", "desc": "The Swiss biotech, which pocketed another $50 million through a concurrent private share sale to Sanofi, is developing a potential competitor to the blockbuster asthma treatment Tezspire.", "section": "交易速览", "summary": "Windward Bio定价1.75亿美元IPO，推进中国授权肺部药物研发。"}, {"title": "Blackstone bets $1.5B on Pfizer’s obesity drug", "url": "https://www.biopharmadive.com/news/blackstone-pfizer-berobenatide-deal/874483/", "source": "BioPharma Dive", "time": "2026-11-12T16:44:00Z", "desc": "The deal will support a sprawling Phase 3 program for a monthly GLP-1 shot Pfizer acquired by winning a bidding war for the drug’s previous owner, Metsera.", "section": "交易速览", "summary": "Blackstone向辉瑞肥胖药投资15亿美元，支持每月一次GLP-1注射剂III期项目。"}, {"title": "Argenx is spending billions to push beyond Vyvgart", "url": "https://endpoints.news/argenx-is-spending-billions-to-push-beyond-vyvgart/", "source": "Endpoints News", "time": "2026-11-13T18:50:58Z", "desc": "Six months into her term as CEO of rare disease drugmaker argenx, Karen Massey has overseen two acquisitions worth a combined potential of about $3.4 billion as the company seeks to build a broader immunology ...", "section": "交易速览", "summary": "argenx斥资数十亿美元并购，推动超越Vyvgart的业务扩张。"}, {"title": "Windward Bio hits Nasdaq with $175M IPO, plus another $50M from Sanofi", "url": "https://endpoints.news/windward-bio-hits-nasdaq-with-175m-ipo-plus-another-50m-from-sanofi/", "source": "Endpoints News", "time": "2026-11-13T16:30:30Z", "desc": "Windward Bio, a biotech developing drugs for respiratory diseases, made its public debut after putting together $175 million in its IPO. The company began trading Friday with an initial share price {$WWB} of $17 apiece ...", "section": "交易速览", "summary": "Windward Bio登陆纳斯达克，IPO募资1.75亿美元，另获赛诺菲5000万美元。"}, {"title": "英矽智能携手罗欣药业 达成AI制药慢性病研发战略合作", "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNckUwYk9iRlJXanFxeEwtdmhPRE1FRlYtekI0VHpGMXc4SVdhQ0pPRFBsRGtJZThZRzhPMjE3dkJhQW0zU0NsdVpLcTRZQ3hxdk03NXFyQzBZaHVYUDg4MHBSN3ppd054Z0NHcUV3bDkxeEJwalVxdVJJeVpLVHFLNFQ4dXZYSlRf?oc=5", "source": "Sohu", "time": "2026-11-13T12:48:51Z", "desc": "英矽智能携手罗欣药业 达成AI制药慢性病研发战略合作 Sohu", "section": "交易速览", "summary": "英矽智能与罗欣药业达成AI制药慢性病研发战略合作。"}, {"title": "英矽智能与罗欣药业签署战略合作协议 聚焦消化代谢等慢性病创新药", "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1zSnoyeENQb21ZY0dabWVrRzN0WDhXNDJzR25JZmhveGNQVFdhbDNOdGxDQnlvem9WTlAzamdIZDNKZ18wb1cyWkxPbC1Sd255SDlvX1RocjV2NWVRZEF3MVNR?oc=5", "source": "观点网", "time": "2026-11-13T08:50:30Z", "desc": "英矽智能与罗欣药业签署战略合作协议 聚焦消化代谢等慢性病创新药 观点网", "section": "交易速览", "summary": "英矽智能与罗欣药业签署战略合作协议，聚焦消化代谢等慢性病创新药。"}, {"title": "Pfizer and Blackstone Sign Co-Funding Deal for berobenatide", "url": "https://www.pharmexec.com/view/pfizer-blackstone-sign-co-funding-deal-berobenatide", "source": "Pharmaceutical Executive", "time": "2026-11-12T14:35:05Z", "desc": "Pfizer and Blackstone Life Sciences sign a co-funding deal in which Blackstone is set to provide up to $1.5 billion through 2028 to advance berobenatide.", "section": "交易速览", "summary": "辉瑞与Blackstone Life Sciences签署berobenatide共同出资协议。"}]}, {"label": "行业动态", "items": [{"title": "Milestone cuts 20% of staff as Cardamyst sales hit $1M in Q3", "url": "https://endpoints.news/milestone-cuts-20-of-staff-as-cardamyst-sales-hit-1m-in-q3/", "source": "Endpoints News", "time": "2026-11-13T16:19:06Z", "desc": "Milestone Pharmaceuticals is cutting costs and staff following the FDA approval of its heart arrhythmia treatment, with two top executives departing the leadership team. The company said in its third-quarter earnings ...", "section": "行业动态", "summary": "Milestone因Cardamyst获FDA批准后Q3销售仅100万美元，裁员20%削减成本。"}, {"title": "Novo submits sickle cell drug; Flagship, Gates Foundation deepen ties", "url": "https://www.biopharmadive.com/news/novo-etavopivat-flagship-gates-ascidian-immuneering-neurosterix/874120/", "source": "BioPharma Dive", "time": "2026-11-13T14:36:00Z", "desc": "Novo views the medicine, acquired in a billion-dollar deal, as a future blockbuster. Meanwhile, a pair of startups forged an RNA editing pact and Astellas lined up two new trials in pancreatic cancer.", "section": "行业动态", "summary": "Novo提交镰状细胞病药物申请；Flagship与盖茨基金会深化合作。"}, {"title": "This week in charts: Brain drugs are back on venture capitalists’ minds", "url": "https://www.biopharmadive.com/news/charts-venture-neuroscience-oyster-vectory-acr-cell-therapy/874570/", "source": "BioPharma Dive", "time": "2026-11-13T14:00:00Z", "desc": "Five neurology-focused startups have together raised around $450 million in the last few weeks. Elsewhere, investors had a muted response to the latest cell therapy research.", "section": "行业动态", "summary": "本周图表：脑部药物重获风投青睐，五家神经领域初创近期共融资约4.5亿美元。"}, {"title": "Pharmaceutical Executive Daily: Moderna Outlines Growth Plan at 2026 Analyst Day", "url": "https://www.pharmexec.com/view/daily-moderna-outlines-growth-plan-2026-analyst-day", "source": "Pharmaceutical Executive", "time": "2026-11-12T19:33:26Z", "desc": "Moderna lays out an oncology-driven growth plan at its 2026 Analyst Day, Pfizer and Blackstone sign a co-funding deal worth up to $1.5 billion for berobenatide, and Parexel’s Stacy Hurt on how patients’ use of AI is reshaping sponsor communication.", "section": "行业动态", "summary": "Moderna在2026分析师日公布肿瘤驱动增长计划；辉瑞与Blackstone签署合作。"}, {"title": "Bristol Myers research chief to depart in ‘evolution’ of company’s structure", "url": "https://www.biopharmadive.com/news/bristol-myers-robert-plenge-cristian-massacesi-research-transition/874476/", "source": "BioPharma Dive", "time": "2026-11-12T16:03:00Z", "desc": "Robert Plenge is leaving as part of a shift that will see the company merge together its R&D department in a bid to speed development and capitalize on new technologies.", "section": "行业动态", "summary": "BMS研发主管Robert Plenge将离职，公司合并研发部门调整结构。"}, {"title": "George Church quits AI startup; Ira Mellman’s immunotherapy fight; and more", "url": "https://endpoints.news/george-church-quits-ai-startup-ira-mellmans-immunotherapy-fight-and-more/", "source": "Endpoints News", "time": "2026-11-14T11:00:31Z", "desc": "Welcome back to another edition of Endpoints Weekly! The unseasonably warm autumn we’ve had in New York finally seems to be breaking, with highs expected in the mid-40s and low 50s for this weekend and ...", "section": "行业动态", "summary": "George Church退出AI初创；Ira Mellman免疫疗法之争等本周要闻。"}, {"title": "Insilico Medicine Showcases Generative AI Drug Discovery Across Major Global Conferences", "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWWhWOUFPSW8xNHBONWMySklFYWdEOXBrY2h6bnl0T1dSdkpNb3UzNGVGLWZxb0Jyb3FaR2FLaGYyRzBFNnV4X3VUR200Mk9QeGpZRG9TTFlJYXZfSWlwajJOdEt1bDZJMHExV3pWWXVMdmdJMUtPT2hIelB4UDd3VVptZlBMUjBMM1lsaUxPWmJOS053b3JIVWIyaUgtQ0ZBYjVkWVFfQzBfR3BYel9QMXg2TQ?oc=5", "source": "Bioengineer.org", "time": "2026-11-14T01:22:42Z", "desc": "Insilico Medicine Showcases Generative AI Drug Discovery Across Major Global Conferences Bioengineer.org", "section": "行业动态", "summary": "英矽智能在全球主要会议展示生成式AI药物发现成果。"}, {"title": "DCIS Cell Atlas Reveals Clues to Invasive Breast Cancer Progression", "url": "https://www.genengnews.com/topics/cancer/dcis-cell-atlas-reveals-clues-to-invasive-breast-cancer-progression/", "source": "GEN", "time": "2026-11-13T22:04:09Z", "desc": "Researchers created a detailed map of the tumor microenvironment surrounding estrogen receptor-positive ductal carcinoma in situ , which may help better predict progression to invasive breast cancer and inform on future therapeutic strategies. The post DCIS Cell Atlas Reveals Clues to Invasive Breast Cancer Progression appeared first on GEN - Genetic Engineering and Biotechnology News .", "section": "行业动态", "summary": "DCIS细胞图谱揭示侵袭性乳腺癌进展线索。"}, {"title": "How Vancomycin-Resistant Enterococcus Evolved in a Danish Hospital", "url": "https://www.genengnews.com/topics/infectious-diseases/how-vancomycin-resistant-enterococcus-evolved-in-a-danish-hospital/", "source": "GEN", "time": "2026-11-13T20:02:36Z", "desc": "A genomic study reveals how genetic mutations, recombination, and resistance-carrying plasmids shaped the evolution, diversification, and decline of vancomycin-resistant Enterococcus faecium in Danish hospitals between 2012 and 2020. The post How Vancomycin-Resistant Enterococcus Evolved in a Danish Hospital appeared first on GEN - Genetic Engineering and Biotechnology News .", "section": "行业动态", "summary": "基因组研究揭示丹麦医院耐万古霉素肠球菌的进化机制。"}, {"title": "STAT+: Doctors have questions about the Watchman. Boston Scientific has a sales pitch.", "url": "https://www.statnews.com/2026/11/13/investigation-boston-scientific-watchman-cardiac-implant-marketing-science/?utm_campaign=rss", "source": "STAT News", "time": "2026-11-13T17:55:00Z", "desc": "The Boston Globe investigates if Boston Scientific's marketing of its cardiac implant, Watchman, outpaced the science.", "section": "行业动态", "summary": "Boston Globe调查Boston Scientific心脏植入物Watchman的营销推广，医生对该产品存疑。"}, {"title": "Moderna readies commercial cancer vaccine production ahead of FDA filing", "url": "https://endpoints.news/moderna-readies-commercial-cancer-vaccine-production-ahead-of-fda-filing/", "source": "Endpoints News", "time": "2026-11-13T16:26:47Z", "desc": "MARLBOROUGH, MA — Moderna is “on track and ready” to make thousands of doses of its Merck-partnered cancer vaccine as it prepares to file a marketing application by the end of this year with the FDA ...", "section": "行业动态", "summary": "Moderna为FDA申报做准备，推进与Merck合作癌症疫苗的商业化生产。"}, {"title": "STAT+: Up and down the ladder: The latest comings and goings", "url": "https://www.statnews.com/pharmalot/2026/11/13/up-down-ladder-jobs-pharma-biotech-2/?utm_campaign=rss", "source": "STAT News", "time": "2026-11-13T15:48:14Z", "desc": "From new hires to departures, promotions and transfers, here are the latest comings and goings in the pharmaceutical industry.", "section": "行业动态", "summary": "STAT+人事升降榜：生物医药行业最新招聘、离职、晋升与调动汇总。"}, {"title": "Downstream Processing: Purifying Complex Antibody Therapeutics When Target Molecules Misbehave", "url": "https://www.genengnews.com/multimedia/webinars/downstream-processing-purifying-complex-antibody-therapeutics-when-target-molecules-misbehave/", "source": "GEN", "time": "2026-11-13T15:39:32Z", "desc": "In this GEN webinar, downstream process development and scale up manufacturing specialists will discuss practical strategies for building robust purification processes when the target molecule misbehaves. The post Downstream Processing: Purifying Complex Antibody Therapeutics When Target Molecules Misbehave appeared first on GEN - Genetic Engineering and Biotechnology News .", "section": "行业动态", "summary": "GEN网络研讨会：下游工艺开发与放大专家探讨复杂抗体疗法的纯化难题。"}, {"title": "Eli Lilly Breaks Ground on $3.5 billion Pennsylvania Manufacturing Site", "url": "https://www.pharmexec.com/view/eli-lilly-breaks-ground-3-billion-pennsylvania-manufacturing-site", "source": "Pharmaceutical Executive", "time": "2026-11-13T14:39:09Z", "desc": "Eli Lilly breaks ground on a $3.5 billion manufacturing facility in Pennsylvania to produce next-generation obesity treatments like retatrutide.", "section": "行业动态", "summary": "礼来在宾夕法尼亚州动工建设35亿美元生产基地，生产下一代药物。"}, {"title": "Gubra CEO gets the quick hook; Ex-HHS official Brett Giroir takes over at cancer biotech", "url": "https://endpoints.news/gubra-ceo-gets-the-quick-hook-ex-hhs-official-brett-giroir-takes-over-at-cancer-biotech/", "source": "Endpoints News", "time": "2026-11-13T12:00:11Z", "desc": "→ AbbVie and Boehringer Ingelheim’s Danish obesity partner Gubra is going with a co-CEO arrangement after the abrupt departure of Markus Rohrwild. Endpoints News just spoke with Rohrwild last month about Gubra’s ...", "section": "行业动态", "summary": "Gubra任命联席CEO；前HHS官员Brett Giroir接手一家癌症生物技术公司。"}, {"title": "Reference Genomes of Malaria-Causing Plasmodium Parasites Completed", "url": "https://www.genengnews.com/topics/infectious-diseases/reference-genomes-of-malaria-causing-plasmodium-parasites-completed/", "source": "GEN", "time": "2026-11-12T23:44:45Z", "desc": "Using DNA sequenced from patient blood samples, researchers assembled complete reference genomes of neglected malaria parasites, uncovering genetic regions potentially involved in immune evasion and providing new tools for disease surveillance. The post Reference Genomes of Malaria-Causing Plasmodium Parasites Completed appeared first on GEN - Genetic Engineering and Biotechnology News .", "section": "行业动态", "summary": "研究者利用患者血样DNA测序，组装出疟原虫完整参考基因组。"}, {"title": "High Frequency of Drug-Impacting Gene Variants Found in All of Us Cohort", "url": "https://www.genengnews.com/topics/omics/high-frequency-of-drug-impacting-gene-variants-found-in-all-of-us-cohort/", "source": "GEN", "time": "2026-11-12T20:17:04Z", "desc": "A study finds that everyone in a diverse, nearly 100,000-person sample carried at least one genetic variant that affects how their body processes medications, and a quarter of those people had been prescribed a medication that is known to be impacted by the variant they carried. The post High Frequency of Drug-Impacting Gene Variants Found in All of Us Cohort appeared first on GEN - Genetic Engineering and Biotechnology News .", "section": "行业动态", "summary": "“All of Us”队列研究发现，近10万多样本中每人至少携带一个影响药物的基因变异。"}, {"title": "Neuroprotective Protein Atlas Positions the Blood-Brain Barrier as a Selective Checkpoint", "url": "https://www.genengnews.com/topics/translational-medicine/neuroprotective-protein-atlas-positions-the-blood-brain-barrier-as-a-selective-checkpoint/", "source": "GEN", "time": "2026-11-12T18:59:49Z", "desc": "The blood-brain barrier keeps most proteins in the bloodstream out of the brain, but not all. The pathways that import them are damaged early in Alzheimer’s disease models, hinting at new ways to treat the disease. The post Neuroprotective Protein Atlas Positions the Blood-Brain Barrier as a Selective Checkpoint appeared first on GEN - Genetic Engineering and Biotechnology News .", "section": "行业动态", "summary": "神经保护蛋白图谱揭示血脑屏障是选择性检查点，仅允许部分蛋白入脑。"}, {"title": "Moderna Lays Out Oncology-Driven Growth Plan at 2026 Analyst Day", "url": "https://www.pharmexec.com/view/moderna-oncology-driven-growth-plan-2026-analyst-day", "source": "Pharmaceutical Executive", "time": "2026-11-12T15:10:22Z", "desc": "Moderna used its 2026 Analyst Day to outline an oncology-driven growth strategy anchored by intismeran and other cancer antigen therapies.", "section": "行业动态", "summary": "Moderna在2026分析师日公布以intismeran为核心的肿瘤驱动增长战略。"}, {"title": "The FDA has over 1k open jobs — and the staffing shortage is hitting pharma", "url": "https://www.biopharmadive.com/news/fda-staffing-shortages-drug-reviews-pharma/874480/", "source": "BioPharma Dive", "time": "2026-11-12T14:38:00Z", "desc": "The agency is still recovering from a mass staff exodus last year that left it shorthanded. Here’s what it means for the industry.", "section": "行业动态", "summary": "FDA仍有逾千岗位空缺，去年大规模人员流失致人手短缺波及制药业。"}, {"title": "How Patients’ Use of AI Impact How Sponsors Communicate with Them", "url": "https://www.pharmexec.com/view/patients-use-ai-impact-how-sponsors-communicate-with-them", "source": "Pharmaceutical Executive", "time": "2026-11-12T11:00:00Z", "desc": "With 60% of Americans using AI health tools, patient advocates are encouraging collaborative use of AI alongside healthcare teams for better outcomes.", "section": "行业动态", "summary": "60%美国人使用AI健康工具，患者倡导者呼吁申办方协作式沟通。"}, {"title": "Cancer Grand Challenges launches AI research project", "url": "https://pharmatimes.com/news/cancer-grand-challenges-launches-ai-research-project/", "source": "Pharma Times", "time": "2026-11-12T10:56:47Z", "desc": "£8m initiative to support cancer discovery", "section": "行业动态", "summary": "Cancer Grand Challenges启动800万英镑AI研究项目，支持癌症发现。"}, {"title": "股价在等数据，数据或已来临：港股创新药ETF景顺(513780)的三条催化与一个估值前提", "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1jcS1CNWFsUWV3SjhLcGlwUlVXVE44cHFGeFdCQmpCV2hYX1VIZUV5Vm5nUHlFSmtSemlXRXU2cTRULXJrRk9YNmhiSHFDbTgxajhHYUpLdl9xMkdxZ0dMN3Z6ZndNdGJLMGVvQldOaw?oc=5", "source": "新浪财经", "time": "2026-11-12T08:31:00Z", "desc": "股价在等数据，数据或已来临：港股创新药ETF景顺(513780)的三条催化与一个估值前提 新浪财经", "section": "行业动态", "summary": "港股创新药ETF景顺(513780)的三条催化因素与一个估值前提分析。"}, {"title": "Cancer Vaccines Show Promise for Treatment and Prevention", "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPX3JTb1VwWWFOSzMtNW83aDZDazJZWEZtT0t6RDRTWFM2R2QzdlRLRE04NUhQVkhLN2k5V2xWZ2J6Q2tsdVNkRnF0ZE13UDRRT09fLXFNemJYSlpNdU96eWthSE5fZllIRHhvb19kdFA5ZVpVUUFhZnhMYW1NR0JnZFp6ZmdiOGFhQmphOWpKcFE4TVFKRWphVTliTVdVUWpLNXFZdElpVUxNOEY5NFlacnVyODctdm4yVVUwWnI3YkRfa2s?oc=5", "source": "Johns Hopkins Medicine", "time": "2026-11-12T00:52:26Z", "desc": "Cancer Vaccines Show Promise for Treatment and Prevention Johns Hopkins Medicine", "section": "行业动态", "summary": "Johns Hopkins Medicine称癌症疫苗在治疗与预防方面展现前景。"}]}, {"label": "亦庄园区动态", "items": [{"title": "生物医药专利培训助企高质量发展", "url": "https://kfqgw.beijing.gov.cn/ywdt/gzdt/202611/t20261111_4941930.html", "source": "北京亦庄·经开区官网", "time": "2026-11-11T00:00:00Z", "desc": "本报讯（融媒体中心 李玉凤）近日，由北京经开区科技和产业促进局、北京市知识产权保护中心、中关村知识产权保护中心等单位联合主办，中关村知识产权保护中心BioPark分中心承办的“生物医药领域专利布局与申请质量提升培训”在国际医药创新公园举办。本次培训聚焦生物医药产业专利保护中的重点、难点问题，邀请专利审查协作北京中心两位资深审查员授课，吸引了20余家生物医药企业代表参加。 培训现场，专利审查协作北京中心医药生物部基因工程室审查员刘春杰以“多肽类药物专利保护策略”为题进行授课。他从多肽类药物概况切入，系统梳理了GLP-1药物的研发现状、发展历程与全球专利态势", "section": "亦庄园区动态", "summary": "北京经开区等多方联合举办生物医药领域专利布局与申请培训，助企高质量发展。"}, {"title": "看！5.5平方公里国际医药创新公园拔节生长", "url": "https://kfqgw.beijing.gov.cn/ywdt/gdcyfzgd/zdxm/202611/t20261109_4938488.html", "source": "北京亦庄·经开区官网", "time": "2026-11-09T00:00:00Z", "desc": "国际医药创新公园（BioPark）。张磊/摄（资料图） 南中轴以东、京台路以西，北京五环一带最后一片完整的产业发展区上，国际医药创新公园（BioPark）正在加速成型。从规划到落地，从蓝图到实景，这座北京重点打造的全球医药健康创新合作枢纽，目标、布局、路径尽在一组组清晰数字之中。 01 谋篇 2年时间 见证园区从谋划到落地 2024年7月18日 在博鳌亚洲论坛全球健康论坛第三届大会“投资北京”主题推介会上，北京经开区首次发布国际医药创新公园建设计划。 2025年4月15日 《国际医药创新公园高质量建设实施方案（2025—2030年）》印发，明确功能布局、", "section": "亦庄园区动态", "summary": "北京经开区5.5平方公里国际医药创新公园（BioPark）加速成型。"}, {"title": "亦企同行 临床资源直通车精准对接医企需求", "url": "https://kfqgw.beijing.gov.cn/ywdt/gzdt/202611/t20261109_4938521.html", "source": "北京亦庄·经开区官网", "time": "2026-11-09T00:00:00Z", "desc": "本报讯（融媒体中心 刘茜）近日，“亦企同行·临床资源直通车”活动走进首都医科大学附属北京朝阳医院。活动由北京协同医药医学创新促进中心主办、首都医科大学附属北京朝阳医院支持、北京经开区工委组织人事部亦企服务港旧宫港指导，吸引复星医药、爱恩康、和铂医药、银谷制药、伯乐祝医药等30余家经开区生物医药企业及相关行业机构代表参加。 本次活动聚焦医药补贴专项政策、临床新技术应用、临床质量管理及项目合作等内容，通过政策解读、专题报告、参观座谈等形式，推动医疗机构临床研究资源与企业研发需求精准对接，为生物医药企业拓展合作渠道、提升研发质量搭建交流平台。 临床研究是连接药", "section": "亦庄园区动态", "summary": "“亦企同行·临床资源直通车”走进北京朝阳医院，精准对接医企临床需求。"}]}, {"label": "论文研究", "items": [{"title": "How can gene therapy platforms be scaled up to treat thousands of rare diseases?", "url": "https://www.nature.com/articles/d41573-026-00179-2", "source": "Nat Rev Drug Discovery", "time": "2026-11-12T16:00:00Z", "desc": "Nature Reviews Drug Discovery, Published online: 13 November 2026; doi:10.1038/d41573-026-00179-2 The NIH’s P. J. Brooks discusses the challenges and opportunities ahead for gene therapies and gene editing for diseases of no commercial interest.", "section": "论文研究", "summary": "Nat Rev Drug Discovery探讨基因治疗平台如何放大规模以治疗数千种罕见病。"}, {"title": "Cancer vaccine development gets complicated", "url": "https://www.nature.com/articles/d41573-026-00181-8", "source": "Nat Rev Drug Discovery", "time": "2026-11-12T16:00:00Z", "desc": "Nature Reviews Drug Discovery, Published online: 13 November 2026; doi:10.1038/d41573-026-00181-8 Merck and Moderna’s intismeran autogene succeeded in a landmark melanoma trial, but the oncology community still has more questions than answers about the future of cancer vaccines.", "section": "论文研究", "summary": "Nat Rev Drug Discovery分析癌症疫苗开发日趋复杂的现状与挑战。"}, {"title": "From hope to adoption: an industry perspective on the maturation of new approach methodologies", "url": "https://www.nature.com/articles/s41573-026-01583-4", "source": "Nat Rev Drug Discovery", "time": "2026-11-12T16:00:00Z", "desc": "Nature Reviews Drug Discovery, Published online: 13 November 2026; doi:10.1038/s41573-026-01583-4 From hope to adoption: an industry perspective on the maturation of new approach methodologies", "section": "论文研究", "summary": "Nat Rev Drug Discovery从产业视角评述新方法学（NAMs）从希望走向应用。"}, {"title": "Immunogenicity risk assessment of novel modalities using new approach methodologies", "url": "https://www.nature.com/articles/s41573-026-01562-9", "source": "Nat Rev Drug Discovery", "time": "2026-11-12T16:00:00Z", "desc": "Nature Reviews Drug Discovery, Published online: 13 November 2026; doi:10.1038/s41573-026-01562-9 Novel therapeutic modalities such as cell therapies and gene editors could potentially treat many diseases, but their clinical progression is limited by unwanted immune responses. This Perspective proposes how ‘new approach methodologies’ such as computational tools and organoids can be applied to assess the immunogenicity of novel modalities, given the limited translational value of immunogenicity data from traditional animal models.", "section": "论文研究", "summary": "Nat Rev Drug Discovery探讨用新方法学评估新型模态的免疫原性风险。"}]}, {"label": "政策追踪", "items": [{"title": "STAT+: HHS plans funding for research into ibogaine for PTSD", "url": "https://www.statnews.com/2026/11/13/biotech-news-hhs-funding-for-research-into-ibogaine-for-ptsd/?utm_campaign=rss", "source": "STAT News", "time": "2026-11-13T15:25:46Z", "desc": "The Trump administration will funnel up to $4.9 million into supporting research into ibogaine, a psychedelic that’s drawn interest as a potential treatment for PTSD and addiction.", "section": "政策追踪", "summary": "HHS计划投入至多490万美元资助ibogaine治疗PTSD研究。"}, {"title": "STAT+: Enforcement of stringent Medicaid work requirements delayed for six months", "url": "https://www.statnews.com/2026/11/13/medicaid-work-requirements-implementation-delayed-six-months/?utm_campaign=rss", "source": "STAT News", "time": "2026-11-13T22:21:56Z", "desc": "Enforcement of the Trump administration's stringent new Medicaid work requirements have been delayed for six months, until July 1, 2027.", "section": "政策追踪", "summary": "特朗普政府严格Medicaid工作要求执行推迟六个月。"}, {"title": "STAT+: Democrats coalesce around ‘Medicare for More,’ ‘Medikids’ proposals", "url": "https://www.statnews.com/2026/11/13/democrats-eye-medicare-for-more-vs-medicare-for-all/?utm_campaign=rss", "source": "STAT News", "time": "2026-11-13T21:46:05Z", "desc": "Democrats are coalescing around a plan to offer Medicare to more Americans, if not all of them.", "section": "政策追踪", "summary": "民主党凝聚共识，推动“Medicare for More”“Medikids”提案。"}, {"title": "New addiction society guidance on medetomidine’s brutal withdrawal", "url": "https://www.statnews.com/2026/11/13/medetomidine-withdrawal-asam-new-treatment-guidance/?utm_campaign=rss", "source": "STAT News", "time": "2026-11-13T20:45:42Z", "desc": "The American Society of Addiction Medicine has released the first national guidance for recognizing and treating patients who have taken medetomidine.", "section": "政策追踪", "summary": "美国成瘾医学会发布首份美托咪定戒断识别与处理国家指南。"}, {"title": "多款苏州创新药纳入基本医保和商保", "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1Vd0JqdGUzQW0wQ09rUmwtYW5DM2hNSXYtMG92c0tPNGcyR0ZrVERZLXNTdHJpc2x2S1BRVHlIei0zb3dGQUFVaVRFZTN5TVNTdFJaQjN0cnBGWnE3Qy1pdk5R?oc=5", "source": "苏州新闻", "time": "2026-11-14T02:07:05Z", "desc": "多款苏州创新药纳入基本医保和商保 苏州新闻", "section": "政策追踪", "summary": "苏州多款创新药被纳入基本医保和商业保险。"}]}, {"label": "政策与观点", "items": [{"title": "When Small Protocol Decisions Become Enrollment or Retention Barriers", "url": "https://www.pharmexec.com/view/when-small-protocol-decisions-become-enrollment-or-retention-barriers", "source": "Pharmaceutical Executive", "time": "2026-11-13T11:00:00Z", "desc": "Every protocol decision affects patients, and only those with lived disease experience can identify true burden — from invasive biopsies to daily trial demands.", "section": "政策与观点", "summary": "评论：小型方案决策如何成为入组与留存障碍。"}, {"title": "“可惜你不是中国人”医生一句话，逼出了美国版《我不是药神》", "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9EUUktOHlneUxldVMyMzliUmgyNVFUekVPNFlqS21YX3JHcDFkMGhvanVBTzRnVWhpdHU2SXZaVXZUc2ljSmRaZVR2TUNjTnU3SnhJb29IVDFmSWc?oc=5", "source": "风闻", "time": "2026-11-14T00:50:30Z", "desc": "“可惜你不是中国人”医生一句话，逼出了美国版《我不是药神》 风闻", "section": "政策与观点", "summary": "评论：医生一句话催生美国版《我不是药神》的药品可及性反思。"}, {"title": "This cancer drug is a breakthrough. FDA must fast-track it | Opinion", "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOUw3MXVCNF9YVG5NUXJXTUFtR3RqWUpqUURhdjZCTWJWa1RLQ2JvTC1TemZjOXV6Y1NTMmNIaU5Qa0ZwWUVkTHlaMGpYSVpCYzNBZmJRdzU4bHBvY056NU5Rb2tMUXVjaWR5ZGRIbkdYREd2N0xLS1JYN25iQ0EzNmdpby1kek9JN3d5RXYtSlU1X2ZQZkkxOENpYTVrMVM0M080TVpZOEVXX3pZUWRXRkNDZw?oc=5", "source": "USA Today", "time": "2026-11-14T10:02:00Z", "desc": "This cancer drug is a breakthrough. FDA must fast-track it | Opinion USA Today", "section": "政策与观点", "summary": "USA Today评论文章呼吁FDA加速审批一款突破性抗癌药物。"}, {"title": "Opinion: New organ donation rules are unfair to families", "url": "https://www.statnews.com/2026/11/13/organ-donation-policy-life-sustaining-treatment-brain-death/?utm_campaign=rss", "source": "STAT News", "time": "2026-11-13T14:59:54Z", "desc": "New organ donation rules may “blur the line between the physicians fighting to save a patient's life and the teams responsible for organ procurement.”", "section": "政策与观点", "summary": "STAT评论文章认为新器官捐献规则对家属不公平。"}]}], "sourceNote": "聚合国际媒体/临试/文献/园区/交易所等公开渠道。中文摘要 DeepSeek AI 生成，仅供参考。"};
+const WD = ["周日","周一","周二","周三","周四","周五","周六"];
+function fmtBJ(iso){ if(!iso) return ""; const d=new Date(iso); const bj=new Date(d.getTime()+8*3600*1000);
+  const m=bj.getUTCMonth()+1,day=bj.getUTCDate(),wd=WD[bj.getUTCDay()];
+  const hh=String(bj.getUTCHours()).padStart(2,'0'),mm=String(bj.getUTCMinutes()).padStart(2,'0');
+  return `${m}月${day}日 ${wd} ${hh}:${mm}`; }
+const chEl=document.getElementById('channels');
+(DATA.channels||[]).forEach(c=>{const s=document.createElement('span');s.textContent=c.name;chEl.appendChild(s);});
+const statsEl=document.getElementById('stats');
+DATA.sections.forEach(s=>{const d=document.createElement('div');d.className='stat';
+  d.innerHTML=`<div class="n">${s.items.length}</div><div class="l">${s.label}</div>`;statsEl.appendChild(d);});
+const navEl=document.getElementById('nav');
+DATA.sections.forEach((s,i)=>{const a=document.createElement('a');a.href=`#sec-${i}`;
+  a.innerHTML=`${s.label}<span class="c">${s.items.length}</span>`;navEl.appendChild(a);});
+let idx=0; const mainEl=document.getElementById('main');
+DATA.sections.forEach((s,i)=>{
+  const sec=document.createElement('section');sec.id=`sec-${i}`;sec.setAttribute('data-sec',i);
+  sec.innerHTML=`<div class="sec-head"><h2>${s.label}</h2><span class="cnt">${s.items.length} 条</span></div>`;
+  if(!s.items.length){const e=document.createElement('div');e.className='empty';
+    e.textContent='本期该渠道未检索到相关动态。';sec.appendChild(e);}
+  else{const g=document.createElement('div');g.className='grid';
+    [...s.items].sort((a,b)=>new Date(b.time)-new Date(a.time)).forEach((it,pos)=>{idx++;
+      const c=document.createElement('article');c.className='card';c.dataset.url=it.url;
+      if(pos===0)c.classList.add('lead');
+      if(s.label==='监管审批')c.classList.add('regulatory');
+      if(s.label==='交易速览')c.classList.add('deal');
+      if(s.label==='政策追踪')c.classList.add('policy');
+      c.innerHTML=`<div class="idx">${idx}</div><h3>${it.title}</h3>
+        <div class="meta"><span class="chip">${it.source}</span><span class="time">${fmtBJ(it.time)}（北京时间）</span></div>
+        <p class="summary">${it.summary}</p>
+        <div class="foot"><a class="more" href="${it.url}" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+        <button class="fav" data-url="${it.url}" data-title="${it.title}" data-section="${s.label}" title="收藏">☆</button></div>`;
+      g.appendChild(c);});
+    sec.appendChild(g);}
+  mainEl.appendChild(sec);
+});
+document.getElementById('totalN').textContent=idx;
+document.getElementById('footTotal').textContent=idx;
+const sl=document.getElementById('srcLinks');
+if((DATA.channels||[]).length){sl.innerHTML='来源渠道：'+DATA.channels.map(c=>`<a href="${c.home}" target="_blank" rel="noopener noreferrer">${c.name}</a>`).join(' · ');}
+// 里程碑徽章注入（投资视角关键信号）
+document.querySelectorAll('.card').forEach(c=>{
+  const t=(c.querySelector('h3')?.textContent||'')+(c.querySelector('.summary')?.textContent||'');
+  const b=[];
+  if(/\bphase\s*3\b|phase\s*iii|iii期/.test(t.toLowerCase()))b.push('<span class="ms-badge ph3">Phase 3</span>');
+  if(/\bphase\s*2\b|phase\s*ii(?!\s*i)|ii期/.test(t.toLowerCase()))b.push('<span class="ms-badge ph2">Phase 2</span>');
+  if(/\bphase\s*1\b|phase\s*i(?!\s*i)|i期/.test(t.toLowerCase()))b.push('<span class="ms-badge ph1">Phase 1</span>');
+  if(/fast\s*track|快速通道/.test(t.toLowerCase()))b.push('<span class="ms-badge ft">Fast Track</span>');
+  if(/breakthrough|突破性疗法/.test(t.toLowerCase()))b.push('<span class="ms-badge bt">突破性</span>');
+  if(/fda\s*approv|获批|批准上市|authori[sz]/i.test(t.toLowerCase()))b.push('<span class="ms-badge ok">获批</span>');
+  if(/\$[\d.,]+\s*(billion|million|亿|万)|[\d.]+\s*(亿|万)\s*(美元|美金)/.test(t))b.push('<span class="ms-badge deal">交易</span>');
+  if(/\bipo\b|首次公开|上市/.test(t.toLowerCase()))b.push('<span class="ms-badge ipo">IPO</span>');
+  if(b.length){const d=document.createElement('div');d.className='ms-badges';
+    d.innerHTML=b.join('');c.insertBefore(d,c.querySelector('.meta'));}
+});
+// 搜索框
+function doSearch(q){
+  if(!q||q.trim().length<2){document.querySelectorAll('.card').forEach(c=>c.style.display='');
+    document.querySelectorAll('section[data-sec]').forEach(s=>s.style.display='');return;}
+  q=q.toLowerCase();
+  document.querySelectorAll('.card').forEach(c=>{
+    const txt=(c.querySelector('h3')?.textContent||'')+(c.querySelector('.summary')?.textContent||'');
+    c.style.display=txt.toLowerCase().includes(q)?'':'none';
+  });
+  document.querySelectorAll('section[data-sec]').forEach(sec=>{
+    const any=[...sec.querySelectorAll('.card')].some(c=>c.style.display!=='none');
+    sec.style.display=any?'':'none';
+  });
+}
+</script>
+</body>
+</html>
