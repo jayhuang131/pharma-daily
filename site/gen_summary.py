@@ -2,7 +2,7 @@
 """DeepSeek 批量中文摘要生成 — 一次性请求，质量接近人工。
 读 pharma_raw.json → 噪音过滤 → DeepSeek 批量翻译 → pharma_final.json
 """
-import json, re, urllib.request, ssl, os
+import json, re, urllib.request, ssl, os, time
 from datetime import datetime, timedelta
 
 DEEPSEEK_URL = "https://api.deepseek.com/chat/completions"
@@ -115,14 +115,21 @@ def batch_translate(items, max_per_batch=40):
         })
         ctx = ssl.create_default_context()
         print(f"  → 批次 {batch_start//max_per_batch+1}: {end-batch_start} 条...", end=" ", flush=True)
-        try:
-            with urllib.request.urlopen(req, timeout=90, context=ctx) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                content = data["choices"][0]["message"]["content"]
-            print("OK")
-        except Exception as e:
-            print(f"FAIL: {e}")
+        content = None
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(req, timeout=90, context=ctx) as resp:
+                    data = json.loads(resp.read().decode("utf-8"))
+                    content = data["choices"][0]["message"]["content"]
+                break
+            except Exception as e:
+                if attempt == 2:
+                    print(f"FAIL: {e}")
+                else:
+                    time.sleep(2)
+        if content is None:
             continue
+        print("OK")
         for line in content.strip().split("\n"):
             m = re.match(r'\[(\d+)\]\s*([^|]+)\|(.+)', line.strip())
             if m:
@@ -167,6 +174,82 @@ def classify(title, desc, orig_sec):
     return sec
 
 
+# ---------- DeepSeek 去重（同事件只留最权威/最直接的来源） ----------
+
+SOURCE_PRIORITY = {
+    "FDA Press": 100, "Business Wire": 95, "PRNewswire BioTech": 92, "GlobeNewswire": 90,
+    "Endpoints News": 85, "STAT News": 84, "BioPharma Dive": 83,
+    "Fierce Biotech": 82, "Fierce Pharma": 82, "Reuters": 80,
+    "Nature": 78, "Nat Rev Drug Discovery": 78,
+    "GEN": 70, "Pharmaceutical Executive": 65, "Pharma Times": 60,
+    "ClinicalTrials.gov": 70, "Europe PMC": 70, "北京亦庄·经开区官网": 70,
+    "SEC EDGAR": 60, "Recursion IR": 60,
+    "BioSpace": 55, "MedCity News": 55, "Yahoo Finance": 45, "MarketBeat": 35,
+}
+
+def _prio(source):
+    return SOURCE_PRIORITY.get(source, 50)
+
+
+def batch_dedupe(items):
+    """让 DeepSeek 找出同一事件的重复报道组；每组只保留最权威/最直接的一条。
+    返回要保留的下标集合（调用失败则全保留）。"""
+    if len(items) < 2:
+        return set(range(len(items)))
+    lines = [f"[{i}] ({it.get('source','')}) {it.get('title','')}" for i, it in enumerate(items)]
+    prompt = f"""你是生物医药新闻编辑。下面是 {len(items)} 条新闻标题（格式：[序号] (来源) 标题）。
+其中有些是「同一事件」被多家媒体报道（如同一款药获批/被拒、同一笔收购、同一项临床结果）。
+
+判断「同一事件」要严格：必须是同一款药/公司 + 同一动作（获批/被拒/收购/临床结果等）。
+不要因为都提到 FDA、癌症、获批 就合并成一组。
+
+请找出所有重复组，每组输出一行，只写组内序号（逗号分隔），例如：
+1,3,5
+7,9
+
+只输出重复组（至少 2 条），单条的不输出，不要解释。
+
+新闻列表：
+{chr(10).join(lines)}"""
+    payload = json.dumps({
+        "model": "deepseek-chat",
+        "messages": [
+            {"role": "system", "content": "你是生物医药新闻编辑，负责识别重复报道。"},
+            {"role": "user", "content": prompt}
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048,
+        "stream": False
+    }).encode("utf-8")
+    req = urllib.request.Request(DEEPSEEK_URL, data=payload, headers={
+        "Authorization": f"Bearer {DEEPSEEK_KEY}",
+        "Content-Type": "application/json"
+    })
+    ctx = ssl.create_default_context()
+    try:
+        with urllib.request.urlopen(req, timeout=120, context=ctx) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            content = data["choices"][0]["message"]["content"]
+    except Exception as e:
+        print(f"  [dedupe] 调用失败，跳过去重: {e}")
+        return set(range(len(items)))
+
+    drop = set()
+    groups = 0
+    for line in content.strip().split("\n"):
+        nums = [int(n) for n in re.findall(r'\d+', line)]
+        nums = [i for i in nums if 0 <= i < len(items)]
+        if len(nums) < 2:
+            continue
+        groups += 1
+        best = max(nums, key=lambda i: _prio(items[i].get("source", "")))
+        for i in nums:
+            if i != best:
+                drop.add(i)
+    print(f"  [dedupe] 重复组 {groups} 个，去重 {len(drop)} 条")
+    return set(range(len(items))) - drop
+
+
 # ---------- 主流程 ----------
 
 def main():
@@ -174,6 +257,12 @@ def main():
     print(f"原始: {len(raw)} 条")
     clean = filter_items(raw)
     print(f"去噪: {len(clean)} 条")
+
+    print("DeepSeek 去重（同事件只留最权威来源）...")
+    keep_idx = batch_dedupe(clean)
+    before = len(clean)
+    clean = [it for i, it in enumerate(clean) if i in keep_idx]
+    print(f"去重: {before} -> {len(clean)} 条")
 
     print("调用 DeepSeek 批量生成中文摘要...")
     summaries = batch_translate(clean)
