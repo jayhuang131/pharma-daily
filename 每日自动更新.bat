@@ -14,13 +14,13 @@ if errorlevel 1 (
   set "HTTPS_PROXY="
   git config --global --unset http.proxy >nul 2>&1
   git config --global --unset https.proxy >nul 2>&1
-  echo [proxy] DOWN -> using DIRECT connection
+  echo [proxy] DOWN - using DIRECT connection
 ) else (
   set "HTTP_PROXY=%PROXY%"
   set "HTTPS_PROXY=%PROXY%"
   git config --global http.proxy %PROXY% >nul 2>&1
   git config --global https.proxy %PROXY% >nul 2>&1
-  echo [proxy] OK -> using PROXY
+  echo [proxy] OK - using PROXY
 )
 
 set "LOG=%~dp0auto_run.log"
