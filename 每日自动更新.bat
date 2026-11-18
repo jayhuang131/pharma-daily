@@ -32,6 +32,9 @@ echo ======================================== >> "%LOG%"
 C:\Users\zijia\.workbuddy\binaries\python\versions\3.13.12\python.exe auto_build.py >> "%LOG%" 2>&1
 set "RC=%ERRORLEVEL%"
 
+:: health check -> health.json + NEED_FIX.flag
+C:\Users\zijia\.workbuddy\binaries\python\versions\3.13.12\python.exe health_check.py >> "%LOG%" 2>&1
+
 echo. >> "%LOG%"
 echo exit=%RC%  time=%date% %time% >> "%LOG%"
 echo done, exit=%RC%
