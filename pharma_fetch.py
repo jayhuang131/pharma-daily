@@ -14,7 +14,7 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
 NEWS_DAYS = 3     # 行业媒体新闻窗口
 CT_DAYS   = 4     # 临床试验窗口
 PAPER_DAYS= 7     # 论文窗口
-PER_FEED  = 4     # 每个媒体源最多保留条数（降低：给国内更多比例）
+PER_FEED  = 3     # 每个媒体源最多保留条数（降低：给国内更多比例）
 PER_CT    = 6
 PER_PAPER = 10
 
@@ -437,21 +437,25 @@ GN_QUERIES = [
     ("biopharma FDA approval OR fast track OR breakthrough therapy", "en"),
     ("cancer drug phase 3 clinical trial results", "en"),
     ("Insilico OR Recursion OR Absci AI drug discovery", "en"),
-    # 国内：国家层面政策
-    ("国家药监局 OR 国家医保局 OR 卫健委 创新药 政策", "zh"),
-    ("NMPA OR 医保谈判 OR 集采 创新药 目录", "zh"),
+    # 国内：国家层面政策/监管
+    ("site:nmpa.gov.cn", "zh"),
+    ("site:gov.cn 生物医药", "zh"),
+    ("生物医药 政策 医保 集采 创新药", "zh"),
     # 国内：重要生物医药省市
-    ("上海 OR 苏州 OR 深圳 OR 广州 生物医药 创新药", "zh"),
-    ("成都 OR 杭州 OR 武汉 OR 合肥 生物医药 产业园", "zh"),
-    # 国内：药企动态
+    ("上海 张江 生物医药", "zh"),
+    ("深圳 坪山 OR 苏州 BioBAY 生物医药", "zh"),
+    ("成都 天府 OR 武汉 光谷 生物医药", "zh"),
+    # 国内：行业媒体 / 药企动态
+    ("site:bioon.com 创新药", "zh"),
+    ("site:pharmcube.com 创新药", "zh"),
     ("恒瑞 OR 百济神州 OR 信达 OR 君实 OR 康方 OR 荣昌 创新药", "zh"),
-    ("国内 创新药 获批 上市 临床 融资", "zh"),
 ]
 # 相关性过滤（命中任一才保留，避免无关资讯）
 GN_BIO = ["药", "制药", "临床", "试验", "获批", "批准", "上市", "疗法", "肿瘤", "癌症",
           "biopharm", "pharma", "drug", "clinical", "trial", "fda", "approval", "therapy",
           "vaccine", "antibody", "oncolog", "medic", "biosimilar", "biotech", "gen", "cell",
-          "fast track", "breakthrough", "nda", "inda", "管线", "适应症", "创新药"]
+          "fast track", "breakthrough", "nda", "inda", "管线", "适应症", "创新药",
+          "医药", "医保", "集采", "药监", "审批", "监管", "生物医药", "生物技术", "药品"]
 
 def _gn_params(q, lang):
     if lang == "zh":
