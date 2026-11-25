@@ -437,16 +437,12 @@ GN_QUERIES = [
     ("biopharma FDA approval OR fast track OR breakthrough therapy", "en"),
     ("cancer drug phase 3 clinical trial results", "en"),
     ("Insilico OR Recursion OR Absci AI drug discovery", "en"),
-    # 国内：国家层面政策/监管
-    ("site:nmpa.gov.cn", "zh"),
+    # 国内：国家政策 / 监管
     ("site:gov.cn 生物医药", "zh"),
     ("生物医药 政策 医保 集采 创新药", "zh"),
-    # 国内：重要生物医药省市
+    # 国内：重点省市
     ("上海 张江 生物医药", "zh"),
-    ("深圳 坪山 OR 苏州 BioBAY 生物医药", "zh"),
-    ("成都 天府 OR 武汉 光谷 生物医药", "zh"),
-    # 国内：行业媒体 / 药企动态
-    ("site:bioon.com 创新药", "zh"),
+    # 国内：行业媒体 / 药企
     ("site:pharmcube.com 创新药", "zh"),
     ("恒瑞 OR 百济神州 OR 信达 OR 君实 OR 康方 OR 荣昌 创新药", "zh"),
 ]
@@ -509,12 +505,23 @@ def fetch_google_news():
     if not reachable("https://news.google.com", 8):
         print("  [GN] Google News 当前环境不可达，跳过（在可访问外网的机器上会自动生效）")
         return out
-    for q, lang in GN_QUERIES:
+    for i, (q, lang) in enumerate(GN_QUERIES):
+        if i > 0:
+            time.sleep(2.5)  # 查询间隔，避免 Google 429 限流
         url = "https://news.google.com/rss/search?" + _gn_params(q, lang)
-        try:
-            items = parse_gn(http(url, tries=1, timeout=8), lang)
-        except Exception as e:
-            print(f"  [GN] 查询失败 [{q[:30]}…]: {e}")
+        items = None
+        for attempt in range(3):
+            try:
+                items = parse_gn(http(url, tries=1, timeout=10), lang)
+                break
+            except Exception as e:
+                if "429" in str(e) and attempt < 2:
+                    time.sleep(10 * (attempt + 1))
+                    continue
+                print(f"  [GN] 查询失败 [{q[:30]}…]: {e}")
+                items = None
+                break
+        if items is None:
             continue
         kept = 0
         for it in items:
