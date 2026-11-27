@@ -64,13 +64,31 @@
    "label": "监管审批",
    "items": [
     {
+     "title": "Early-stage breast cancer gains first newly approved hormone therapy in more than 20 years",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMFdZd3ktN3VOLUw4T2phUUxPOHlQYXZPVWlfdlMyWDNNMjJjeFdsSVRDYngzMGwwdWNtQTNHWXlQNl9ZMW1uR1Bib3ZvZ1pDdXo5UnNubUQ5eUZZSmdnMnNGanEzb2ZHWGFScmVvWFU4VUFvLU0wSVljZGpncjRLUw?oc=5",
+     "source": "Medical Xpress",
+     "time": "2026-11-25T03:20:06Z",
+     "desc": "Early-stage breast cancer gains first newly approved hormone therapy in more than 20 years Medical Xpress",
+     "section": "监管审批",
+     "summary": "早期乳腺癌20余年来首个新获批激素疗法落地"
+    },
+    {
+     "title": "FDA approves BridgeBio muscular dystrophy drug",
+     "url": "https://www.biopharmadive.com/news/fda-bridgebio-welgemda-limb-girdle-muscle-disorder-approval/875610/",
+     "source": "BioPharma Dive",
+     "time": "2026-11-24T16:36:00Z",
+     "desc": "Wall Street analysts say a price of nearly $1 million a year should drive blockbuster sales for a medicine that helped patients walk and breathe better.",
+     "section": "监管审批",
+     "summary": "FDA批准BridgeBio肌营养不良药物，分析师预计年价近百万美元可成重磅"
+    },
+    {
      "title": "GSK's autoimmune success; AbbVie drug gets expanded label for vitiligo",
      "url": "https://endpoints.news/gsks-autoimmune-success-abbvie-drug-gets-expanded-label-for-vitiligo/",
      "source": "Endpoints News",
      "time": "2026-11-25T15:22:38Z",
      "desc": "Plus news about MPN Therapeutics, Desentum, Schrödinger and CirCode Biomed. GSK’s Exdensur matches Nucala in Phase 3: The UK drugmaker’s Exdensur, given twice a year, achieved non-inferior disease remission rates when set against the company’s ...",
      "section": "监管审批",
-     "summary": "GSK自免药物Exdensur获成功，AbbVie药物获白癜风扩展标签"
+     "summary": "GSK自免获成功，AbbVie药物白癜风标签扩展"
     },
     {
      "title": "普祺医药1类新药上市申请获受理",
@@ -87,13 +105,49 @@
    "label": "临床试验",
    "items": [
     {
+     "title": "恒瑞医药HER2 ADC三期数据首度披露！和记黄埔新药获批，科创创新药ETF汇添富(589120)60日吸金超1.3亿",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1ia1VxX1kwd08tb1U3aGhZdlBtQVp2ck9CQ3Bha3ZKeHN2ejRkSDAxVE9pYlc5bXNUSFBBRkMzY2xUYzhlVkY2aDhick1adnhsSFZZSmVKcmdLdnFuT0o3SXk0YmM0YXBYeV9CZDl3SQ?oc=5",
+     "source": "新浪财经",
+     "time": "2026-11-24T06:26:34Z",
+     "desc": "恒瑞医药HER2 ADC三期数据首度披露！和记黄埔新药获批，科创创新药ETF汇添富(589120)60日吸金超1.3亿 新浪财经",
+     "section": "临床试验",
+     "summary": "恒瑞HER2 ADC三期数据首披露，和记黄埔新药获批"
+    },
+    {
+     "title": "Breast Cancer Drug Reduced Recurrence, Death, and Metastasis Risk in Phase 3 Trial",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPR3FJSDk2djhiTEE2OXVXTHZXcGJiaHZYOThNMFI3QVRva1g3Um9PbzJHS3ZrWUF6dWhhMzdGb3FsQVBXNFVKYnE1SnI5QTF5TEVXR2w4M1IxVFJLWDNrRGlyaF8wY0JqV09leGg1OHpWYUxURlNhMDh4VzYxT2xXakp4UG5JbVVxMC14T1NVWjVyaHY0TEl3bmFrbVF4bUhzQlUzZENhUTBuX2JkcVN2N05zLVRPVzZXUjlESFJncDFLUUJyanFsUHVB?oc=5",
+     "source": "Technology Networks",
+     "time": "2026-11-26T12:33:49Z",
+     "desc": "Breast Cancer Drug Reduced Recurrence, Death, and Metastasis Risk in Phase 3 Trial Technology Networks",
+     "section": "临床试验",
+     "summary": "乳腺癌药物III期试验降低复发、死亡及转移风险"
+    },
+    {
+     "title": "GSK reports positive phase 3 EGPA trial results",
+     "url": "https://pharmatimes.com/news/gsk-reports-positive-phase-3-egpa-trial-results/",
+     "source": "Pharma Times",
+     "time": "2026-11-26T11:33:08Z",
+     "desc": "Twice-yearly drug matches monthly biologic treatment",
+     "section": "临床试验",
+     "summary": "GSK公布EGPA三期阳性结果，半年一次给药媲美月度生物制剂"
+    },
+    {
      "title": "Simcere and Almirall report phase 2 study success",
      "url": "https://pharmatimes.com/news/simcere-and-almirall-report-phase-2-study-success/",
      "source": "Pharma Times",
      "time": "2026-11-26T11:12:51Z",
      "desc": "Week 16 data show significant eczema improvements",
      "section": "临床试验",
-     "summary": "Simcere与Almirall公布2期研究成功，第16周数据示湿疹显著改善"
+     "summary": "先声与Almirall公布II期成功，第16周湿疹改善显著"
+    },
+    {
+     "title": "福建首个“创新药IND30日通道”国际多中心临床试验项目在我院启动",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBBaUdxNnBrVnlIUnVBa0dvekZfN25wYTVVeGN2bGxDYzhTRk1IZVRKVjNsOVRIZER0eDUxdmVqczhZcGZzbzlnU1RKZlFab1YwdW5MZEIwTEV2RlZtQUtQUWFwbVlhN0ZnUlBzeVBmaEJNeFV1QnBRTlltUUhwUQ?oc=5",
+     "source": "ByDrug",
+     "time": "2026-11-26T08:03:00Z",
+     "desc": "福建首个“创新药IND30日通道”国际多中心临床试验项目在我院启动 ByDrug",
+     "section": "临床试验",
+     "summary": "福建首个创新药IND30日通道国际多中心临床试验项目启动"
     },
     {
      "title": "First patient dosed in Tiprelestat PAH study",
@@ -102,7 +156,7 @@
      "time": "2026-11-25T14:38:34Z",
      "desc": "Phase 2 trial begins in United States",
      "section": "临床试验",
-     "summary": "Tiprelestat肺动脉高压研究首例患者给药，美国2期试验启动"
+     "summary": "Tiprelestat肺动脉高压研究首例患者给药，美国II期启动"
     },
     {
      "title": "Vitamin C Supplementation and Photodynamic Therapy Outcomes in Oral Lichen Planus",
@@ -112,7 +166,7 @@
      "desc": "登记号 NCT07959900；申办方 Medical University of Bialystok；适应症 Oral Lichen Planus。This prospective study will enroll 40 adults with clinically and histopathologically confirmed oral lichen planus to assess the association between oral vitamin C supplementation and outcomes of 5-aminolevulinic acid pho",
      "section": "临床试验",
      "_nct": "NCT07959900",
-     "summary": "维生素C补充与光动力疗法治疗口腔扁平苔藓的前瞻性研究登记启动"
+     "summary": "维生素C联合光动力治疗口腔扁平苔藓前瞻性研究登记"
     },
     {
      "title": "A Phase 3 Study of HSK47388 Tablets (I) to Evaluate the Efficacy and Safety in Participants With Moderate-to-Severe Plaque Psori",
@@ -122,7 +176,7 @@
      "desc": "登记号 NCT07960264；申办方 Haisco Pharmaceutical Group Co., Ltd.；适应症 Psoriasis。The primary objective of this study is to evaluate the efficacy of multiple-dose HSK47388 versus placebo in participants with moderate-to-severe plaque psoriasis.",
      "section": "临床试验",
      "_nct": "NCT07960264",
-     "summary": "HSK47388片治疗中重度斑块状银屑病3期研究登记，评估疗效与安全性"
+     "summary": "海思科HSK47388片治疗中重度斑块状银屑病III期研究登记"
     },
     {
      "title": "Ivonescimab Combined With Chemotherapy and Third-generation Epidermal Growth Factor Receptor Tyrosine Kinase Inhibitor (EGFR-TKIs) in Patients With EGFR Mutant Who Have Failed to EGFR-TKIs",
@@ -142,7 +196,7 @@
      "desc": "登记号 NCT07957833；申办方 The First Affiliated Hospital of Air Force Medical University；适应症 Lung Cancer (Non-Small Cell)。The goal of this clinical trial is to learn whether treatment adjustments guided by an early diffusion-weighted magnetic-resonance imaging (DWI-MRI) scan work better than standard care for adults with locally advanced st",
      "section": "临床试验",
      "_nct": "NCT07957833",
-     "summary": "弥散加权MRI引导早期疗效评估与适应性治疗III期局部晚期NSCLC研究"
+     "summary": "DWI-MRI引导早期疗效评估与适应性治疗III期局部晚期NSCLC研究"
     },
     {
      "title": "A Study of [177Lu]Lu-XT381 in Participants With PSMA-Positive Metastatic Castration-Resistant Prostate Cancer",
@@ -152,7 +206,7 @@
      "desc": "登记号 NCT07953049；申办方 Sinotau Pharmaceutical Group；适应症 Metastatic Castration-resistant Prostate Cancer (CRPC)。This is a multicenter, open-label Phase Ib/II study of the investigational drug \\[177Lu\\]Lu-XT381 in adult men with prostate-specific membrane antigen (PSMA)-positive metastatic castration-resistant prostate cancer (mCRP",
      "section": "临床试验",
      "_nct": "NCT07953049",
-     "summary": "[177Lu]Lu-XT381治疗PSMA阳性转移性去势抵抗性前列腺癌研究登记"
+     "summary": "[177Lu]Lu-XT381治疗PSMA阳性mCRPC研究登记"
     },
     {
      "title": "A Study to Evaluate the Efficacy and Safety of Sonelokimab Compared With Placebo in Participants With Palmoplantar Pustulosis",
@@ -162,7 +216,7 @@
      "desc": "登记号 NCT07951983；申办方 MoonLake Immunotherapeutics AG；适应症 Palmoplantar Pustulosis (PPP)。A phase 3 multicenter, randomized, parallel-group, double-blind, placebo-controlled, multicenter study to evaluate the efficacy and safety of sonelokimab in adults with Palmoplantar Pustulosis (PPP).",
      "section": "临床试验",
      "_nct": "NCT07951983",
-     "summary": "Sonelokimab对比安慰剂治疗掌跖脓疱病3期多中心研究登记"
+     "summary": "MoonLake的sonelokimab治疗掌跖脓疱病III期研究登记"
     }
    ]
   },
@@ -170,13 +224,22 @@
    "label": "交易速览",
    "items": [
     {
+     "title": "苏州核酸创新药企业，又获5500万美元融资",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBUcnhWQnVHNUNZTUk3WXBFLW1LTXZ2MENoSlpwOFVONUdWMUJFR1BUR1IxVnFJcEt3YUxSTDN5Q3BLdVhYbmtvSWhrRUh0RzZ2dV9iSkVyRENDaXFuSlVoc3FkRWdBZDhWN3NUTnltTkVnRDFuVUprbWxWOHlQZw?oc=5",
+     "source": "ByDrug",
+     "time": "2026-11-24T15:08:00Z",
+     "desc": "苏州核酸创新药企业，又获5500万美元融资 ByDrug",
+     "section": "交易速览",
+     "summary": "苏州核酸创新药企业再获5500万美元融资"
+    },
+    {
      "title": "Bayer goes to Hansoh for ADC deal worth $150M up front",
      "url": "https://endpoints.news/bayer-goes-to-hansoh-for-adc-deal-worth-150m-up-front/",
      "source": "Endpoints News",
      "time": "2026-11-25T15:55:19Z",
      "desc": "Hansoh Pharma continues to line up partners as dealmaking with China’s biotech industry shows no signs of abating. Bayer is the latest to sign up for a piece of Hansoh’s pipeline. The German giant on ...",
      "section": "交易速览",
-     "summary": "Bayer与Hansoh达成ADC交易，首付款1.5亿美元"
+     "summary": "Bayer与翰森达成ADC交易，首付1.5亿美元"
     },
     {
      "title": "Sanofi to buy Insmed and its respiratory drugs for $41 billion",
@@ -185,7 +248,7 @@
      "time": "2026-11-24T16:00:00Z",
      "desc": "Nature Reviews Drug Discovery, Published online: 25 November 2026; doi:10.1038/d41573-026-00189-0 Sanofi to buy Insmed and its respiratory drugs for $41 billion",
      "section": "交易速览",
-     "summary": "Sanofi以410亿美元收购Insmed及其呼吸系统药物"
+     "summary": "赛诺菲以410亿美元收购Insmed及其呼吸系统药物"
     }
    ]
   },
@@ -199,7 +262,7 @@
      "time": "2026-11-25T16:24:00Z",
      "desc": "It’s the second big change to Bristol Myers’ executive ranks this month. Elsewhere, Cogent secured a cancer drug approval while Arcus Biosciences and Belite Bio hit setbacks.",
      "section": "行业动态",
-     "summary": "Amgen推进Opdivo生物类似药，Bristol Myers任命新财务主管，本月第二次高管变动"
+     "summary": "安进推进Opdivo生物类似药，BMS本月二度调整高管层，Cogent获融资"
     },
     {
      "title": "Engineered Medical Gloves Cut Bacterial Transmission by Up to 99%",
@@ -208,7 +271,61 @@
      "time": "2026-11-25T19:00:47Z",
      "desc": "Researchers developed innovative medical gloves with microscopic fluid-repelling surfaces that reduce bacterial attachment and transmission by up to 99%, potentially helping prevent hospital-acquired infections. The post Engineered Medical Gloves Cut Bacterial Transmission by Up to 99% appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "行业动态",
-     "summary": "工程化医用手套表面微流体排斥结构，细菌传播降低最高达99%"
+     "summary": "工程化医用手套微流体排斥表面可将细菌传播降低至多99%"
+    },
+    {
+     "title": "校地共建 科创赋能 鹤城推动生物医药创新发展",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNUG1XNWdzUm1Pb1lsbmdEUHhqc3didTJnbzRzU3paUHN4UFJxWS1KejJSZ19aUU9OWDVXZ0sySmpjZTB1M0ZpcG9ZN1hVS0R0ZDdhUFNrVzdnWWtBNFhwdUpFUGRTbVViTEY2UGthSDNBLW5JWTh1S2hVVFB5bVRGejhpbENDcHV5Y0pKRFRlRGR4Zw?oc=5",
+     "source": "怀化市人民政府",
+     "time": "2026-11-27T00:55:00Z",
+     "desc": "校地共建 科创赋能 鹤城推动生物医药创新发展 怀化市人民政府",
+     "section": "行业动态",
+     "summary": "校地共建推动鹤城生物医药创新发展"
+    },
+    {
+     "title": "In a fertility advance, engineered molecular glue stabilizes chromosomes in aging eggs",
+     "url": "https://www.statnews.com/2026/11/26/fertility-advance-engineered-protein-stabilizes-chromosomes-in-aging-eggs/?utm_campaign=rss",
+     "source": "STAT News",
+     "time": "2026-11-26T19:00:00Z",
+     "desc": "Researchers engineered a protein system capable of restoring normal chromosome connections in aging mouse eggs, raising hopes of one day improving IVF outcomes",
+     "section": "行业动态",
+     "summary": "工程化分子胶稳定衰老卵子染色体，助力生育研究"
+    },
+    {
+     "title": "Cathie Wood: AI Saves Billion in Biotech Costs - 5 Stocks to Watch - CRISPR Therapeutics (NASDAQ:CRSP), I",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQaDdqM2h3VzZkU1o3THNRanh2d3ZMejVtWGt3WXFPa2s4RGI2ZWVaX0h5Q29fX1ZMOS1rWFJXWS1BNklYYm9WUHNPRWZiU1hPSzNRaFVFRXlkWDQ0b0F3ek1ZdmNvTXpwN3A1NHIwQ3ltUDhZLVVrT2dacnRxWnlUZ2Q1M1A2MTZUQUZfS0VSZGxIV2hmc1phX1J3?oc=5",
+     "source": "Benzinga",
+     "time": "2026-11-26T18:45:07Z",
+     "desc": "Cathie Wood: AI Saves Billion in Biotech Costs - 5 Stocks to Watch - CRISPR Therapeutics (NASDAQ:CRSP), I Benzinga",
+     "section": "行业动态",
+     "summary": "Cathie Wood称AI为生物科技节省数十亿美元，点名CRISPR等5股"
+    },
+    {
+     "title": "Experimental Drug Shrinks Tumors in Two of the Hardest-To-Treat Cancers",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNNVhnQ05QVmpwUWJKdGh2TEVjSC1Pb1VCV3V2ckNKeksxeUJxd1lpMmZCVG5HdUl6amdnTTRfdUdCVm9JUzBTX3ZoV2xLY0UzN2JzeXRiNG9fWWF6b3dFNFA5Z0JTdi1CSG5BbVh5czU1XzZyZmh0enk0QlRjcjl3NHkxcHFmRnBDS0R1eWlpNEhrcXF2Y0tabmFhRkdRZw?oc=5",
+     "source": "SciTechDaily",
+     "time": "2026-11-26T16:15:45Z",
+     "desc": "Experimental Drug Shrinks Tumors in Two of the Hardest-To-Treat Cancers SciTechDaily",
+     "section": "行业动态",
+     "summary": "实验性药物在两种最难治癌症中使肿瘤缩小"
+    },
+    {
+     "title": "From Obesity Drugs to Cancer Treatments, Chinese Biotech Expands Its Role in AI-Driven Drug Discovery",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wbmdvajF5LUpkM3puR05xUzBoUU5UazMtMm81ZUZ1LWpkS2JWZ1RLVEw0WlY5UGdLVWktbVlrMzFJdGhrMXlyQmVMc2J5ZjQ4M2VQYlJoQjJqdw?oc=5",
+     "source": "https://economy.ac/",
+     "time": "2026-11-26T07:59:23Z",
+     "desc": "From Obesity Drugs to Cancer Treatments, Chinese Biotech Expands Its Role in AI-Driven Drug Discovery https://economy.ac/",
+     "section": "行业动态",
+     "summary": "中国生物科技从减肥药到抗癌药，扩大AI驱动药物发现角色"
+    },
+    {
+     "title": "Big Pharma Bets 60 Trillion on AI Drug Development Amid Patent Cliff",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTllLMDdPV2JIcm53MnZaak5FVmlwaXFPZVNpZ3lpVmU3azVTT2ZuNVl3WlQtamVCaktmeld3UVdjeTZuY25rXzJHbXVoZVBDVWIzS1M4Z1dqMTlBbHFwbkJaZ0NsTHltWWlZQWxSS2tiaEdUNzhHZWg2Y0trNEhJN0t2aXVfQkJl?oc=5",
+     "source": "조선일보",
+     "time": "2026-11-25T21:36:19Z",
+     "desc": "Big Pharma Bets 60 Trillion on AI Drug Development Amid Patent Cliff 조선일보",
+     "section": "行业动态",
+     "summary": "专利悬崖下大型药企60万亿押注AI药物开发"
     },
     {
      "title": "CGT Manufacturing Success in Asia Requires Standardization and Flexibility",
@@ -217,7 +334,7 @@
      "time": "2026-11-25T16:59:23Z",
      "desc": "Asia's CGT therapy pipeline is expanding rapidly, but the region's fragmented regulatory, manufacturing, and supply-chain landscape creates a distinctive challenge: how to build processes that are standardized enough to be reproducible. The post CGT Manufacturing Success in Asia Requires Standardization and Flexibility appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "行业动态",
-     "summary": "亚洲CGT疗法管线快速扩张，需标准化与灵活性以保障生产成功"
+     "summary": "亚洲CGT制造成功需标准化与灵活性"
     },
     {
      "title": "Coronary Artery Disease Genetics Map Links Risk Variants to Genes and Cell Types",
@@ -226,7 +343,25 @@
      "time": "2026-11-25T16:22:26Z",
      "desc": "Researchers create a multiomic map of human coronary artery disease that links disease-associated genetic variants with candidate disease-relevant cell types and target genes. The post Coronary Artery Disease Genetics Map Links Risk Variants to Genes and Cell Types appeared first on GEN - Genetic Engineering and Biotechnology News .",
      "section": "行业动态",
-     "summary": "冠状动脉疾病多组学图谱将风险变异关联至基因与细胞类型"
+     "summary": "冠心病遗传图谱将风险变异关联至基因与细胞类型"
+    },
+    {
+     "title": "Bayer pulls blockbuster drug from Germany over pricing dispute",
+     "url": "https://endpoints.news/bayer-pulls-blockbuster-drug-from-germany-over-pricing-dispute/",
+     "source": "Endpoints News",
+     "time": "2026-11-25T15:51:44Z",
+     "desc": "Bayer is pulling its blockbuster heart and kidney disease drug Kerendia from Germany, its home market, in a reimbursement dispute that highlights growing tensions between drugmakers and European governments over the price of innovative medicines. ...",
+     "section": "行业动态",
+     "summary": "Bayer因定价争议将Kerendia撤出德国本土市场"
+    },
+    {
+     "title": "Leading Takeda’s Plasma-Derived Therapies Business: Q&A with Ramy Riad",
+     "url": "https://www.pharmexec.com/view/leading-takeda-plasma-derived-therapies-business-qa-ramy-riad",
+     "source": "Pharmaceutical Executive",
+     "time": "2026-11-25T11:00:00Z",
+     "desc": "Ramy Riad, president of Takeda’s Plasma-Derived Therapies unit, discusses strengthening global plasma supply resilience, emerging therapeutic applications, and innovations in treatment delivery and manufacturing.",
+     "section": "行业动态",
+     "summary": "武田血浆衍生疗法事业部总裁Ramy Riad谈全球血浆业务强化策略"
     },
     {
      "title": "The Role of Automation and AI in Medication Management and Resident Care",
@@ -236,6 +371,15 @@
      "desc": "For long-term care pharmacies serving an aging population, automation and AI aren’t optional upgrades — they’re the infrastructure that keeps complex medication workflows from breaking down.",
      "section": "行业动态",
      "summary": "自动化与AI在长期护理药房用药管理及居民照护中的作用"
+    },
+    {
+     "title": "创新药概念局部走强 百济神州（06160）涨2.43% 机构指AIDD、CXO需求有望持续抬升-证券之星",
+     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBUQ3ZXZTBPNVk1SUlZTEZSSTlQMko1ZG9fZVAtei1Cenpxcmg1Tld3aVF0a0JaSDdObFJVb1Y5cGVLVGVpblpyNlk0RTRmZWktWTBpUURyQ0Z5THdJTFE?oc=5",
+     "source": "证券之星",
+     "time": "2026-11-25T06:34:15Z",
+     "desc": "创新药概念局部走强 百济神州（06160）涨2.43% 机构指AIDD、CXO需求有望持续抬升-证券之星 证券之星",
+     "section": "行业动态",
+     "summary": "创新药概念局部走强，百济神州涨2.43%，机构看好AIDD、CXO需求"
     }
    ]
   },
@@ -243,13 +387,31 @@
    "label": "亦庄园区动态",
    "items": [
     {
+     "title": "生物技术和大健康产业局国际医药创新公园职住平衡研究中选公告_通知公告",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5TZlo0WlpFZHY4YXVtX3h6eEVNSVJGYkd3TmxJYzJBWW5UNWJTMW5RMnhDQXVPM1gxSmNiVFYwbkFqMURBYVZQb0xyRjB0R200NUphSE9rRG94UmdETEZlUkEzTlNfa19vcHNBR2I1Z19KaEFuaTV5SHNZQQ?oc=5",
+     "source": "北京经济技术开发区",
+     "time": "2026-11-26T07:37:00Z",
+     "desc": "生物技术和大健康产业局国际医药创新公园职住平衡研究中选公告_通知公告 北京经济技术开发区",
+     "section": "亦庄园区动态",
+     "summary": "经开区生物技术和大健康产业局国际医药创新公园职住平衡研究中选公告"
+    },
+    {
+     "title": "组团申报简化编制统一受理集中审批经开区试点推行建设项目环评审批打包办_工作动态",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE82UjB1d1RNaXpURDdncEgwTnhXVGF2V0NMbFhhUWJUZHd1dTV0RkpOZTYzOUt1d2xMTTRxR1hIYlVBbGRKdXpFZ1NaS3YxZnM2RDJ6Qnctb2lSY0dZUktoUlM3OWF3UlNsYU1hWDJYd293TTlUSlFJ?oc=5",
+     "source": "北京经济技术开发区",
+     "time": "2026-11-25T06:36:00Z",
+     "desc": "组团申报简化编制统一受理集中审批经开区试点推行建设项目环评审批打包办_工作动态 北京经济技术开发区",
+     "section": "亦庄园区动态",
+     "summary": "经开区试点推行建设项目环评审批打包办，组团申报统一受理"
+    },
+    {
      "title": "“核药第一股”先通医药成功登陆港交所 经开区为企业对接资本市场铺就快车道",
      "url": "https://kfqgw.beijing.gov.cn/ywdt/dwkfgd/cych/202611/t20261125_4957664.html",
      "source": "北京亦庄·经开区官网",
      "time": "2026-11-25T00:00:00Z",
      "desc": "本报讯（融媒体中心 许淑芳）11月24日，北京经开区企业北京先通国际医药科技股份有限公司（以下简称“先通医药”，股份代号：09941.HK）正式在港交所主板挂牌上市，成为港股市场首家聚焦放射性药物（核药）的上市企业，被誉为港股18A“核药第一股”，同时也是港股无纸证券市场制度实施后的首只无纸化新股。随着该企业的上市，北京经开区上市企业总数达67家。 先通医药公告称，公司全球发售所得款项总额超3亿港元，上市募集资金将主要用于核心产品的研发及注册申报以及其他候选产品的研发、公司销售及营销能力的提升、新生产基地建设等。 作为全球少数具备从放射性核素开发生产、放",
      "section": "亦庄园区动态",
-     "summary": "先通医药港交所主板上市，成港股首家聚焦放射性药物企业"
+     "summary": "经开区企业先通医药登陆港交所，成港股首家聚焦放射性药物企业"
     },
     {
      "title": "企业交流提升创新药械项目全球化交易能力",
@@ -272,7 +434,7 @@
      "time": "2026-11-26T16:00:00Z",
      "desc": "期刊 。The liver is a central metabolic organ essential for maintaining physiological homeostasis, and its dysfunction is closely associated with the development and progression of various chronic diseases. Metabolic dysfunction-associated steatotic liver disease (MA",
      "section": "论文研究",
-     "summary": "综述：黄酮类化合物在肝病预防与治疗中的研究进展与前景"
+     "summary": "综述：黄酮类化合物在肝病预防与治疗中的研究进展与未来展望"
     },
     {
      "title": "Potential therapeutic role of kratom (Mitragyna speciosa) in mental health: a mini-review.",
@@ -281,7 +443,7 @@
      "time": "2026-11-26T16:00:00Z",
      "desc": "期刊 。Mitragyna speciosa Korth. (kratom) is becoming increasingly popular as a natural remedy for a variety of therapeutic purposes, including chronic pain management, opioid dependence and withdrawal, and mental health improvement. Its principal alkaloids, which in",
      "section": "论文研究",
-     "summary": "迷你综述：卡痛叶在心理健康中的潜在治疗作用"
+     "summary": "迷你综述：kratom（Mitragyna speciosa）在精神健康中的潜在治疗作用"
     },
     {
      "title": "Clinical Practice Guideline: The Diagnosis, Treatment, and Follow-Up Management of Thrombotic Thrombocytopenic Purpura.",
@@ -299,7 +461,7 @@
      "time": "2026-11-26T16:00:00Z",
      "desc": "期刊 。Given that previous studies have provided mixed results on cathinone neurotoxicity, we compared the effects of 'functionally equivalent' dosing regimens of methamphetamine (METH), methcathinone, and α-pyrrolidinopropiophenone (α-PPP) on behavioral and neuroche",
      "section": "论文研究",
-     "summary": "比较甲基苯丙胺、甲卡西酮等对兴奋剂神经毒性行为与神经化学标志物的影响"
+     "summary": "比较甲基苯丙胺、甲卡西酮与α-PPP等效剂量方案对兴奋剂神经毒性的影响"
     },
     {
      "title": "Unleashing an E3 ligase to degrade multiple targets",
@@ -308,7 +470,7 @@
      "time": "2026-11-25T16:00:00Z",
      "desc": "Nature Reviews Drug Discovery, Published online: 26 November 2026; doi:10.1038/d41573-026-00190-7 Unleashing an E3 ligase to degrade multiple targets",
      "section": "论文研究",
-     "summary": "Nature Reviews：释放E3连接酶以降解多靶点"
+     "summary": "Nat Rev Drug Discovery：释放E3连接酶以降解多靶点"
     },
     {
      "title": "Base editing permanently lowers lipid levels",
@@ -317,7 +479,7 @@
      "time": "2026-11-24T16:00:00Z",
      "desc": "Nature Reviews Drug Discovery, Published online: 25 November 2026; doi:10.1038/d41573-026-00187-2 Base editing permanently lowers lipid levels",
      "section": "论文研究",
-     "summary": "Nature Reviews：碱基编辑永久降低血脂水平"
+     "summary": "Nat Rev Drug Discovery：碱基编辑可永久降低血脂水平"
     }
    ]
   },
@@ -325,13 +487,49 @@
    "label": "政策追踪",
    "items": [
     {
+     "title": "“十五五”时期北京累计新增创新药械85个以上 多个前沿领域将获重点支持",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9UQkpNa3FJWEhCX2YwQVhyc3JxYm1KTTBWcEY4UzNnekdtWHlWRklNSlhHYmwtT0Q3eHZNX2RvaGoyWFdJdUx0Z2Q3QkdrdzVXakFJUFQ4VXJUd1pjT0c1Ql9fYlpXbzhGQ2taOGJWM1F3YU0y?oc=5",
+     "source": "北京市人民政府门户网站",
+     "time": "2026-11-27T00:09:00Z",
+     "desc": "“十五五”时期北京累计新增创新药械85个以上 多个前沿领域将获重点支持 北京市人民政府门户网站",
+     "section": "政策追踪",
+     "summary": "北京“十五五”将累计新增创新药械85个以上，多前沿领域获重点支持"
+    },
+    {
+     "title": "Why Medicare’s 2027 physician pay changes worry some specialists",
+     "url": "https://www.statnews.com/2026/11/25/medicare-physician-fee-schedule-change-worry-some-specialists/?utm_campaign=rss",
+     "source": "STAT News",
+     "time": "2026-11-25T21:28:53Z",
+     "desc": "Cuts to Medicare physician payment rates for certain same-day services could impact some specialists more than others.",
+     "section": "政策追踪",
+     "summary": "Medicare 2027医师支付改革引发部分专科担忧"
+    },
+    {
      "title": "Medicare sets 2028 prices for 13 new drugs under Biden-era law",
      "url": "https://www.biopharmadive.com/news/inflation-reduction-act-2028-final-medicare-drug-price/875717/",
      "source": "BioPharma Dive",
      "time": "2026-11-25T16:26:00Z",
      "desc": "Drugs nearing or past patent expiration are facing steep cuts as the Inflation Reduction Act expands the number of medicines subject to cost controls.",
      "section": "政策追踪",
-     "summary": "Medicare依IRA法案设定2028年13种新药价格，临近专利到期药物面临大幅降价"
+     "summary": "Medicare依IRA设定13款新药2028年价格，专利到期药物面临大幅降价"
+    },
+    {
+     "title": "北京自贸试验区怀柔联动发展区建设实施方案发布",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdEZmTVp4Z2Q2bWgxYld4cDJZSGxRS3lLX1JzQlZDTHY4YXY4NFdsVHlpV0dpTW9ZekN0Y0pMYVhaNTZPUklXWVcxbE00M2I4WHc0VDdOT1VZaWxhT3JrYVN5N2NVa0ExSXZQcDRYYXFjLXNBR1QxR3NHLWxDcE4zNW1B?oc=5",
+     "source": "北京市科学技术委员会",
+     "time": "2026-11-25T09:19:37Z",
+     "desc": "北京自贸试验区怀柔联动发展区建设实施方案发布 北京市科学技术委员会",
+     "section": "政策追踪",
+     "summary": "北京自贸试验区怀柔联动发展区建设实施方案发布"
+    },
+    {
+     "title": "上海启动新增国谈药、商保创新药信息线上推介，企业于12月7日前提交材料",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1WaEF2LTNKeHJjdm5fbjgyeXFsVk9KR0Z3Q3hoVU5OZm5CMzE4bWRGd1NjSDZCOWkydEdZNzB2bThUR2JrQXZaRnFCaGF6Uy1zSm5Ka0JWNXlSSzZ4OWpaT3hSWUdKdWRydHVfaDhkOFBac0J0NEpObWxXd1d1Zw?oc=5",
+     "source": "ByDrug",
+     "time": "2026-11-24T10:09:00Z",
+     "desc": "上海启动新增国谈药、商保创新药信息线上推介，企业于12月7日前提交材料 ByDrug",
+     "section": "政策追踪",
+     "summary": "上海启动新增国谈药、商保创新药信息线上推介，12月7日前提交材料"
     }
    ]
   },
@@ -339,22 +537,58 @@
    "label": "政策与观点",
    "items": [
     {
+     "title": "Drug Developers Should Treat AI as an Operating Model, From Target to Trial - Genetic Engineering and Biotechnology News",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRmMtOG93TmtKMV9LZjB6QXZnVTlWT3dINVRjdWxpS191SmtQUXJFbzZncGN1RGFQTDVuUmtKMS1aU1NYMVRtRVhlWWQzUEFiX1UwRjdpOG0tN1RtYW1IU1AyYmdDc2laN0NGVGFYakpQaTFFbi1OUGI4MXh3TVdDam5ybXVaLTF5cDhKZ0pwb0wyaUNRVDZUajBLZjEybTBDdFBFdkZ3dldxbEV5bE5BNTVHd01nZmFDVm1wWVhtVFNzcW1tVzNuOEh1bUZEQQ?oc=5",
+     "source": "Genetic Engineering and Biotechnology News",
+     "time": "2026-11-24T19:28:57Z",
+     "desc": "Drug Developers Should Treat AI as an Operating Model, From Target to Trial Genetic Engineering and Biotechnology News",
+     "section": "政策与观点",
+     "summary": "观点：药企应将AI视为从靶点到试验的运营模式"
+    },
+    {
+     "title": "Opinion: Summit’s ivonescimab optimism meets FDA scrutiny",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSDhqWWtwNHBwNDhNQlFONDlJZERzSUs4TnRJWTBNNmpZN1RjV2tKVm84ZERqemxjeVBsOEZuVVZqOWlvX3NiSGRYVFlnNDFNcktqX0dUQjBXUGRzVGRiUkEydmtWX2tNQV90Y3FWR01LbDMwQ2xObDRFLWpHNnhaTEVxZFBCbEg5YUdYVEtyV1IxazlSenF4Z3NMWWxwUQ?oc=5",
+     "source": "BioSpace",
+     "time": "2026-11-25T05:06:14Z",
+     "desc": "Opinion: Summit’s ivonescimab optimism meets FDA scrutiny BioSpace",
+     "section": "政策与观点",
+     "summary": "观点：Summit对ivonescimab的乐观面临FDA审视"
+    },
+    {
+     "title": "惠民保用商保创新药目录，百万医疗险走中保协药品清单？两套玩法，药企怎么下注",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBqdHV3U2lvc19WOG10MWwzN2FOTDM4TXJiMDhaUWJleWtzeFE0U1pvZ2FZMFJIdmo3ZzBtMlNDajZET2VUUGtsWmdQVGF1Q3FMMXQyWWdVVWptdDlRa3Rhd0VsSHB0TlZ2TE5EYUdkTWNpLW0yYWc1RTcycDNrQQ?oc=5",
+     "source": "ByDrug",
+     "time": "2026-11-26T12:25:50Z",
+     "desc": "惠民保用商保创新药目录，百万医疗险走中保协药品清单？两套玩法，药企怎么下注 ByDrug",
+     "section": "政策与观点",
+     "summary": "惠民保商保创新药目录与中保协药品清单两套玩法，药企如何下注"
+    },
+    {
      "title": "MFN: Rewriting the Global Pricing Playbook",
      "url": "https://www.pharmexec.com/view/mfn-rewriting-the-global-pricing-playbook",
      "source": "Pharmaceutical Executive",
      "time": "2026-11-25T14:45:00Z",
      "desc": "Model N's Michael Grosberg explains how the Trump administration's most-favored-nation push ties international pricing decisions to U.S. rebate liability — and what that means for launch sequencing, gross-to-net forecasting, and a new layer of global price reporting.",
      "section": "政策与观点",
-     "summary": "Model N专家解读最惠国待遇政策如何重塑全球药品定价规则"
+     "summary": "MFN最惠国定价改写全球定价规则"
     },
     {
-     "title": "Leading Takeda’s Plasma-Derived Therapies Business: Q&A with Ramy Riad",
-     "url": "https://www.pharmexec.com/view/leading-takeda-plasma-derived-therapies-business-qa-ramy-riad",
-     "source": "Pharmaceutical Executive",
-     "time": "2026-11-25T11:00:00Z",
-     "desc": "Ramy Riad, president of Takeda’s Plasma-Derived Therapies unit, discusses strengthening global plasma supply resilience, emerging therapeutic applications, and innovations in treatment delivery and manufacturing.",
+     "title": "“新新三样”里，创新药这张牌为什么分量最重",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBDOFgyQS1Sc3gyMmxNZktYXzRUS3J5cWhnN0JUWlM1bVBTcWxCRVJ4bFU1VldZSDVoNGhvM1ZDV2hXRGxIT0huN0VsdkdOZkZNUkUyTDVUTnVRTmNuZVRKVVB1MWh3RTF5cEtCYUpzSzUtanp3MVctdEJTZEV4QQ?oc=5",
+     "source": "ByDrug",
+     "time": "2026-11-24T03:48:36Z",
+     "desc": "“新新三样”里，创新药这张牌为什么分量最重 ByDrug",
      "section": "政策与观点",
-     "summary": "武田血浆衍生疗法业务负责人谈全球血浆疗法业务强化"
+     "summary": "“新新三样”中创新药分量最重的评论分析"
+    },
+    {
+     "title": "PD-1/VEGF未死，康方生物不哭",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE50dlpBb0Y5YlgyeWxfZ081MzBUcG11UU8yclVUSHJtUDVOdUI5Z0Y5ZVpHSmxXbUczQlZvblRTRmRGVGRydm92cjZrLXlHQ0tZM2M5S0s3NUJaNXMxWlN6NDNIWHg0dDM3ZUozd2hJMEUwU1ZfbDRPenpwczE5QQ?oc=5",
+     "source": "ByDrug",
+     "time": "2026-11-24T02:36:00Z",
+     "desc": "PD-1/VEGF未死，康方生物不哭 ByDrug",
+     "section": "政策与观点",
+     "summary": "PD-1/VEGF未死，康方生物不哭的评论文章"
     }
    ]
   }
